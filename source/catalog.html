@@ -66,15 +66,137 @@
     </header>
 
     <main class="page-catalog">
-      <div class="wrapper wrapper-dark">
-        <div class="page-current page-catalog__current">
-          <h1 class="page-current__title">Попутчики</h1>
-        </div>
+      <div class="page-current page-catalog__current">
+        <h1 class="page-current__title">Попутчики</h1>
       </div>
-
-
-      <!-- форма-->
-
+      <div class="country-filter page-catalog__country-filter">
+        <h2 class="country-filter__title">
+          Фильтрация по странам
+        </h2>
+        <button class="country-filter__toggle visually-hidden" type="button">
+          Открыть фильтрацию по странам
+        </button>
+        <div class="area-choose country-filter__area-choose">
+          <ul class="area-choose__list">
+            <li class="area-choose__item">Европа</li>
+            <li class="area-choose__item">Азия</li>
+            <li class="area-choose__item">Америка</li>
+            <li class="area-choose__item">Острова</li>
+          </ul>
+        </div>
+        <div class="letter-table country-filter__letter-tablet">
+          <table class="table letter-table__table">
+            <tr class="table__row">
+              <td class="table__cell table__cell--active">А</td>
+              <td class="table__cell">Б</td>
+              <td class="table__cell">В</td>
+              <td class="table__cell">Г</td>
+              <td class="table__cell">Д</td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell">Е</td>
+              <td class="table__cell">З</td>
+              <td class="table__cell">И</td>
+              <td class="table__cell">К</td>
+              <td class="table__cell">Л</td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell">М</td>
+              <td class="table__cell">Н</td>
+              <td class="table__cell">О</td>
+              <td class="table__cell">П</td>
+              <td class="table__cell">Р</td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell">С</td>
+              <td class="table__cell">Т</td>
+              <td class="table__cell">У</td>
+              <td class="table__cell">Ф</td>
+              <td class="table__cell">Х</td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell">Ч</td>
+              <td class="table__cell">Ш</td>
+              <td class="table__cell">Э</td>
+              <td class="table__cell">Ю</td>
+              <td class="table__cell">Я</td>
+            </tr>
+          </table>
+        </div>
+        <div class="country-choose country-filter__country-choose">
+          <ul class="country-choose__list">
+            <li class="country-choose__item">Афганистан</li>
+            <li class="country-choose__item">Албания</li>
+            <li class="country-choose__item">Алжир</li>
+            <li class="country-choose__item">Андора</li>
+            <li class="country-choose__item">Аргентина</li>
+            <li class="country-choose__item">Армения</li>
+            <li class="country-choose__item">Австралия</li>
+            <li class="country-choose__item">Австрия</li>
+            <li class="country-choose__item">Азербайджан</li>
+          </ul>
+        </div>
+        <button class="grey-button country-filter__button" type="button">
+          Свернуть
+        </button>
+      </div>
+      <div class="traveller-filter page-catalog__traveller-filter">
+        <h2 class="traveller-filter__title">
+          Подберите идеального попутчика
+        </h2>
+        <form action="https://echo.htmlacademy.ru" method="post" name="item-filter" class="traveller-form traveller-filter__traveller-form">
+          <div class="hobby-form traveller-form__hobby-form">
+            <b class="hobby-form__text">Хобби</b>
+          </div>
+          <div class="music-form traveller-form__music-form">
+            <b class="music-form__text">Музыка</b>
+            <fieldset class="fieldset music__fieldset">
+              <label>
+                <input type="checkbox" name="music-choice" value="rock" class="fieldset__input-checkbox visually-hidden" checked>
+                <span class="checkbox-indicator"></span>
+                <span>Тяжелый рок</span>
+              </label>
+              <label>
+                <input type="checkbox" name="music-choice" value="rap" class="fieldset__input-checkbox visually-hidden" checked>
+                <span class="checkbox-indicator"></span>
+                <span>Русский рэп</span>
+              </label>
+              <label>
+                <input type="checkbox" name="music-choice" value="eurodance" class="fieldset__input-checkbox visually-hidden" checked>
+                <span class="checkbox-indicator"></span>
+                <span>Евроденс</span>
+              </label>
+            </fieldset>
+            <div class="food-form traveller-form__food-form">
+              <b class="food-form__text">Еда</b>
+            </div>
+            <!-- ЧЕКБОКС?-->
+            <div class="transport traveller-form__transport">
+              <ul class="transport__list">
+                <li class="transport__item transport__item--back transport__item--active"><span class="visually-hidden">Самолет</span></li>
+                <li class="transport__item transport__item--back transport__item--active"><span class="visually-hidden">Автобус</span></li>
+                <li class="transport__item transport__item--back"><span class="visually-hidden">Велосипед</span></li>
+                <li class="transport__item transport__item--back transport__item--active"><span class="visually-hidden">Пешком</span></li>
+              </ul>
+            </div>
+            <div class="level-form traveller-form__level-form">
+              <b class="level-form__text">Левел</b>
+              <span class="level-form__number">30</span>
+              <span class="level-form__number">100</span>
+              <div class="range-controls level-form__range-controls">
+                <div class="range-controls__scale">
+                  <div class="range-controls__bar"></div>
+                </div>
+                <div class="range-controls__range-toggle range-controls__range-toggle--min" tabindex="0"></div>
+                <div class="range-controls__range-toggle range-controls__range-toggle--max" tabindex="0"></div>
+              </div>
+            </div>
+          </div>
+          <button class="traveller-filter__button white-button">
+            Показать
+          </button>
+        </form>
+      </div>
       <section class="catalog page-catalog__catalog">
         <h2 class="catalog__title visually-hidden">Каталог для подбора попутчика</h2>
         <ul class="catalog__list">
