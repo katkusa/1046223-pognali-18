@@ -71,7 +71,7 @@
       </div>
       <section class="traveller-id-card page-form__traveller-id-card">
         <h2 class="traveller-id-card__title visually-hidden">
-           Карточка пользователя
+          Карточка пользователя
         </h2>
         <div class="level-id traveller-id-card__level-id">
           <svg class="level-id__svg"></svg>
@@ -103,12 +103,12 @@
         </div>
       </section>
       <section class="plans-id page-form__plans-id">
-        <h2 class="plans-id__title page-form__title">
+        <h2 class="plans-id__title title--h2">
           Мои планы:
         </h2>
         <div class="country-card plans-id__country-card">
-          <b class="country-card__text">1.
-            <span class="country-card__text country-card__text--bold">Франция, Италия</span>
+          <b class="country-card__text">
+            1.<span class="country-card__text country-card__text--bold">Франция, Италия</span>
           </b>
           <b class="country-card__text">
             3 попутчика
@@ -121,8 +121,8 @@
           </button>
         </div>
         <div class="country-card plans-id__country-card">
-          <b class="country-card__text">2.
-            <span class="country-card__text country-card__text--bold">Таиланд, Индонезия</span>
+          <b class="country-card__text">
+            2.<span class="country-card__text country-card__text--bold">Таиланд, Индонезия</span>
           </b>
           <b class="country-card__text">
             1 попутчик
@@ -135,17 +135,17 @@
           </button>
         </div>
       </section>
-      <section class="add-plan-card page-form__add-plan-card">
-        <h2 class="add-plan-card__title page-form__title">
+      <section class="add-plan-form-container page-form__add-plan-form-container">
+        <h2 class="add-plan-form-container__title title--h2">
           Добавить план:
         </h2>
-        <form action="https://echo.htmlacademy.ru" method="post" name="item-form" class="add-plan-card__form">
-          <div class="arrival-dates add-plan-card__arrival-dates">
-            <h3 class="arrival-dates__title">
+        <form action="https://echo.htmlacademy.ru" method="post" name="item-form" class="add-plan-form-container__form">
+          <div class="arrival-dates add-plan-form-container__arrival-dates">
+            <h3 class="arrival-dates__title title--h3">
               Шаг 1.
               Даты пребывания
             </h3>
-            <p class="arrival-dates__pharagraph">
+            <p class="arrival-dates__pharagraph add-plan-form-container__pharagraph">
               Укажите предпочтительное количество попутчиков, которых
               вы хотели бы позвать в поездку и ее предполагаемую длительность.
             </p>
@@ -153,17 +153,17 @@
               <b class="quantity__text">
                 ищу попутчиков:
               </b>
-              <b class="quantity__text quantity__text--grey">
+              <b class="quantity__text quantity__text--gray">
                 Чел.
               </b>
               <div class="quantity-change quantity__quantity-change">
-                <button class="quantity-change__button button-less visually-hidden">
+                <button class="quantity-change__button quantity-change__button--less visually-hidden">
                   Меньше
                 </button>
                 <b class="quantity-change__text">
                   2
                 </b>
-                <button class="quantity-change__button button-more visually-hidden">
+                <button class="quantity-change__button quantity-change__button--more visually-hidden">
                   Больше
                 </button>
               </div>
@@ -172,17 +172,17 @@
               <b class="quantity__text">
                 длительность:
               </b>
-              <b class="quantity__text quantity__text--grey">
+              <b class="quantity__text quantity__text--gray">
                 дн.
               </b>
               <div class="quantity-change quantity__quantity-change">
-                <button class="quantity-change__button button-less visually-hidden">
+                <button class="quantity-change__button quantity-change__button--less visually-hidden">
                   Меньше
                 </button>
                 <b class="quantity-change__text">
                   2
                 </b>
-                <button class="quantity-change__button button-more visually-hidden">
+                <button class="quantity-change__button quantity-change__button--more visually-hidden">
                   Больше
                 </button>
               </div>
@@ -256,150 +256,152 @@
                   <td class="calendar__cell calendar__cell--grey">29</td>
                 </tr>
                 <tr class="calendar__row">
-                  <td class="calendar__cell calendar__cell--grey">30</td>
-                  <td class="calendar__cell calendar__cell--grey">31</td>
-                  <td class="calendar__cell calendar__cell--grey">1</td>
-                  <td class="calendar__cell calendar__cell--grey">2</td>
-                  <td class="calendar__cell calendar__cell--grey">3</td>
-                  <td class="calendar__cell calendar__cell--grey">4</td>
-                  <td class="calendar__cell calendar__cell--grey">5</td>
+                  <td class="calendar__cell calendar__cell--gray">30</td>
+                  <td class="calendar__cell calendar__cell--gray">31</td>
+                  <td class="calendar__cell calendar__cell--gray">1</td>
+                  <td class="calendar__cell calendar__cell--gray">2</td>
+                  <td class="calendar__cell calendar__cell--gray">3</td>
+                  <td class="calendar__cell calendar__cell--gray">4</td>
+                  <td class="calendar__cell calendar__cell--gray">5</td>
                 </tr>
               </table>
             </div>
-            <button class="yellow-button arrival-dates__button" type="button">
+            <button class="button--bg-yellow arrival-dates__button" type="button">
               следующий шаг
             </button>
           </div>
-          <div class="travel-route add-plan-card__travel-route">
-            <h3 class="travel-route__title">
+          <div class="travel-route add-plan-form-container__travel-route">
+            <h3 class="travel-route__title title--h3">
               Шаг 2.
               Маршрут
             </h3>
-            <p class="travel-route__pharagraph">
+            <p class="travel-route__pharagraph add-plan-form-container__pharagraph">
               Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.
             </p>
-            <div class="add-country travel-route__add-country">
-              <b class="add-country__text">Босния и Герцеговина</b>
-              <div class="flag add-country__flag">
-                <svg class="flag__bosnia"></svg>
+            <div class="travel-route__accordion">
+              <div class="travel-route__accordion-item">
+                <input type="checkbox" name="country-choice" value="country" class="travel-route__checkbox">
+                <label for="country-choice" class="travel-route__label">Босния и Герцеговина</label>
               </div>
-              <button class="add-country__delete-button" type="button">
-                <span class="visually-hidden">Удалить</span>
+              <div class="travel-route__accordion-item">
+                <input type="checkbox" name="country-choice" value="country" class="travel-route__checkbox">
+                <label for="country-choice" class="travel-route__label">Чехия</label>
+              </div>
+              <div class="travel-route__accordion-item">
+                <input type="checkbox" name="country-choice" value="country" class="travel-route__checkbox">
+                <label for="country-choice" class="travel-route__label">Выберите страну</label>
+                <div class="country-option travel-route__country-option">
+                  <div class="country-option__alphabet">
+                    <table class="country-option__alphabet-table">
+                      <tr class="country-option__row">
+                        <td class="country-option__cell country-option__cell--active">А</td>
+                        <td class="country-option__cell">Б</td>
+                        <td class="country-option__cell">В</td>
+                        <td class="country-option__cell">Г</td>
+                        <td class="country-option__cell">Д</td>
+                      </tr>
+                      <tr class="country-option__row">
+                        <td class="country-option__cell">Е</td>
+                        <td class="country-option__cell">З</td>
+                        <td class="country-option__cell">И</td>
+                        <td class="country-option__cell">К</td>
+                        <td class="country-option__cell">Л</td>
+                      </tr>
+                      <tr class="country-option__row">
+                        <td class="country-option__cell">М</td>
+                        <td class="country-option__cell">Н</td>
+                        <td class="country-option__cell">О</td>
+                        <td class="country-option__cell">П</td>
+                        <td class="country-option__cell">Р</td>
+                      </tr>
+                      <tr class="country-option__row">
+                        <td class="country-option__cell">С</td>
+                        <td class="country-option__cell">Т</td>
+                        <td class="country-option__cell">У</td>
+                        <td class="country-option__cell">Ф</td>
+                        <td class="country-option__cell">Х</td>
+                      </tr>
+                      <tr class="country-option__row">
+                        <td class="country-option__cell">Ч</td>
+                        <td class="country-option__cell">Ш</td>
+                        <td class="country-option__cell">Э</td>
+                        <td class="country-option__cell">Ю</td>
+                        <td class="country-option__cell">Я</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="country-option__country-choose">
+                    <ul class="country-option__list">
+                      <li class="country-option__item">Афганистан</li>
+                      <li class="country-option__item">Албания</li>
+                      <li class="country-option__item">Алжир</li>
+                      <li class="country-option__item">Андора</li>
+                      <li class="country-option__item">Аргентина</li>
+                      <li class="country-option__item">Армения</li>
+                      <li class="country-option__item">Австралия</li>
+                      <li class="country-option__item">Австрия</li>
+                      <li class="country-option__item">Азербайджан</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <button class="travel-route__button">
+                Добавить страну
               </button>
+              <ul class="travel-route__list">
+                <li class="travel-route">
+                  <svg class="travel-route__flag"></svg>
+                  <button class="travel-route__button">
+                    <span class="visually-hidden">Удалить</span>
+                  </button>
+                </li>
+                <li class="travel-route">
+                  <svg class="travel-route__flag"></svg>
+                  <button class="travel-route__button">
+                    <span class="visually-hidden">Удалить</span>
+                  </button>
+                </li>
+                <li class="travel-route">
+                  <svg class="travel-route__flag"></svg>
+                  <button class="travel-route__button">
+                    <span class="visually-hidden">Удалить</span>
+                  </button>
+                </li>
+              </ul>
             </div>
-            <div class="add-country travel-route__add-country">
-              <b class="add-country__text">Чехия</b>
-              <div class="flag add-country__flag">
-                <svg class="flag__czech"></svg>
-              </div>
-              <button class="add-country__delete-button" type="button">
-                <span class="visually-hidden">Удалить</span>
-              </button>
-            </div>
-            <div class="add-country travel-route__add-country">
-              <b class="add-country__text">Выберите страну</b>
-              <button class="add-country__delete-button" type="button">
-                <span class="visually-hidden">Удалить</span>
-              </button>
-            </div>
-            <div class="country-option add-country__country-option">
-              <div class="letter-table country-option__letter-tablet">
-                <table class="table letter-table__table">
-                  <tr class="table__row">
-                    <td class="table__cell table__cell--active">А</td>
-                    <td class="table__cell">Б</td>
-                    <td class="table__cell">В</td>
-                    <td class="table__cell">Г</td>
-                    <td class="table__cell">Д</td>
-                  </tr>
-                  <tr class="table__row">
-                    <td class="table__cell">Е</td>
-                    <td class="table__cell">З</td>
-                    <td class="table__cell">И</td>
-                    <td class="table__cell">К</td>
-                    <td class="table__cell">Л</td>
-                  </tr>
-                  <tr class="table__row">
-                    <td class="table__cell">М</td>
-                    <td class="table__cell">Н</td>
-                    <td class="table__cell">О</td>
-                    <td class="table__cell">П</td>
-                    <td class="table__cell">Р</td>
-                  </tr>
-                  <tr class="table__row">
-                    <td class="table__cell">С</td>
-                    <td class="table__cell">Т</td>
-                    <td class="table__cell">У</td>
-                    <td class="table__cell">Ф</td>
-                    <td class="table__cell">Х</td>
-                  </tr>
-                  <tr class="table__row">
-                    <td class="table__cell">Ч</td>
-                    <td class="table__cell">Ш</td>
-                    <td class="table__cell">Э</td>
-                    <td class="table__cell">Ю</td>
-                    <td class="table__cell">Я</td>
-                  </tr>
-                </table>
-              </div>
-              <div class="country-choose country-option__country-choose">
-                <ul class="country-choose__list">
-                  <li class="country-choose__item">Афганистан</li>
-                  <li class="country-choose__item">Албания</li>
-                  <li class="country-choose__item">Алжир</li>
-                  <li class="country-choose__item">Андора</li>
-                  <li class="country-choose__item">Аргентина</li>
-                  <li class="country-choose__item">Армения</li>
-                  <li class="country-choose__item">Австралия</li>
-                  <li class="country-choose__item">Австрия</li>
-                  <li class="country-choose__item">Азербайджан</li>
-                </ul>
-              </div>
-            </div>
-            <div class="add-country add-country--grey travel-route__add-country">
-              <b class="add-country__text">Добавить страну</b>
-            </div>
-            <button class="yellow-button travel-route__button--next" type="button">
+            <button class="button--bg-yellow travel-route__button--next" type="button">
               следующий шаг
             </button>
-            <button class="travel-route__button--back step-back-button" type="button">
+            <button class="travel-route__button--back" type="button">
               на шаг назад
             </button>
           </div>
-          <div class="activity-plans add-plan-card__activity-plans">
-            <h3 class="activity-plans__title">
+          <div class="activity-plans add-plan-form-container__activity-plans">
+            <h3 class="activity-plans__title title--h3">
               Шаг 3.
               Развлечения
             </h3>
-            <p class="activity-plans__pharagraph">
+            <p class="activity-plans__pharagraph add-plan-form-container__pharagraph">
               Наконец, расскажите о своих планах времяпровождения.
               Можно писать в свободной форме и ставить тэги.
             </p>
-            <div class="textarea-activity activity-plans__textarea-activity">
-              <div class="country-activity textarea-activity__country-activity">
-                <div class="country-name country-activity__country-name">
-                  <b class="country-name__text">
-                    Босния и Герцеговина
-                  </b>
-                </div>
-                <div class="flag country-activity__flag">
-                  <svg class="flag__bosnia"></svg>
-                </div>
+            <div class="activity-plans__textarea-activity">
+              <div class="activity-plans__country">
+                <b class="activity-plans__text">
+                  Босния и Герцеговина
+                </b>
+                <svg class="activity-plans__flag activity-plans__flag--bosnia"></svg>
               </div>
-              <textarea class="textarea-activity__textarea" name="user-textarea" id="userfield-textarea" rows="5" placeholder="План действий" aria-label="Поле для ввода развлечений в стране"></textarea>
+              <textarea class="activity-plans__textarea" name="user-textarea" id="userfield-textarea" rows="5" placeholder="План действий" aria-label="Поле для ввода развлечений в стране"></textarea>
             </div>
-            <div class="textarea-activity activity-plans__textarea-activity">
-              <div class="country-activity textarea-activity__country-activity">
-                <div class="country-name country-activity__country-name">
-                  <b class="country-name__text">
-                    Чехия
-                  </b>
-                </div>
-                <div class="flag country-activity__flag">
-                  <svg class="flag__czech"></svg>
-                </div>
+            <div class="activity-plans__textarea-activity">
+              <div class="activity-plans__country">
+                <b class="activity-plans__text">
+                  Чехия
+                </b>
+                <svg class="activity-plans__flag activity-plans__flag--czech"></svg>
               </div>
-              <p class="textarea-activity__pharagraph">
+              <p class="activity-plans__pharagraph">
                 <textarea class="textarea-activity__textarea" name="user-textarea" id="userfield-textarea" rows="5" placeholder="План действий" aria-label="Поле для ввода развлечений в стране">
                   Пить пиво и лазить
                   по старым замкам, наслаждаться архитектурой
@@ -407,10 +409,10 @@
                 </textarea>
               </p>
             </div>
-            <button class="textarea-activity__button yellow-button" type="submit">
+            <button class="activity-plans__button button--bg-yellow" type="submit">
               Отправить
             </button>
-            <button class="textarea-activity__button--back step-back-button" type="button">
+            <button class="activity-plans__button--back" type="button">
               на шаг назад
             </button>
           </div>
