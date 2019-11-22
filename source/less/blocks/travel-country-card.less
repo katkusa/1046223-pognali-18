@@ -1,0 +1,28 @@
+.travel-country-card__wrapper {
+  background-color: @white;
+  border-radius: 10px;
+}
+.travel-country-card__country {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #161c35;
+}
+.travel-country-card__slogan {
+  font-weight: 500;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.3);
+}
+.travel-country-card__people-number {
+  font-weight: 500;
+  line-height: 30px;
+  color: rgba(68, 68, 68, 0.3);
+  &:before {
+    content: '';
+    display: block;
+    flex-shrink: 0;
+    width: 11px;
+    height: 11px;
+    background-image: url("../../img/user.svg")
+  }
+}

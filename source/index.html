@@ -6,140 +6,173 @@
     <title>Сервис для путешествий "Погнали?"</title>
     <link href="./css/style.css" rel="stylesheet">
     <link rel="preload" href="fonts/bloggersans.woff" as="font">
-    <link rel="preload" href="fonts/bloggersans-italic.woff" as="font">
     <link rel="preload" href="fonts/bloggersans-bold.woff" as="font">
-    <link rel="preload" href="fonts/bloggersans-bolditalic.woff" as="font">
     <link rel="preload" href="fonts/bloggersans-light.woff" as="font">
-    <link rel="preload" href="fonts/bloggersans-lightitalic.woff" as="font">
     <link rel="preload" href="fonts/bloggersans-medium.woff" as="font">
-    <link rel="preload" href="fonts/bloggersans-mediumitalic.woff" as="font">
   </head>
 
   <body>
+    <div class="wrapper--bg-blue wrapper--bg-with-img-man">
+      <header class="page-header">
+        <a class="logo page-header__logo">
+          <img class="logo__img" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип сервиса для путешествий Погнали?">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="site-list main-nav__list">
+              <li class="site-list__item">
+                <a href="#" class="site-list__link">
+                  О сервисе
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="#" class="site-list__link">
+                  Направления
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="#" class="site-list__link">
+                  Попутчики
+                </a>
+                </li>
+            </ul>
+            <a href="#" class="button main-nav__link button--bg-yellow"> Авторизация</a>
+            <div class="phone main-nav__phone phone--menu">
+              <a href="tel:+78005558628" class="phone__link phone__link--bg-blue">
+                <svg class="phone__svg phone__svg--yellow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
+                  c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
+                  c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
+                  c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
+                  M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
+                  c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
+                  c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
+                  c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
+                </svg>
+                <span class="phone__text phone__text--blue">8 800 555-86-28</span>
+              </a>
+            </div>
+            <div class="mail main-nav__mail mail--menu">
+              <a href="mailto:mail@htmlacademy.ru" class="mail__link mail__link--bg-blue">
+                  <svg  class="mail__svg mail__svg--yellow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
+               <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
+                 c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
+                 L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
+                 c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
+               </svg>
+                <span class="mail__text mail__text--blue">mail@htmlacademy.ru</span>
+              </a>
+            </div>
+            <div class="social main-nav__social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link social__link--facebook" href="#">
+                    <span class="visually-hidden">Фейсбук</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--vk" href="#">
+                    <span class="visually-hidden">Вконтакте</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--insta" href="#">
+                    <span class="visually-hidden">Инстаграм</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-    <header class="page-header">
-      <a class="logo page-header__logo">
-        <img class="logo__img" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип сервиса для путешествий Погнали?">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="site-list main-nav__list">
-            <li class="site-list__item">
-              <a href="#" class="site-list__link">
-                О сервисе
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#" class="site-list__link">
-                Направления
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#" class="site-list__link">
-                Попутчики
-              </a>
+      <main class="page-main">
+
+        <h1 class="visually-hidden">Сервис для путешествий "Погнали?"</h1>
+
+        <div class="user page-main__user">
+          <b class="user__slogan">
+            В путешествие с крутыми попутчиками!
+          </b>
+          <div class="user__interaction">
+            <ul class="user__list">
+              <li class="user__item">
+                <div class="phone user__phone phone--main">
+                  <a href="tel:+78005558628" class="phone__link phone__link--bg-yellow">
+                      <svg class="phone__svg phone__svg--blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                   <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
+                     c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
+                     c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
+                     c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
+                      M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
+                     c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
+                     c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
+                     c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
+                   </svg>
+                    <span class="visually-hidden">8 800 555-86-28</span>
+                  </a>
+                </div>
               </li>
-          </ul>
-          <a href="#" class="button main-nav__link button--menu"> Авторизация</a>
-          <div class="phone main-nav__phone phone--menu">
-            <a href="tel:+78005558628" class="phone__link phone__link--menu">
-              8 800 555-86-28
-            </a>
-          </div>
-          <div class="mail main-nav__mail mail--menu">
-            <a href="mailto:mail@htmlacademy.ru" class="mail__link mail__link--menu">
-              mail@htmlacademy.ru
-            </a>
-          </div>
-          <div class="social main-nav__social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="#">
-                  <span class="visually-hidden">Фейсбук</span>
-                </a>
+              <li class="user__item">
+                <div class="user__mail mail mail--main">
+                  <a href="mailto:mail@htmlacademy.ru" class="mail__link mail__link--bg-yellow">
+                      <svg  class="mail__svg mail__svg--blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
+                   <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
+                     c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
+                     L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
+                     c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
+                   </svg>
+                    <span class="visually-hidden">mail@htmlacademy.ru</span>
+                  </a>
+                </div>
               </li>
-              <li class="social__item">
-                <a class="social__link social__link--vk" href="#">
-                  <span class="visually-hidden">Вконтакте</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--insta" href="#">
-                  <span class="visually-hidden">Инстаграм</span>
-                </a>
+              <li class="user__item">
+                <a class="user__login-button button button--bg-yellow" href="#">Авторизация</a>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
-    </header>
 
-    <main class="page-main">
-
-      <h1 class="visually-hidden">Сервис для путешествий "Погнали?"</h1>
-
-      <div class="user page-main__user">
-        <b class="user__slogan">
-          В путешествие с крутыми попутчиками!
-        </b>
-        <div class="user__interaction">
-          <ul class="user__list">
-            <li class="user__item">
-              <div class="phone user__phone phone--main">
-                <a href="tel:+78005558628" class="phone__link phone__link--main visually-hidden">
-                  8 800 555-86-28
-                </a>
-              </div>
-            </li>
-            <li class="user__item">
-              <div class="user__mail mail mail--main">
-                <a href="mailto:mail@htmlacademy.ru" class="mail__link mail__link--main visually-hidden">
-                  mail@htmlacademy.ru
-                </a>
-              </div>
-            </li>
-            <li class="user__item">
-              <a class="user__login-button button button--menu" href="#">Авторизация</a>
+        <section class="reviews page-main__reviews">
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <blockquote class="reviews__text">
+                «Лучшее приложение, что я видел в жизни!»
+              </blockquote>
+              <cite class="reviews__author">
+                Мурат Эльтазин главный редактор газеты «гаджетлайф»
+              </cite>
             </li>
           </ul>
-        </div>
-      </div>
+        </section>
 
-      <section class="reviews page-main__reviews">
-        <ul class="reviews__list">
-          <li class="reviews__item">
-            <blockquote class="reviews__text">
-              «Лучшее приложение, что я видел в жизни!»
-            </blockquote>
-            <cite class="reviews__author">
-              Мурат Эльтазин главный редактор газеты «гаджетлайф»
-            </cite>
-          </li>
-        </ul>
-      </section>
-
-      <section class="service page-main__service">
-        <ul class="service__list">
-          <li class="service__item service__item--first">
-            Выберите направление
-          </li>
-          <li class="service__item service__item--second">
-            Изучите идеи путешественников
-          </li>
-          <li class="service__item service__item--third">
-            Находите тех, кто похож на вас
-          </li>
-          <li class="service__item service__item--fourth">
-            Путешествуйте вместе!
-          </li>
-        </ul>
-      </section>
-
+        <section class="service page-main__service">
+          <ul class="service__list">
+            <li class="service__item service__item--first">
+              Выберите направление
+            </li>
+            <li class="service__item service__item--second">
+              Изучите идеи путешественников
+            </li>
+            <li class="service__item service__item--third">
+              Находите тех, кто похож на вас
+            </li>
+            <li class="service__item service__item--fourth">
+              Путешествуйте вместе!
+            </li>
+          </ul>
+        </section>
+    </div>
+    <div class="wrapper--bg-blue wrapper--bg-with-phone">
       <section class="service-info page-main__service-info">
-        <h2 class="service-info__title page-main__title">
+        <h2 class="service-info__title title--h2-orange">
           О сервисе
         </h2>
         <p class="service-info__text page-main__text--light">
@@ -151,9 +184,10 @@
           близкого по духу — скорее зовите в совместный трип!
         </p>
       </section>
-
+    </div>
+    <div class="wrapper--bg-gray">
       <section class="directions page-main__directions">
-        <h2 class="directions__title page-main__title">Направления</h2>
+        <h2 class="directions__title title--h2-orange">Направления</h2>
         <p class="directions__text">
           Мы не продаем туры и ничего не рекламируем.
           Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
@@ -161,39 +195,44 @@
         <ul class="directions__list">
           <li class="directions__item">
             <div class="travel-country-card">
-              <img class="travel-country-card__img" src="" alt="Фото Таиланда" width="" height="">
-              <svg class="travel-country-card__flag"></svg>
-              <h3 class="travel-country-card__country">Таиланд</h3>
-              <p class="travel-country-card__slogan">Джунгли зовут!</p>
-              <span class="travel-country-card__people-number">18321</span>
+              <img class="travel-country-card__img" src="./img/thailand-mobile@1x.jpg" alt="Фото Таиланда" width="270" height="110">
+              <div class="travel-country-card__wrapper">
+                <svg class="travel-country-card__flag"></svg>
+                <h3 class="travel-country-card__country">Таиланд</h3>
+                <p class="travel-country-card__slogan">Джунгли зовут!</p>
+                <span class="travel-country-card__people-number">18321</span>
+              </div>
             </div>
           </li>
           <li class="directions__item">
             <div class="travel-country-card">
-              <img class="travel-country-card__img" src="" alt="Фото Франции" width="" height="">
-              <svg class="travel-country-card__flag"></svg>
-              <h3 class="travel-country-card__country">Франция</h3>
-              <p class="travel-country-card__slogan">Трэ бьен, манифик!</p>
-              <span class="travel-country-card__people-number">12518</span>
+              <img class="travel-country-card__img" src="./img/france-mobile@1x.jpg" alt="Фото Франции" width="270" height="110">
+              <div class="travel-country-card__wrapper">
+                <svg class="travel-country-card__flag"></svg>
+                <h3 class="travel-country-card__country">Франция</h3>
+                <p class="travel-country-card__slogan">Трэ бьен, манифик!</p>
+                <span class="travel-country-card__people-number">12518</span>
+              </div>
             </div>
           </li>
           <li class="directions__item">
             <div class="travel-country-card">
-              <img class="travel-country-card__img" src="" alt="Фото Чехии" width="" height="">
-              <svg class="travel-country-card__flag"></svg>
-              <h3 class="travel-country-card__country">Чехия</h3>
-              <p class="travel-country-card__slogan">Закоулки старой Европы</p>
-              <span class="travel-country-card__people-number">5326</span>
+              <img class="travel-country-card__img" src="./img/czech-mobile@1x.jpg" alt="Фото Чехии" width="270" height="109">
+              <div class="travel-country-card__wrapper">
+                <svg class="travel-country-card__flag"></svg>
+                <h3 class="travel-country-card__country">Чехия</h3>
+                <p class="travel-country-card__slogan">Закоулки старой Европы</p>
+                <span class="travel-country-card__people-number">5326</span>
+              </div>
             </div>
           </li>
         </ul>
-        <div class="directions__show-all">
-          <a class="directions__button big-yellow-button">Показать все</a>
-        </div>
+        <a class="directions__button button button--big-yellow">Показать все</a>
       </section>
-
+    </div>
+    <div class="wrapper--bg-blue">
       <section class="traveller page-main__traveller">
-        <h2 class="traveller__title page-main__title">Попутчики</h2>
+        <h2 class="traveller__title title--h2-orange">Попутчики</h2>
         <p class="traveller__text page-main__text--light">
           Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
           Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
@@ -204,14 +243,15 @@
         <ul class="traveller__list">
           <li class="traveller__item">
             <div class="traveller-card">
-              <svg class="traveller-card__level"></svg>
-              <img class="traveller-card__img" src="" alt="Личное фото Тани Фирсовой" width="" height="">
-              <div class="flags traveller-card__flags">
-                <ul class="flags__list">
-                  <li class="flags__item"></li>
-                  <li class="flags__item"></li>
-                  <li class="flags__item"></li>
-                </ul>
+              <div class="traveller-card__wrapper">
+                <img class="traveller-card__img" src="./img/firsova-mobile@1x.jpg" alt="Личное фото Тани Фирсовой" width="270" height="270">
+                <div class="flags traveller-card__flags">
+                  <ul class="flags__list">
+                    <li class="flags__item"></li>
+                    <li class="flags__item"></li>
+                    <li class="flags__item"></li>
+                  </ul>
+                </div>
               </div>
               <div class="traveller-card__discription">
                 <b class="traveller-card__name">Таня Фирсова</b>
@@ -220,10 +260,54 @@
                 </p>
                 <div class="transport traveller-card__transport">
                   <ul class="transport__list">
-                    <li class="transport__item transport__item--active"><span class="visually-hidden">Самолет</span></li>
-                    <li class="transport__item"><span class="visually-hidden">Автобус</span></li>
-                    <li class="transport__item"><span class="visually-hidden">Велосипед</span></li>
-                    <li class="transport__item"><span class="visually-hidden">Пешком</span></li>
+                    <li class="transport__item transport__item--active">
+                      <svg class="transport__svg transport__svg--plane transport__svg--active" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                        <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                        c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                        C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                        c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                        c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                        c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                        c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                      </svg>
+                      <span class="visually-hidden">Самолет</span></li>
+                    <li class="transport__item">
+                      <svg class="transport__svg transport__svg--bus" version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                        <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                        c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                        C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                        M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                        H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                      </svg>
+                      <span class="visually-hidden">Автобус</span>
+                    </li>
+                    <li class="transport__item">
+                      <svg class="transport__svg transport__svg--bike" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                        <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                        S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                        l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                        l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                        s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                      </svg>
+                      <span class="visually-hidden">Велосипед</span>
+                    </li>
+                    <li class="transport__item">
+                      <svg class="transport__svg transport__svg--foot" version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                        <g>
+                        <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
+                        <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                        C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                        c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                        c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                        z"/>
+                        </g>
+                     </svg>
+                      <span class="visually-hidden">Пешком</span>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -231,38 +315,83 @@
           </li>
           <li class="traveller__item">
             <div class="traveller-card">
-              <svg class="traveller-card__level"></svg>
-              <img class="traveller-card__img" src="" alt="Личное фото Пети Демина" width="" height="">
-              <div class="flags traveller-card__flags">
-                <ul class="flags__list">
-                    <li class="flags__item"></li>
-                    <li class="flags__item"></li>
-                  </ul>
+              <div class="traveller-card__wrapper">
+                <img class="traveller-card__img" src="./img/demin-mobile@1x.jpg" alt="Личное фото Пети Демина" width="270" height="270">
+                <div class="flags traveller-card__flags">
+                  <ul class="flags__list">
+                      <li class="flags__item"></li>
+                      <li class="flags__item"></li>
+                    </ul>
+                </div>
               </div>
               <div class="traveller-card__discription">
-                <b class="traveller__name">Петя Демин</b>
-                <p class="traveller__hobbys">
+                <b class="traveller-card__name">Петя Демин</b>
+                <p class="traveller-card__hobbys">
                   #бургер #бар #футбол #концерт #крафт
                 </p>
                 <div class="transport traveller-card__transport">
                   <ul class="transport__list">
-                    <li class="transport__item transport__item--active"><span class="visually-hidden">Самолет</span></li>
-                    <li class="transport__item transport__item--active"><span class="visually-hidden">Автобус</span></li>
-                    <li class="transport__item"><span class="visually-hidden">Велосипед</span></li>
-                    <li class="transport__item transport__item--active"><span class="visually-hidden">Пешком</span></li>
+                    <li class="transport__item transport__item--active">
+                      <svg class="transport__svg transport__svg--plane transport__svg--active" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                        <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                        c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                        C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                        c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                        c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                        c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                        c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                      </svg>
+                      <span class="visually-hidden">Самолет</span>
+                    </li>
+                    <li class="transport__item transport__item--active">
+                      <svg class="transport__svg transport__svg--bus transport__svg--active" version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                        <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                        c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                        C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                        M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                        H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                      </svg>
+                      <span class="visually-hidden">Автобус</span>
+                    </li>
+                    <li class="transport__item">
+                      <svg class="transport__svg transport__svg--bike" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                        <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                        S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                        l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                        l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                        s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                      </svg>
+                      <span class="visually-hidden">Велосипед</span>
+                    </li>
+                    <li class="transport__item transport__item--active">
+                      <svg class="transport__svg transport__svg--foot transport__svg--active" version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                        <g>
+                        <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
+                        <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                        C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                        c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                        c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                        z"/>
+                        </g>
+                     </svg>
+                      <span class="visually-hidden">Пешком</span>
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
           </li>
         </ul>
-        <div class="traveller__show-all">
-          <a class="traveller__button big-yellow-button">Показать всех</a>
-        </div>
+        <a class="traveller__button button button--big-yellow">Показать всех</a>
       </section>
-
+    </div>
+    <div class="wrapper--bg-gray">
       <section class="distribution page-main__distribution">
-        <h2 class="distribution__title page-main__title">
+        <h2 class="distribution__title title--h2-orange">
           Добавьте свой профиль
         </h2>
         <ul class="distribution__list">
@@ -281,9 +410,10 @@
         </ul>
         <a class="distribution__link" href="#" >Показать тарифы для бизнеса</a>
       </section>
-
+    </div>
+    <div class="wrapper--bg-blue">
       <section class="subscription page-main__subscription">
-        <h2 class="subscription__title page-main__title">Заинтересовались?</h2>
+        <h2 class="subscription__title title--h2-orange">Заинтересовались?</h2>
         <p class="subscription__text">
           Зарегистрируйтесь,
           это быстро и бесплатно!
@@ -292,69 +422,90 @@
         <form action="https://echo.htmlacademy.ru" method="post" name="subscription__form">
           <label for="subscription-field" class="visually-hidden">Электронная почта</label>
           <input class="subscription__input" type="email" name="subscription-form" id="subscription-field" placeholder="E-mail" required>
-          <button type="submit" class="subscription__button visually-hidden">Отправить</button>
+          <button type="submit" class="button subscription__button visually-hidden">Отправить</button>
         </form>
         <p class="subscription__text">
           Остались вопросы?
           Мы с радостью на них ответим!
         </p>
         <div class="phone page-main__phone phone--subscription">
-            <a href="tel:+78005558628" class="phone__link phone__link--subscription">
-              8 800 555-86-28
+            <a href="tel:+78005558628" class="phone__link phone__link--bg-blue">
+                <svg class="phone__svg phone__svg--yellow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+             <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
+               c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
+               c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
+               c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
+                M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
+               c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
+               c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
+               c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
+             </svg>
+              <span class="phone__text phone__text--yellow">8 800 555-86-28</span>
             </a>
           </div>
           <div class="mail page-main__mail mail--subscription">
-            <a href="mailto:mail@htmlacademy.ru" class="mail__link mail__link--subscription">
-              mail@htmlacademy.ru
+            <a href="mailto:mail@htmlacademy.ru" class="mail__link mail__link--bg-blue">
+                <svg  class="mail__svg mail__svg--yellow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
+             <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
+               c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
+               L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
+               c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
+             </svg>
+              <span class="mail__text mail__text--yellow">mail@htmlacademy.ru</span>
             </a>
           </div>
       </section>
-
+    </div>
+    <div class="wrapper--bg-yellow">
       <section class="address page-main__address">
         <span class="address__text">
           ул. Большая Конюшенная, 19/8
         </span>
-        <a class="address__link stroke-button">
+        <a class="address__link">
           Проложить маршрут
         </a>
       </section>
-
+    </div>
       <div class="page-main__map">
         <!--КАРТА-->
       </div>
 
     </main>
-    <footer class="page-footer">
-      <a href="#" class="logo page-footer__logo">
-          <img class="logo__img" src="img/logo-mobile-blue@1x.png" width="96" height="15" alt="Логотип сервиса для путешествий Погнали?">
-      </a>
-      <div class="social page-footer__social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--facebook social__link--social-yellow" href="#">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--vk social__link--social-yellow" href="#">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--insta social__link--social-yellow" href="#">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="copyright page-footer__copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__html-logo" src="img/htmlacademy.svg" alt="Логотип HTML Академии" width="27" height="34">
-          <span class="visually-hidden">HTML-Academy</span>
+    <div class="wrapper--bg-white">
+      <footer class="page-footer">
+        <a href="#" class="logo page-footer__logo">
+            <img class="logo__img" src="img/logo-mobile-blue@1x.png" width="96" height="15" alt="Логотип сервиса для путешествий Погнали?">
         </a>
-      </div>
-    </footer>
+        <div class="social page-footer__social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--facebook social__link--social-yellow" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vk social__link--social-yellow" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--insta social__link--social-yellow" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright page-footer__copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__html-logo" src="img/htmlacademy.svg" alt="Логотип HTML Академии" width="27" height="34">
+            <span class="visually-hidden">HTML-Academy</span>
+          </a>
+        </div>
+      </footer>
+    </div>
 
   </body>
 </html>
