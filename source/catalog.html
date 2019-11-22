@@ -66,15 +66,153 @@
     </header>
 
     <main class="page-catalog">
-      <div class="wrapper wrapper-dark">
-        <div class="page-current page-catalog__current">
-          <h1 class="page-current__title">Попутчики</h1>
-        </div>
+      <div class="page-current page-catalog__current">
+        <h1 class="page-current__title">Попутчики</h1>
       </div>
-
-
-      <!-- форма-->
-
+      <div class="country-filter page-catalog__country-filter">
+        <h2 class="country-filter__title">
+          Фильтрация по странам
+        </h2>
+        <button class="country-filter__toggle visually-hidden" type="button">
+          Открыть фильтрацию по странам
+        </button>
+        <div class="country-filter__area-choose">
+          <ul class="country-filter__list-continent">
+            <li class="country-filter__item-continent">Европа</li>
+            <li class="country-filter__item-continent">Азия</li>
+            <li class="country-filter__item-continent">Америка</li>
+            <li class="country-filter__item-continent">Острова</li>
+          </ul>
+        </div>
+        <div class="country-filter__alphabet">
+          <table class="country-filter__alphabet-table">
+            <tr class="country-filter__row">
+              <td class="country-filter__cell country-filter__cell--active">А</td>
+              <td class="country-filter__cell">Б</td>
+              <td class="country-filter__cell">В</td>
+              <td class="country-filter__cell">Г</td>
+              <td class="country-filter__cell">Д</td>
+            </tr>
+            <tr class="country-filter__row">
+              <td class="country-filter__cell">Е</td>
+              <td class="country-filter__cell">З</td>
+              <td class="country-filter__cell">И</td>
+              <td class="country-filter__cell">К</td>
+              <td class="country-filter__cell">Л</td>
+            </tr>
+            <tr class="country-filter__row">
+              <td class="country-filter__cell">М</td>
+              <td class="country-filter__cell">Н</td>
+              <td class="country-filter__cell">О</td>
+              <td class="country-filter__cell">П</td>
+              <td class="country-filter__cell">Р</td>
+            </tr>
+            <tr class="country-filter__row">
+              <td class="country-filter__cell">С</td>
+              <td class="country-filter__cell">Т</td>
+              <td class="country-filter__cell">У</td>
+              <td class="country-filter__cell">Ф</td>
+              <td class="country-filter__cell">Х</td>
+            </tr>
+            <tr class="country-filter__row">
+              <td class="country-filter__cell">Ч</td>
+              <td class="country-filter__cell">Ш</td>
+              <td class="country-filter__cell">Э</td>
+              <td class="country-filter__cell">Ю</td>
+              <td class="country-filter__cell">Я</td>
+            </tr>
+          </table>
+        </div>
+        <div class="country-filter__country-choose">
+          <ul class="country-choose__list-country">
+            <li class="country-choose__item-country">Афганистан</li>
+            <li class="country-choose__item-country">Албания</li>
+            <li class="country-choose__item-country">Алжир</li>
+            <li class="country-choose__item-country">Андора</li>
+            <li class="country-choose__item-country">Аргентина</li>
+            <li class="country-choose__item-country">Армения</li>
+            <li class="country-choose__item-country">Австралия</li>
+            <li class="country-choose__item-country">Австрия</li>
+            <li class="country-choose__item-country">Азербайджан</li>
+          </ul>
+        </div>
+        <button class="grey-button country-filter__button" type="button">
+          Свернуть
+        </button>
+      </div>
+      <div class="traveller-filter page-catalog__traveller-filter">
+        <h2 class="traveller-filter__title">
+          Подберите идеального попутчика
+        </h2>
+        <form action="https://echo.htmlacademy.ru" method="post" name="item-filter" class="traveller-form traveller-filter__traveller-form">
+          <div class="traveller-form__hobby">
+            <b class="traveller-form__text">Хобби</b>
+          </div>
+          <div class="traveller-form__music">
+            <b class="traveller-form__text">Музыка</b>
+            <fieldset class="traveller-form__fieldset">
+              <label>
+                <input type="checkbox" name="music-choice" value="rock" class="traveller-form__input-checkbox visually-hidden" checked>
+                <span class="checkbox-indicator"></span>
+                <span>Тяжелый рок</span>
+              </label>
+              <label>
+                <input type="checkbox" name="music-choice" value="rap" class="traveller-form__input-checkbox visually-hidden">
+                <span class="checkbox-indicator"></span>
+                <span>Русский рэп</span>
+              </label>
+              <label>
+                <input type="checkbox" name="music-choice" value="eurodance" class="traveller-form__input-checkbox visually-hidden">
+                <span class="checkbox-indicator"></span>
+                <span>Евроденс</span>
+              </label>
+            </fieldset>
+            <div class="traveller-form__food">
+              <b class="traveller-form__text">Еда</b>
+            </div>
+            <div class="traveller-form__transport">
+              <b class="traveller-form__text">Транспорт</b>
+              <fieldset class="traveller-form__fieldset">
+                <label>
+                  <input type="checkbox" name="transport-choice" value="plane" class="traveller-form__input-checkbox traveller-form__input-checkbox--circle visually-hidden" checked>
+                  <span class="checkbox-indicator checkbox-indicator--plane"></span>
+                  <span class="visually-hidden">Самолет</span>
+                </label>
+                <label>
+                  <input type="checkbox" name="transport-choice" value="bus" class="traveller-form__input-checkbox traveller-form__input-checkbox--circle visually-hidden">
+                  <span class="checkbox-indicator checkbox-indicator--bus"></span>
+                  <span class="visually-hidden">Автобус</span>
+                </label>
+                <label>
+                  <input type="checkbox" name="transport-choice" value="bike" class="traveller-form__input-checkbox traveller-form__input-checkbox--circle visually-hidden">
+                  <span class="checkbox-indicator checkbox-indicator--bike"></span>
+                  <span class="visually-hidden">Велосипед</span>
+                </label>
+                <label>
+                  <input type="checkbox" name="transport-choice" value="foot" class="traveller-form__input-checkbox traveller-form__input-checkbox--circle visually-hidden">
+                  <span class="checkbox-indicator checkbox-indicator--foot"></span>
+                  <span class="visually-hidden">Пешком</span>
+                </label>
+              </fieldset>
+            </div>
+            <div class="level-form traveller-form__level-form">
+              <b class="level-form__text">Левел</b>
+              <span class="level-form__number">30</span>
+              <span class="level-form__number">100</span>
+              <div class="range-controls level-form__range-controls">
+                <div class="range-controls__scale">
+                  <div class="range-controls__bar"></div>
+                </div>
+                <div class="range-controls__range-toggle range-controls__range-toggle--min" tabindex="0"></div>
+                <div class="range-controls__range-toggle range-controls__range-toggle--max" tabindex="0"></div>
+              </div>
+            </div>
+          </div>
+          <button class="button button--bg-white traveller-filter__button" type="button">
+            Показать
+          </button>
+        </form>
+      </div>
       <section class="catalog page-catalog__catalog">
         <h2 class="catalog__title visually-hidden">Каталог для подбора попутчика</h2>
         <ul class="catalog__list">
@@ -110,10 +248,18 @@
               <b class="traveller-skills-card__text catalog__text">транспорт:</b>
               <div class="transport traveller-skills-card__transport">
                 <ul class="transport__list">
-                    <li class="transport__item transport__item--back transport__item--active"><span class="visually-hidden">Самолет</span></li>
-                    <li class="transport__item transport__item--back"><span class="visually-hidden">Автобус</span></li>
-                    <li class="transport__item transport__item--back"><span class="visually-hidden">Велосипед</span></li>
-                    <li class="transport__item transport__item--back"><span class="visually-hidden">Пешком</span></li>
+                    <li class="transport__item transport__item--back transport__item--active">
+                      <span class="visually-hidden">Самолет</span>
+                    </li>
+                    <li class="transport__item transport__item--back">
+                      <span class="visually-hidden">Автобус</span>
+                    </li>
+                    <li class="transport__item transport__item--back">
+                      <span class="visually-hidden">Велосипед</span>
+                    </li>
+                    <li class="transport__item transport__item--back">
+                      <span class="visually-hidden">Пешком</span>
+                    </li>
                   </ul>
               </div>
               <b class="traveller-skills-card__text catalog__text">левел:</b>
@@ -153,10 +299,18 @@
               <b class="traveller-skills-card__text catalog__text">транспорт:</b>
               <div class="transport traveller-skills-card__transport">
                 <ul class="transport__list">
-                    <li class="transport__item transport__item--back transport__item--active"><span class="visually-hidden">Самолет</span></li>
-                    <li class="transport__item transport__item--back transport__item--active"><span class="visually-hidden">Автобус</span></li>
-                    <li class="transport__item transport__item--back"><span class="visually-hidden">Велосипед</span></li>
-                    <li class="transport__item transport__item--back transport__item--active"><span class="visually-hidden">Пешком</span></li>
+                    <li class="transport__item transport__item--back transport__item--active">
+                      <span class="visually-hidden">Самолет</span>
+                    </li>
+                    <li class="transport__item transport__item--back transport__item--active">
+                      <span class="visually-hidden">Автобус</span>
+                    </li>
+                    <li class="transport__item transport__item--back">
+                      <span class="visually-hidden">Велосипед</span>
+                    </li>
+                    <li class="transport__item transport__item--back transport__item--active">
+                      <span class="visually-hidden">Пешком</span>
+                    </li>
                   </ul>
               </div>
               <b class="traveller-skills-card__text catalog__text">левел:</b>
@@ -200,10 +354,18 @@
               <b class="traveller-skills-card__text catalog__text">транспорт:</b>
               <div class="transport traveller-skills-card__transport">
                 <ul class="transport__list">
-                    <li class="transport__item transport__item--back transport__item--active"><span class="visually-hidden">Самолет</span></li>
-                    <li class="transport__item transport__item--back"><span class="visually-hidden">Автобус</span></li>
-                    <li class="transport__item transport__item--back transport__item--active"><span class="visually-hidden">Велосипед</span></li>
-                    <li class="transport__item transport__item--back"><span class="visually-hidden">Пешком</span></li>
+                    <li class="transport__item transport__item--back transport__item--active">
+                      <span class="visually-hidden">Самолет</span>
+                    </li>
+                    <li class="transport__item transport__item--back">
+                      <span class="visually-hidden">Автобус</span>
+                    </li>
+                    <li class="transport__item transport__item--back transport__item--active">
+                      <span class="visually-hidden">Велосипед</span>
+                    </li>
+                    <li class="transport__item transport__item--back">
+                      <span class="visually-hidden">Пешком</span>
+                    </li>
                   </ul>
               </div>
               <b class="traveller-skills-card__text catalog__text">левел:</b>
@@ -243,10 +405,18 @@
               <b class="traveller-skills-card__text catalog__text">транспорт:</b>
               <div class="transport traveller-skills-card__transport">
                 <ul class="transport__list">
-                    <li class="transport__item transport__item--back transport__item--active"><span class="visually-hidden">Самолет</span></li>
-                    <li class="transport__item transport__item--back transport__item--active"><span class="visually-hidden">Автобус</span></li>
-                    <li class="transport__item transport__item--back"><span class="visually-hidden">Велосипед</span></li>
-                    <li class="transport__item transport__item--back"><span class="visually-hidden">Пешком</span></li>
+                    <li class="transport__item transport__item--back transport__item--active">
+                      <span class="visually-hidden">Самолет</span>
+                    </li>
+                    <li class="transport__item transport__item--back transport__item--active">
+                      <span class="visually-hidden">Автобус</span>
+                    </li>
+                    <li class="transport__item transport__item--back">
+                      <span class="visually-hidden">Велосипед</span>
+                    </li>
+                    <li class="transport__item transport__item--back">
+                      <span class="visually-hidden">Пешком</span>
+                    </li>
                   </ul>
               </div>
               <b class="traveller-skills-card__text catalog__text">левел:</b>
