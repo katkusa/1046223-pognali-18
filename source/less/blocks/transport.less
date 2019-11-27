@@ -1,10 +1,25 @@
+.transport__title {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: @dark-slate-blue;
+  text-transform: uppercase;
+}
 .transport__list {
   display: flex;
-  list-style: none;
+  .list-reset();
 }
 .transport__item {
   width: 33px;
   height: 33px;
+}
+.transport__item--bg-white {
+  border-radius: 50%;
+  background-color: @white;
+}
+.transport__item--bg-gray {
+  border-radius: 50%;
+  background-color: @light-grayish-blue
 }
 .transport__svg {
   fill: rgba(0, 0, 0, 0.15);
