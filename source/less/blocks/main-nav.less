@@ -1,3 +1,39 @@
 .main-nav__wrapper {
   background-color: @white;
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-nav__user {
+    display: flex;
+  }
+}
+@media (min-width: @desktop-width) {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
+  .main-nav__wrapper {
+    display: flex;
+    background-color: @very-dark-blue;
+  }
+  .main-nav__link{
+    display: none;
+  }
+  .main-nav__phone {
+    display: none;
+  }
+  .main-nav__mail {
+    display: none;
+  }
+  .main-nav__social {
+    display: none;
+  }
 }

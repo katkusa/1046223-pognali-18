@@ -3,17 +3,28 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.user__slogan {
-  font-size: 36px;
-  line-height: 40px;
-  font-weight: 700;
-  color: @white;
-}
-.user__interaction {
+
+.user {
   display: flex;
 }
 .user__list {
   display: flex;
   justify-content: space-around;
   .list-reset();
+}
+@media (min-width: @tablet-width) {
+  .user__phone {
+    display: none;
+  }
+  .user__mail {
+    display: none;
+  }
+}
+@media (min-width: @desktop-width) {
+  .user__phone {
+    display: block;
+  }
+  .user__mail {
+    display: block;
+  }
 }

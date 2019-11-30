@@ -1,9 +1,23 @@
 .page-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .page-header__logo {
   display: block;
   width: 100px;
   height: 19px;
+}
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    display: block;
+    width: 105px;
+    height: 17px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    display: block;
+    width: 200px;
+    height: 52px;
+  }
 }
