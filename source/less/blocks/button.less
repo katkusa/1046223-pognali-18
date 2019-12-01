@@ -1,0 +1,33 @@
+.button {
+  display: inline-block;
+  cursor: pointer;
+  border: transparent;
+  font-family: inherit;
+}
+.button--bg-yellow {
+  background-color: @light-yellow;
+  color: #161c35;
+  &:hover,
+  &:focus {
+    background-color: @vivid-orange-light;
+  }
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
+  }
+}
+.button--size-small {
+  padding: 13px 40px 5px 37px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  border-radius: 25px;
+}
+.button--size-big {
+  padding: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
+  border-radius: 10px;
+}
