@@ -11,6 +11,7 @@
 }
 .mail__link {
   display: block;
+  margin-right: 16px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -32,4 +33,12 @@
 }
 .mail__svg--yellow {
   fill: @light-yellow;
+}
+@media (min-width: @desktop-width) {
+  .mail__text {
+    display: none;
+  }
+  .mail__link {
+    margin: 0;
+  }
 }

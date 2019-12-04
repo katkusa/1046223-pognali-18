@@ -21,6 +21,7 @@
 }
 .phone__link {
   display: block;
+  margin-right: 16px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -31,4 +32,12 @@
 }
 .phone__link--bg-blue {
   background-color: #121936;
+}
+@media (min-width: @desktop-width) {
+  .phone__text {
+    display: none;
+  }
+  .phone__link {
+    margin: 0;
+  }
 }

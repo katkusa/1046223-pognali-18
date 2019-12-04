@@ -1,6 +1,13 @@
 .page-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  width: 320px;
+  min-height: 50px;
+}
+.page-header--opened {
+  position: relative;
+  background-color: @white;
+  width: 280px;
 }
 .page-header__logo {
   display: block;
@@ -13,11 +20,23 @@
     width: 105px;
     height: 17px;
   }
+  .page-header--opened {
+    width: 700px;
+  }
 }
 @media (min-width: @desktop-width) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: @very-dark-blue;
+  }
   .page-header__logo {
     display: block;
     width: 200px;
-    height: 52px;
+  }
+  .page-header--opened {
+    width: 1320px;
   }
 }
