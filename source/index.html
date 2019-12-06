@@ -15,10 +15,14 @@
   <body>
     <div class="wrapper wrapper--bg-blue">
       <header class="page-header page-header--opened">
-        <a class="logo page-header__logo page-header__logo--opened">
-          <img class="logo__img" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип сервиса для путешествий Погнали?">
+        <a class="page-header__logo page-header__logo--opened">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop-white@1x.png">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png">
+            <img class="page-header__logo-img" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип сервиса для путешествий Погнали?">
+          </picture>
         </a>
-        <nav class="main-nav main-nav--close main-nav--opened main-nav--nojs">
+        <nav class="main-nav main-nav--closed main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle button" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -43,7 +47,7 @@
             <div class="main-nav__user-container">
               <a href="#" class="button main-nav__link button--bg-yellow button--size-small"> Авторизация</a>
               <div class="phone main-nav__phone phone--menu">
-                <a href="tel:+78005558628" class="phone__link phone__link--bg-blue">
+                <a href="tel:+78005558628" class="phone__link phone__link--bg-blue main-nav__phone-link">
                   <svg class="phone__svg phone__svg--yellow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
                   <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
@@ -59,7 +63,7 @@
                 <a href="tel:+78005558628" class="phone__text phone__text--blue">8 800 555-86-28</a>
               </div>
               <div class="mail main-nav__mail mail--menu">
-                <a href="mailto:mail@htmlacademy.ru" class="mail__link mail__link--bg-blue">
+                <a href="mailto:mail@htmlacademy.ru" class="mail__link mail__link--bg-blue main-nav__mail-link">
                   <svg class="mail__svg mail__svg--yellow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
                     <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
@@ -133,7 +137,7 @@
       </header>
     </div>
     <div class=" wrapper wrapper--bg-blue">
-      <main class="page-main">
+      <span class="page-main">
 
         <h1 class="visually-hidden">Сервис для путешествий "Погнали?"</h1>
 
@@ -144,7 +148,7 @@
           <ul class="user__list">
             <li class="user__item">
               <div class="phone user__phone phone--main">
-                <a href="tel:+78005558628" class="phone__link phone__link--bg-yellow">
+                <a href="tel:+78005558628" class="phone__link phone__link--bg-dark-yellow">
                   <svg class="phone__svg phone__svg--blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
                     <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
@@ -162,7 +166,7 @@
             </li>
             <li class="user__item">
               <div class="user__mail mail mail--main">
-                <a href="mailto:mail@htmlacademy.ru" class="mail__link mail__link--bg-yellow">
+                <a href="mailto:mail@htmlacademy.ru" class="mail__link mail__link--bg-medium-yellow">
                   <svg class="mail__svg mail__svg--blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
                     <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
@@ -179,6 +183,7 @@
             </li>
           </ul>
         </div>
+
         <section class="reviews page-main__reviews">
           <ul class="reviews__list">
             <li class="reviews__item">
@@ -186,7 +191,7 @@
                 «Лучшее приложение, что я видел в жизни!»
               </blockquote>
               <cite class="reviews__author">
-                Мурат Эльтазин главный редактор газеты «гаджетлайф»
+                Мурат Эльтазин <br>главный редактор газеты «гаджетлайф»
               </cite>
             </li>
           </ul>
@@ -195,16 +200,20 @@
         <section class="service page-main__service">
           <ul class="service__list">
             <li class="service__item service__item--first">
-              Выберите направление
+              <span class="service__text">Выберите направление</span>
+              <span class="service__number">1</span>
             </li>
             <li class="service__item service__item--second">
-              Изучите идеи путешественников
+              <span class="service__text">Изучите идеи путешественников</span>
+              <span class="service__number">2</span>
             </li>
             <li class="service__item service__item--third">
-              Находите тех, кто похож на вас
+              <span class="service__text">Находите тех, кто похож на вас</span>
+              <span class="service__number">3</span>
             </li>
             <li class="service__item service__item--fourth">
-              Путешествуйте вместе!
+              <span class="service__text">Путешествуйте вместе!</span>
+              <span class="service__number">4</span>
             </li>
           </ul>
         </section>

@@ -1,6 +1,7 @@
 .site-list {
   .list-reset();
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   padding: 0;
 }
@@ -15,6 +16,10 @@
   text-transform: uppercase;
 }
 @media (min-width: @tablet-width) {
+  .site-list__link {
+    font-size: 60px;
+    line-height: 71px;
+  }
   .site-list__item {
     text-align: left;
   }

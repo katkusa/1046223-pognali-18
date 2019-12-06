@@ -1,8 +1,17 @@
+.page-main {
+  display: flex;
+  flex-direction: column;
+}
+.page-main__user {
+  margin-bottom: 30px;
+}
 .page-main__slogan {
   font-size: 36px;
   line-height: 40px;
   font-weight: 700;
   color: @white;
+  text-align: center;
+  padding: 0 15px;
 }
 .page-main__text--light {
   font-weight: 300;
@@ -11,4 +20,34 @@
 .page-main__text--bold {
   font-weight: 700;
   color: @white;
+}
+.page-main__reviews {
+  margin-bottom: 30px;
+}
+.page-main__service {
+  margin-bottom: 40px;
+}
+@media (min-width: @tablet-width) {
+  .page-main__slogan {
+    padding: 0 130px;
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 96px;
+  }
+  .page-main__user {
+    display: none;
+  }
+}
+@media (min-width: @desktop-width) {
+  .page-main__slogan {
+    padding-right: 89px;
+    text-align: left;
+    width: 400px;
+    margin-bottom: 107px;
+  }
+  .page-main__reviews {
+    position: absolute;
+    right: 60px;
+    margin: 0;
+  }
 }
