@@ -15,6 +15,7 @@
   font-weight: 700;
   color: #161c35;
   border-radius: 10px;
+  margin-bottom: -15px;
 }
 .service__text {
   width: 140px;
@@ -33,6 +34,7 @@
 }
 .service__item--fourth {
   background-color: @light-yellow;
+  padding: 18px 20px;
 }
 @media (min-width: @tablet-width) {
   .service__list {
@@ -45,16 +47,38 @@
     height: 95px;
     font-size: 24px;
     line-height: 24px;
+    border-radius: 0;
+    padding: 23px 24px;
+    margin-right: -17px;
   }
   .service__text {
     width: 190px;
   }
+  .service__item--first {
+    border-top-left-radius: 20px;
+  }
+  .service__item--second {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .service__item--third {
+    border-bottom-left-radius: 20px;
+  }
+  .service__item--fourth {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
 }
 @media (min-width: @desktop-width) {
+  .service__list {
+    margin-left: 15px;
+  }
   .service__item {
     flex-direction: row;
     width: 290px;
     height: 60px;
     border-radius: 20px;
+    margin-left: -15px;
+    padding: 23px 32px;
   }
 }

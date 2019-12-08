@@ -1,0 +1,92 @@
+.site-navigation-wrapper--closed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-navigation-wrapper--closed .site-navigation {
+  display: none;
+}
+.site-navigation-wrapper--opened {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: @white;
+  width: 266px;
+  padding: 27px 27px 40px 27px;
+}
+.site-navigation-wrapper--closed .page-header__toggle::before {
+  content: "";
+  position: absolute;
+  right: 30px;
+  top: 35px;
+  width: 25px;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: @white;
+  box-shadow: 0 8px 0 0 #ffffff;
+}
+.site-navigation-wrapper--opened .page-header__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    right: 30px;
+    top: 35px;
+    width: 19px;
+    height: 2px;
+    background-color: #cccccc;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+  @media (min-width: @tablet-width) {
+  .site-navigation-wrapper--opened {
+    padding: 40px;
+    width: 688px;
+  }
+  .site-navigation-wrapper--closed .page-header__toggle::before {
+    right: 400px;
+    top: 60px;
+  }
+  .site-navigation-wrapper--opened .page-header__toggle {
+    &::before,
+    &::after {
+      right: 400px;
+      top: 60px;
+    }
+  }
+  .site-navigation-wrapper--closed .site-navigation {
+    display: block;
+  }
+  .site-navigation-wrapper--closed .site-navigation__main-nav {
+    display: none;
+  }
+  .site-navigation-wrapper--closed .site-navigation__contacts-wrapper {
+    display: none;
+  }
+  .site-navigation-wrapper--closed .site-navigation__social {
+    display: none;
+  }
+  .site-navigation-wrapper--closed .site-navigation__link {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-navigation-wrapper--closed .site-navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  .site-navigation-wrapper--closed .site-navigation__main-nav {
+    display: flex;
+  }
+  .site-navigation-wrapper--closed .site-navigation__contacts-wrapper {
+    display: flex;
+  }
+}

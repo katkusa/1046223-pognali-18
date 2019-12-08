@@ -1,4 +1,9 @@
-.page-main {
+.page-main__app-preview {
+  display: flex;
+  flex-direction: column;
+
+}
+.page-main__container {
   display: flex;
   flex-direction: column;
 }
@@ -12,6 +17,7 @@
   color: @white;
   text-align: center;
   padding: 0 15px;
+  margin-bottom: 247px;
 }
 .page-main__text--light {
   font-weight: 300;
@@ -25,7 +31,7 @@
   margin-bottom: 30px;
 }
 .page-main__service {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 @media (min-width: @tablet-width) {
   .page-main__slogan {
@@ -37,17 +43,27 @@
   .page-main__user {
     display: none;
   }
+  .page-main__reviews {
+    margin-bottom: 213px;
+  }
 }
 @media (min-width: @desktop-width) {
   .page-main__slogan {
-    padding-right: 89px;
+    padding: 0;
+    padding-left: 89px;
     text-align: left;
-    width: 400px;
-    margin-bottom: 107px;
+    width: 439px;
   }
   .page-main__reviews {
-    position: absolute;
-    right: 60px;
     margin: 0;
+  }
+  .page-main__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 107px;
+  }
+  .page-main__service {
+    padding-bottom: 123px;
   }
 }
