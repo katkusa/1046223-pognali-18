@@ -42,6 +42,12 @@
   padding-left: 20px;
   padding-right: 30px;
 }
+.page-main__directions {
+  display: flex;
+  flex-direction: column;
+  padding-top: 72px;
+  padding-bottom: 32px;
+}
 @media (min-width: @tablet-width) {
   .page-main__service {
     margin-bottom: 96px;
@@ -71,6 +77,9 @@
   .page-main__service-info {
     padding-bottom: 88px;
   }
+  .page-main__directions {
+    padding: 74px 35px 80px 35px;
+  }
 }
 @media (min-width: @desktop-width) {
   .page-main__slogan {
@@ -92,12 +101,25 @@
     margin-bottom: 123px;
   }
   .page-main__service-info {
+    padding-top: 133px;
     padding-bottom: 163px;
+    padding-left: 70px;
   }
   .page-main__text--light {
     width: 609px;
   }
   .page-main__text--bold {
     width: 409px;
+  }
+  .page-main__directions {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+    padding-top: 161px;
+    padding-left: 70px;
+    padding-bottom: 139px;
+    padding-right: 180px;
+
   }
 }
