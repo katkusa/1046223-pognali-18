@@ -22,12 +22,10 @@
 .page-main__text--light {
   font-weight: 300;
   color: @white;
-  width: 210px;
 }
 .page-main__text--bold {
   font-weight: 700;
   color: @white;
-  width: 195px;
 }
 .page-main__reviews {
   margin-bottom: 30px;
@@ -48,6 +46,11 @@
   padding-top: 72px;
   padding-bottom: 32px;
 }
+.page-main__traveller {
+  display: flex;
+  flex-direction: column;
+  padding: 73px 0 30px 0;
+}
 @media (min-width: @tablet-width) {
   .page-main__service {
     margin-bottom: 96px;
@@ -67,18 +70,19 @@
   .page-main__text--light {
     font-size: 28px;
     line-height: 33px;
-    width: 298px;
   }
   .page-main__text--bold {
     font-size: 21px;
     line-height: 25px;
-    width: 291px;
   }
   .page-main__service-info {
     padding-bottom: 88px;
   }
   .page-main__directions {
     padding: 74px 35px 80px 35px;
+  }
+  .page-main__traveller {
+    padding: 143px 25px 88px 25px;
   }
 }
 @media (min-width: @desktop-width) {
@@ -120,6 +124,10 @@
     padding-left: 70px;
     padding-bottom: 139px;
     padding-right: 180px;
-
+  }
+  .page-main__traveller {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 131px 0 134px 71px;
   }
 }

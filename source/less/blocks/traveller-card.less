@@ -7,8 +7,69 @@
   line-height: 21px;
   font-weight: 700;
   color: #1d2e5b;
+  margin-bottom: 16px;
+  position: relative;
 }
 .traveller-card__hobbys {
   line-height: 18px;
-  color: @very-dark-gray
+  text-align: center;
+  color: @very-dark-gray;
+  margin: 0;
+  margin-bottom: 17px;
+  max-width: 180px;
+
+}
+.traveller-card__discription{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.traveller-card__transport {
+  margin-bottom: 22px;
+}
+.traveller-card__name--status::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -11px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+.traveller-card__name--offline::before {
+  background-color: #f97676;
+}
+.traveller-card__name--online::before {
+  background-color: #81e31e;
+}
+@media (min-width: @tablet-width) {
+  .traveller-card__img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .traveller-card__name {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 22px;
+  }
+  .traveller-card__hobbys {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 230px;
+    margin-bottom: 27px;
+  }
+  .traveller-card__name--status::before {
+    width: 7px;
+    height: 7px;
+    left: -17px;
+  }
+  .traveller-card__img {
+    width: 285px;
+    height: 285px;
+  }
+  .traveller-card__transport {
+    margin-bottom: 29px;
+  }
 }
