@@ -1,12 +1,124 @@
 .distribution__list {
   .list-reset();
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 31px;
 }
 .distribution__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
   font-weight: 300;
+}
+.distribution__item::after {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 1px;
+  background-color: rgba(0,0,0,0.05);
+}
+.distribution__item::before {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 200px;
+  height: 1px;
+  background-color: rgba(0,0,0,0.02);
+}
+.distribution__container {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.distribution__text {
+  display: block;
 }
 .distribution__link {
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
   color: @very-dark-blue;
+}
+.distribution__title {
+  margin-bottom: 52px;
+  width: 101px;
+}
+.distribution__number {
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  border-radius: 50%;
+  color: @white;
+}
+.distribution__number--vivid-orange {
+  background-color: @vivid-orange;
+}
+.distribution__number--vivid-orange-light {
+  background-color: @vivid-orange-light;
+}
+.distribution__number--light-yellow {
+  background-color: @light-yellow;
+}
+@media (min-width: @tablet-width) {
+  .distribution__list {
+    margin-bottom: 59px;
+  }
+  .distribution__item {
+    justify-content: flex-start;
+    align-items: initial;
+  }
+  .distribution__text {
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .distribution__number {
+    order: 1;
+    font-size: 28px;
+    line-height: 28px;
+    width: 67px;
+    height: 67px;
+    margin-right: 25px;
+  }
+  .distribution__container {
+    order: 2;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 550px;
+    padding: 0;
+  }
+  .distribution__title {
+    width: auto;
+    text-align: center;
+    margin-bottom: 95px;
+  }
+  .distribution__item::after {
+    width: 562px;
+    right: 10px;
+  }
+  .distribution__item::before {
+    width: 562px;
+    right: 10px;
+  }
+  .distribution__link {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 90px;
+    color: #132576;
+  }
+}
+@media (min-width: @desktop-width) {
+  .distribution__container {
+    min-width: 813px;
+  }
+  .distribution__item::after {
+    width: 813px;
+  }
+  .distribution__item::before {
+    width: 813px;
+  }
 }
