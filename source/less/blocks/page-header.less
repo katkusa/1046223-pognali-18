@@ -1,9 +1,26 @@
 .page-header {
-  display: flex;
-  justify-content: space-around;
+  padding-top: 27px;
+  padding-bottom: 52px;
 }
-.page-header__logo {
+.page-header__toggle {
+  padding: 0;
   display: block;
-  width: 100px;
-  height: 19px;
+  cursor: pointer;
+  border: none;
+  position: relative;
+}
+@media (min-width: @tablet-width) {
+  .page-header {
+    padding-top: 43px;
+    padding-bottom: 81px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .page-header {
+    padding-top: 47px;
+    padding-bottom: 118px;
+  }
+  .page-header__toggle {
+    display: none;
+  }
 }

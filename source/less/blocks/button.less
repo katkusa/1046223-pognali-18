@@ -6,7 +6,7 @@
 }
 .button--bg-yellow {
   background-color: @light-yellow;
-  color: #161c35;
+  color: #1d2e5b;
   &:hover,
   &:focus {
     background-color: @vivid-orange-light;
@@ -24,10 +24,34 @@
   border-radius: 25px;
 }
 .button--size-big {
+  position: relative;
   padding: 24px;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
   text-align: left;
   border-radius: 10px;
+}
+.button--arrow-right::after {
+  content: "";
+  position: absolute;
+  right: 10%;
+  top: 40%;
+  border: 6px solid transparent;
+  border-left: 10px solid #1d2e5b;
+  width: 0px;
+  height: 0px;
+}
+@media (min-width: @tablet-width) {
+  .button--size-small {
+    font-size: 20px;
+  }
+  .button--size-big {
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
+  }
+}
+@media (min-width: @desktop-width) {
+
 }

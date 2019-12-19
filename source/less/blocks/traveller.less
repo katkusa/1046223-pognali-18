@@ -6,4 +6,69 @@
 .traveller__item {
   background-color: @white;
   border-radius: 10px;
+  margin-bottom: 10px;
+}
+.traveller__item:last-child {
+  margin-bottom: 20px;
+}
+.traveller__container {
+  padding-right: 32px;
+  padding-left: 25px;
+  margin-bottom: 60px;
+}
+.traveller__title {
+  margin-bottom: 23px;
+}
+.traveller__text {
+  margin-bottom: 27px;
+  width: 215px;
+}
+@media (min-width: @tablet-width) {
+  .traveller__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .traveller__container {
+    padding: 0;
+    margin-bottom: 62px;
+  }
+  .traveller__title {
+    margin-bottom: 61px;
+  }
+  .traveller__text {
+    display: block;
+    margin-bottom: 46px;
+    width: 423px;
+  }
+  .traveller__text:last-child {
+    width: 258px;
+    margin-bottom: 0;
+  }
+  .traveller__item {
+    border-radius: 20px;
+    margin-bottom: 80px;
+  }
+  .traveller__item:last-child {
+    margin-bottom: 80px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .traveller {
+    position: relative;
+  }
+  .traveller__button {
+    position: absolute;
+    top: 570px;
+    padding: 31px 95px 32px 34px;
+  }
+  .traveller__item {
+    margin-bottom: 0;
+  }
+  .traveller__item:last-child {
+    margin-bottom: 0;
+  }
+  .traveller__item:not(:last-child) {
+    margin-right: 60px;
+  }
 }
