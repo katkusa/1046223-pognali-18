@@ -4,9 +4,15 @@
   margin-right: auto;
   padding: 0 25px;
 }
+.wrapper__inner-form {
+  padding: 0 20px;
+}
 .wrapper--bottom-radius {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+.wrapper--all-border {
+  border-radius: 10px;
 }
 .wrapper--bg-blue {
   background-color: @very-dark-blue;
@@ -35,11 +41,17 @@
     padding-right: 40px;
     padding-left: 40px;
   }
+  .wrapper__inner-form {
+    padding: 0 44px;
+  }
 }
 @media (min-width: @desktop-width) {
   .wrapper__inner {
     width: 1320px;
     padding-right: 60px;
     padding-left: 60px;
+  }
+  .wrapper__inner-form {
+    padding: 0 160px;
   }
 }

@@ -7,12 +7,76 @@
   border-radius: 50%;
 }
 .traveller-id-card__button {
+  margin-bottom: 33px;
   background-color: @medium-grayish-blue;
+  color: #161c35;
 }
 .traveller-id-card__heading {
+  margin: 0;
+  width: 65px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
+  text-align: center;
   color: @dark-slate-blue;
   text-transform: uppercase;
+  position: absolute;
+  top: -8px;
+  left: 100px;
+  background-color: #edeff6;
+}
+.traveller-id-card__text {
+  margin: 0;
+  padding: 25px;
+}
+.traveller-id-card__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 21px 18px 0;
+  margin-bottom: 19px;
+}
+.traveller-id-card__level-id {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 94px;
+  height: 94px;
+  border: 3px solid @vivid-orange-dark;
+  border-radius: 50%;
+}
+.traveller-id-card__number {
+  font-size: 38px;
+  line-height: 38px;
+  font-weight: 700;
+  color: #161c35;
+  position: relative;
+}
+.traveller-id-card__number::after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  bottom: 2px;
+  width: 49px;
+  height: 2px;
+  background-color: #cbced9;
+}
+.traveller-id-card__level {
+  font-size: 18px;
+  line-height: 22px;
+  color: #444444;
+}
+.traveller-id-card__photo-id {
+  width: 100px;
+  height: 100px;
+}
+.traveller-id-card__tags {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
 }
