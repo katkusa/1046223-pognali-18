@@ -36,6 +36,21 @@
   flex-direction: row;
   margin-bottom: 32px;
 }
+.address__link:hover,
+.address__link:focus {
+  background-color: @very-dark-blue;
+  color: @white;
+}
+.address__link:hover::after,
+.address__link:focus::after {
+  border-left: 10px solid @white;
+}
+.address__link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.address__link:active::after {
+  border-left: 10px solid rgba(255, 255, 255, 0.3);
+}
 @media (min-width: @tablet-width) {
   .address__text {
     min-width: 500px;

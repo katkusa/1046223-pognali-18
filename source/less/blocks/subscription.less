@@ -25,6 +25,7 @@
 .subscription__link {
   color: @light-yellow;
   text-decoration: underline;
+  cursor: pointer;
 }
 .subscription__link:hover,
 .subscription__link:focus {
@@ -99,6 +100,33 @@
 }
 .subscription__mail-link {
   margin-right: 17px;
+}
+.subscription__button--text:active {
+  opacity: 0.3;
+}
+.subscription__phone:hover .subscription__phone-text,
+.subscription__phone:hover .subscription__phone-svg,
+.subscription__phone:focus .subscription__phone-text,
+.subscription__phone:focus .subscription__phone-svg {
+  color: @vivid-orange-light;
+  fill: @vivid-orange-light;
+}
+.subscription__phone:active .subscription__phone-text,
+.subscription__phone:active .subscription__phone-svg {
+  color: rgba(255, 189, 48, 0.3);
+  fill: rgba(255, 189, 48, 0.3);
+}
+.subscription__mail:hover .subscription__mail-text,
+.subscription__mail:hover .subscription__mail-svg,
+.subscription__mail:focus .subscription__mail-text,
+.subscription__mail:focus .subscription__mail-svg {
+  color: @vivid-orange-light;
+  fill: @vivid-orange-light;
+}
+.subscription__mail:active .subscription__mail-text,
+.subscription__mail:active .subscription__mail-svg {
+  color: rgba(255, 189, 48, 0.3);
+  fill: rgba(255, 189, 48, 0.3);
 }
 @media (min-width: @tablet-width) {
   .subscription__title {
