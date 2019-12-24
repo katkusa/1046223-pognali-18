@@ -157,16 +157,23 @@
               Карточка пользователя
             </h2>
             <div class="traveller-id-card__container">
+              <svg class="traveller-id-card__svg" width="100" height="100">
+                <circle r="47" cx="50" cy="50" fill="none" stroke="#ff8d30" stroke-width="3" stroke-dasharray="180 48" stroke-dashoffset="10"/>
+              </svg>
               <div class="traveller-id-card__level-id">
                 <span class="traveller-id-card__number">80</span>
                 <span class="traveller-id-card__level">level</span>
               </div>
               <div class="traveller-id-card__photo-id">
-                <img class="traveller-id-card__img" src="./img/demin-mobile@1x.jpg" width="99" height="100">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                  <img class="traveller-id-card__img" src="./img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="Личное фото Пети Демина" width="99" height="100">
+                </picture>
               </div>
             </div>
             <button class="button button--size-small traveller-id-card__button">
-              Сменить фото
+              <span class="traveller-id-card__button-text">Сменить</span> фото
             </button>
             <div class="traveller-id-card__tags">
               <h3 class="traveller-id-card__heading">
@@ -180,9 +187,9 @@
               <h3 class="transport__title">
                 Транспорт
               </h3>
-              <ul class="transport__list">
+              <ul class="transport__list traveller-id-card__list">
                 <li class="transport__item transport__item--bg-white">
-                  <svg class="transport__svg transport__svg--plane transport__svg--active" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg class="transport__svg traveller-id-card__svg--plane transport__svg--plane transport__svg--active" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
                     <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
                     c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
@@ -194,7 +201,7 @@
                   </svg>
                   <span class="visually-hidden">Самолет</span></li>
                 <li class="transport__item transport__item--bg-white">
-                  <svg class="transport__svg transport__svg--bus transport__svg--active" version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg class="transport__svg traveller-id-card__svg--bus transport__svg--bus transport__svg--active" version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
                     <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
                     c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
@@ -205,7 +212,7 @@
                   <span class="visually-hidden">Автобус</span>
                 </li>
                 <li class="transport__item transport__item--bg-white">
-                  <svg class="transport__svg transport__svg--bike" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg class="transport__svg transport__svg--bike traveller-id-card__svg--bike" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
                     <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
                     S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
@@ -216,7 +223,7 @@
                   <span class="visually-hidden">Велосипед</span>
                 </li>
                 <li class="transport__item transport__item--bg-white">
-                  <svg class="transport__svg transport__svg--foot transport__svg--active" version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg class="transport__svg transport__svg--foot traveller-id-card__svg--foot transport__svg--active" version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
                     <g>
                     <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>

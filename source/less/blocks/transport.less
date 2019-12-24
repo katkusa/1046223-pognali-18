@@ -4,6 +4,12 @@
   font-weight: 700;
   color: @dark-slate-blue;
   text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  padding: 0 14px;
+  background-color: #edeff6;
+  text-align: center;
+  top: -8px;
 }
 .transport__list {
   display: flex;
@@ -28,18 +34,61 @@
   fill: #1d2e5b;
 }
 .transport__svg--plane {
-  width: 19px;
-  height: 21px;
+  width: 14px;
+  height: 16px;
+  padding: 9px 11px 8px 8px;
 }
 .transport__svg--bus {
-  width: 17px;
-  height: 21px;
+  width: 13px;
+  height: 16px;
+  padding: 9px 10px 8px;
 }
 .transport__svg--bike {
-  width: 24px;
-  height: 21px;
+  width: 19px;
+  height: 17px;
+  padding: 7px 7px 9px 7px;
 }
 .transport__svg--foot {
-  width: 20px;
-  height: 21px;
+  width: 15px;
+  height: 17px;
+  padding: 8px 10px 8px 8px;
+}
+@media (min-width: @tablet-width) {
+  .transport__title {
+    top: 85px;
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 0 20px;
+  }
+  .transport__item {
+    width: 43px;
+    height: 43px;
+  }
+  .transport__svg--plane {
+    width: 19px;
+    height: 21px;
+    padding: 11px 13px 11px 11px;
+  }
+  .transport__svg--bus {
+    width: 17px;
+    height: 21px;
+    padding: 11px 13px;
+  }
+  .transport__svg--bike {
+    width: 24px;
+    height: 21px;
+    padding: 11px 10px 11px 9px;
+  }
+  .transport__svg--foot {
+    width: 20px;
+    height: 21px;
+    padding: 11px 12px 11px 11px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .transport__title {
+    top: 165px;
+  }
 }
