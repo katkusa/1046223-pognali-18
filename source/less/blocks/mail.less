@@ -16,11 +16,11 @@
   border-radius: 50%;
   background-repeat: no-repeat;
 }
-.mail__link--bg-yellow {
-  background-color: @vivid-orange-light;
-}
 .mail__link--bg-blue {
   background-color: #121936;
+}
+.mail__link--bg-medium-yellow {
+  background-color: @vivid-orange-light;
 }
 .mail__svg {
   width: 18px;
@@ -32,4 +32,36 @@
 }
 .mail__svg--yellow {
   fill: @light-yellow;
+}
+@media (min-width: @tablet-width) {
+  .mail__text {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .mail__link {
+    width: 67px;
+    height: 67px;
+  }
+  .mail__svg {
+    width: 27px;
+    height: 19px;
+    padding: 23px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .mail__text {
+    display: none;
+  }
+  .mail__link {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    background-color: @vivid-orange-light;
+  }
+  .mail__svg {
+    width: 18px;
+    height: 14px;
+    padding: 17px;
+    fill: #161c35;
+  }
 }
