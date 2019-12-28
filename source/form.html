@@ -302,74 +302,105 @@
               <div class="wrapper wrapper--bg-white wrapper--all-border">
                 <div class="wrapper__inner-form">
                   <div class="arrival-dates add-plan-form-container__arrival-dates">
-                    <h3 class="arrival-dates__title title title--h3 title--h3-blue">
-                      Шаг 1.
-                      Даты пребывания
-                    </h3>
-                    <p class="arrival-dates__pharagraph add-plan-form-container__pharagraph">
-                      Укажите предпочтительное количество попутчиков, которых
-                      вы хотели бы позвать в поездку и ее предполагаемую длительность.
-                    </p>
-                    <div class="quantity arrival-dates__quantity">
-                      <b class="quantity__text">
-                        ищу попутчиков:
-                      </b>
-                      <b class="quantity__text quantity__text--gray">
-                        Чел.
-                      </b>
-                      <div class="quantity__quantity-change">
-                        <button class="quantity__button quantity__button--less visually-hidden">
-                          Меньше
-                        </button>
-                        <b class="quantity__text">
-                          2
-                        </b>
-                        <button class="quantity__button quantity__button--more visually-hidden">
-                          Больше
-                        </button>
+                    <div class="arrival-dates__container">
+                      <div class="arrival-dates__container-text">
+                        <h3 class="arrival-dates__title title title--h3 title--h3-blue">
+                          Шаг 1.
+                          Даты пребывания
+                        </h3>
+                        <p class="arrival-dates__pharagraph add-plan-form-container__pharagraph">
+                          Укажите предпочтительное количество попутчиков, которых
+                          вы хотели бы позвать в поездку и ее предполагаемую длительность.
+                        </p>
                       </div>
+                      <ul class="arrival-dates__list">
+                        <li class="arrival-dates__item arrival-dates__item--current">
+                          <span class="arrival-dates__item-text arrival-dates__item-text--current">
+                            Даты
+                          </span>
+                        </li>
+                        <li class="arrival-dates__item">
+                          <span class="arrival-dates__item-text">
+                            Маршрут
+                          </span>
+                        </li>
+                        <li class="arrival-dates__item">
+                          <span class="arrival-dates__item-text">
+                            Развлечения
+                          </span>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="quantity arrival-dates__quantity">
-                      <b class="quantity__text">
-                        длительность:
-                      </b>
-                      <b class="quantity__text quantity__text--gray">
-                        дн.
-                      </b>
-                      <div class="quantity__quantity-change">
-                        <button class="quantity__button quantity__button--less visually-hidden">
-                          Меньше
-                        </button>
-                        <b class="quantity__text">
-                          2
-                        </b>
-                        <button class="quantity__button quantity__button--more visually-hidden">
-                          Больше
-                        </button>
+                    <div class="arrival-dates__container-check">
+                      <div class="arrival-dates__quantity-container">
+                        <div class="quantity arrival-dates__quantity">
+                          <div class="quantity__container-text">
+                            <b class="quantity__text">
+                              ищу попутчиков:
+                            </b>
+                            <b class="quantity__text quantity__text--gray quantity__text--position quantity__text--blue">
+                              Чел.
+                            </b>
+                          </div>
+                          <div class="quantity__quantity-change quantity__quantity-change--margin">
+                            <button class="quantity__button quantity__button--less" type="button">
+                              <span class="visually-hidden">Меньше</span>
+                            </button>
+                            <b class="quantity__text">
+                              2
+                            </b>
+                            <button class="quantity__button quantity__button--more" type="button">
+                              <span class="visually-hidden">Больше</span>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="quantity arrival-dates__quantity">
+                          <div class="quantity__container-text">
+                            <b class="quantity__text">
+                              длительность:
+                            </b>
+                            <b class="quantity__text quantity__text--gray quantity__text--position quantity__text--blue">
+                              дн.
+                            </b>
+                          </div>
+                          <div class="quantity__quantity-change">
+                            <button class="quantity__button quantity__button--less" type="button">
+                              <span class="visually-hidden">Меньше</span>
+                            </button>
+                            <b class="quantity__text">
+                              2
+                            </b>
+                            <button class="quantity__button quantity__button--more" type="button">
+                              <span class="visually-hidden">Больше</span>
+                            </button>
+                          </div>
+                        </div>
                       </div>
+                      <label class="arrival-dates__label">
+                        <input type="checkbox" name="children-choice" value="rock" class="arrival-dates__input visually-hidden" checked>
+                        <span class="checkbox-indicator"></span>
+                        <span class="arrival-dates__label-text">Можно с детьми</span>
+                      </label>
                     </div>
-                    <label class="arrival-dates__label">
-                      <input type="checkbox" name="children-choice" value="rock" class="arrival-dates__input visually-hidden" checked>
-                      <span class="checkbox-indicator"></span>
-                      <span>Можно с детьми</span>
-                    </label>
                     <div class="calendar arrival-dates__calendar">
-                      <button class="calendar__button calendar--prev" type="button">
-                        <span class="visually-hidden">Назад</span>
-                      </button>
-                      <h3 class="title title--h3 title--h3-blue calendar__title">Март 2019</h3>
-                      <button class="calendar__button calendar--next" type="button">
-                        <span class="visually-hidden">Вперед</span>
-                      </button>
+                      <div class="calendar__month-container">
+                        <button class="calendar__button calendar__button--prev" type="button">
+                          <span class="visually-hidden">Назад</span>
+                        </button>
+                        <h3 class="title title--h3 title--h3-blue calendar__title">Март 2019</h3>
+                        <button class="calendar__button calendar__button--next" type="button">
+                          <span class="visually-hidden">Вперед</span>
+                        </button>
+                      </div>
                       <table class="calendar__table">
-                        <tr class="calendar__row">
-                          <td class="calendar__cell calendar__cell--day">П</td>
-                          <td class="calendar__cell calendar__cell--day">В</td>
-                          <td class="calendar__cell calendar__cell--day">С</td>
-                          <td class="calendar__cell calendar__cell--day">Ч</td>
-                          <td class="calendar__cell calendar__cell--day">П</td>
-                          <td class="calendar__cell calendar__cell--day calendar__cell--day-red">С</td>
-                          <td class="calendar__cell calendar__cell--day calendar__cell--day-red">В</td>
+                        <tr class="calendar__row calendar__row-days">
+                          <td class="calendar__cell calendar__cell--day">П<span class="calendar__cell-letter">н</span></td>
+                          <td class="calendar__cell calendar__cell--day">В<span class="calendar__cell-letter">т</span></td>
+                          <td class="calendar__cell calendar__cell--day">С<span class="calendar__cell-letter">р</span></td>
+                          <td class="calendar__cell calendar__cell--day">Ч<span class="calendar__cell-letter">т</span></td>
+                          <td class="calendar__cell calendar__cell--day">П<span class="calendar__cell-letter">н</span></td>
+                          <td class="calendar__cell calendar__cell--day calendar__cell--day-red">С<span class="calendar__cell-letter">б</span></td>
+                          <td class="calendar__cell calendar__cell--day calendar__cell--day-red">В<span class="calendar__cell-letter">с</span></td>
                         </tr>
                         <tr class="calendar__row">
                           <td class="calendar__cell">23</td>
@@ -378,7 +409,12 @@
                           <td class="calendar__cell">26</td>
                           <td class="calendar__cell">27</td>
                           <td class="calendar__cell">28</td>
-                          <td class="calendar__cell">1</td>
+                          <td class="calendar__cell">
+                            1
+                            <span class="calendar__cell--text calendar__cell--text-grey">
+                              мар
+                            </span>
+                          </td>
                         </tr>
                         <tr class="calendar__row">
                           <td class="calendar__cell">2</td>
@@ -411,15 +447,29 @@
                           <td class="calendar__cell">23</td>
                           <td class="calendar__cell">24</td>
                           <td class="calendar__cell">25</td>
-                          <td class="calendar__cell calendar__cell--active calendar__cell--red-border">26</td>
-                          <td class="calendar__cell calendar__cell--active">27</td>
-                          <td class="calendar__cell calendar__cell--active">28</td>
+                          <td class="calendar__cell calendar__cell--active calendar__cell--red-border">
+                            26
+                          <span class="calendar__cell--text calendar__cell--text-white">
+                            Заезд
+                          </span>
+                          </td>
+                          <td class="calendar__cell calendar__cell--active calendar__cell--no-text">27</td>
+                          <td class="calendar__cell calendar__cell--active">
+                            28
+                          <span class="calendar__cell--text calendar__cell--text-white">
+                            Выезд
+                          </span>
+                          </td>
                           <td class="calendar__cell calendar__cell--gray">29</td>
                         </tr>
                         <tr class="calendar__row">
                           <td class="calendar__cell calendar__cell--gray">30</td>
                           <td class="calendar__cell calendar__cell--gray">31</td>
-                          <td class="calendar__cell calendar__cell--gray">1</td>
+                          <td class="calendar__cell calendar__cell--gray">1
+                            <span class="calendar__cell--text calendar__cell--text-black">
+                              апр
+                            </span>
+                          </td>
                           <td class="calendar__cell calendar__cell--gray">2</td>
                           <td class="calendar__cell calendar__cell--gray">3</td>
                           <td class="calendar__cell calendar__cell--gray">4</td>
@@ -428,7 +478,7 @@
                       </table>
                     </div>
                     <button class="button button--bg-yellow button--size-small arrival-dates__button" type="button">
-                      следующий шаг
+                      Cледующий шаг
                     </button>
                   </div>
                 </div>
@@ -443,6 +493,23 @@
                     <p class="travel-route__pharagraph add-plan-form-container__pharagraph">
                       Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.
                     </p>
+                    <ul class="arrival-dates__list">
+                      <li class="arrival-dates__item arrival-dates__item--current">
+                        <span class="arrival-dates__item-text">
+                          Даты
+                        </span>
+                      </li>
+                      <li class="arrival-dates__item">
+                        <span class="arrival-dates__item-text arrival-dates__item-text--current">
+                          Маршрут
+                        </span>
+                      </li>
+                      <li class="arrival-dates__item">
+                        <span class="arrival-dates__item-text">
+                          Развлечения
+                        </span>
+                      </li>
+                    </ul>
                     <div class="travel-route__accordion">
                       <div class="travel-route__accordion-item">
                         <input type="checkbox" name="country-choice" value="country" class="travel-route__checkbox">
@@ -554,6 +621,23 @@
                       Наконец, расскажите о своих планах времяпровождения.
                       Можно писать в свободной форме и ставить тэги.
                     </p>
+                    <ul class="arrival-dates__list">
+                      <li class="arrival-dates__item arrival-dates__item--current">
+                        <span class="arrival-dates__item-text">
+                          Даты
+                        </span>
+                      </li>
+                      <li class="arrival-dates__item">
+                        <span class="arrival-dates__item-text">
+                          Маршрут
+                        </span>
+                      </li>
+                      <li class="arrival-dates__item">
+                        <span class="arrival-dates__item-text arrival-dates__item-text--current">
+                          Развлечения
+                        </span>
+                      </li>
+                    </ul>
                     <div class="activity-plans__textarea-activity">
                       <div class="activity-plans__country">
                         <b class="activity-plans__text">
