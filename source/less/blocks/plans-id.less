@@ -1,0 +1,30 @@
+.plans-id__title {
+  margin-bottom: 34px;
+}
+.plans-id__country-card:not(:last-child) {
+  margin-bottom: 10px;
+}
+.plans-id__country-card {
+  padding: 25px;
+  border-radius: 10px;
+}
+@media (min-width: @tablet-width) {
+  .plans-id__title {
+    margin-bottom: 56px;
+  }
+  .plans-id__country-card {
+    padding: 0;
+  }
+}
+@media (min-width: @desktop-width) {
+  .plans-id__country-card:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .plans-id__country-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 42px 41px 44px;
+  }
+}

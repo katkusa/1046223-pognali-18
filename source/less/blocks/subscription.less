@@ -1,8 +1,217 @@
+.subscription {
+  display: flex;
+  flex-direction: column;
+}
+.subscription__title {
+  padding: 0 30px;
+  text-align: center;
+  margin-bottom: 23px;
+}
 .subscription__text {
+  margin: 0;
+  margin-bottom: 42px;
   font-weight: 300;
   color: @white;
+  text-align: center;
+  padding: 0 33px;
+}
+.subscription__pharagraph {
+  margin: 0;
+  margin-bottom: 20px;
+  color: @white;
+  text-align: center;
+  padding: 0 30px;
 }
 .subscription__link {
   color: @light-yellow;
   text-decoration: underline;
+  cursor: pointer;
+}
+.subscription__link:hover,
+.subscription__link:focus {
+  color: #ff8d30;
+}
+.subscription__link:active {
+  color: rgba(255, 141, 48, 0.3);
+}
+.subscription__form {
+  display: flex;
+  margin-bottom: 32px;
+}
+.subscription__input {
+  border-radius: 10px;
+  border: none;
+  padding: 21px 32px;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: inherit;
+  font-weight: 700;
+  background-color: @white;
+  color: @white;
+  cursor: pointer;
+}
+.subscription__input::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+.subscription__input::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+.subscription__input:hover::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.5);
+}
+.subscription__input:hover::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.5);
+}
+.subscription__input:hover {
+  background-color: #edeff6;
+}
+.subscription__input:focus {
+  background-color: @very-dark-blue;
+  border: 4px solid @white;
+  padding: 17px 28px;
+}
+.subscription__button {
+  position: relative;
+  border-radius: 10px;
+  background-color: @light-yellow;
+  padding: 31px 30px;
+  margin-left: -20px;
+}
+.subscription__button--text {
+  display: none;
+}
+.subscription__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.subscription__phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.subscription__mail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.subscription__phone-link {
+  margin-right: 16px;
+}
+.subscription__mail-link {
+  margin-right: 17px;
+}
+.subscription__button--text:active {
+  opacity: 0.3;
+}
+.subscription__phone:hover .subscription__phone-text,
+.subscription__phone:hover .subscription__phone-svg,
+.subscription__phone:focus .subscription__phone-text,
+.subscription__phone:focus .subscription__phone-svg {
+  color: @vivid-orange-light;
+  fill: @vivid-orange-light;
+}
+.subscription__phone:active .subscription__phone-text,
+.subscription__phone:active .subscription__phone-svg {
+  color: rgba(255, 189, 48, 0.3);
+  fill: rgba(255, 189, 48, 0.3);
+}
+.subscription__mail:hover .subscription__mail-text,
+.subscription__mail:hover .subscription__mail-svg,
+.subscription__mail:focus .subscription__mail-text,
+.subscription__mail:focus .subscription__mail-svg {
+  color: @vivid-orange-light;
+  fill: @vivid-orange-light;
+}
+.subscription__mail:active .subscription__mail-text,
+.subscription__mail:active .subscription__mail-svg {
+  color: rgba(255, 189, 48, 0.3);
+  fill: rgba(255, 189, 48, 0.3);
+}
+@media (min-width: @tablet-width) {
+  .subscription__title {
+    padding: 0;
+    margin-bottom: 60px;
+  }
+  .subscription__text {
+    font-size: 28px;
+    line-height: 33px;
+    padding: 0 5px;
+    margin-bottom: 67px;
+  }
+  .subscription__pharagraph {
+    padding: 0;
+    margin-bottom: 43px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .subscription__form {
+    margin-bottom: 61px;
+  }
+  .subscription__input {
+    border-radius: 20px;
+    padding: 30px 35px;
+    width: 536px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .subscription__button {
+    width: 82px;
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .subscription__phone-link {
+    margin-right: 24px;
+  }
+  .subscription__mail-link {
+    margin-right: 24px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .subscription__container {
+    justify-content: center;
+  }
+  .subscription__mail-link {
+    width: 90px;
+    height: 90px;
+  }
+  .subscription__mail-svg {
+    width: 36px;
+    height: 26px;
+    padding: 30px 27px;
+  }
+  .subscription__phone {
+    margin-right: 110px;
+  }
+  .subscription__phone-link {
+    width: 90px;
+    height: 90px;
+  }
+  .subscription__phone-svg {
+    width: 36px;
+    height: 36px;
+    padding: 27px;
+  }
+  .subscription__text {
+    padding: 0 200px;
+    margin-bottom: 61px;
+  }
+  .subscription__button {
+    width: 324px;
+  }
+  .subscription__input {
+    width: 850px;
+  }
+  .subscription__form {
+    margin-bottom: 71px;
+  }
+  .subscription__button--text {
+    display: block;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: #1d2e5b;
+  }
 }

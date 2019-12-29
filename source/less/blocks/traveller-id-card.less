@@ -7,12 +7,212 @@
   border-radius: 50%;
 }
 .traveller-id-card__button {
+  margin-bottom: 33px;
   background-color: @medium-grayish-blue;
+  color: #161c35;
 }
 .traveller-id-card__heading {
+  margin: 0;
+  padding: 0 17px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
+  text-align: center;
   color: @dark-slate-blue;
   text-transform: uppercase;
+  position: absolute;
+  top: -8px;
+  background-color: #edeff6;
+}
+.traveller-id-card__text {
+  margin: 0;
+  padding: 25px;
+}
+.traveller-id-card__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 21px 18px 0;
+  margin-bottom: 19px;
+  position: relative;
+}
+.traveller-id-card__level-id {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 94px;
+  height: 94px;
+  top: 30px;
+  left: 20px;
+  border-radius: 50%;
+}
+.traveller-id-card__number {
+  font-size: 38px;
+  line-height: 38px;
+  font-weight: 700;
+  color: #161c35;
+  position: relative;
+}
+.traveller-id-card__number::after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  bottom: 2px;
+  width: 49px;
+  height: 2px;
+  background-color: #cbced9;
+}
+.traveller-id-card__level {
+  font-size: 18px;
+  line-height: 22px;
+  color: #444444;
+}
+.traveller-id-card__photo-id {
+  width: 100px;
+  height: 100px;
+}
+.traveller-id-card__tags {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+.traveller-id-card__transport {
+  margin-bottom: 33px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+}
+.traveller-id-card__list {
+  align-items: center;
+  padding: 15px 0;
+}
+@media (min-width: @tablet-width) {
+  .traveller-id-card {
+    position: relative;
+  }
+  .traveller-id-card__container {
+    margin-bottom: 52px;
+    padding: 0;
+    padding-top: 60px;
+  }
+  .traveller-id-card__transport {
+    position: absolute;
+    top: 60px;
+    left: 180px;
+    right: 0;
+    margin-bottom: 0;
+    width: 310px;
+  }
+  .traveller-id-card__list {
+    padding: 25px 0;
+  }
+  .traveller-id-card__button {
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #1d2e5b;
+    padding: 22px 0;
+    border-radius: 10px;
+    margin-bottom: 51px;
+  }
+  .traveller-id-card__tags {
+    margin-bottom: 60px;
+    align-items: flex-start;
+  }
+  .traveller-id-card__heading {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding: 0 18px;
+    top: 90px;
+    left: 300px;
+  }
+  .traveller-id-card__text {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    padding: 37px 40px;
+  }
+  .traveller-id-card__level-id {
+    top: 65px;
+    left: 5px;
+  }
+  .traveller-id-card__img {
+    border-radius: 10px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .traveller-id-card__container {
+    justify-content: flex-end;
+    position: absolute;
+    top: -190px;
+    left: 0px;
+    right: 95px;
+    padding: 0;
+  }
+  .traveller-id-card {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .traveller-id-card__tags {
+    margin-bottom: 0;
+    width: 730px;
+  }
+  .traveller-id-card__button {
+    position: absolute;
+    right: 95px;
+    top: 0;
+    margin-bottom: 0;
+    padding: 15px 67px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .traveller-id-card__transport {
+    position: initial;
+    width: 384px;
+  }
+  .traveller-id-card__button-text {
+    display: none;
+  }
+  .traveller-id-card__img {
+    width: 190px;
+    height: 190px;
+    border-radius: 0;
+  }
+  .traveller-id-card__photo-id {
+    width: 190px;
+    height: 190px;
+  }
+  .traveller-id-card__level-id {
+    top: 45px;
+    left: 895px;
+  }
+  .traveller-id-card__heading {
+    left: 20px;
+  }
+  .traveller-id-card__number {
+    color: @white;
+  }
+  .traveller-id-card__number::after {
+    opacity: 0.3;
+  }
+  .traveller-id-card__level {
+    color: @white;
+  }
+  .traveller-id-card__svg {
+    margin-right: 45px;
+    margin-top: 40px;
+  }
 }

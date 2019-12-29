@@ -15,6 +15,7 @@
     color: rgba(22, 28, 53, 0.3);
   }
 }
+
 .button--size-small {
   padding: 13px 40px 5px 37px;
   font-size: 17px;
@@ -42,6 +43,13 @@
   width: 0px;
   height: 0px;
 }
+.button--arrow-right-subscribe::after {
+  top: 40%;
+  right: auto;
+}
+.button--bg-yellow:active::after {
+  opacity: 0.3;
+}
 @media (min-width: @tablet-width) {
   .button--size-small {
     font-size: 20px;
@@ -53,5 +61,8 @@
   }
 }
 @media (min-width: @desktop-width) {
-
+  .button--arrow-right-subscribe::after {
+    top: 40%;
+    right: 10%;
+  }
 }

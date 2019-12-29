@@ -1,10 +1,124 @@
+.quantity {
+  display: flex;
+  flex-direction: column;
+}
+.quantity__container-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
 .quantity__text {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
   font-weight: 500;
+  letter-spacing: 1.6px;
   color: @dark-slate-blue;
 }
 .quantity__text--gray {
   color: rgba(29, 46, 91, 0.3);
+}
+.quantity__quantity-change {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  margin-bottom: 21px;
+  padding: 16px 14px;
+}
+.quantity__quantity-change:hover,
+.quantity__quantity-change:focus {
+  border: 1px solid #959bb2;
+}
+.quantity__quantity-change:active {
+  border: 1px solid #161c35;
+}
+.quantity__button {
+  position: relative;
+  cursor: pointer;
+  opacity: 0.3;
+}
+.quantity__button:hover,
+.quantity__button:focus {
+  opacity: 0.4;
+}
+.quantity__button:active {
+  opacity: 0.1;
+}
+.quantity__button {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    background-color: black;
+  }
+}
+.quantity__button--more::before {
+  transform: rotate(90deg);
+}
+.quantity__button--more {
+  right: 10px;
+}
+@media (min-width: @tablet-width) {
+  .quantity {
+    position: relative;
+  }
+  .quantity__text {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+  .quantity__container-text {
+    margin-bottom: 25px;
+  }
+  .quantity__container-text::before {
+    content: "";
+    width: 532px;
+    height: 1px;
+    position: absolute;
+    top: -24px;
+    left: 0;
+    background-color: #d6d9e6
+  }
+  .quantity__quantity-change {
+    margin-bottom: 59px;
+    padding: 28px 20px;
+  }
+  .quantity__quantity-change--margin {
+    margin-bottom: 112px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .quantity__container-text::before {
+    display: none;
+  }
+  .quantity__container-text {
+    position: relative;
+    margin-bottom: 0;
+  }
+  .quantity__text--position {
+    position: absolute;
+    margin-right: 0;
+    left: 480px;
+  }
+  .quantity__quantity-change {
+    width: 181px;
+    margin-bottom: 0;
+    margin-left: 32px;
+  }
+  .quantity__button {
+    border: transparent;
+  }
+  .quantity__text--blue {
+    color: #1d2e5b;
+  }
+  .quantity__button {
+    &::before,
+    &::after {
+      width: 20px;
+    }
+  }
 }
