@@ -1,3 +1,6 @@
+.travel-country-card {
+  position: relative;
+}
 .travel-country-card__wrapper {
   background-color: @white;
   border-radius: 10px;
@@ -46,6 +49,13 @@
     background-repeat: no-repeat;
   }
 }
+.travel-country-card__flags {
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  left: 25px;
+  top: 75px;
+}
 @media (min-width: @tablet-width) {
   .travel-country-card {
     display: flex;
@@ -92,6 +102,10 @@
       top: 0;
     }
   }
+  .travel-country-card__flags {
+    left: 410px;
+    top: 15px;
+  }
 }
 @media (min-width: @desktop-width) {
   .travel-country-card__wrapper {
@@ -101,5 +115,9 @@
   .travel-country-card__img {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+  }
+  .travel-country-card__flags {
+    left: 430px;
+    top: 23px;
   }
 }

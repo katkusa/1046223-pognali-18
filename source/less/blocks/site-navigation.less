@@ -52,6 +52,18 @@
 .site-navigation__mail:active .site-navigation__mail-svg {
   opacity: 0.3;
 }
+.site-navigation__phone-svg--nodesktop {
+  display: flex;
+}
+.site-navigation__phone-svg--desktop {
+  display: none;
+}
+.site-navigation__mail-svg--desktop {
+  display: none;
+}
+.site-navigation__mail-svg--nodesktop {
+  display: flex;
+}
 @media (min-width: @tablet-width) {
   .site-navigation {
     padding-left: 20px;
@@ -129,5 +141,17 @@
     height: 14px;
     padding: 17px;
     fill: #161c35;
+  }
+  .site-navigation__phone-svg--nodesktop {
+    display: none;
+  }
+  .site-navigation__phone-svg--desktop {
+    display: flex;
+  }
+  .site-navigation__mail-svg--desktop {
+    display: flex;
+  }
+  .site-navigation__mail-svg--nodesktop {
+    display: none;
   }
 }

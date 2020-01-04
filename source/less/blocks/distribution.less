@@ -1,3 +1,7 @@
+
+.distribution {
+  position: relative;
+}
 .distribution__list {
   .list-reset();
   display: flex;
@@ -37,6 +41,11 @@
 .distribution__text {
   display: block;
 }
+.distribution__img {
+  position: absolute;
+  top: 40px;
+  left: 170px;
+}
 .distribution__link {
   font-size: 16px;
   line-height: 16px;
@@ -48,11 +57,14 @@
   width: 101px;
 }
 .distribution__number {
-  width: 34px;
+  width: 22px;
   height: 34px;
   text-align: center;
   border-radius: 50%;
   color: @white;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
 }
 .distribution__number--vivid-orange {
   background-color: @vivid-orange;
@@ -62,6 +74,9 @@
 }
 .distribution__number--light-yellow {
   background-color: @light-yellow;
+}
+.distribution__svg-container {
+  display: none;
 }
 @media (min-width: @tablet-width) {
   .distribution__list {
@@ -79,9 +94,10 @@
     order: 1;
     font-size: 28px;
     line-height: 28px;
-    width: 67px;
+    width: 40px;
     height: 67px;
     margin-right: 25px;
+    padding-left: 27px;
   }
   .distribution__container {
     order: 2;
@@ -107,8 +123,30 @@
   .distribution__link {
     font-size: 20px;
     line-height: 20px;
-    padding-left: 90px;
+    padding-left: 23px;
     color: #132576;
+  }
+  .distribution__img {
+    top: 460px;
+    left: 550px;
+  }
+  .distribution__link-container {
+    display: flex;
+    align-items: center;
+  }
+  .distribution__svg-container {
+    display: flex;
+    align-items: center;
+    width: 67px;
+    height: 67px;
+    background-color: #e2e5f2;
+    border-radius: 50%;
+  }
+  .distribution__svg {
+    padding: 25px;
+    width: 17px;
+    height: 27px;
+    fill: #132576;
   }
 }
 @media (min-width: @desktop-width) {
@@ -120,5 +158,11 @@
   }
   .distribution__item::before {
     width: 813px;
+  }
+  .distribution__img {
+    width: 198px;
+    height: 198px;
+    top: 250px;
+    left: 1050px;
   }
 }

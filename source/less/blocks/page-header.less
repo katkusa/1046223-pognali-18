@@ -7,13 +7,24 @@
   display: block;
   cursor: pointer;
   border: none;
-  position: relative;
-  
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 19px;
+  height: 11px;
+  background-color: transparent;
+
 }
 @media (min-width: @tablet-width) {
   .page-header {
     padding-top: 43px;
     padding-bottom: 81px;
+  }
+  .page-header__toggle {
+    width: 24px;
+    right: 0px;
+    top: 60px;
+    left: 360px;
   }
 }
 @media (min-width: @desktop-width) {

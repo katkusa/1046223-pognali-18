@@ -1,5 +1,23 @@
 .flags__list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  .list-reset();
+}
+.flags__item:not(:last-child) {
+  margin-right: 19px;
+}
+.flags__svg {
+  width: 35px;
+  height: 24px;
+}
+.flags__svg-card {
+  width: 35px;
+  height: 24px;
+}
+@media (min-width: @tablet-width) {
+  .flags__svg {
+    width: 70px;
+    height: 47px;
+  }
 }
