@@ -13,8 +13,15 @@
 .social__item--bg-yellow {
   background-color: @light-yellow;
 }
+.social__item--bg-yellow:hover,
+.social__item--bg-yellow:focus {
+  background-color: @vivid-orange-light;
+}
 .social__svg--bg-yellow {
   fill: #1d2e5b;
+}
+.social__svg--bg-yellow:active {
+  opacity: 0.3;
 }
 .social__svg--no-bg {
   fill: #cccccc;
@@ -46,5 +53,18 @@
   .social__svg--insta {
     width: 24px;
     height: 24px;
+  }
+  .social__item {
+    width: 60px;
+    height: 60px;
+  }
+  .social__svg--facebook {
+    padding: 16px 23px;
+  }
+  .social__svg--vk {
+    padding: 22px 15px;
+  }
+  .social__svg--insta {
+    padding: 18px;
   }
 }

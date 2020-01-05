@@ -1,4 +1,216 @@
+.arrival-dates__container {
+  position: relative;
+}
+.arrival-dates__container-text {
+  margin-bottom: 25px;
+}
 .arrival-dates__label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   font-size: 15px;
   line-height: 15px;
+  margin-bottom: 21px;
+}
+.arrival-dates__title {
+  margin-bottom: 18px;
+  width: 160px;
+}
+.arrival-dates__pharagraph {
+  margin: 0;
+}
+.arrival-dates__list {
+  position: absolute;
+  top: -70px;
+  left: 160px;
+  display: flex;
+  flex-direction: row;
+  .list-reset();
+}
+.arrival-dates__item {
+  position: relative;
+  margin-left: 20px;
+}
+.arrival-dates__item::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #808285;
+  opacity: 0.3;
+}
+.arrival-dates__item--current::before {
+  background-color: #1d2e5b;
+  opacity: 1;
+}
+.arrival-dates__item-text {
+  display: none;
+}
+.arrival-dates__input + .checkbox-indicator {
+  display: flex;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  margin-right: 13px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+}
+.arrival-dates__input:hover + .checkbox-indicator,
+.arrival-dates__input:focus + .checkbox-indicator {
+  border: 1px solid #959bb2;
+}
+.arrival-dates__input:disabled + .checkbox-indicator {
+  border: transparent;
+  background-color: #e2e5f1;
+}
+.arrival-dates__input:checked + .checkbox-indicator::after {
+  content: "";
+  flex-shrink: 0;
+  display: block;
+  width: 9px;
+  height: 9px;
+  background-image: url("../../img/tick.svg");
+  fill: #192144;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 0;
+  left: 8px;
+}
+.arrival-dates__input:checked:hover + .checkbox-indicator,
+.arrival-dates__input:checked:focus + .checkbox-indicator {
+  border: 1px solid #959bb2;
+}
+.arrival-dates__input:checked:disabled + .checkbox-indicator {
+  border: transparent;
+  background-color: #e2e5f1;
+}
+.arrival-dates__calendar {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 23px;
+}
+.arrival-dates__button {
+  padding: 10px 46px 5px 46px;
+}
+@media (min-width: @tablet-width) {
+  .arrival-dates__list {
+    top: -135px;
+    left: 470px;
+  }
+  .arrival-dates__item {
+    margin-left: 30px;
+  }
+  .arrival-dates__title {
+    margin-bottom: 37px;
+    width: 287px;
+  }
+  .arrival-dates__pharagraph {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 67px;
+    position: relative;
+  }
+
+  .arrival-dates__label-text {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: @dark-slate-blue;
+    text-transform: uppercase;
+  }
+  .arrival-dates__container-check {
+    position: relative;
+  }
+  .arrival-dates__label {
+    position: absolute;
+    top: 140px;
+    left: 0;
+    margin-bottom: 0;
+  }
+  .arrival-dates__input + .checkbox-indicator {
+    margin-right: 23px;
+  }
+  .arrival-dates__calendar {
+    margin-bottom: 46px;
+  }
+  .arrival-dates__button {
+    padding: 30px 78px 28px 34px;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: initial;
+    position: relative;
+  }
+  .arrival-dates__button::after {
+    content: "";
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    border: 6px solid transparent;
+    border-left: 10px solid #1d2e5b;
+    width: 0px;
+    height: 0px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .arrival-dates__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 56px;
+  }
+  .arrival-dates__container-text {
+    width: 576px;
+    margin-bottom: 0;
+  }
+  .arrival-dates__list {
+    position: initial;
+    display: flex;
+    flex-direction: column;
+  }
+  .arrival-dates__item-text {
+    display: block;
+    font-size: 20px;
+    line-height: 13.8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 36px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .arrival-dates__item-text--current {
+    color: #1d2e5b;
+  }
+  .arrival-dates__title {
+    width: auto;
+    margin-bottom: 37px;
+    line-height: 50px;
+    margin-bottom: 37px;
+  }
+  .arrival-dates__item {
+    margin-bottom: 26px;
+    margin-left: 0;
+  }
+  .arrival-dates__label {
+    position: initial;
+  }
+  .arrival-dates__container-check {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 30px;
+    border-top: 1px solid #d6d9e6;
+  }
+  .arrival-dates__quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 14px;
+  }
+  .arrival-dates__button {
+    border-radius: 20px;
+  }
 }
