@@ -16,27 +16,27 @@
     <div class="wrapper wrapper--bg-blue">
       <div class="wrapper__inner">
         <header class="page-header">
-          <div class="site-navigation-wrapper site-navigation-wrapper--closed">
-            <a class="logo page-header__logo">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
-                <img class="logo__img" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="Логотип сервиса для путешествий Погнали?">
-              </picture>
-            </a>
-            <a class="logo page-header__logo--opened">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-                <img class="logo__img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Логотип сервиса для путешествий Погнали?">
-              </picture>
-            </a>
-            <button class="page-header__toggle button" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-            <div class="site-navigation">
-              <nav class="main-nav site-navigation__main-nav">
-                <ul class="site-list main-nav__list">
+          <a class="logo page-header__logo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+              <img class="logo__img" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="Логотип сервиса для путешествий Погнали?">
+            </picture>
+          </a>
+          <button class="page-header__toggle button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="site-menu site-menu--closed">
+            <div class="site-menu__wrapper">
+              <a class="logo site-menu__logo">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+                  <img class="logo__img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Логотип сервиса для путешествий Погнали?">
+                </picture>
+              </a>
+              <nav class="site-navigation">
+                <ul class="site-list">
                   <li class="site-list__item">
                     <a href="#" class="site-list__link">
                       О сервисе
@@ -54,24 +54,11 @@
                     </li>
                 </ul>
               </nav>
-              <div class="site-navigation__container">
-                <a href="#" class="button site-navigation__link button--bg-yellow button--size-small"> Авторизация</a>
-                <div class="site-navigation__contacts-wrapper">
-                  <div class="phone site-navigation__phone phone--menu">
-                    <a href="tel:+78005558628" class="phone__link  phone__link--bg-blue site-navigation__phone-link">
-                      <svg class="phone__svg phone__svg--yellow site-navigation__phone-svg site-navigation__phone-svg--nodesktop" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
-                      <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
-                        c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
-                        c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
-                        c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
-                        M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
-                        c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
-                        c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
-                        c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
-                      </svg>
-                      <svg class="phone__svg phone__svg--yellow site-navigation__phone-svg site-navigation__phone-svg--desktop" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+              <div class="site-menu__contacts site-menu__contacts--view-desktop">
+                <div class="site-menu__contact-item">
+                  <a href="tel:+78005558628" class="contact contact--icon-bg-orange contact--icon-size-s">
+                    <div class="contact__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
                         <g>
                           <g id="UrwUhy_1_">
                             <g>
@@ -86,40 +73,71 @@
                           <path class="st0" d="M9.1,4.6c2.4,0,4.4,2,4.4,4.5h1.2c0-3.1-2.5-5.7-5.5-5.7V4.6L9.1,4.6z"/>
                         </g>
                       </svg>
-                    </a>
-                    <a href="tel:+78005558628" class="phone__text phone__text--blue site-navigation__phone-text">8 800 555-86-28</a>
-                  </div>
-                  <div class="mail site-navigation__mail mail--menu">
-                    <a href="mailto:mail@htmlacademy.ru" class="mail__link  mail__link--bg-blue site-navigation__mail-link">
-                      <svg class="mail__svg mail__svg--yellow site-navigation__mail-svg site-navigation__mail-svg--nodesktop" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
-                        <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
-                        c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
-                        L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
-                        c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
-                      </svg>
-                      <svg class="mail__svg mail__svg--yellow site-navigation__mail-svg site-navigation__mail-svg--desktop" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 18 14" style="enable-background:new 0 0 18 14;" xml:space="preserve">
+                    </div>
+                    <span class="contact__text">8 800 555-86-28</span>
+                  </a>
+                </div>
+                <div class="site-menu__contact-item">
+                  <a href="mailto:mail@htmlacademy.ru" class="contact contact--icon-bg-yellow contact--icon-size-s">
+                  <div class="contact__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 14" style="enable-background:new 0 0 18 14;" xml:space="preserve">
+                      <g>
                         <g>
                           <g>
-                            <g>
-                              <path class="st0" d="M14.9,1.8c1.2-1,0.9-1.8-0.7-1.8H3.7C2.2,0,1.9,0.8,3.1,1.8l3.7,3.1c1.2,1,3.2,1,4.4,0L14.9,1.8z"/>
-                            </g>
-                            <g>
-                              <path class="st0" d="M11.9,7.1c-1.2,1-2.2,1.8-2.2,1.8c0,0,0,0,0,0C9.6,9,9.5,9,9.4,9c0,0-0.1,0-0.1,0C9.2,9.1,9.1,9.1,9,9.1
-                                c0,0,0,0,0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0c-0.1,0-0.2,0-0.3-0.1c0,0-0.1,0-0.1,0C8.5,9,8.4,9,8.3,8.9c0,0,0,0,0,0
-                                c0,0-1-0.8-2.2-1.8L2.2,3.8C1,2.8,0,3.3,0,4.8v6.3C0,12.7,1.3,14,2.8,14h12.3c1.6,0,2.8-1.3,2.8-2.8V4.8c0-1.6-1-2-2.2-1
-                                L11.9,7.1z"/>
-                            </g>
+                            <path class="st0" d="M14.9,1.8c1.2-1,0.9-1.8-0.7-1.8H3.7C2.2,0,1.9,0.8,3.1,1.8l3.7,3.1c1.2,1,3.2,1,4.4,0L14.9,1.8z"/>
+                          </g>
+                          <g>
+                            <path class="st0" d="M11.9,7.1c-1.2,1-2.2,1.8-2.2,1.8c0,0,0,0,0,0C9.6,9,9.5,9,9.4,9c0,0-0.1,0-0.1,0C9.2,9.1,9.1,9.1,9,9.1
+                              c0,0,0,0,0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0c-0.1,0-0.2,0-0.3-0.1c0,0-0.1,0-0.1,0C8.5,9,8.4,9,8.3,8.9c0,0,0,0,0,0
+                              c0,0-1-0.8-2.2-1.8L2.2,3.8C1,2.8,0,3.3,0,4.8v6.3C0,12.7,1.3,14,2.8,14h12.3c1.6,0,2.8-1.3,2.8-2.8V4.8c0-1.6-1-2-2.2-1
+                              L11.9,7.1z"/>
                           </g>
                         </g>
-                      </svg>
-                    </a>
-                    <a href="mailto:mail@htmlacademy.ru" class="mail__text site-navigation__mail-text mail__text--blue">mail@htmlacademy.ru</a>
+                      </g>
+                    </svg>
                   </div>
+                  <span class="contact__text">mail@htmlacademy.ru</span>
+                  </a>
                 </div>
               </div>
-              <div class="social site-navigation__social">
+              <a href="#" class="button button--bg-yellow button--size-small site-menu__authorization-link">
+                Авторизация
+              </a>
+              <div class="site-menu__contacts site-menu__contacts--view-mobile">
+                <div class="site-menu__contact-item">
+                  <a href="tel:+78005558628" class="contact contact--icon-bg-dark-blue contact--color-dark-blue contact--show-text">
+                    <div class="contact__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                        <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
+                        c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
+                        c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
+                        c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
+                        M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
+                        c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
+                        c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
+                        c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
+                      </svg>
+                    </div>
+                    <span class="contact__text">8 800 555-86-28</span>
+                  </a>
+                </div>
+                <div class="site-menu__contact-item">
+                  <a href="mailto:mail@htmlacademy.ru" class="contact contact--icon-bg-dark-blue contact--color-dark-blue contact--show-text">
+                  <div class="contact__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
+                      <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
+                      c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
+                      L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
+                      c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
+                    </svg>
+                  </div>
+                  <span class="contact__text">mail@htmlacademy.ru</span>
+                  </a>
+                </div>
+              </div>
+              <div class="social site-menu__social">
                 <ul class="social__list">
                   <li class="social__item">
                     <a class="social__link social__link--no-bg" href="#">
@@ -182,88 +200,76 @@
     </div>
 
     <main class="page-main">
-
       <div class="wrapper wrapper--bg-blue">
         <div class="wrapper__inner">
-          <div class="page-main__app-preview">
-            <h1 class="visually-hidden">Сервис для путешествий "Погнали?"</h1>
+          <h1 class="visually-hidden">Сервис для путешествий "Погнали?"</h1>
+          <div class="promoblock page-main__promoblock">
+            <div class="promoblock__container">
+              <b class="promoblock__slogan">В путешествие с крутыми попутчиками!</b>
 
-            <div class="page-main__container">
-
-              <b class="page-main__slogan">
-                В путешествие с крутыми попутчиками!
-              </b>
-
-              <div class="user page-main__user">
-                <ul class="user__list">
-                  <li class="user__item">
-                    <div class="phone user__phone phone--main">
-                      <a href="tel:+78005558628" class="phone__link phone__link--bg-dark-yellow">
-                        <svg class="phone__svg phone__svg--blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                          viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
-                          <g>
-                            <g id="UrwUhy_1_">
-                              <g>
-                                <path class="st0" d="M12.6,18c-0.3,0-0.5,0-0.8,0c-3.6-0.4-6.2-2.1-8.1-4.3C1.8,11.6,0.3,8.8,0,5c0-0.3,0-0.7,0-1
-                                  c0.1-0.7,0.4-1.1,0.8-1.5C1.2,2,2,1.4,2.6,1.3c0.5,0,1.3,0.3,1.6,0.8c0.3,0.4,0.4,1.2,0.6,1.8c0.1,0.6,0.4,1.4,0.4,2
-                                  C5,6.8,3.9,7.2,3.5,7.8c1.1,2.8,3,4.8,5.4,6.2c0.6-0.3,1.2-1.4,2-1.4c0.3,0,0.7,0.2,1,0.3c0.3,0.1,0.6,0.2,1,0.4
-                                  c0.5,0.2,1.4,0.5,1.7,0.9c0.3,0.4,0.5,1.2,0.4,1.7C14.9,16.7,13.4,17.7,12.6,18z"/>
-                              </g>
+              <ul class="promoblock__buttons-list">
+                <li>
+                  <a href="tel:+78005558628" class="contact contact--icon-size-s contact--icon-bg-orange">
+                    <div class="contact__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+                        <g>
+                          <g id="UrwUhy_1_">
+                            <g>
+                              <path class="st0" d="M12.6,18c-0.3,0-0.5,0-0.8,0c-3.6-0.4-6.2-2.1-8.1-4.3C1.8,11.6,0.3,8.8,0,5c0-0.3,0-0.7,0-1
+                                c0.1-0.7,0.4-1.1,0.8-1.5C1.2,2,2,1.4,2.6,1.3c0.5,0,1.3,0.3,1.6,0.8c0.3,0.4,0.4,1.2,0.6,1.8c0.1,0.6,0.4,1.4,0.4,2
+                                C5,6.8,3.9,7.2,3.5,7.8c1.1,2.8,3,4.8,5.4,6.2c0.6-0.3,1.2-1.4,2-1.4c0.3,0,0.7,0.2,1,0.3c0.3,0.1,0.6,0.2,1,0.4
+                                c0.5,0.2,1.4,0.5,1.7,0.9c0.3,0.4,0.5,1.2,0.4,1.7C14.9,16.7,13.4,17.7,12.6,18z"/>
                             </g>
-                            <path class="st0" d="M9.1,1.1c4.3,0,7.8,3.6,7.8,8H18c0-5-4-9.1-8.9-9.1L9.1,1.1z"/>
-                            <path class="st0" d="M9.1,6.9V8c0.6,0,1,0.5,1,1.1h1.1C11.2,7.9,10.3,6.9,9.1,6.9z"/>
-                            <path class="st0" d="M9.1,4.6c2.4,0,4.4,2,4.4,4.5h1.2c0-3.1-2.5-5.7-5.5-5.7V4.6L9.1,4.6z"/>
                           </g>
-                       </svg>
-                        <span class="visually-hidden">8 800 555-86-28</span>
-                      </a>
+                          <path class="st0" d="M9.1,1.1c4.3,0,7.8,3.6,7.8,8H18c0-5-4-9.1-8.9-9.1L9.1,1.1z"/>
+                          <path class="st0" d="M9.1,6.9V8c0.6,0,1,0.5,1,1.1h1.1C11.2,7.9,10.3,6.9,9.1,6.9z"/>
+                          <path class="st0" d="M9.1,4.6c2.4,0,4.4,2,4.4,4.5h1.2c0-3.1-2.5-5.7-5.5-5.7V4.6L9.1,4.6z"/>
+                        </g>
+                      </svg>
                     </div>
-                  </li>
-                  <li class="user__item">
-                    <div class="user__mail mail mail--main">
-                      <a href="mailto:mail@htmlacademy.ru" class="mail__link mail__link--bg-medium-yellow">
-                        <svg class="mail__svg mail__svg--blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                          viewBox="0 0 18 14" style="enable-background:new 0 0 18 14;" xml:space="preserve">
+                    <span class="contact__text">8 800 555-86-28</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:mail@htmlacademy.ru" class="contact contact--icon-size-s contact--icon-bg-yellow">
+                    <div class="contact__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 14" style="enable-background:new 0 0 18 14;" xml:space="preserve">
+                        <g>
                           <g>
                             <g>
-                              <g>
-                                <path class="st0" d="M14.9,1.8c1.2-1,0.9-1.8-0.7-1.8H3.7C2.2,0,1.9,0.8,3.1,1.8l3.7,3.1c1.2,1,3.2,1,4.4,0L14.9,1.8z"/>
-                              </g>
-                              <g>
-                                <path class="st0" d="M11.9,7.1c-1.2,1-2.2,1.8-2.2,1.8c0,0,0,0,0,0C9.6,9,9.5,9,9.4,9c0,0-0.1,0-0.1,0C9.2,9.1,9.1,9.1,9,9.1
-                                  c0,0,0,0,0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0c-0.1,0-0.2,0-0.3-0.1c0,0-0.1,0-0.1,0C8.5,9,8.4,9,8.3,8.9c0,0,0,0,0,0
-                                  c0,0-1-0.8-2.2-1.8L2.2,3.8C1,2.8,0,3.3,0,4.8v6.3C0,12.7,1.3,14,2.8,14h12.3c1.6,0,2.8-1.3,2.8-2.8V4.8c0-1.6-1-2-2.2-1
-                                  L11.9,7.1z"/>
-                              </g>
+                              <path class="st0" d="M14.9,1.8c1.2-1,0.9-1.8-0.7-1.8H3.7C2.2,0,1.9,0.8,3.1,1.8l3.7,3.1c1.2,1,3.2,1,4.4,0L14.9,1.8z"/>
+                            </g>
+                            <g>
+                              <path class="st0" d="M11.9,7.1c-1.2,1-2.2,1.8-2.2,1.8c0,0,0,0,0,0C9.6,9,9.5,9,9.4,9c0,0-0.1,0-0.1,0C9.2,9.1,9.1,9.1,9,9.1
+                                c0,0,0,0,0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0c-0.1,0-0.2,0-0.3-0.1c0,0-0.1,0-0.1,0C8.5,9,8.4,9,8.3,8.9c0,0,0,0,0,0
+                                c0,0-1-0.8-2.2-1.8L2.2,3.8C1,2.8,0,3.3,0,4.8v6.3C0,12.7,1.3,14,2.8,14h12.3c1.6,0,2.8-1.3,2.8-2.8V4.8c0-1.6-1-2-2.2-1
+                                L11.9,7.1z"/>
                             </g>
                           </g>
-                        </svg>
-                        <span class="visually-hidden">mail@htmlacademy.ru</span>
-                      </a>
+                        </g>
+                      </svg>
                     </div>
-                  </li>
-                  <li class="user__item">
-                    <a class="user__login-button button button--bg-yellow button--size-small" href="#">Авторизация</a>
-                  </li>
-                </ul>
+                    <span class="contact__text">mail@htmlacademy.ru</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="promoblock__login-button button button--bg-yellow button--size-small" href="#">
+                    Авторизация
+                  </a>
+                </li>
+              </ul>
+
+              <div class="promoblock__review">
+                <blockquote class="promoblock__review-text">
+                  «Лучшее приложение, что я видел в жизни!»
+                </blockquote>
+                <cite class="promoblock__review-author">
+                  Мурат Эльтазин <br>главный редактор газеты «гаджетлайф»
+                </cite>
               </div>
-
-              <section class="reviews page-main__reviews">
-                <ul class="reviews__list">
-                  <li class="reviews__item">
-                    <blockquote class="reviews__text">
-                      «Лучшее приложение, что я видел в жизни!»
-                    </blockquote>
-                    <cite class="reviews__author">
-                      Мурат Эльтазин <br>главный редактор газеты «гаджетлайф»
-                    </cite>
-                  </li>
-                </ul>
-              </section>
-
             </div>
 
-            <section class="service page-main__service">
+            <section class="service promoblock__service">
               <ul class="service__list">
                 <li class="service__item service__item--first">
                   <span class="service__text">Выберите направление</span>
@@ -283,7 +289,6 @@
                 </li>
               </ul>
             </section>
-
           </div>
         </div>
       </div>
@@ -291,14 +296,14 @@
       <div class="wrapper wrapper--bg-blue wrapper--bottom-radius">
         <div class="wrapper__inner">
           <section class="service-info page-main__service-info">
-            <h2 class="service-info__title title--h2 title--h2-orange">
+            <h2 class="service-info__title title--h2 title--color-orange">
               О сервисе
             </h2>
-            <p class="service-info__text page-main__text--light">
+            <p class="service-info__text service-info__text--light">
               Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
               Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
             </p>
-            <p class="service-info__text page-main__text--bold">
+            <p class="service-info__text service-info__text--bold">
               А если найдете кого-то
               близкого по духу — скорее зовите в совместный трип!
             </p>
@@ -310,7 +315,7 @@
         <div class="wrapper__inner">
           <section class="directions page-main__directions">
             <div class="directions__container">
-              <h2 class="directions__title title--h2 title--h2-orange">Направления</h2>
+              <h2 class="directions__title title--h2 title--color-orange">Направления</h2>
               <p class="directions__text">
                 Мы не продаем туры и ничего не рекламируем.
                 Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
@@ -319,13 +324,11 @@
             <ul class="directions__list">
               <li class="directions__item">
                 <div class="travel-country-card">
-                  <div class="travel-country-card__container">
-                    <picture>
-                      <source media="(min-width: 1200px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
-                      <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
-                        <img class="travel-country-card__img" src="./img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x" alt="Фото Таиланда" width="270" height="110">
-                    </picture>
-                  </div>
+                  <picture class="travel-country-card__img-container">
+                    <source media="(min-width: 1200px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
+                    <img class="travel-country-card__img" src="./img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x" alt="Фото Таиланда" width="270" height="110">
+                  </picture>
                   <div class="flags travel-country-card__flags">
                     <svg class="flags__svg flags__svg--thailand" width="71" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
                       <g fill-rule="nonzero" fill="none">
@@ -335,7 +338,7 @@
                     </svg>
                   </div>
                   <div class="travel-country-card__wrapper">
-                    <div class="travel-country-card__cont">
+                    <div class="travel-country-card__container">
                       <h3 class="travel-country-card__country">Таиланд</h3>
                       <p class="travel-country-card__slogan">Джунгли зовут!</p>
                     </div>
@@ -345,13 +348,11 @@
               </li>
               <li class="directions__item">
                 <div class="travel-country-card">
-                  <div class="travel-country-card__container">
-                    <picture>
-                      <source media="(min-width: 1200px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
-                      <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
-                      <img class="travel-country-card__img" src="./img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x" alt="Фото Франции" width="270" height="110">
-                    </picture>
-                  </div>
+                  <picture class="travel-country-card__img-container">
+                    <source media="(min-width: 1200px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
+                    <img class="travel-country-card__img" src="./img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x" alt="Фото Франции" width="270" height="110">
+                  </picture>
                   <div class="flags travel-country-card__flags">
                     <svg class="flags__svg flags__svg--france" width="71" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
                       <g fill-rule="nonzero" fill="none">
@@ -362,7 +363,7 @@
                     </svg>
                   </div>
                   <div class="travel-country-card__wrapper">
-                    <div class="travel-country-card__cont">
+                    <div class="travel-country-card__container">
                       <h3 class="travel-country-card__country">Франция</h3>
                       <p class="travel-country-card__slogan">Трэ бьен, манифик!</p>
                     </div>
@@ -372,13 +373,11 @@
               </li>
               <li class="directions__item">
                 <div class="travel-country-card">
-                  <div class="travel-country-card__container">
-                    <picture>
-                      <source media="(min-width: 1200px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
-                      <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
-                      <img class="travel-country-card__img" src="./img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x" alt="Фото Чехии" width="270" height="110">
-                    </picture>
-                  </div>
+                  <picture class="travel-country-card__img-container">
+                    <source media="(min-width: 1200px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
+                    <img class="travel-country-card__img" src="./img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x" alt="Фото Чехии" width="270" height="110">
+                  </picture>
                   <div class="flags travel-country-card__flags">
                     <svg class="flags__svg flags__svg--czech" width="71" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
                       <g fill-rule="nonzero" fill="none">
@@ -389,7 +388,7 @@
                     </svg>
                   </div>
                   <div class="travel-country-card__wrapper">
-                    <div class="travel-country-card__cont">
+                    <div class="travel-country-card__container">
                       <h3 class="travel-country-card__country">Чехия</h3>
                       <p class="travel-country-card__slogan">Закоулки старой Европы</p>
                     </div>
@@ -398,7 +397,9 @@
                 </div>
               </li>
             </ul>
-            <a class="directions__button button button--bg-yellow button--size-big button--arrow-right">Показать все</a>
+            <a class="directions__button button button--bg-yellow button--size-big button--arrow-right">
+              Показать все
+            </a>
           </section>
         </div>
       </div>
@@ -406,12 +407,12 @@
         <div class="wrapper__inner">
           <section class="traveller page-main__traveller">
             <div class="traveller__container">
-              <h2 class="traveller__title title title--h2 title--h2-orange">Попутчики</h2>
-              <p class="traveller__text page-main__text--light">
+              <h2 class="traveller__title title--h2 title--color-orange">Попутчики</h2>
+              <p class="traveller__text traveller__text--light">
                 Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
                 Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
               </p>
-              <span class="traveller__text page-main__text--bold">
+              <span class="traveller__text traveller__text--bold">
                 Теперь можно легко найти единомышленников!
               </span>
             </div>
@@ -419,6 +420,15 @@
               <li class="traveller__item">
                 <div class="traveller-card">
                   <div class="traveller-card__wrapper">
+                    <div class="traveller-card__level-score">
+                      <svg class="traveller-card__svg" width="100" height="100" viewBox="0 0 100 100">
+                        <circle r="47" cx="50" cy="50" fill="none" stroke="#ff8d30" stroke-width="4" stroke-dasharray="350 10" stroke-dashoffset="140"/>
+                      </svg>
+                      <div class="traveller-card__level-id">
+                        <span class="traveller-card__number">99</span>
+                        <span class="traveller-card__level">level</span>
+                      </div>
+                    </div>
                     <picture>
                       <source media="(min-width: 1200px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-destop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
@@ -460,7 +470,9 @@
                     </div>
                   </div>
                   <div class="traveller-card__discription">
-                    <b class="traveller-card__name traveller-card__name--status traveller-card__name--offline">Таня Фирсова</b>
+                    <b class="traveller-card__name traveller-card__name--offline">
+                      Таня Фирсова
+                    </b>
                     <p class="traveller-card__hobbys">
                       #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
                     </p>
@@ -522,6 +534,15 @@
               <li class="traveller__item">
                 <div class="traveller-card">
                   <div class="traveller-card__wrapper">
+                    <div class="traveller-card__level-score">
+                      <svg class="traveller-card__svg" width="100" height="100" viewBox="0 0 100 100">
+                        <circle r="47" cx="50" cy="50" fill="none" stroke="#ff8d30" stroke-width="4" stroke-dasharray="180 48" stroke-dashoffset="10"/>
+                      </svg>
+                      <div class="traveller-card__level-id">
+                        <span class="traveller-card__number">80</span>
+                        <span class="traveller-card__level">level</span>
+                      </div>
+                    </div>
                     <picture>
                       <source media="(min-width: 1200px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
@@ -551,7 +572,9 @@
                     </div>
                   </div>
                   <div class="traveller-card__discription">
-                    <b class="traveller-card__name traveller-card__name--status traveller-card__name--online">Петя Демин</b>
+                    <b class="traveller-card__name traveller-card__name--online">
+                      Петя Демин
+                    </b>
                     <p class="traveller-card__hobbys">
                       #бургер #бар #футбол #концерт #крафт
                     </p>
@@ -619,10 +642,10 @@
       <div class="wrapper wrapper--bg-gray wrapper--bottom-radius">
         <div class="wrapper__inner">
           <section class="distribution page-main__distribution">
-            <h2 class="distribution__title title title--h2 title--h2-orange">
+            <h2 class="distribution__title title title--h2 title--color-orange">
               Добавьте свой профиль
             </h2>
-            <img class="distribution__img" src="./img/img/rates@1x.png" srcset="img/rates@2x.png 2x" width="99" height="99">
+            <img class="distribution__img" srcset="img/img/rates@1x.png 1x, img/rates@2x.png 2x" width="99" height="99">
             <ul class="distribution__list">
               <li class="distribution__item">
                 <div class="distribution__container">
@@ -665,52 +688,55 @@
       <div class="wrapper wrapper--bg-blue wrapper--bottom-radius">
         <div class="wrapper__inner">
           <section class="subscription page-main__subscription">
-            <h2 class="subscription__title title title--h2 title--h2-orange">Заинтересовались?</h2>
+            <h2 class="visually-hidden">Регистрация и обратная связь</h2>
+            <span class="subscription__title title title--h2 title--color-orange">Заинтересовались?</span>
             <p class="subscription__text">
-              Зарегистрируйтесь,
-              это быстро и бесплатно!
+              Зарегистрируйтесь, это быстро и бесплатно!
               Уже зарегистрированы? Тогда скорее <a class="subscription__link">авторизуйтесь</a>.
             </p>
             <form action="https://echo.htmlacademy.ru" method="post" name="subscription__form" class="subscription__form">
               <label for="subscription-field" class="visually-hidden">Электронная почта</label>
               <input class="subscription__input" type="email" name="subscription-form" id="subscription-field" placeholder="E-mail" required>
-              <button type="submit" class="button subscription__button button--bg-yellow button--arrow-right button--arrow-right-subscribe"><span class="subscription__button--text"> Регистрация</span></button>
+              <button type="submit" class="button subscription__button button--bg-yellow button--arrow-right">
+                <span class="subscription__button--text">
+                  Регистрация
+                </span>
+              </button>
             </form>
             <p class="subscription__pharagraph">
-              Остались вопросы?
-              Мы с радостью на них ответим!
+              Остались вопросы? Мы с радостью на них ответим!
             </p>
-            <div class="subscription__container">
-              <div class="phone subscription__phone">
-                <a href="tel:+78005558628" class="phone__link phone__link--bg-blue subscription__phone-link">
-                  <svg class="phone__svg phone__svg--yellow subscription__phone-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
-                    <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
-                    c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
-                    c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
-                    c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
-                    M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
-                    c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
-                    c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
-                    c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
-                  </svg>
-                </a>
-                <a href="tel:+78005558628" class="phone__text phone__text--yellow subscription__phone-text">
-                  8 800 555-86-28
+            <div class="subscription__contacts">
+              <div class="subscription__contact-item">
+                <a href="tel:+78005558628" class="contact contact--icon-bg-dark-blue contact--color-yellow contact--show-text">
+                  <div class="contact__icon">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                      <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
+                      c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
+                      c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
+                      c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
+                      M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
+                      c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
+                      c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
+                      c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
+                    </svg>
+                  </div>
+                  <span class="contact__text">8 800 555-86-28</span>
                 </a>
               </div>
-              <div class="mail subscription__mail">
-                <a href="mailto:mail@htmlacademy.ru" class="mail__link mail__link--bg-blue subscription__mail-link">
-                  <svg  class="mail__svg mail__svg--yellow subscription__mail-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
-                    <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
-                    c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
-                    L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
-                    c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
-                  </svg>
-                </a>
-                <a href="mailto:mail@htmlacademy.ru" class="mail__text mail__text--yellow subscription__mail-text">
-                  mail@htmlacademy.ru
+              <div class="subscription__contact-item">
+                <a href="mailto:mail@htmlacademy.ru" class="contact contact--icon-bg-dark-blue contact--color-yellow contact--show-text">
+                  <div class="contact__icon">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
+                      <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
+                      c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
+                      L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
+                      c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
+                    </svg>
+                  </div>
+                  <span class="contact__text">mail@htmlacademy.ru</span>
                 </a>
               </div>
             </div>
@@ -740,12 +766,20 @@
           </section>
         </div>
       </div>
-      <div class="page-main__map">
-        <!--КАРТА-->
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1712.0566339341992!2d30.32383543228358!3d59.93859171300498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1571417828946!5m2!1sru!2sru" width="320" height="312" style="border:0;" allowfullscreen=""></iframe>
+          <div class="map__container">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="map__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="312" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          </picture>
+          <img class="map__pin" src="img/map-marker.svg" alt=""  width="41" height="41">
+        </div>
       </div>
     </main>
 
-    <div class="wrapper wrapper--bg-white">
+    <div class="wrapper wrapper--bg-white wrapper--top-radius">
       <div class="wrapper__inner">
         <footer class="page-footer">
           <a href="#" class="logo page-footer__logo">
@@ -828,21 +862,30 @@
       </div>
     </div>
     <script>
-      var navMain = document.querySelector('.main-nav');
-      var siteNav = document.querySelector('.site-navigation-wrapper');
-      var headerToggle = document.querySelector('.page-header__toggle');
-      navMain.classList.remove('main-nav--nojs');
+      var siteMenu = document.querySelector('.site-menu');
+      var siteMenuToggle = document.querySelector('.page-header__toggle');
+      var getIsDesktop = function () {
+        return window.matchMedia("(min-width: 1440px)").matches
+      }
 
-      headerToggle.addEventListener('click', function() {
-        if (siteNav.classList.contains('site-navigation-wrapper--closed')) {
-          siteNav.classList.remove('site-navigation-wrapper--closed');
-          siteNav.classList.add('site-navigation-wrapper--opened');
-        } else {
-          siteNav.classList.add('site-navigation-wrapper--closed');
-          siteNav.classList.remove('site-navigation-wrapper--opened');
+      if (getIsDesktop()) {
+        if (siteMenu.classList.contains('site-menu--closed')) {
+          siteMenu.classList.remove('site-menu--closed');
         }
+      }
+
+      window.addEventListener('resize', function() {
+        if (getIsDesktop() && siteMenu.classList.contains('site-menu--closed')) {
+            siteMenu.classList.remove('site-menu--closed');
+        } else {
+          siteMenu.classList.add('site-menu--closed');
+        }
+      })
+
+      siteMenuToggle.addEventListener('click', function() {
+        siteMenuToggle.classList.toggle('page-header__toggle--closed');
+        siteMenu.classList.toggle('site-menu--closed');
       });
     </script>
-
   </body>
 </html>

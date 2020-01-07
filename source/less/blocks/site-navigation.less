@@ -84,13 +84,13 @@
 }
 @media (min-width: @desktop-width) {
   .site-navigation {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     padding: 0;
     width: 100%;
+    margin-right: auto;
   }
   .site-navigation__main-nav {
     flex-wrap: wrap;
@@ -153,5 +153,17 @@
   }
   .site-navigation__mail-svg--nodesktop {
     display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list::before {
+    content: "";
+    position: absolute;
+    left: -100px;
+    top: 10px;
+    width: 60px;
+    height: 2px;
+    background-color: @white;
   }
 }

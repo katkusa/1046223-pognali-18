@@ -1,9 +1,11 @@
+.directions__container {
+  padding-left: 26px;
+}
 .directions__text {
   color: @very-dark-gray;
   font-weight: 300;
   margin: 0;
   margin-bottom: 66px;
-  padding-left: 25px;
   padding-right: 45px;
 }
 .directions__list {
@@ -12,7 +14,6 @@
 }
 .directions__title {
   margin-bottom: 23px;
-  padding-left: 25px;
 }
 .directions__item {
   margin-bottom: 10px;
@@ -21,6 +22,12 @@
   margin-bottom: 25px;
 }
 @media (min-width: @tablet-width) {
+  .directions {
+    position: relative;
+  }
+  .directions__container {
+    padding-left: 0;
+  }
   .directions__text {
     padding: 0;
     margin-bottom: 113px;
@@ -39,21 +46,52 @@
   .directions__item:last-child {
     margin-bottom: 47px;
   }
+  .directions::after {
+    content: "";
+    width: 289px;
+    height: 575px;
+    background-image: url("../../img/flags-back@2x.png");
+    background-size: 289px 575px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 79px;
+  }
+  .directions::before {
+    content: "";
+    width: 141px;
+    height: 141px;
+    border-radius: 20px;
+    background-color: #e2e5f2;
+    position: absolute;
+    top: 425px;
+    left: 0;
+  }
 }
 @media (min-width: @desktop-width) {
   .directions__container {
     order: 2;
+    z-index: 2;
   }
   .directions__button {
     position: absolute;
     right: 250px;
     bottom: 140px;
     padding: 31px 102px 32px 34px;
+    z-index: 2;
   }
   .directions__text {
     margin: 0;
   }
   .directions__item:last-child {
     margin-bottom: 0;
+  }
+  .directions::after {
+    right: 0;
+    top: 89px;
+  }
+  .directions::before {
+    top: 89px;
+    left: 0;
   }
 }

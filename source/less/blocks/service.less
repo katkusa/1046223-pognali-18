@@ -10,6 +10,7 @@
   justify-content: space-between;
   align-items: baseline;
   padding: 23px 20px;
+  padding-bottom: 35px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -21,6 +22,9 @@
   width: 140px;
 }
 .service__number {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
   color: @white;
 }
 .service__item--first {
@@ -51,15 +55,20 @@
     padding: 23px 24px;
     margin-right: -17px;
   }
+  .service__number {
+    font-size: 30px;
+  }
   .service__text {
     width: 190px;
   }
   .service__item--first {
     border-top-left-radius: 20px;
+    padding-bottom: 40px;
   }
   .service__item--second {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    padding-bottom: 40px;
   }
   .service__item--third {
     border-bottom-left-radius: 20px;
@@ -72,6 +81,9 @@
 @media (min-width: @desktop-width) {
   .service__list {
     margin-left: 15px;
+  }
+  .service__number {
+    font-size: 24px;
   }
   .service__item {
     flex-direction: row;

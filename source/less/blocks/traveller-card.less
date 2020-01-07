@@ -1,3 +1,51 @@
+.traveller-card__wrapper {
+  position: relative;
+}
+.traveller-card__level-score {
+  position: absolute;
+  top: 16px;
+  left: 17px;
+}
+.traveller-card__level-id {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+.traveller-card__svg {
+  width: 60px;
+  height: 60px;
+}
+.traveller-card__svg circle {
+  fill: rgba(0, 0, 0, 0.5);
+}
+.traveller-card__number {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: @white;
+  position: relative;
+}
+.traveller-card__number::after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  bottom: 2px;
+  width: 31px;
+  height: 1px;
+  background-color: rgba(225, 225, 225, 0.2);
+}
+.traveller-card__level {
+  font-size: 14px;
+  line-height: 14px;
+  color: @white;
+}
 .traveller-card__img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -24,7 +72,6 @@
   margin: 0;
   margin-bottom: 17px;
   max-width: 180px;
-
 }
 .traveller-card__discription{
   display: flex;
@@ -35,7 +82,8 @@
 .traveller-card__transport {
   margin-bottom: 22px;
 }
-.traveller-card__name--status::before {
+.traveller-card__name--offline::before,
+.traveller-card__name--online::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -90,7 +138,8 @@
     max-width: 230px;
     margin-bottom: 27px;
   }
-  .traveller-card__name--status::before {
+  .traveller-card__name--offline::before,
+  .traveller-card__name--online::before {
     width: 7px;
     height: 7px;
     left: -17px;

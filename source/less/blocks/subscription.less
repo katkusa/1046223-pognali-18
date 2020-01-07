@@ -77,10 +77,14 @@
   padding: 31px 30px;
   margin-left: -20px;
 }
+.subscription__button::after {
+  right: 19px;
+}
+
 .subscription__button--text {
   display: none;
 }
-.subscription__container {
+.subscription__contacts {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -160,6 +164,7 @@
     border-radius: 0;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    right: 36px;
   }
   .subscription__phone-link {
     margin-right: 24px;
@@ -169,7 +174,7 @@
   }
 }
 @media (min-width: @desktop-width) {
-  .subscription__container {
+  .subscription__contacts {
     justify-content: center;
   }
   .subscription__mail-link {
@@ -213,5 +218,8 @@
     font-weight: 700;
     text-align: left;
     color: #1d2e5b;
+  }
+  .subscription__contact-item:first-child {
+    margin-right: 111px;
   }
 }
