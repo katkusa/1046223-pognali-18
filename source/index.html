@@ -859,6 +859,30 @@
             </a>
           </div>
         </footer>
+        <section class="modal">
+          <h2 class="modal__title title title--h2 title--color-orange">
+            Бизнес-тарифы
+          </h2>
+          <ul class="modal__list">
+            <li class="modal__item">
+              <span class="modal__text">Реклама у блоггера</span>
+              <span class="modal__text">300 000 руб./пост</span>
+            </li>
+            <li class="modal__item">
+              <span class="modal__text">Накрутка подписчиков</span>
+              <span class="modal__text">от 1 руб./шт.</span>
+            </li>
+            <li class="modal__item">
+              <span class="modal__text">Лайки от ботов</span>
+              <span class="modal__text">от 20 коп./лайк</span>
+            </li>
+            <li class="modal__item">
+              <span class="modal__text">Ваш продакт-плейсмент</span>
+              <span class="modal__text">Индивидуально</span>
+            </li>
+          </ul>
+          <button class="modal__button button">Закрыть окно</button>
+        </section>
       </div>
     </div>
     <script>
@@ -886,6 +910,18 @@
         siteMenuToggle.classList.toggle('page-header__toggle--closed');
         siteMenu.classList.toggle('site-menu--closed');
       });
+      var link = document.querySelector(".distribution__link");
+      var popup = document.querySelector(".modal");
+      var close = popup.querySelector(".modal__button");
+
+      link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal--show");
+    });
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal--show");
+    });
     </script>
   </body>
 </html>
