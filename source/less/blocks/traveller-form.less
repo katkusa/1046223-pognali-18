@@ -4,13 +4,116 @@
   font-weight: 700;
   color: @dark-slate-blue;
   text-transform: uppercase;
+  position: relative;
 }
 .traveller-form__label {
   font-size: 15px;
   line-height: 15px;
+  display: flex;
+  align-items: center;
+}
+.traveller-form__label:not(:last-child) {
+  padding-bottom: 10px;
 }
 .traveller-form__number {
   font-size: 15px;
   line-height: 13.5px;
   color: @dark-slate-blue;
+}
+.traveller-form__input-checkbox + .checkbox-indicator {
+  display: flex;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  margin-right: 9px;
+  border: transparent;
+  background-color: @white;
+  border-radius: 4px;
+}
+.traveller-form__input-checkbox:hover + .checkbox-indicator,
+.traveller-form__input-checkbox:focus + .checkbox-indicator {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.traveller-form__input-checkbox:disabled + .checkbox-indicator {
+  border: transparent;
+  background-color: #e2e5f1;
+}
+.traveller-form__input-checkbox:checked + .checkbox-indicator::after {
+  content: "";
+  flex-shrink: 0;
+  display: block;
+  width: 9px;
+  height: 9px;
+  background-image: url("../../img/tick.svg");
+  fill: #192144;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 0;
+  left: 5px;
+}
+.traveller-form__input-checkbox:checked:disabled + .checkbox-indicator {
+  border: transparent;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.traveller-form__label:hover,
+.traveller-form__label:focus {
+  opacity: 0.6;
+}
+.traveller-form__label:disabled {
+  opacity: 0.3;
+}
+.traveller-form__hobby {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-top: 1px solid #f3c72b;
+}
+.traveller-form__hobby .traveller-form__fieldset {
+  display: none;
+}
+.traveller-form__food .traveller-form__fieldset {
+  display: none;
+}
+.traveller-form__music {
+  padding-top: 13px;
+  padding-bottom: 20px;
+  border-top: 1px solid #f3c72b;
+}
+.traveller-form__fieldset {
+  border: transparent;
+  padding: 0;
+  padding-top: 17px;
+}
+.traveller-form__food {
+  padding-top: 13px;
+  padding-bottom: 11px;
+  border-top: 1px solid #f3c72b;
+}
+.traveller-form__transport {
+  padding-top: 13px;
+  padding-bottom: 19px;
+  border-top: 1px solid #f3c72b;
+}
+.traveller-form__text-arrow--up::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 210px;
+  top: 50%;
+  margin-top: -6px;
+  border: 4px solid transparent;
+  border-bottom: 4px solid #1d2e5b;
+  width: 0px;
+  height: 0px;
+}
+.traveller-form__text-arrow--down::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 210px;
+  top: 50%;
+  margin-top: -6px;
+  border: 4px solid transparent;
+  border-top: 4px solid #1d2e5b;
+  width: 0px;
+  height: 0px;
 }

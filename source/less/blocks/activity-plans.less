@@ -1,8 +1,91 @@
+.activity-plans {
+  position: relative;
+}
+.activity-plans::after {
+  content:'';
+  background-color: #1d2e5b;
+  width: 2px;
+  height: 289px;
+  position: absolute;
+  top: 192px;
+  left: -15px;
+}
 .activity-plans__text {
   font-size: 18px;
   line-height: 18px;
   font-weight: 500;
   color: @dark-slate-blue;
+  padding-left: 10px;
+  position: relative;
+}
+.activity-plans__text::before {
+  content:'';
+  background-color: #1d2e5b;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: -5px;
+}
+.activity-plans__text::after {
+  content:'';
+  background-color: #1d2e5b;
+  width: 15px;
+  height: 2px;
+  border-radius: 1px;
+  position: absolute;
+  top: 7px;
+  left: -15px;
+}
+.activity-plans__textarea {
+  font: inherit;
+  border: 1px solid #cdced9;
+  border-radius: 4px;
+  resize: none;
+  color: #444444;
+  width: 182px;
+  height: 205px;
+  padding: 13px 21px 0 15px;
+}
+.activity-plans__textarea:hover,
+.activity-plans__textarea:focus {
+  border: 1px solid #959bb2;
+}
+.activity-plans__textarea:active {
+  border: 1px solid #161c35;
+}
+.activity-plans__textarea::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+.activity-plans__pharagraph {
+  margin: 0;
+  padding: 22px 0 27px;
+}
+.activity-plans__country {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14px;
+}
+.activity-plans__flag {
+  width: 35px;
+  height: 24px;
+}
+.activity-plans__textarea-activity {
+  padding-bottom: 24px;
+}
+.activity-plans__textarea-pharagraph {
+  margin: 0;
+}
+.activity-plans__button-container {
+  display: flex;
+  flex-direction: column;
+}
+.activity-plans__button {
+  padding: 10px 66px 5px;
+  margin-bottom: 19px;
+  color: #161c35;
 }
 .activity-plans__button--back {
   font-size: 17px;
@@ -10,11 +93,130 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #161c35;
+  padding: 0;
+  background-color: transparent;
 }
-.activity-plans__textarea {
-  font: inherit;
-  border: 1px solid #cdced9;
-  border-radius: 4px;
-  resize: none;
-  color: @very-dark-gray;
+.activity-plans__button--back:hover,
+.activity-plans__button--back:focus {
+  opacity: 0.7;
+}
+.activity-plans__button--back:active {
+  opacity: 0.3;
+}
+@media (min-width: @tablet-width) {
+  .activity-plans::after {
+    display: none;
+  }
+  .activity-plans__text::after {
+    display: none;
+  }
+  .activity-plans__text::before {
+    width: 15px;
+    height: 15px;
+    top: 0;
+    left: 420px;
+  }
+  .activity-plans__pharagraph {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .activity-plans__country {
+    padding-bottom: 26px;
+  }
+  .activity-plans__text {
+    padding: 0;
+    font-size: 30px;
+    line-height: 18px;
+  }
+  .activity-plans__flag {
+    width: 70px;
+    height: 47px;
+  }
+  .activity-plans__textarea-activity {
+    padding-bottom: 46px;
+  }
+  .activity-plans__textarea {
+    width: 344px;
+    height: 119px;
+    padding: 21px 162px 0 19px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .activity-plans__button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .activity-plans__button {
+    margin: 0;
+    text-transform: initial;
+    color: #1d2e5b;
+    padding: 27px 140px 24px 34px;
+    border-radius: 20px;
+    position: relative;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .activity-plans__button::after {
+    content: "";
+    position: absolute;
+    right: 36px;
+    top: 50%;
+    margin-top: -6px;
+    border: 6px solid transparent;
+    border-left: 10px solid #1d2e5b;
+    width: 0px;
+    height: 0px;
+  }
+  .activity-plans__button--back {
+    text-transform: initial;
+    color: #1d2e5b;
+    position: relative;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .activity-plans__button--back::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    margin-top: -6px;
+    border: 6px solid transparent;
+    border-right: 10px solid #1d2e5b;
+    width: 0px;
+    height: 0px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .activity-plans__container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 56px;
+    margin-bottom: 74px;
+    border-bottom: 1px solid #d6d9e6;
+  }
+  .activity-plans__pharagraph {
+    padding: 0;
+    padding-top: 44px;
+    padding-right: 300px;
+  }
+  .activity-plans__textarea-activity {
+    padding-bottom: 53px;
+  }
+  .activity-plans__textarea {
+    padding: 28px 22px 0 27px;
+    width: 679px;
+    height: 112px;
+  }
+  .activity-plans__text::before {
+    left: 860px;
+  }
+  .activity-plans::after {
+    display: block;
+    width: 3px;
+    height: 270px;
+    top: 380px;
+    left: 866px;
+  }
 }

@@ -1,6 +1,9 @@
 .page-current__title {
   position: relative;
 }
+.page-current {
+  padding-bottom: 12px;
+}
 .page-current__title::after {
   content: "";
   position: absolute;
@@ -19,5 +22,10 @@
     width: 355px;
     height: 8px;
     border-radius: 4px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .page-current {
+    padding-left: 69px;
   }
 }

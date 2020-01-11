@@ -52,6 +52,28 @@
   border-radius: 50%;
   background-color: @white;
 }
+.transport__item--bg-white:hover,
+.transport__item--bg-white:focus {
+  box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.08);
+}
+.transport__item--bg-white:active {
+  background-color: #e2e5f1;
+}
+.transport__item--bg-white:hover .transport__svg--noactive,
+.transport__item--bg-white:focus .transport__svg--noactive {
+  fill: rgba(0, 0, 0, 0.3);
+}
+.transport__item--bg-white:active .transport__svg--noactive {
+  fill: rgba(0, 0, 0, 0.1);
+}
+.transport__item--bg-white:active .transport__svg--active {
+  opacity: 0.3;
+}
+.transport__item--bg-white:hover .transport__svg--active,
+.transport__item--bg-white:focus .transport__svg--active {
+  opacity: 0.7;
+}
+
 .transport__item--bg-gray {
   border-radius: 50%;
   background-color: @light-grayish-blue

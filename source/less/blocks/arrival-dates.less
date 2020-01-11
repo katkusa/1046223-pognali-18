@@ -27,6 +27,12 @@
   flex-direction: row;
   .list-reset();
 }
+.arrival-dates__list--second {
+  display: none;
+}
+.arrival-dates__list--third {
+  display: none;
+}
 .arrival-dates__item {
   position: relative;
   margin-left: 20px;
@@ -91,7 +97,7 @@
   margin-bottom: 23px;
 }
 .arrival-dates__button {
-  padding: 10px 46px 5px 46px;
+  padding: 10px 42px 5px 41px;
 }
 @media (min-width: @tablet-width) {
   .arrival-dates__list {
@@ -169,6 +175,12 @@
     position: initial;
     display: flex;
     flex-direction: column;
+  }
+  .arrival-dates__list--second {
+    display: block;
+  }
+  .arrival-dates__list--third {
+    display: block;
   }
   .arrival-dates__item-text {
     display: block;
