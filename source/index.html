@@ -461,7 +461,7 @@
                             <path fill="#4758A9" d="M.25 13.57h70v20h-70z"/></g>
                           </svg>
                         </li>
-                        <li class="flags__item flags__tooltip" title="Сейшеллы">
+                        <li class="flags__item flags__tooltip" title="Сейшелы">
                           <svg class="flags__svg-card" width="71" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
                             <g fill-rule="nonzero" fill="none">
                               <path d="M3.88 47l.51-.12 66.47-30.61V7.33A6.36 6.36 0 0 0 64.5.97H46.6L2.28 45.59A6.39 6.39 0 0 0 3.88 47z" fill="#ED5565"/>
@@ -701,8 +701,10 @@
               Уже зарегистрированы? Тогда скорее <a class="subscription__link">авторизуйтесь</a>.
             </p>
             <form action="https://echo.htmlacademy.ru" method="post" name="subscription__form" class="subscription__form">
-              <label for="subscription-field" class="visually-hidden">Электронная почта</label>
-              <input class="subscription__input" type="email" name="subscription-form" id="subscription-field" placeholder="E-mail" required>
+              <div class="subscription__input-container">
+                <label for="subscription-field" class="visually-hidden">Электронная почта</label>
+                <input class="subscription__input" type="email" name="subscription-form" id="subscription-field" placeholder="E-mail" required>
+              </div>
               <button type="submit" class="button subscription__button button--bg-yellow button--arrow-right">
                 <span class="subscription__button--text">
                   Регистрация
@@ -778,7 +780,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-            <img class="map__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="312" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
+            <img class="map__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="" height="" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
           </picture>
           <img class="map__pin" src="img/map-marker.svg" alt=""  width="41" height="41">
         </div>

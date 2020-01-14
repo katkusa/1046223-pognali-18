@@ -1,3 +1,22 @@
 .page-catalog__traveller-filter {
   margin-bottom: 28px;
 }
+@media (min-width: @tablet-width) {
+  .page-catalog__traveller-filter {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .page-catalog__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .page-catalog__catalog {
+    order: -1;
+    width: 1000px;
+    margin-right: 85px;
+  }
+  .page-catalog__traveller-filter {
+    margin-bottom: 0;
+  }
+}
