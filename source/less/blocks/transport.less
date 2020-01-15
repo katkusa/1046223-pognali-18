@@ -24,9 +24,8 @@
   display: inline;
   position: relative;
 }
-.transport__tooltip:hover::after{
-  display: flex;
-  justify-content: center;
+.transport__tooltip::after {
+  display: none;
   background: #101d41;
   border-radius: 4px;
   color: #fff;
@@ -39,7 +38,12 @@
   position: absolute;
   z-index: 5;
 }
-.transport__tooltip:hover::before{
+.transport__tooltip:hover::after {
+  display: flex;
+  justify-content: center;
+}
+.transport__tooltip::before {
+  display: none;
   border: solid;
   border-color: #101d41 transparent;
   border-width: 0 8px 8px 8px;
@@ -47,6 +51,9 @@
   left: 10px;
   bottom: -12px;
   position: absolute;
+}
+.transport__tooltip:hover::before {
+  display: block;
 }
 .transport__item--bg-white {
   border-radius: 50%;

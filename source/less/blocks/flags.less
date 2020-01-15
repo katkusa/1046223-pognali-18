@@ -14,9 +14,8 @@
   display: inline;
   position: relative;
 }
-.flags__tooltip:hover::after{
-  display: flex;
-  justify-content: center;
+.flags__tooltip::after {
+  display: none;
   background: #101d41;
   border-radius: 4px;
   color: #fff;
@@ -30,7 +29,12 @@
   position: absolute;
   top: 40px;
 }
-.flags__tooltip:hover::before{
+.flags__tooltip:hover::after {
+  display: flex;
+  justify-content: center;
+}
+.flags__tooltip::before {
+  display: none;
   border: solid;
   border-color: #101d41 transparent;
   border-width: 0 8px 8px 8px;
@@ -38,6 +42,9 @@
   left: 10px;
   bottom: -10px;
   position: absolute;
+}
+.flags__tooltip:hover::before {
+  display: block;
 }
 .flags__svg {
   width: 35px;
