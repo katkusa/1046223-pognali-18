@@ -486,10 +486,13 @@
                     <picture>
                       <source media="(min-width: 1200px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-destop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
-                      <a class="catalog__img-link" href="#"><img class="catalog__img" src="./img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Личное фото Тани Фирсовой" width="70" height="70"></a>
+                      <img class="catalog__img" src="./img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Личное фото Тани Фирсовой" width="70" height="70">
                     </picture>
                     <div class="catalog__text-container">
-                      <a class="catalog__name catalog__name--offline" href="#">Таня Фирсова</a>
+                      <div class="catalog__name-container">
+                        <a class="catalog__name" href="#">Таня Фирсова</a>
+                        <div class="catalog__indicator catalog__indicator--offline"></div>
+                      </div>
                       <div class="catalog__likes">
                         <div class="catalog__likes-svg-container catalog__likes-svg-container--red">
                           <svg class="catalog__likes-svg catalog__likes-svg--red" version="1.1" id="heart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -604,7 +607,7 @@
                             <svg class="catalog__level-status" width="100" height="100" viewBox="0 0 100 100">
                               <circle r="47" cx="50" cy="50" fill="none" stroke="#ff8d30" stroke-width="4" stroke-dasharray="350 10" stroke-dashoffset="140"/>
                             </svg>
-                            <div class="catalog__level-container">
+                            <div class="catalog__level-text-container">
                               <span class="catalog__level-number">99</span>
                               <span class="catalog__level-level">level</span>
                             </div>
@@ -620,12 +623,13 @@
                     <picture>
                       <source media="(min-width: 1200px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
-                      <a class="catalog__img-link" href="#">
-                        <img class="catalog__img" src="./img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="Личное фото Пети Демина" width="70" height="70">
-                      </a>
+                      <img class="catalog__img" src="./img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="Личное фото Пети Демина" width="70" height="70">
                     </picture>
                     <div class="catalog__text-container">
-                      <a class="catalog__name catalog__name--offline" href="#">Петя Демин</a>
+                      <div class="catalog__name-container">
+                        <a class="catalog__name" href="#"> Петя Демин</a>
+                        <div class="catalog__indicator catalog__indicator--offline"></div>
+                      </div>
                       <div class="catalog__likes">
                         <div class="catalog__likes-svg-container">
                           <svg class="catalog__likes-svg" version="1.1" id="heart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -728,7 +732,7 @@
                             <svg class="catalog__level-status" width="100" height="100" viewBox="0 0 100 100">
                               <circle r="47" cx="50" cy="50" fill="none" stroke="#ff8d30" stroke-width="4" stroke-dasharray="180 48" stroke-dashoffset="10"/>
                             </svg>
-                            <div class="catalog__level-container">
+                            <div class="catalog__level-text-container">
                               <span class="catalog__level-number">80</span>
                               <span class="catalog__level-level">level</span>
                             </div>
@@ -744,12 +748,13 @@
                     <picture>
                       <source media="(min-width: 1200px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
-                      <a class="catalog__img-link" href="#">
-                        <img class="catalog__img" src="./img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" alt="Личное фото  Марка Смолова" width="70" height="70">
-                      </a>
+                      <img class="catalog__img" src="./img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" alt="Личное фото  Марка Смолова" width="70" height="70">
                     </picture>
                     <div class="catalog__text-container">
-                      <a class="catalog__name catalog__name--offline" href="#">Марк Смолов</a>
+                      <div class="catalog__name-container">
+                        <a class="catalog__name" href="#">Марк Смолов</a>
+                        <div class="catalog__indicator catalog__indicator--offline"></div>
+                      </div>
                       <div class="catalog__likes">
                         <div class="catalog__likes-svg-container">
                           <svg class="catalog__likes-svg" version="1.1" id="heart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -880,7 +885,7 @@
                             <svg class="catalog__level-status" width="100" height="100" viewBox="0 0 100 100">
                               <circle r="47" cx="50" cy="50" fill="none" stroke="#ff8d30" stroke-width="4" stroke-dasharray="75 296" stroke-dashoffset="-230"/>
                             </svg>
-                            <div class="catalog__level-container">
+                            <div class="catalog__level-text-container">
                               <span class="catalog__level-number">25</span>
                               <span class="catalog__level-level">level</span>
                             </div>
@@ -896,12 +901,13 @@
                     <picture>
                       <source media="(min-width: 1200px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
-                      <a class="catalog__img-link" href="#">
-                        <img class="catalog__img" src="./img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Личное фото  Ларисы Роговой" width="70" height="70">
-                      </a>
+                      <img class="catalog__img" src="./img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Личное фото  Ларисы Роговой" width="70" height="70">
                       </picture>
                     <div class="catalog__text-container">
-                      <a class="catalog__name catalog__name--online" href="#">Лариса Роговая</a>
+                      <div class="catalog__name-container">
+                        <a class="catalog__name" href="#">Лариса Роговая</a>
+                        <div class="catalog__indicator catalog__indicator--online"></div>
+                      </div>
                       <div class="catalog__likes">
                         <div class="catalog__likes-svg-container">
                           <svg class="catalog__likes-svg" version="1.1" id="heart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -931,7 +937,7 @@
                             <span class="catalog__flags-text">Великобритания</span>
                           </li>
                           <li class="catalog__flags-item">
-                            <svg class="catalog__flags-svg" xmlns="http://www.w3.org/2000/svg" width="71" height="48" viewBox="0 0 5 3">
+                            <svg class="catalog__flags-svg catalog__flags-svg--germany" xmlns="http://www.w3.org/2000/svg" width="71" height="48" viewBox="0 0 5 3">
                               <rect id="black_stripe" width="5" height="3" y="0" x="0" fill="#000"/>
                               <rect id="red_stripe" width="5" height="2" y="1" x="0" fill="#D00"/>
                               <rect id="gold_stripe" width="5" height="1" y="2" x="0" fill="#FFCE00"/>
@@ -1003,7 +1009,7 @@
                             <svg class="catalog__level-status" width="100" height="100" viewBox="0 0 100 100">
                               <circle r="47" cx="50" cy="50" fill="none" stroke="#ff8d30" stroke-width="4" stroke-dasharray="140, 140" stroke-dashoffset="60"/>
                             </svg>
-                            <div class="catalog__level-container">
+                            <div class="catalog__level-text-container">
                               <span class="catalog__level-number">50</span>
                               <span class="catalog__level-level">level</span>
                             </div>

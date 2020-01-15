@@ -1,6 +1,9 @@
 .catalog__list{
   .list-reset();
 }
+.catalog__name-container {
+  display: flex;
+}
 .catalog__name {
   font-size: 20px;
   line-height: 20px;
@@ -11,21 +14,19 @@
   display: block;
   position: relative;
 }
-.catalog__name--offline::after,
-.catalog__name--online::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 100%;
-  margin-left: -6px;
+.catalog__indicator {
   width: 6px;
   height: 6px;
   border-radius: 50%;
+  margin-top: 5px;
+  position: absolute;
+  left: 100%;
+  margin-left: -30px;
 }
-.catalog__name--offline::after {
+.catalog__indicator--offline {
   background-color: #f97676;
 }
-.catalog__name--online::after {
+.catalog__indicator--online {
   background-color: #81e31e;
 }
 .catalog__likes {
@@ -95,8 +96,6 @@
 }
 .catalog__img {
   border-radius: 50%;
-}
-.catalog__img-link {
   display: block;
   position: absolute;
   width: 70px;
@@ -145,6 +144,10 @@
   height: 18px;
   margin-right: 15px;
 }
+.catalog__flags-svg--germany {
+  opacity: 0.7;
+  border-radius: 6px;
+}
 .catalog__flags-text {
   color: #1d2e5b;
   font-size: 15px;
@@ -171,31 +174,32 @@
 .catalog__level {
   position: relative;
 }
+.catalog__level-text-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
 .catalog__level-status {
   width: 45px;
   height: 45px;
 }
 .catalog__level-number {
-  position: absolute;
-  top: 50%;
-  margin-top: -9px;
-  left: 50%;
-  margin-left: -20px;
   font-size: 24px;
   line-height: 18px;
   color: #1d2e5b;
   font-weight: 700;
 }
+.catalog__level-level {
+  display: none;
+}
 @media (min-width: @tablet-width) {
   .catalog__item {
     padding: 35px 25px 26px 35px ;
   }
-  .catalog__img-link {
-    position: absolute;
-    width: 190px;
-    height: 190px;
-  }
   .catalog__img {
+    position: absolute;
     width: 190px;
     height: 190px;
     border-radius: 20px;
@@ -210,6 +214,13 @@
     line-height: 30px;
     padding: 0;
     margin-bottom: 20px;
+  }
+  .catalog__indicator {
+    position: static;
+    width: 7px;
+    height: 7px;
+    margin-left: 23px;
+    margin-top: 10px;
   }
   .catalog__likes {
     padding: 0;
@@ -250,9 +261,10 @@
   .catalog__traveller-skills-card {
     position: absolute;
     flex-direction: column;
+    align-items: center;
     top: 30px;
     left: 100%;
-    margin-left: -70px;
+    margin-left: -90px;
   }
   .catalog__traveller-skills-card::before {
     display: none;
@@ -299,12 +311,101 @@
   .catalog__transport-item {
     background-color: transparent;
   }
+  .catalog__level-text-container {
+    top: 13px;
+    left: 17px;
+  }
+  .catalog__level-status {
+    width: 60px;
+    height: 60px;
+  }
   .catalog__level-number {
-    margin-left: -13px;
+    line-height: 24px;
+  }
+  .catalog__level-level {
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+    color: rgba(68, 68, 68, 0.4);
+    position: relative;
+  }
+  .catalog__level-level::before {
+    content:'';
+    position: absolute;
+    top: -2px;
+    left: -3px;
+    width: 31px;
+    height: 1px;
+    background-color: rgba(68, 68, 68, 0.4);
   }
 }
 @media (min-width: @desktop-width) {
   .catalog__item {
-    padding: 35px 25px 26px 35px ;
+    padding: 0;
+    padding-right: 44px;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 285px;
+  }
+  .catalog__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .catalog__img {
+    position: static;
+    width: 285px;
+    height: 285px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .catalog__text-container {
+    margin-top: 48px;
+    padding: 0;
+    max-width: 290px;
+  }
+  .catalog__text-tags {
+    padding: 0;
+  }
+  .catalog__traveller-info-container {
+    flex-direction: column;
+    width: 219px;
+    margin: 0;
+    margin-top: 48px;
+    margin-bottom: 42px;
+  }
+  .catalog__traveller-skills-card {
+    position: static;
+    flex-direction: row;
+    margin: 0;
+  }
+  .catalog__transport-list {
+    flex-direction: row;
+  }
+  .catalog__transport-item {
+    width: 30px;
+  }
+  .catalog__flags-container::before {
+    display: none;
+  }
+  .catalog__flags-list {
+    flex-direction: column;
+    align-items: initial;
+  }
+  .catalog__flags-item:not(:last-child) {
+    margin: 0;
+  }
+  .catalog__text {
+    display: none;
+  }
+  .catalog__button {
+    top: 70%;
+    left: 40%;
+    margin-left: -50px;
+  }
+  .catalog__likes {
+    margin: 0;
+    top: 70%;
+    left: 50%;
+    margin-left: 12px;
+    margin-top: -30px;
   }
 }
