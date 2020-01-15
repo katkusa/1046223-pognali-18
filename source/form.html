@@ -249,7 +249,7 @@
                 Транспорт
               </h3>
               <ul class="transport__list traveller-id-card__list">
-                <li class="transport__item transport__item--bg-white">
+                <li class="transport__item transport__item--bg-white transport__tooltip" title="Авиаперелет">
                   <svg class="transport__svg traveller-id-card__svg--plane transport__svg--plane transport__svg--active" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
                     <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
@@ -261,7 +261,7 @@
                     c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
                   </svg>
                   <span class="visually-hidden">Самолет</span></li>
-                <li class="transport__item transport__item--bg-white">
+                <li class="transport__item transport__item--bg-white transport__tooltip" title="Автотранспорт">
                   <svg class="transport__svg traveller-id-card__svg--bus transport__svg--bus transport__svg--active" version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
                     <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
@@ -272,7 +272,7 @@
                   </svg>
                   <span class="visually-hidden">Автобус</span>
                 </li>
-                <li class="transport__item transport__item--bg-white">
+                <li class="transport__item transport__item--bg-white transport__tooltip" title="Велосипед">
                   <svg class="transport__svg transport__svg--noactive transport__svg--bike traveller-id-card__svg--bike" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
                     <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
@@ -283,7 +283,7 @@
                   </svg>
                   <span class="visually-hidden">Велосипед</span>
                 </li>
-                <li class="transport__item transport__item--bg-white">
+                <li class="transport__item transport__item--bg-white transport__tooltip" title="Пешком">
                   <svg class="transport__svg transport__svg--foot traveller-id-card__svg--foot transport__svg--active" version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
                     <g>
@@ -361,7 +361,7 @@
             </h2>
             <form action="https://echo.htmlacademy.ru" method="post" name="item-form" class="add-plan-form-container__form">
               <div class="wrapper wrapper--bg-white wrapper--all-border">
-                <div class="wrapper__inner-form">
+                <div class="form-wrapper">
                   <div class="arrival-dates add-plan-form-container__arrival-dates">
                     <div class="arrival-dates__container">
                       <div class="arrival-dates__container-text">
@@ -376,7 +376,7 @@
                       </div>
                       <ul class="arrival-dates__list arrival-dates__list--first">
                         <li class="arrival-dates__item arrival-dates__item--current">
-                          <span class="arrival-dates__item-text arrival-dates__item-text--current">
+                          <span class="arrival-dates__item-text">
                             Даты
                           </span>
                         </li>
@@ -541,7 +541,7 @@
                 </div>
               </div>
               <div class="wrapper wrapper--bg-white wrapper--all-border">
-                <div class="wrapper__inner-form">
+                <div class="form-wrapper">
                   <div class="travel-route add-plan-form-container__travel-route">
                     <div class="travel-route__container-head">
                       <div class="travel-route__text-container">
@@ -560,7 +560,7 @@
                           </span>
                         </li>
                         <li class="arrival-dates__item arrival-dates__item--current">
-                          <span class="arrival-dates__item-text arrival-dates__item-text--current">
+                          <span class="arrival-dates__item-text">
                             Маршрут
                           </span>
                         </li>
@@ -714,7 +714,7 @@
                 </div>
               </div>
               <div class="wrapper wrapper--bg-white wrapper--all-border">
-                <div class="wrapper__inner-form">
+                <div class="form-wrapper">
                   <div class="activity-plans add-plan-form-container__activity-plans">
                     <div class="activity-plans__container">
                       <div class="activity-plans__text-container">
@@ -739,7 +739,7 @@
                           </span>
                         </li>
                         <li class="arrival-dates__item arrival-dates__item--current">
-                          <span class="arrival-dates__item-text arrival-dates__item-text--current">
+                          <span class="arrival-dates__item-text">
                             Развлечения
                           </span>
                         </li>
@@ -909,7 +909,7 @@
 
       dropdownLabel.addEventListener('click', function() {
       dropdown.classList.toggle('travel-route__dropdown--opened');
-})
+});
     </script>
 
   </body>

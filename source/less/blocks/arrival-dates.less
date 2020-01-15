@@ -50,6 +50,9 @@
   background-color: #1d2e5b;
   opacity: 1;
 }
+.arrival-dates__item--current .arrival-dates__item-text {
+  color: #1d2e5b;
+}
 .arrival-dates__item-text {
   display: none;
 }
@@ -191,9 +194,6 @@
     margin-left: 36px;
     color: rgba(0, 0, 0, 0.6);
   }
-  .arrival-dates__item-text--current {
-    color: #1d2e5b;
-  }
   .arrival-dates__title {
     width: auto;
     margin-bottom: 37px;
@@ -211,7 +211,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-start;
     padding-top: 30px;
     border-top: 1px solid #d6d9e6;
   }
@@ -221,6 +221,7 @@
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 14px;
+    padding-right: 100px;
   }
   .arrival-dates__button {
     border-radius: 20px;

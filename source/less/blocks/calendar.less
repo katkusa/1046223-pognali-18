@@ -19,14 +19,17 @@
 .calendar__row .selected {
   color: @white;
   background-color: #101d41;
+  box-sizing: border-box;
 }
 .calendar__row .selected:hover {
   background-color: #1d2e5b;
-  border: 4px solid #ff5c23;
+  outline: 4px solid #ff5c23;
+  border: 1px solid transparent;
 }
 .calendar__row .active:hover {
   background-color: #1d2e5b;
-  border: 4px solid #ff5c23;
+  border: 1px solid transparent;
+  outline: 4px solid #ff5c23;
   color: @white;
 }
 .calendar__cell--text {

@@ -299,8 +299,13 @@
                       Подберите идеального попутчика
                     </h2>
                     <form action="https://echo.htmlacademy.ru" method="post" name="item-filter" class="traveller-form traveller-filter__traveller-form">
-                      <div class="traveller-form__hobby">
-                        <b class="traveller-form__text traveller-form__text-arrow--down">Хобби</b>
+                      <div class="traveller-form__container-checkbox traveller-form__container-checkbox--hobby">
+                        <div class="traveller-form__text">
+                          <span>Хобби</span>
+                          <button class="traveller-form__button-arrow traveller-form__text-arrow--down" type="button">
+                            <span class="visually-hidden">Закрыть</span>
+                          </button>
+                        </div>
                         <fieldset class="traveller-form__fieldset traveller-form__fieldset--hobby">
                           <div class="traveller-form__input-container traveller-form__input-container--hobby">
                             <label class="traveller-form__label">
@@ -321,8 +326,13 @@
                           </div>
                         </fieldset>
                       </div>
-                      <div class="traveller-form__music">
-                        <b class="traveller-form__text traveller-form__text-arrow--up">Музыка</b>
+                      <div class="traveller-form__container-checkbox traveller-form__container-checkbox--music">
+                        <div class="traveller-form__text">
+                          <span>Музыка</span>
+                          <button class="traveller-form__button-arrow traveller-form__text-arrow--down" type="button">
+                            <span class="visually-hidden">Закрыть</span>
+                          </button>
+                        </div>
                         <fieldset class="traveller-form__fieldset traveller-form__fieldset--music">
                           <div class="traveller-form__input-container traveller-form__input-container--music">
                             <label class="traveller-form__label">
@@ -343,8 +353,13 @@
                           </div>
                         </fieldset>
                       </div>
-                      <div class="traveller-form__food">
-                        <b class="traveller-form__text traveller-form__text-arrow--down">Еда</b>
+                      <div class="traveller-form__container-checkbox traveller-form__container-checkbox--food">
+                        <div class="traveller-form__text">
+                          <span>Еда</span>
+                          <button class="traveller-form__button-arrow traveller-form__text-arrow--down" type="button">
+                            <span class="visually-hidden">Закрыть</span>
+                          </button>
+                        </div>
                         <fieldset class="traveller-form__fieldset traveller-form__fieldset--food">
                           <div class="traveller-form__input-container traveller-form__input-container--food">
                             <label class="traveller-form__label">
@@ -365,8 +380,13 @@
                           </div>
                         </fieldset>
                       </div>
-                      <div class="traveller-form__transport">
-                        <b class="traveller-form__text traveller-form__text-arrow--up">Транспорт</b>
+                      <div class="traveller-form__container-checkbox traveller-form__container-checkbox--transport">
+                        <div class="traveller-form__text">
+                          <span>Транспорт</span>
+                          <button class="traveller-form__button-arrow traveller-form__text-arrow--down" type="button">
+                            <span class="visually-hidden">Закрыть</span>
+                          </button>
+                        </div>
                         <fieldset class="traveller-form__fieldset-transport">
                           <div class="traveller-form__input-container traveller-form__input-container--transport">
                             <label>
@@ -433,8 +453,13 @@
                           </div>
                         </fieldset>
                       </div>
-                      <div class="traveller-form__level-form">
-                        <b class="traveller-form__text traveller-form__text-arrow--up">Левел</b>
+                      <div class="traveller-form__container-checkbox traveller-form__container-checkbox--level-form">
+                        <div class="traveller-form__text">
+                          <span>Левел</span>
+                          <button class="traveller-form__button-arrow traveller-form__text-arrow--down" type="button">
+                            <span class="visually-hidden">Закрыть</span>
+                          </button>
+                        </div>
                         <div class="traveller-form__number-container">
                           <input class="traveller-form__number traveller-form__number--left" id="number" type="number" value="30">
                           <input class="traveller-form__number traveller-form__number--right" id="number" type="number" value="100">
@@ -447,7 +472,7 @@
                           <div class="range-controls__range-toggle range-controls__range-toggle--max" tabindex="0"></div>
                         </div>
                       </div>
-                      <button class="button button--size-small traveller-filter__button" type="button">
+                      <button class="button button--size-small traveller-filter__button" type="submit">
                         Показать
                       </button>
                     </form>
@@ -462,10 +487,10 @@
                       <picture>
                         <source media="(min-width: 1200px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-destop@2x.jpg 2x">
                         <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
-                        <img class="catalog__img" src="./img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Личное фото Тани Фирсовой" width="70" height="70">
+                        <a href="#"><img class="catalog__img" src="./img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Личное фото Тани Фирсовой" width="70" height="70"></a>
                       </picture>
                       <div class="catalog__text-container">
-                        <b class="catalog__name">Таня Фирсова</b>
+                        <a class="catalog__name" href="#">Таня Фирсова</a>
                         <div class="catalog__likes">
                           <div class="catalog__likes-svg-container">
                             <svg class="catalog__likes-svg" version="1.1" id="heart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -597,7 +622,7 @@
                         <img class="catalog__img" src="./img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="Личное фото Пети Демина" width="70" height="70">
                       </picture>
                       <div class="catalog__text-container">
-                        <b class="catalog__name">Петя Демин</b>
+                        <a class="catalog__name" href="#">Петя Демин</a>
                         <div class="catalog__likes">
                           <div class="catalog__likes-svg-container">
                             <svg class="catalog__likes-svg" version="1.1" id="heart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -716,7 +741,7 @@
                         <img class="catalog__img" src="./img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" alt="Личное фото  Марка Смолова" width="70" height="70">
                       </picture>
                       <div class="catalog__text-container">
-                        <b class="catalog__name">Марк Смолов</b>
+                        <a class="catalog__name" href="#">Марк Смолов</a>
                         <div class="catalog__likes">
                           <div class="catalog__likes-svg-container">
                             <svg class="catalog__likes-svg" version="1.1" id="heart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -863,7 +888,7 @@
                         <img class="catalog__img" src="./img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Личное фото  Ларисы Роговой" width="70" height="70">
                       </picture>
                       <div class="catalog__text-container">
-                        <b class="catalog__name">Лариса Роговая</b>
+                        <a class="catalog__name" href="#">Лариса Роговая</a>
                         <div class="catalog__likes">
                           <div class="catalog__likes-svg-container">
                             <svg class="catalog__likes-svg" version="1.1" id="heart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -1102,6 +1127,16 @@
         siteMenuToggle.classList.toggle('page-header__toggle--closed');
         siteMenu.classList.toggle('site-menu--closed');
       });
+
+      var formCont = document.querySelector('.traveller-form__container-checkbox');
+      var formBtnArrow = document.querySelector('.traveller-form__button-arrow');
+
+
+      formBtnArrow.addEventListener('click', function() {
+      formBtnArrow.classList.toggle('traveller-form__button-arrow--opened');
+      formCont.classList.toggle('traveller-form__container-checkbox--opened');
+      });
+
     </script>
   </body>
 </html>

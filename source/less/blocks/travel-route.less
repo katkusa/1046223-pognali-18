@@ -218,9 +218,17 @@
     transform: rotate(-45deg);
   }
 }
+.travel-route__country-container--hover:hover,
+.travel-route__country-container--hover:focus {
+  border: 1px solid #959bb2;
+}
+.travel-route__country-container--hover:hover .travel-route__button--arrow,
+.travel-route__country-container--hover:focus .travel-route__button--arrow {
+  opacity: 0.5;
+}
 .travel-route__dropdown--opened .travel-route__country-container {
   background-color: #1d2e5b;
-  border: transparent;
+  border: 1px solid transparent;
   border-radius: 0;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -251,14 +259,6 @@
 }
 .travel-route__country-choice {
   margin-bottom: 25px;
-}
-.travel-route__country-container--hover:hover,
-.travel-route__country-container--hover:focus {
-  border: 1px solid #959bb2;
-}
-.travel-route__country-container--hover:hover .travel-route__button--arrow,
-.travel-route__country-container--hover:focus .travel-route__button--arrow {
-  opacity: 0.5;
 }
 @media (min-width: @tablet-width) {
   .travel-route__title {
