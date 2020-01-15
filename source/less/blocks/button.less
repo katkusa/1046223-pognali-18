@@ -36,17 +36,15 @@
 .button--arrow-right::after {
   content: "";
   position: absolute;
-  right: 10%;
-  top: 40%;
+  right: 36px;
+  top: 50%;
+  margin-top: -6px;
   border: 6px solid transparent;
   border-left: 10px solid #1d2e5b;
   width: 0px;
   height: 0px;
 }
-.button--arrow-right-subscribe::after {
-  top: 40%;
-  right: auto;
-}
+
 .button--bg-yellow:active::after {
   opacity: 0.3;
 }
@@ -58,11 +56,5 @@
     font-size: 24px;
     line-height: 24px;
     border-radius: 20px;
-  }
-}
-@media (min-width: @desktop-width) {
-  .button--arrow-right-subscribe::after {
-    top: 40%;
-    right: 10%;
   }
 }

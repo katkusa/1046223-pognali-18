@@ -1,42 +1,63 @@
+.wrapper {
+  position: relative;
+}
+.wrapper::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
 .wrapper__inner {
   width: 270px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 25px;
 }
-.wrapper__inner-form {
-  padding: 0 20px;
+.wrapper__inner-catalog {
+  padding: 0 25px;
+}
+.wrapper--all-border {
+  border-radius: 20px;
 }
 .wrapper--bottom-radius {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.wrapper--all-border {
-  border-radius: 10px;
+.wrapper--bottom-radius + .wrapper::before {
+  top: -20px;
+  height: 20px;
 }
 .wrapper--top-radius {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.wrapper--bg-blue {
+.wrapper--bg-blue,
+.wrapper--bg-blue.wrapper::before {
   background-color: @very-dark-blue;
 }
-.wrapper--bg-gray {
+.wrapper--bg-gray,
+.wrapper--bg-gray.wrapper::before {
   background-color: @light-grayish-blue;
 }
-.wrapper--bg-yellow {
+.wrapper--bg-yellow,
+.wrapper--bg-yellow.wrapper::before {
   background-color: @light-yellow;
 }
-.wrapper--bg-white {
+.wrapper--bg-white,
+.wrapper--bg-white.wrapper::before {
   background-color: @white;
 }
-.wrapper--bg-medium-gray {
+.wrapper--bg-medium-gray,
+.wrapper--bg-medium-gray.wrapper::before {
   background-color: @medium-grayish-blue;
 }
-.wrapper--bg-dark-gray {
+.wrapper--bg-dark-gray,
+.wrapper--bg-dark-gray.wrapper::before {
   background-color: @dark-grayish-blue;
 }
-.wrapper--bg-light-gray {
+.wrapper--bg-light-gray,
+.wrapper--bg-light-gray.wrapper::before {
   background-color: #e2e5f2;
 }
 @media (min-width: @tablet-width) {
@@ -45,11 +66,23 @@
     padding-right: 40px;
     padding-left: 40px;
   }
-  .wrapper__inner-form {
-    padding: 0 44px;
+  .wrapper__inner-catalog {
+    padding: 0 35px;
   }
   .wrapper--all-border {
     border-radius: 30px;
+  }
+  .wrapper--bottom-radius {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .wrapper--bottom-radius + .wrapper::before {
+    top: -30px;
+    height: 30px;
+  }
+  .wrapper--top-radius {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
   }
 }
 @media (min-width: @desktop-width) {
@@ -58,7 +91,11 @@
     padding-right: 60px;
     padding-left: 60px;
   }
-  .wrapper__inner-form {
-    padding: 0 160px;
+  .wrapper__inner-catalog {
+    padding: 0 47px;
+  }
+  .wrapper--bg-yellow-height {
+    height: 815px;
+    width: 285px;
   }
 }
