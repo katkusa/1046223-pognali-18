@@ -14,6 +14,9 @@
   border-radius: 2.4px;
   background-color: #ff8d30;
 }
+.page-current__back-main {
+  display: none;
+}
 @media (min-width: @tablet-width) {
   .page-current__title {
     padding-bottom: 69px;
@@ -22,6 +25,32 @@
     width: 355px;
     height: 8px;
     border-radius: 4px;
+  }
+  .page-current__back-main {
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: @white;
+    margin-top: 25px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url(../../img/return.svg);
+      width: 32px;
+      height: 16px;
+      top: 0;
+      left: 140px;
+    }
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 @media (min-width: @desktop-width) {
