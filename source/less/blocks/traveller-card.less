@@ -1,10 +1,19 @@
 .traveller-card__wrapper {
   position: relative;
 }
+.traveller-card__img-container {
+  overflow: hidden;
+  width: 270px;
+  height: 270px;
+}
 .traveller-card__level-score {
   position: absolute;
   top: 16px;
   left: 17px;
+  z-index: 3;
+}
+.traveller-card__discription:hover {
+  box-shadow: 0px 6px 21px 0 rgba(0, 0, 0, 0.08);
 }
 .traveller-card__level-id {
   display: flex;
@@ -46,9 +55,16 @@
   line-height: 14px;
   color: @white;
 }
+
 .traveller-card__img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  transition: all 1s ease-out;
+}
+.traveller-card__img:hover {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform: scale(1.1);
 }
 .traveller-card__name {
   font-size: 21px;
@@ -125,6 +141,14 @@
   }
   .traveller-card__discription {
     margin-top: 11px;
+  }
+  .traveller-card__img-container {
+    width: 285px;
+    height: 285px;
+  }
+  .traveller-card__img {
+    width: 285px;
+    height: 285px;
   }
 }
 @media (min-width: @desktop-width) {

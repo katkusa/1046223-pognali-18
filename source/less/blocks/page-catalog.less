@@ -1,9 +1,22 @@
 .page-catalog__traveller-filter {
   margin-bottom: 28px;
 }
+.page-catalog__paginator {
+  margin-bottom: 46px;
+}
 @media (min-width: @tablet-width) {
   .page-catalog__traveller-filter {
     margin-bottom: 40px;
+  }
+  .page-catalog__current {
+    padding-left: 35px;
+    padding-right: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .page-catalog__paginator {
+    margin-bottom: 62px;
   }
 }
 @media (min-width: @desktop-width) {
@@ -13,10 +26,17 @@
   }
   .page-catalog__catalog {
     order: -1;
-    width: 1000px;
-    margin-right: 85px;
+  }
+  .page-catalog__current {
+    padding-left: 66px;
+    padding-right: 124px;
+    display: flex;
+    justify-content: space-between;
   }
   .page-catalog__traveller-filter {
     margin-bottom: 0;
+  }
+  .page-catalog__paginator {
+    margin-bottom: 77px;
   }
 }
