@@ -16,45 +16,106 @@
     <div class="wrapper wrapper--bg-blue">
       <div class="wrapper__inner">
         <header class="page-header">
-          <div class="site-navigation-wrapper site-navigation-wrapper--opene site-navigation-wrapper--closed">
-            <a class="logo page-header__logo">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
-                <img class="logo__img" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="Логотип сервиса для путешествий Погнали?">
-              </picture>
-            </a>
-            <button class="page-header__toggle button" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-            <div class="site-navigation">
-              <nav class="main-nav site-navigation__main-nav">
-                <ul class="site-list main-nav__list">
+          <a class="logo page-header__logo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+              <img class="logo__img" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="Логотип сервиса для путешествий Погнали?">
+            </picture>
+          </a>
+          <button class="page-header__toggle button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="site-menu site-menu--closed">
+            <div class="site-menu__wrapper">
+              <a class="logo site-menu__logo">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+                  <img class="logo__img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Логотип сервиса для путешествий Погнали?">
+                </picture>
+              </a>
+              <nav class="site-navigation">
+                <ul class="site-list">
                   <li class="site-list__item">
                     <a href="#" class="site-list__link">
-                      О сервисе
+                      <span class="site-list__link-text" data-hover="О сервисе">
+                        О сервисе
+                      </span>
                     </a>
                   </li>
                   <li class="site-list__item">
                     <a href="./form.html" class="site-list__link">
-                      Направления
+                      <span class="site-list__link-text" data-hover="Направления">
+                        Направления
+                      </span>
                     </a>
                   </li>
                   <li class="site-list__item">
                     <a href="./catalog.html" class="site-list__link">
-                      Попутчики
+                      <span class="site-list__link-text" data-hover="Попутчики">
+                        Попутчики
+                      </span>
                     </a>
                     </li>
                 </ul>
               </nav>
-              <div class="site-navigation__container">
-                <a href="#" class="button site-navigation__link button--bg-yellow button--size-small"> Авторизация</a>
-                <div class="site-navigation__contacts-wrapper">
-                  <div class="phone site-navigation__phone phone--menu">
-                    <a href="tel:+78005558628" class="phone__link  phone__link--bg-blue site-navigation__phone-link">
-                      <svg class="phone__svg phone__svg--yellow site-navigation__phone-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
-                      <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
+              <div class="site-menu__contacts site-menu__contacts--view-desktop">
+                <div class="site-menu__contact-item">
+                  <a href="tel:+78005558628" class="contact contact--icon-bg-orange contact--icon-size-s">
+                    <div class="contact__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+                        <g>
+                          <g id="UrwUhy_1_">
+                            <g>
+                              <path class="st0" d="M12.6,18c-0.3,0-0.5,0-0.8,0c-3.6-0.4-6.2-2.1-8.1-4.3C1.8,11.6,0.3,8.8,0,5c0-0.3,0-0.7,0-1
+                                c0.1-0.7,0.4-1.1,0.8-1.5C1.2,2,2,1.4,2.6,1.3c0.5,0,1.3,0.3,1.6,0.8c0.3,0.4,0.4,1.2,0.6,1.8c0.1,0.6,0.4,1.4,0.4,2
+                                C5,6.8,3.9,7.2,3.5,7.8c1.1,2.8,3,4.8,5.4,6.2c0.6-0.3,1.2-1.4,2-1.4c0.3,0,0.7,0.2,1,0.3c0.3,0.1,0.6,0.2,1,0.4
+                                c0.5,0.2,1.4,0.5,1.7,0.9c0.3,0.4,0.5,1.2,0.4,1.7C14.9,16.7,13.4,17.7,12.6,18z"/>
+                            </g>
+                          </g>
+                          <path class="st0" d="M9.1,1.1c4.3,0,7.8,3.6,7.8,8H18c0-5-4-9.1-8.9-9.1L9.1,1.1z"/>
+                          <path class="st0" d="M9.1,6.9V8c0.6,0,1,0.5,1,1.1h1.1C11.2,7.9,10.3,6.9,9.1,6.9z"/>
+                          <path class="st0" d="M9.1,4.6c2.4,0,4.4,2,4.4,4.5h1.2c0-3.1-2.5-5.7-5.5-5.7V4.6L9.1,4.6z"/>
+                        </g>
+                      </svg>
+                    </div>
+                    <span class="contact__text">8 800 555-86-28</span>
+                  </a>
+                </div>
+                <div class="site-menu__contact-item">
+                  <a href="mailto:mail@htmlacademy.ru" class="contact contact--icon-bg-yellow contact--icon-size-s">
+                  <div class="contact__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 14" style="enable-background:new 0 0 18 14;" xml:space="preserve">
+                      <g>
+                        <g>
+                          <g>
+                            <path class="st0" d="M14.9,1.8c1.2-1,0.9-1.8-0.7-1.8H3.7C2.2,0,1.9,0.8,3.1,1.8l3.7,3.1c1.2,1,3.2,1,4.4,0L14.9,1.8z"/>
+                          </g>
+                          <g>
+                            <path class="st0" d="M11.9,7.1c-1.2,1-2.2,1.8-2.2,1.8c0,0,0,0,0,0C9.6,9,9.5,9,9.4,9c0,0-0.1,0-0.1,0C9.2,9.1,9.1,9.1,9,9.1
+                              c0,0,0,0,0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0c-0.1,0-0.2,0-0.3-0.1c0,0-0.1,0-0.1,0C8.5,9,8.4,9,8.3,8.9c0,0,0,0,0,0
+                              c0,0-1-0.8-2.2-1.8L2.2,3.8C1,2.8,0,3.3,0,4.8v6.3C0,12.7,1.3,14,2.8,14h12.3c1.6,0,2.8-1.3,2.8-2.8V4.8c0-1.6-1-2-2.2-1
+                              L11.9,7.1z"/>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <span class="contact__text">mail@htmlacademy.ru</span>
+                  </a>
+                </div>
+              </div>
+              <a href="#" class="button button--bg-yellow button--size-small site-menu__authorization-link">
+                Авторизация
+              </a>
+              <div class="site-menu__contacts site-menu__contacts--view-mobile">
+                <div class="site-menu__contact-item">
+                  <a href="tel:+78005558628" class="contact contact--icon-bg-dark-blue contact--color-dark-blue contact--show-text">
+                    <div class="contact__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                        <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
                         c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
                         c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
                         c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
@@ -63,24 +124,26 @@
                         c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
                         c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
                       </svg>
-                    </a>
-                    <a href="tel:+78005558628" class="phone__text phone__text--blue site-navigation__phone-text">8 800 555-86-28</a>
+                    </div>
+                    <span class="contact__text">8 800 555-86-28</span>
+                  </a>
+                </div>
+                <div class="site-menu__contact-item">
+                  <a href="mailto:mail@htmlacademy.ru" class="contact contact--icon-bg-dark-blue contact--color-dark-blue contact--show-text">
+                  <div class="contact__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
+                      <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
+                      c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
+                      L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
+                      c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
+                    </svg>
                   </div>
-                  <div class="mail site-navigation__mail mail--menu">
-                    <a href="mailto:mail@htmlacademy.ru" class="mail__link  mail__link--bg-blue site-navigation__mail-link">
-                      <svg class="mail__svg mail__svg--yellow site-navigation__mail-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
-                        <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
-                        c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
-                        L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
-                        c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
-                      </svg>
-                    </a>
-                    <a href="mailto:mail@htmlacademy.ru" class="mail__text site-navigation__mail-text mail__text--blue">mail@htmlacademy.ru</a>
-                  </div>
+                  <span class="contact__text">mail@htmlacademy.ru</span>
+                  </a>
                 </div>
               </div>
-              <div class="social site-navigation__social">
+              <div class="social site-menu__social">
                 <ul class="social__list">
                   <li class="social__item">
                     <a class="social__link social__link--no-bg" href="#">
@@ -143,74 +206,76 @@
     </div>
 
     <main class="page-main">
-
       <div class="wrapper wrapper--bg-blue">
         <div class="wrapper__inner">
-          <div class="page-main__app-preview">
-            <h1 class="visually-hidden">Сервис для путешествий "Погнали?"</h1>
+          <h1 class="visually-hidden">Сервис для путешествий "Погнали?"</h1>
+          <div class="promoblock page-main__promoblock">
+            <div class="promoblock__container">
+              <b class="promoblock__slogan">В путешествие с крутыми попутчиками!</b>
 
-            <div class="page-main__container">
-
-              <b class="page-main__slogan">
-                В путешествие с крутыми попутчиками!
-              </b>
-
-              <div class="user page-main__user">
-                <ul class="user__list">
-                  <li class="user__item">
-                    <div class="phone user__phone phone--main">
-                      <a href="tel:+78005558628" class="phone__link phone__link--bg-dark-yellow">
-                        <svg class="phone__svg phone__svg--blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                          viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
-                          <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
-                          c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
-                          c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
-                          c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
-                          M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
-                          c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
-                          c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
-                          c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
-                        </svg>
-                        <span class="visually-hidden">8 800 555-86-28</span>
-                      </a>
+              <ul class="promoblock__buttons-list">
+                <li>
+                  <a href="tel:+78005558628" class="contact contact--icon-size-s contact--icon-bg-orange">
+                    <div class="contact__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+                        <g>
+                          <g id="UrwUhy_1_">
+                            <g>
+                              <path class="st0" d="M12.6,18c-0.3,0-0.5,0-0.8,0c-3.6-0.4-6.2-2.1-8.1-4.3C1.8,11.6,0.3,8.8,0,5c0-0.3,0-0.7,0-1
+                                c0.1-0.7,0.4-1.1,0.8-1.5C1.2,2,2,1.4,2.6,1.3c0.5,0,1.3,0.3,1.6,0.8c0.3,0.4,0.4,1.2,0.6,1.8c0.1,0.6,0.4,1.4,0.4,2
+                                C5,6.8,3.9,7.2,3.5,7.8c1.1,2.8,3,4.8,5.4,6.2c0.6-0.3,1.2-1.4,2-1.4c0.3,0,0.7,0.2,1,0.3c0.3,0.1,0.6,0.2,1,0.4
+                                c0.5,0.2,1.4,0.5,1.7,0.9c0.3,0.4,0.5,1.2,0.4,1.7C14.9,16.7,13.4,17.7,12.6,18z"/>
+                            </g>
+                          </g>
+                          <path class="st0" d="M9.1,1.1c4.3,0,7.8,3.6,7.8,8H18c0-5-4-9.1-8.9-9.1L9.1,1.1z"/>
+                          <path class="st0" d="M9.1,6.9V8c0.6,0,1,0.5,1,1.1h1.1C11.2,7.9,10.3,6.9,9.1,6.9z"/>
+                          <path class="st0" d="M9.1,4.6c2.4,0,4.4,2,4.4,4.5h1.2c0-3.1-2.5-5.7-5.5-5.7V4.6L9.1,4.6z"/>
+                        </g>
+                      </svg>
                     </div>
-                  </li>
-                  <li class="user__item">
-                    <div class="user__mail mail mail--main">
-                      <a href="mailto:mail@htmlacademy.ru" class="mail__link mail__link--bg-medium-yellow">
-                        <svg class="mail__svg mail__svg--blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                          viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
-                          <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
-                          c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
-                          L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
-                          c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
-                        </svg>
-                        <span class="visually-hidden">mail@htmlacademy.ru</span>
-                      </a>
+                    <span class="contact__text">8 800 555-86-28</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:mail@htmlacademy.ru" class="contact contact--icon-size-s contact--icon-bg-yellow">
+                    <div class="contact__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 14" style="enable-background:new 0 0 18 14;" xml:space="preserve">
+                        <g>
+                          <g>
+                            <g>
+                              <path class="st0" d="M14.9,1.8c1.2-1,0.9-1.8-0.7-1.8H3.7C2.2,0,1.9,0.8,3.1,1.8l3.7,3.1c1.2,1,3.2,1,4.4,0L14.9,1.8z"/>
+                            </g>
+                            <g>
+                              <path class="st0" d="M11.9,7.1c-1.2,1-2.2,1.8-2.2,1.8c0,0,0,0,0,0C9.6,9,9.5,9,9.4,9c0,0-0.1,0-0.1,0C9.2,9.1,9.1,9.1,9,9.1
+                                c0,0,0,0,0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0c-0.1,0-0.2,0-0.3-0.1c0,0-0.1,0-0.1,0C8.5,9,8.4,9,8.3,8.9c0,0,0,0,0,0
+                                c0,0-1-0.8-2.2-1.8L2.2,3.8C1,2.8,0,3.3,0,4.8v6.3C0,12.7,1.3,14,2.8,14h12.3c1.6,0,2.8-1.3,2.8-2.8V4.8c0-1.6-1-2-2.2-1
+                                L11.9,7.1z"/>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
                     </div>
-                  </li>
-                  <li class="user__item">
-                    <a class="user__login-button button button--bg-yellow button--size-small" href="#">Авторизация</a>
-                  </li>
-                </ul>
+                    <span class="contact__text">mail@htmlacademy.ru</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="promoblock__login-button button button--bg-yellow button--size-small" href="#">
+                    Авторизация
+                  </a>
+                </li>
+              </ul>
+
+              <div class="promoblock__review">
+                <blockquote class="promoblock__review-text">
+                  «Лучшее приложение, что я видел в жизни!»
+                </blockquote>
+                <cite class="promoblock__review-author">
+                  Мурат Эльтазин <br>главный редактор газеты «гаджетлайф»
+                </cite>
               </div>
-
-              <section class="reviews page-main__reviews">
-                <ul class="reviews__list">
-                  <li class="reviews__item">
-                    <blockquote class="reviews__text">
-                      «Лучшее приложение, что я видел в жизни!»
-                    </blockquote>
-                    <cite class="reviews__author">
-                      Мурат Эльтазин <br>главный редактор газеты «гаджетлайф»
-                    </cite>
-                  </li>
-                </ul>
-              </section>
-
             </div>
 
-            <section class="service page-main__service">
+            <section class="service promoblock__service">
               <ul class="service__list">
                 <li class="service__item service__item--first">
                   <span class="service__text">Выберите направление</span>
@@ -230,7 +295,6 @@
                 </li>
               </ul>
             </section>
-
           </div>
         </div>
       </div>
@@ -238,14 +302,14 @@
       <div class="wrapper wrapper--bg-blue wrapper--bottom-radius">
         <div class="wrapper__inner">
           <section class="service-info page-main__service-info">
-            <h2 class="service-info__title title--h2 title--h2-orange">
+            <h2 class="service-info__title title--h2 title--color-orange">
               О сервисе
             </h2>
-            <p class="service-info__text page-main__text--light">
+            <p class="service-info__text service-info__text--light">
               Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
               Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
             </p>
-            <p class="service-info__text page-main__text--bold">
+            <p class="service-info__text service-info__text--bold">
               А если найдете кого-то
               близкого по духу — скорее зовите в совместный трип!
             </p>
@@ -257,7 +321,7 @@
         <div class="wrapper__inner">
           <section class="directions page-main__directions">
             <div class="directions__container">
-              <h2 class="directions__title title--h2 title--h2-orange">Направления</h2>
+              <h2 class="directions__title title--h2 title--color-orange">Направления</h2>
               <p class="directions__text">
                 Мы не продаем туры и ничего не рекламируем.
                 Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
@@ -266,15 +330,21 @@
             <ul class="directions__list">
               <li class="directions__item">
                 <div class="travel-country-card">
-                  <div class="travel-country-card__container">
-                    <picture>
-                      <source media="(min-width: 1200px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
-                      <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
-                        <img class="travel-country-card__img" src="./img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x" alt="Фото Таиланда" width="270" height="110">
-                    </picture>
+                  <picture class="travel-country-card__img-container">
+                    <source media="(min-width: 1200px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
+                    <img class="travel-country-card__img" src="./img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x" alt="Фото Таиланда" width="270" height="110">
+                  </picture>
+                  <div class="flags travel-country-card__flags">
+                    <svg class="flags__svg flags__svg--thailand" width="71" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
+                      <g fill-rule="nonzero" fill="none">
+                      <rect fill="#ED5565" x=".25" y=".07" width="70" height="47" rx="6.36"/>
+                      <path fill="#FFF" d="M.25 9.57h70v28h-70z"/>
+                      <path fill="#4758A9" d="M.25 13.57h70v20h-70z"/></g>
+                    </svg>
                   </div>
                   <div class="travel-country-card__wrapper">
-                    <div class="travel-country-card__cont">
+                    <div class="travel-country-card__container">
                       <h3 class="travel-country-card__country">Таиланд</h3>
                       <p class="travel-country-card__slogan">Джунгли зовут!</p>
                     </div>
@@ -284,11 +354,22 @@
               </li>
               <li class="directions__item">
                 <div class="travel-country-card">
-                  <div class="travel-country-card__container">
-                    <img class="travel-country-card__img" src="./img/france-mobile@1x.jpg" alt="Фото Франции" width="270" height="110">
+                  <picture class="travel-country-card__img-container">
+                    <source media="(min-width: 1200px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
+                    <img class="travel-country-card__img" src="./img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x" alt="Фото Франции" width="270" height="110">
+                  </picture>
+                  <div class="flags travel-country-card__flags">
+                    <svg class="flags__svg flags__svg--france" width="71" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
+                      <g fill-rule="nonzero" fill="none">
+                        <path d="M6.51.11A6.36 6.36 0 0 0 .15 6.47v34.27a6.36 6.36 0 0 0 6.36 6.36h17V.1l-17 .01z" fill="#4758A9"/>
+                        <path d="M23.49.11v47h23.35v-47H23.49z" fill="#FFF"/>
+                        <path d="M63.78.11H46.83v47h16.95a6.36 6.36 0 0 0 6.36-6.36V6.48A6.36 6.36 0 0 0 63.78.11z" fill="#ED5565"/>
+                      </g>
+                    </svg>
                   </div>
                   <div class="travel-country-card__wrapper">
-                    <div class="travel-country-card__cont">
+                    <div class="travel-country-card__container">
                       <h3 class="travel-country-card__country">Франция</h3>
                       <p class="travel-country-card__slogan">Трэ бьен, манифик!</p>
                     </div>
@@ -298,11 +379,22 @@
               </li>
               <li class="directions__item">
                 <div class="travel-country-card">
-                  <div class="travel-country-card__container">
-                    <img class="travel-country-card__img" src="./img/czech-mobile@1x.jpg" alt="Фото Чехии" width="270" height="109">
+                  <picture class="travel-country-card__img-container">
+                    <source media="(min-width: 1200px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
+                    <img class="travel-country-card__img" src="./img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x" alt="Фото Чехии" width="270" height="110">
+                  </picture>
+                  <div class="flags travel-country-card__flags">
+                    <svg class="flags__svg flags__svg--czech" width="71" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
+                      <g fill-rule="nonzero" fill="none">
+                      <path d="M63.92.55H6.65A6.36 6.36 0 0 0 .29 6.91v17.64h70V6.91A6.36 6.36 0 0 0 63.92.55z" fill="#FFF"/>
+                      <path d="M.28 41.18a6.36 6.36 0 0 0 6.36 6.36h57.28a6.36 6.36 0 0 0 6.36-6.36V24.55h-70v16.63z" fill="#ED5565"/>
+                      <path d="M2.19 2.38a6.34 6.34 0 0 0-1.9 4.54v34.27a6.34 6.34 0 0 0 1.95 4.57l23.05-21.21L2.19 2.38z" fill="#4758A9"/>
+                      </g>
+                    </svg>
                   </div>
                   <div class="travel-country-card__wrapper">
-                    <div class="travel-country-card__cont">
+                    <div class="travel-country-card__container">
                       <h3 class="travel-country-card__country">Чехия</h3>
                       <p class="travel-country-card__slogan">Закоулки старой Европы</p>
                     </div>
@@ -311,7 +403,9 @@
                 </div>
               </li>
             </ul>
-            <a class="directions__button button button--bg-yellow button--size-big button--arrow-right">Показать все</a>
+            <a class="directions__button button button--bg-yellow button--size-big button--arrow-right">
+              Показать все
+            </a>
           </section>
         </div>
       </div>
@@ -319,12 +413,12 @@
         <div class="wrapper__inner">
           <section class="traveller page-main__traveller">
             <div class="traveller__container">
-              <h2 class="traveller__title title title--h2 title--h2-orange">Попутчики</h2>
-              <p class="traveller__text page-main__text--light">
+              <h2 class="traveller__title title--h2 title--color-orange">Попутчики</h2>
+              <p class="traveller__text traveller__text--light">
                 Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
                 Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
               </p>
-              <span class="traveller__text page-main__text--bold">
+              <span class="traveller__text traveller__text--bold">
                 Теперь можно легко найти единомышленников!
               </span>
             </div>
@@ -332,27 +426,67 @@
               <li class="traveller__item">
                 <div class="traveller-card">
                   <div class="traveller-card__wrapper">
-                    <picture>
-                      <source media="(min-width: 1200px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-destop@2x.jpg 2x">
-                      <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
-                      <img class="traveller-card__img" src="./img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Личное фото Тани Фирсовой" width="270" height="270">
-                    </picture>
+                    <div class="traveller-card__img-container">
+                      <div class="traveller-card__level-score">
+                        <svg class="traveller-card__svg" width="100" height="100" viewBox="0 0 100 100">
+                          <circle r="47" cx="50" cy="50" fill="none" stroke="#ff8d30" stroke-width="4" stroke-dasharray="350 10" stroke-dashoffset="140"/>
+                        </svg>
+                        <div class="traveller-card__level-id">
+                          <span class="traveller-card__number">99</span>
+                          <span class="traveller-card__level">level</span>
+                        </div>
+                      </div>
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-destop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+                        <img class="traveller-card__img" src="./img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Личное фото Тани Фирсовой" width="270" height="270">
+                      </picture>
+                    </div>
                     <div class="flags traveller-card__flags">
                       <ul class="flags__list">
-                        <li class="flags__item"></li>
-                        <li class="flags__item"></li>
-                        <li class="flags__item"></li>
+                        <li class="flags__item flags__tooltip" title="Шри-Ланка">
+                          <svg class="flags__svg-card" width="71" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
+                            <g fill-rule="nonzero" fill="none">
+                              <rect fill="#FFCE54" x=".25" y=".52" width="70" height="47" rx="6.36"/>
+                              <path fill="#57A863" d="M5.25 42.52v-37h8.11v37z"/>
+                              <path fill="#FF8416" d="M13.36 42.52v-37h8.11v37z"/>
+                              <path fill="#ED5565" d="M26.47 42.52v-37h38.79v37z"/>
+                              <path d="M59.54 16.69a.72.72 0 0 0-.56-.39.7.7 0 0 0-.61.26.59.59 0 0 0-.15.55 4.29 4.29 0 0 1-1.29-.88 11.63 11.63 0 0 0-3.68-2.14 8.18 8.18 0 0 0-2.81-.15 4.6 4.6 0 0 0-2.13 1 2.06 2.06 0 0 0 0 3l.15.18-.09.14a1.22 1.22 0 0 0 .05 1.37c.26.35.33.35.39.35s.22-.28.23-.37a.46.46 0 0 1 .27-.45c.14-.05.25 0 1.15.33a8.4 8.4 0 0 0 4.39.08 4.71 4.71 0 0 1 2.17 0 1 1 0 0 1 .62.68 1 1 0 0 1-.28.92c-.22.24-.4.35-1.24.58a6 6 0 0 1-2.15.16 9.58 9.58 0 0 0-2.18.12 9.48 9.48 0 0 1-2.41.08h-1.71l-.34-.46a1.18 1.18 0 0 1-.18-.51V21l.2.12a.2.2 0 0 0 .23 0c.11-.1.09-.26-.12-.76a1.26 1.26 0 0 1-.07-.39v-.05a.16.16 0 0 0 .16 0c.06-.05.08-.07.12-1.33.04-1.26 0-1.6-.34-2l-.07-.09.15-.16a2 2 0 0 0 .57-1.08l.13-.8-.64.6a.54.54 0 0 1-.48.21.43.43 0 0 1-.41-.18 2.4 2.4 0 0 0-1-.59.33.33 0 0 0-.3 0 .24.24 0 0 0-.09.2 1.44 1.44 0 0 1-.14.34l-.06.1-.18-.18a1.79 1.79 0 0 0-.71-.45c-.27-.07-.45-.12-.58 0-.13.12-.12.25-.12.42 0 .17-.06.31-.06.31s-.08 0-.29-.17a1.42 1.42 0 0 0-1.28-.3l-.67.07.16.41c0 .1 0 .12-.07.27a1 1 0 0 1-.88.38 1.91 1.91 0 0 0-.68.12 2.31 2.31 0 0 1-.58.13l-.47.07a.74.74 0 0 0-.16-.6.83.83 0 0 0-.64-.27.79.79 0 0 0-.67.32 1.15 1.15 0 0 0-.08 1c0 .12.09.31.12.42a3 3 0 0 0 .62.82c.207.201.4.415.58.64.104.146.241.266.4.35l.54.3-.06-.47c.072.063.149.12.23.17.13.08.25.15.36.09a.23.23 0 0 0 .1-.21.65.65 0 0 1 0-.12c.17.27.36.528.57.77l.14.17a7.35 7.35 0 0 1-2.49-.7c-.67-.3-.88-.36-1-.22a.34.34 0 0 0-.1.31 1 1 0 0 0 .4.54.66.66 0 0 0-.23.38l-.2.63-.19.59.65-.06a4.77 4.77 0 0 0 .59-.09l-.32.59.6-.12a2.48 2.48 0 0 0 .49-.16h.07l.09.13c.05.09.22.35.44.3.22-.05.2-.13.23-.3l.05.11c.18.39.36.57.55.55.19-.02.19 0 .22-.26a.51.51 0 0 1 .17-.2.25.25 0 0 1 .17-.07s.07.06.1.14c.03.08 0 .31-.76.78a5 5 0 0 0-2.53 3.61 3.39 3.39 0 0 0 0 1.23c-.21-.23-.5-.52-.92-.93l-1.16-1.13a1 1 0 0 0 .52-.89.81.81 0 0 0-.61-.72.93.93 0 0 0-.38 0c0-.34.06-1 .09-2.55.08-4.13.38-7.27.78-8 .1-.18.17-.32.05-.43-.12-.11-.25 0-.58.19a4.26 4.26 0 0 0-1.38 1.6c-.7 1.32-1 3.12-1 6.86a23.17 23.17 0 0 0 .05 2.35.92.92 0 0 0-.41 0 .8.8 0 0 0-.64.69 1 1 0 0 0 .64 1c.147.068.301.118.46.15a.32.32 0 0 0-.08.29.31.31 0 0 0 0 .11.34.34 0 0 0-.17.1c-.07.08-.13.23 0 .49a.5.5 0 0 0 .22.22.36.36 0 0 0-.1.36c.032.1.1.186.19.24a.4.4 0 0 0 0 .24.43.43 0 0 0 .27.42.5.5 0 0 0 0 .23l-.13-.06a.45.45 0 0 0-.46 0 .42.42 0 0 0-.07.65.81.81 0 0 0 .62.15.7.7 0 0 1-.14.21l-.28.31.23.32a.82.82 0 0 1 0 .91l-.05.06a.49.49 0 0 0-.47-.22.4.4 0 0 0-.3.31c-.07.25 0 .39.25.58a1 1 0 0 0 .55.25.61.61 0 0 1-.12.12l-.52.4.72.11h.21c.06.22.25.65.45.65s.29-.18.33-.23a.81.81 0 0 0 .15-.42h.21l.73-.1-.54-.43-.11-.1a1.13 1.13 0 0 0 .82-.55.46.46 0 0 0-.07-.43.47.47 0 0 0-.45-.15.36.36 0 0 0-.27.24l-.06-.06a.75.75 0 0 1 0-1c.21-.24.17-.35-.05-.56a.8.8 0 0 1-.19-.31h.11a.53.53 0 0 0 .54 0 .36.36 0 0 0 .14-.43.51.51 0 0 0-.38-.27.48.48 0 0 0 .27-.14.85.85 0 0 0 .16.15c.16.12.16.12.16.78s0 .84.19 1c.19.16.18.17.3.12a.22.22 0 0 0 .12-.23.33.33 0 0 1 .2-.12c.23.175.447.365.65.57.265.28.572.516.91.7h.25a1.36 1.36 0 0 0 .41-.12 2.79 2.79 0 0 0 1-.87 7.7 7.7 0 0 0 .85.52c.202.14.436.226.68.25.07.24.16.51.26.81.53 1.57.35 2-.21 2.35-.19.11-.29.13-.91.13-.62 0-.81 0-1.07.21a1.91 1.91 0 0 0-.54 1.1.25.25 0 0 0 .12.22c.13.07.3 0 .59-.13l.13-.08a.57.57 0 0 0 .38.21 1 1 0 0 0 .69-.18l.1-.07.07.07a.85.85 0 0 0 .56.2 1 1 0 0 0 .58-.19l.1-.07c.175.111.374.18.58.2.42.05.48 0 .73-.34a.85.85 0 0 0 .18-.74c0-.16-.06-.42-.06-.58a.94.94 0 0 1 0-.16c.096-.05.196-.09.3-.12a5.89 5.89 0 0 0 .63-.25c.16-.09.73-.68.73-.9 0-.22-.14-.22-.56-.26-.42-.04-.56-.13-.63-.28-.07-.15 0-.5.29-.93.17-.26.32-.51.46-.76l.28-.06c.15 0 .95-.38 1.61-.68a8 8 0 0 1 3.57-1v.28a3.21 3.21 0 0 0 .93 1.94 2.63 2.63 0 0 1 .79 2.23v1l-.16.15c-.15.14-.17.16-.81.2-.64.04-.78.06-1 .26a1.14 1.14 0 0 0-.43.69.35.35 0 0 0 0 .32.28.28 0 0 0 .23.09 1.28 1.28 0 0 0 .52-.21l.17-.11.1.09a.68.68 0 0 0 1 0 .63.63 0 0 0 .54.25c.29 0 .44 0 .59-.23l.14.09c.179.127.39.2.61.21a.56.56 0 0 0 .34-.11l.05.05c.15.11.36 0 .63-.16l.14-.09a.57.57 0 0 0 .4.24.85.85 0 0 0 .64-.21l.11-.09.12.09a.87.87 0 0 0 .76.18.64.64 0 0 0 .37-.27c.288.21.647.3 1 .25a.3.3 0 0 0 .23-.17.66.66 0 0 0-.13-.52 2 2 0 0 1-.47-1c0-.34.07-.5.53-.84.46-.34.71-.74.62-1a.37.37 0 0 0-.4-.25c-.2 0-.43-.21-.58-.54-.34-.77-.27-1.63.26-3.1a6.62 6.62 0 0 0 .62-2.89 3 3 0 0 0-.22-1.49 5.3 5.3 0 0 0-.54-1l-.21-.29.28-.23a2.1 2.1 0 0 0 .82-1.92 2.15 2.15 0 0 0-1.35-1.65 2.61 2.61 0 0 0-1.41-.22 11.61 11.61 0 0 0-1.62.14 10.87 10.87 0 0 1-1.57.13c-.76 0-.86 0-1.11-.15-.25-.15-.28-.17-.33-.5a.39.39 0 0 0-.24-.31c-.21-.07-.61.3-.78.54a1.55 1.55 0 0 1-.15-.31c-.07-.2-.07-.43.37-.65l.61-.29-.46-.28a1.13 1.13 0 0 0-.86-.11 1.16 1.16 0 0 0-.73.5l-.05.08-.16-.15a.74.74 0 0 1-.24-.7.76.76 0 0 1 .53-.53.63.63 0 0 1 .47 0 .18.18 0 0 1 .09.11c.08.29.28.26.32.25.27-.05.43-.53.38-.89v-.12c.392.08.745.292 1 .6a1.13 1.13 0 0 1 0 1.12l-.39.64.62-.12a1.64 1.64 0 0 0 1-.65 1.53 1.53 0 0 0 .07-1.3c.253.108.459.303.58.55.117.16.14.37.06.55a1.79 1.79 0 0 1-.22.49c-.1.13-.18.24-.12.36a.23.23 0 0 0 .22.11 1.6 1.6 0 0 0 .88-.4c.11-.132.197-.28.26-.44.234.335.56.596.94.75.45.19.62.21.7.07.08-.14-.08-.28-.14-.33a2.09 2.09 0 0 1-.26-.61c.22.16.58.45 1 .84a2.4 2.4 0 0 0 1.75.81 1.14 1.14 0 0 0 1-.52 1 1 0 0 0 .31-1.09zM34.4 28a.66.66 0 0 0 .26-.07.2.2 0 0 0 .08.06 1 1 0 0 0-.26 0l-.08.01zm20.85 6a2.2 2.2 0 0 0-1.2.62 2.55 2.55 0 0 0-.12-.53c-.14-.43-.1-.66.45-1.31.08-.09.47-.56.47-.77a.3.3 0 0 0-.08-.23c-.09-.09-.23-.09-.45-.09s-.3 0-.42-.14-.25-.37.05-.75l.2-.25.19.12c1.55 1 1.55 1 1.62 2.08.07 1.08.04 1.11-.71 1.25z" fill="#FFCE54"/>
+                            </g>
+                          </svg>
+                        </li>
+                        <li class="flags__item flags__tooltip" title="Тайланд">
+                          <svg class="flags__svg-card" width="71" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
+                            <g fill-rule="nonzero" fill="none">
+                            <rect fill="#ED5565" x=".25" y=".07" width="70" height="47" rx="6.36"/>
+                            <path fill="#FFF" d="M.25 9.57h70v28h-70z"/>
+                            <path fill="#4758A9" d="M.25 13.57h70v20h-70z"/></g>
+                          </svg>
+                        </li>
+                        <li class="flags__item flags__tooltip" title="Сейшелы">
+                          <svg class="flags__svg-card" width="71" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
+                            <g fill-rule="nonzero" fill="none">
+                              <path d="M3.88 47l.51-.12 66.47-30.61V7.33A6.36 6.36 0 0 0 64.5.97H46.6L2.28 45.59A6.39 6.39 0 0 0 3.88 47z" fill="#ED5565"/>
+                              <path d="M7.24 1A6.36 6.36 0 0 0 .88 7.36v34.27c0 .915.197 1.819.58 2.65L24.15 1H7.24z" fill="#4758A9"/>
+                              <path d="M25.1 1h-.95L1.45 44.28c.14.306.304.6.49.88.11.16.22.31.34.46L46.6 1H25.1z" fill="#FFCE54"/>
+                              <path fill="#FFF" d="M70.87 30.89V16.26L4.4 46.87z"/>
+                              <path d="M4.4 46.87l-.41.19a6.32 6.32 0 0 0 3.25.9h57.27a6.36 6.36 0 0 0 6.36-6.36V30.9L4.4 46.87z" fill="#57A863"/>
+                            </g>
+                          </svg>
+                        </li>
                       </ul>
                     </div>
                   </div>
                   <div class="traveller-card__discription">
-                    <b class="traveller-card__name traveller-card__name--status traveller-card__name--offline">Таня Фирсова</b>
+                    <b class="traveller-card__name traveller-card__name--offline">
+                      Таня Фирсова
+                    </b>
                     <p class="traveller-card__hobbys">
                       #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
                     </p>
                     <div class="transport traveller-card__transport">
                       <ul class="transport__list">
-                        <li class="transport__item transport__item--active">
+                        <li class="transport__item transport__item--active transport__tooltip" title="Авиаперелет">
                           <svg class="transport__svg transport__svg--plane traveller-card__svg--plane transport__svg--active" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
                             <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
@@ -364,7 +498,7 @@
                             c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
                           </svg>
                           <span class="visually-hidden">Самолет</span></li>
-                        <li class="transport__item">
+                        <li class="transport__item transport__tooltip" title="Автотранспорт">
                           <svg class="transport__svg transport__svg--bus traveller-card__svg--bus" version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
                             <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
@@ -375,7 +509,7 @@
                           </svg>
                           <span class="visually-hidden">Автобус</span>
                         </li>
-                        <li class="transport__item">
+                        <li class="transport__item transport__tooltip" title="Велосипед">
                           <svg class="transport__svg transport__svg--bike traveller-card__svg--bike" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
                             <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
@@ -386,7 +520,7 @@
                           </svg>
                           <span class="visually-hidden">Велосипед</span>
                         </li>
-                        <li class="transport__item">
+                        <li class="transport__item transport__tooltip" title="Пешком">
                           <svg class="transport__svg transport__svg--foot traveller-card__svg--foot" version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
                             <g>
@@ -408,26 +542,55 @@
               <li class="traveller__item">
                 <div class="traveller-card">
                   <div class="traveller-card__wrapper">
-                    <picture>
-                      <source media="(min-width: 1200px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
-                      <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
-                      <img class="traveller-card__img" src="./img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="Личное фото Пети Демина" width="270" height="270">
-                    </picture>
-                      <div class="flags traveller-card__flags">
+                    <div class="traveller-card__img-container">
+                      <div class="traveller-card__level-score">
+                        <svg class="traveller-card__svg" width="100" height="100" viewBox="0 0 100 100">
+                          <circle r="47" cx="50" cy="50" fill="none" stroke="#ff8d30" stroke-width="4" stroke-dasharray="180 48" stroke-dashoffset="10"/>
+                        </svg>
+                        <div class="traveller-card__level-id">
+                          <span class="traveller-card__number">80</span>
+                          <span class="traveller-card__level">level</span>
+                        </div>
+                      </div>
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                        <img class="traveller-card__img" src="./img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="Личное фото Пети Демина" width="270" height="270">
+                      </picture>
+                    </div>
+                    <div class="flags traveller-card__flags">
                       <ul class="flags__list">
-                          <li class="flags__item"></li>
-                          <li class="flags__item"></li>
+                          <li class="flags__item flags__tooltip" title="Бельгия">
+                            <svg class="flags__svg-card" width="71" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
+                              <g fill-rule="nonzero" fill="none">
+                                <path d="M7.27.85A6.36 6.36 0 0 0 .91 7.21v34.27a6.36 6.36 0 0 0 6.36 6.36h17v-47l-17 .01z" fill="#434A54"/>
+                                <path d="M24.25.85v47H47.6v-47H24.25z" fill="#FFCE54"/>
+                                <path d="M64.54.85H47.59v47h16.95a6.36 6.36 0 0 0 6.36-6.36V7.21A6.36 6.36 0 0 0 64.54.85z" fill="#ED5565"/>
+                              </g>
+                            </svg>
+                          </li>
+                          <li class="flags__item flags__tooltip" title="Чехия">
+                            <svg class="flags__svg-card" width="71" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
+                              <g fill-rule="nonzero" fill="none">
+                              <path d="M63.92.55H6.65A6.36 6.36 0 0 0 .29 6.91v17.64h70V6.91A6.36 6.36 0 0 0 63.92.55z" fill="#FFF"/>
+                              <path d="M.28 41.18a6.36 6.36 0 0 0 6.36 6.36h57.28a6.36 6.36 0 0 0 6.36-6.36V24.55h-70v16.63z" fill="#ED5565"/>
+                              <path d="M2.19 2.38a6.34 6.34 0 0 0-1.9 4.54v34.27a6.34 6.34 0 0 0 1.95 4.57l23.05-21.21L2.19 2.38z" fill="#4758A9"/>
+                              </g>
+                            </svg>
+                          </li>
                         </ul>
                     </div>
                   </div>
                   <div class="traveller-card__discription">
-                    <b class="traveller-card__name traveller-card__name--status traveller-card__name--online">Петя Демин</b>
+                    <b class="traveller-card__name traveller-card__name--online">
+                      Петя Демин
+                    </b>
                     <p class="traveller-card__hobbys">
                       #бургер #бар #футбол #концерт #крафт
                     </p>
                     <div class="transport traveller-card__transport">
                       <ul class="transport__list">
-                        <li class="transport__item transport__item--active">
+                        <li class="transport__item transport__item--active transport__tooltip" title="Авиаперелет">
                           <svg class="transport__svg transport__svg--plane traveller-card__svg--plane transport__svg--active" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
                             <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
@@ -440,7 +603,7 @@
                           </svg>
                           <span class="visually-hidden">Самолет</span>
                         </li>
-                        <li class="transport__item transport__item--active">
+                        <li class="transport__item transport__item--active transport__tooltip" title="Автотранспорт">
                           <svg class="transport__svg transport__svg--bus traveller-card__svg--bus transport__svg--active" version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
                             <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
@@ -451,7 +614,7 @@
                           </svg>
                           <span class="visually-hidden">Автобус</span>
                         </li>
-                        <li class="transport__item">
+                        <li class="transport__item transport__tooltip" title="Велосипед">
                           <svg class="transport__svg traveller-card__svg--bike transport__svg--bike" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
                             <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
@@ -462,7 +625,7 @@
                           </svg>
                           <span class="visually-hidden">Велосипед</span>
                         </li>
-                        <li class="transport__item transport__item--active">
+                        <li class="transport__item transport__item--active transport__tooltip" title="Пешком">
                           <svg class="transport__svg transport__svg--foot traveller-card__svg--foot transport__svg--active" version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
                             <g>
@@ -489,9 +652,10 @@
       <div class="wrapper wrapper--bg-gray wrapper--bottom-radius">
         <div class="wrapper__inner">
           <section class="distribution page-main__distribution">
-            <h2 class="distribution__title title title--h2 title--h2-orange">
+            <h2 class="distribution__title title title--h2 title--color-orange">
               Добавьте свой профиль
             </h2>
+            <img class="distribution__img" srcset="img/img/rates@1x.png 1x, img/rates@2x.png 2x" width="99" height="99">
             <ul class="distribution__list">
               <li class="distribution__item">
                 <div class="distribution__container">
@@ -515,59 +679,76 @@
                 <span class="distribution__number distribution__number--light-yellow">3</span>
               </li>
             </ul>
-            <a class="distribution__link" href="#" >Показать тарифы для бизнеса</a>
+            <div class="distribution__link-container">
+              <div class="distribution__svg-container">
+                <svg class="distribution__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                  <path class="st0" d="M16.4,15.1c-0.9-1.2-2-2-3.6-2.4l-1.5,5.2c0,0.5-0.4,0.9-0.9,0.9c-0.5,0-0.9-0.4-0.9-0.9v-4.2
+                  c0-0.6-0.5-1.1-1.1-1.1c-0.6,0-1.1,0.5-1.1,1.1v4.2c0,0.5-0.4,0.9-0.9,0.9c-0.5,0-0.9-0.4-0.9-0.9l-1.5-5.2
+                  c-1.6,0.4-2.7,1.2-3.6,2.4C0.2,15.6,0,16.6,0,17.1c0,0.1,0,0.3,0,0.4v0.9v0.9c0,1,0.8,1.7,1.7,1.7h13.5c1,0,1.7-0.8,1.7-1.7v-0.9
+                  v-0.9c0-0.2,0-0.3,0-0.4C17,16.6,16.8,15.6,16.4,15.1z M3.9,4.6c0,2.6,1.6,6.3,4.6,6.3c2.9,0,4.6-3.8,4.6-6.3c0-2.6-2-4.6-4.6-4.6
+                  C6,0,3.9,2.1,3.9,4.6z"/>
+                </svg>
+              </div>
+              <a class="distribution__link" href="#" >Показать тарифы для бизнеса</a>
+            </div>
           </section>
         </div>
       </div>
       <div class="wrapper wrapper--bg-blue wrapper--bottom-radius">
         <div class="wrapper__inner">
           <section class="subscription page-main__subscription">
-            <h2 class="subscription__title title title--h2 title--h2-orange">Заинтересовались?</h2>
+            <h2 class="visually-hidden">Регистрация и обратная связь</h2>
+            <span class="subscription__title title title--h2 title--color-orange">Заинтересовались?</span>
             <p class="subscription__text">
-              Зарегистрируйтесь,
-              это быстро и бесплатно!
+              Зарегистрируйтесь, это быстро и бесплатно!
               Уже зарегистрированы? Тогда скорее <a class="subscription__link">авторизуйтесь</a>.
             </p>
             <form action="https://echo.htmlacademy.ru" method="post" name="subscription__form" class="subscription__form">
-              <label for="subscription-field" class="visually-hidden">Электронная почта</label>
-              <input class="subscription__input" type="email" name="subscription-form" id="subscription-field" placeholder="E-mail" required>
-              <button type="submit" class="button subscription__button button--bg-yellow button--arrow-right button--arrow-right-subscribe"><span class="subscription__button--text"> Регистрация</span></button>
+              <div class="subscription__input-container">
+                <label for="subscription-field" class="visually-hidden">Электронная почта</label>
+                <input class="subscription__input" type="email" name="subscription-form" id="subscription-field" placeholder="E-mail" required>
+              </div>
+              <button type="submit" class="button subscription__button button--bg-yellow button--arrow-right" type="submit">
+                <span class="subscription__button--text">
+                  Регистрация
+                </span>
+              </button>
             </form>
             <p class="subscription__pharagraph">
-              Остались вопросы?
-              Мы с радостью на них ответим!
+              Остались вопросы? Мы с радостью на них ответим!
             </p>
-            <div class="subscription__container">
-              <div class="phone subscription__phone">
-                <a href="tel:+78005558628" class="phone__link phone__link--bg-blue subscription__phone-link">
-                  <svg class="phone__svg phone__svg--yellow subscription__phone-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
-                    <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
-                    c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
-                    c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
-                    c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
-                    M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
-                    c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
-                    c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
-                    c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
-                  </svg>
-                </a>
-                <a href="tel:+78005558628" class="phone__text phone__text--yellow subscription__phone-text">
-                  8 800 555-86-28
+            <div class="subscription__contacts">
+              <div class="subscription__contact-item">
+                <a href="tel:+78005558628" class="contact contact--icon-bg-dark-blue contact--color-yellow contact--show-text">
+                  <div class="contact__icon">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                      <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
+                      c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
+                      c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
+                      c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
+                      M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
+                      c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
+                      c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
+                      c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
+                    </svg>
+                  </div>
+                  <span class="contact__text">8 800 555-86-28</span>
                 </a>
               </div>
-              <div class="mail subscription__mail">
-                <a href="mailto:mail@htmlacademy.ru" class="mail__link mail__link--bg-blue subscription__mail-link">
-                  <svg  class="mail__svg mail__svg--yellow subscription__mail-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
-                    <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
-                    c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
-                    L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
-                    c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
-                  </svg>
-                </a>
-                <a href="mailto:mail@htmlacademy.ru" class="mail__text mail__text--yellow subscription__mail-text">
-                  mail@htmlacademy.ru
+              <div class="subscription__contact-item">
+                <a href="mailto:mail@htmlacademy.ru" class="contact contact--icon-bg-dark-blue contact--color-yellow contact--show-text">
+                  <div class="contact__icon">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
+                      <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
+                      c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
+                      L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
+                      c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
+                    </svg>
+                  </div>
+                  <span class="contact__text">mail@htmlacademy.ru</span>
                 </a>
               </div>
             </div>
@@ -597,12 +778,20 @@
           </section>
         </div>
       </div>
-      <div class="page-main__map">
-        <!--КАРТА-->
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1712.0566339341992!2d30.32383543228358!3d59.93859171300498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1571417828946!5m2!1sru!2sru" width="320" height="312" style="border:0;" allowfullscreen=""></iframe>
+          <div class="map__container">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="map__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="" height="" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          </picture>
+          <img class="map__pin" src="img/map-marker.svg" alt=""  width="41" height="41">
+        </div>
       </div>
     </main>
 
-    <div class="wrapper wrapper--bg-white">
+    <div class="wrapper wrapper--bg-white wrapper--top-radius">
       <div class="wrapper__inner">
         <footer class="page-footer">
           <a href="#" class="logo page-footer__logo">
@@ -682,24 +871,71 @@
             </a>
           </div>
         </footer>
+        <div class="modal">
+          <section class="modal__container">
+            <h2 class="modal__title title title--h2 title--color-orange">
+              Бизнес-тарифы
+            </h2>
+            <ul class="modal__list">
+              <li class="modal__item">
+                <span class="modal__text">Реклама у блоггера</span>
+                <span class="modal__text">300 000 руб./пост</span>
+              </li>
+              <li class="modal__item">
+                <span class="modal__text">Накрутка подписчиков</span>
+                <span class="modal__text">от 1 руб./шт.</span>
+              </li>
+              <li class="modal__item">
+                <span class="modal__text">Лайки от ботов</span>
+                <span class="modal__text">от 20 коп./лайк</span>
+              </li>
+              <li class="modal__item">
+                <span class="modal__text">Ваш продакт-плейсмент</span>
+                <span class="modal__text">Индивидуально</span>
+              </li>
+            </ul>
+            <button class="modal__button button">Закрыть окно</button>
+          </section>
+        </div>
       </div>
     </div>
     <script>
-      var navMain = document.querySelector('.main-nav');
-      var siteNav = document.querySelector('.site-navigation-wrapper');
-      var headerToggle = document.querySelector('.page-header__toggle');
-      navMain.classList.remove('main-nav--nojs');
+      var siteMenu = document.querySelector('.site-menu');
+      var siteMenuToggle = document.querySelector('.page-header__toggle');
+      var getIsDesktop = function () {
+        return window.matchMedia("(min-width: 1440px)").matches
+      }
 
-      headerToggle.addEventListener('click', function() {
-        if (siteNav.classList.contains('site-navigation-wrapper--closed')) {
-          siteNav.classList.remove('site-navigation-wrapper--closed');
-          siteNav.classList.add('site-navigation-wrapper--opened');
-        } else {
-          siteNav.classList.add('site-navigation-wrapper--closed');
-          siteNav.classList.remove('site-navigation-wrapper--opened');
+      if (getIsDesktop()) {
+        if (siteMenu.classList.contains('site-menu--closed')) {
+          siteMenu.classList.remove('site-menu--closed');
         }
-      });
-    </script>
+      }
 
+      window.addEventListener('resize', function() {
+        if (getIsDesktop() && siteMenu.classList.contains('site-menu--closed')) {
+            siteMenu.classList.remove('site-menu--closed');
+        } else {
+          siteMenu.classList.add('site-menu--closed');
+        }
+      })
+
+      siteMenuToggle.addEventListener('click', function() {
+        siteMenuToggle.classList.toggle('page-header__toggle--closed');
+        siteMenu.classList.toggle('site-menu--closed');
+      });
+      var link = document.querySelector(".distribution__link-container");
+      var popup = document.querySelector(".modal");
+      var close = popup.querySelector(".modal__button");
+
+      link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal--show");
+    });
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal--show");
+    });
+    </script>
   </body>
 </html>

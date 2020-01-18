@@ -1,5 +1,62 @@
 .flags__list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  .list-reset();
+}
+.flags__item {
+  cursor: pointer;
+}
+.flags__item:not(:last-child) {
+  margin-right: 19px;
+}
+.flags__tooltip {
+  display: inline;
+  position: relative;
+}
+.flags__tooltip::after {
+  display: none;
+  background: #101d41;
+  border-radius: 4px;
+  color: #fff;
+  content: attr(title);
+  margin-left: -50px;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 19px 20px 15px;
+  min-width: 110px;
+  z-index: 5;
+  position: absolute;
+  top: 40px;
+}
+.flags__tooltip:hover::after {
+  display: flex;
+  justify-content: center;
+}
+.flags__tooltip::before {
+  display: none;
+  border: solid;
+  border-color: #101d41 transparent;
+  border-width: 0 8px 8px 8px;
+  content: "";
+  left: 10px;
+  bottom: -10px;
+  position: absolute;
+}
+.flags__tooltip:hover::before {
+  display: block;
+}
+.flags__svg {
+  width: 35px;
+  height: 24px;
+}
+.flags__svg-card {
+  width: 35px;
+  height: 24px;
+}
+@media (min-width: @tablet-width) {
+  .flags__svg {
+    width: 70px;
+    height: 47px;
+  }
 }

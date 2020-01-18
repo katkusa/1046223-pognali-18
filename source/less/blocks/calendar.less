@@ -5,11 +5,32 @@
 .calendar__cell {
   font-size: 14px;
   line-height: 18px;
-  color: rgba(68, 68, 68, 0.3);
-  border: 1px solid rgba(68, 68, 68, 0.3);
+  background-color: #edeff6;
+  color: #444444;
+  border: 1px solid #cbced9;
   border-collapse: collapse;
   width: 31px;
   height: 30px;
+}
+.calendar__cell--disabled {
+  color: rgba(68, 68, 68, 0.3);
+  background-color: @white;
+}
+.calendar__cell--selected{
+  color: @white;
+  background-color: #101d41;
+  box-sizing: border-box;
+}
+.calendar__cell--selected:hover {
+  background-color: #1d2e5b;
+  outline: 4px solid #ff5c23;
+  border: 1px solid transparent;
+}
+.calendar__cell--active:hover {
+  background-color: #1d2e5b;
+  border: 1px solid transparent;
+  outline: 4px solid #ff5c23;
+  color: @white;
 }
 .calendar__cell--text {
   display: none;
@@ -17,17 +38,12 @@
 .calendar__cell--day {
   color: @very-dark-gray;
   border: transparent;
+  background-color: transparent;
 }
 .calendar__cell--day-red {
   color: #ff5c23;
 }
-.calendar__cell--active {
-  color: @white;
-  background-color: @dark-slate-blue;
-}
-.calendar__cell--red-border {
-  border: 2px solid #ff5c23;
-}
+
 .calendar__cell--gray {
   color: @very-dark-gray;
   background-color: @light-grayish-blue;
@@ -43,6 +59,8 @@
 }
 .calendar__button {
   padding: 0;
+  background-color: transparent;
+  border: transparent;
 }
 .calendar__button::before {
   position: relative;
@@ -103,6 +121,9 @@
   }
 }
 @media (min-width: @desktop-width) {
+  .calendar__row .selected {
+    padding-bottom: 20px;
+  }
   .calendar__button::before {
     width: 18px;
     height: 18px;

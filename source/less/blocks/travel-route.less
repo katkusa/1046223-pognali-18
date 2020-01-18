@@ -6,6 +6,10 @@
   text-transform: uppercase;
   border: 1px solid #cbced9;
 }
+.travel-route__button-container {
+  display: flex;
+  flex-direction: column;
+}
 .travel-route__button {
   font-size: 14px;
   line-height: 18px;
@@ -14,6 +18,9 @@
   text-transform: uppercase;
   background-color: @light-grayish-blue;
   border-radius: 4px;
+  margin: 0;
+  position: relative;
+  opacity: 0.3;
 }
 .travel-route__button--back {
   font-size: 17px;
@@ -21,4 +28,421 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #161c35;
+  background-color: transparent;
 }
+.travel-route__button--back:hover,
+.travel-route__button--back:focus {
+  opacity: 0.7;
+}
+.travel-route__button--back:active {
+  opacity: 0.3;
+}
+.travel-route__button--next {
+  padding: 10px 40px 5px 38px;
+  margin-bottom: 19px;
+}
+.travel-route__title {
+  margin-bottom: 18px;
+}
+.travel-route__pharagraph {
+  margin: 0;
+  margin-bottom: 24px;
+}
+.travel-route__text {
+  color: #1d2e5b;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.4px;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.travel-route__country-item {
+  display: flex;
+  margin-bottom: 22px;
+  position: relative;
+}
+.travel-route__flag {
+  width: 35px;
+  height: 24px;
+}
+.travel-route__button--arrow {
+  background-color: transparent;
+  padding: 0;
+  opacity: 0.3;
+}
+.travel-route__button--arrow::before {
+  position: relative;
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  transform: rotate(135deg);
+}
+.travel-route__country-container {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  padding: 16px 11px 13px 12px;
+  min-width: 143px;
+  position: relative;
+}
+.travel-route__country-container::after {
+  content: '';
+  position: absolute;
+  background-image: url("../../img/small-arrow.svg");
+  width: 5px;
+  height: 10px;
+  top: 53px;
+  left: 165px;
+  fill: #cbced9;
+}
+.travel-route__country-container--bgcolor::after {
+  display: none;
+}
+.travel-route__container {
+  display: flex;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  padding: 9px;
+  position: relative;
+}
+.travel-route__button--delete {
+  position: absolute;
+  top: -10px;
+  left: 100%;
+  margin-left: -10px;
+  background-color: #edeff6;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+}
+.travel-route__button--delete {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    right: 3px;
+    width: 15px;
+    height: 1px;
+    background-color: #cccccc;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+.travel-route__container-circle {
+  position: relative;
+}
+.travel-route__circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -4px;
+  bottom: 0;
+  right: 0;
+  margin-top: -4px;
+  z-index: 2;
+}
+.travel-route__circle--selected {
+  background-color: #1d2e5b;
+}
+.travel-route__circle--choose {
+  width: 7px;
+  height: 7px;
+  background-color: @white;
+  border: 1px solid #cbced9;
+  left: 75%;
+  top: -25px;
+}
+.travel-route__circle--add {
+  width: 7px;
+  height: 7px;
+  background-color: #edeff6;
+  border: 1px solid #cbced9;
+  left: 75%;
+  top: -25px;
+}
+.travel-route__dropdown {
+  display: flex;
+  flex-direction: column;
+}
+.travel-route__dropdown-container {
+  position: relative;
+}
+.travel-route__button-dropdown {
+  position: relative;
+  background-color: transparent;
+}
+.travel-route__country-option {
+  display: none;
+}
+.travel-route__dropdown--opened .travel-route__country-container--hover {
+  border: transparent;
+}
+.travel-route__dropdown--opened .travel-route__country-option{
+  display: flex;
+  flex-direction: column;
+}
+.travel-route__dropdown--opened .travel-route__button--delete {
+  display: none;
+}
+.travel-route__dropdown--opened .travel-route__circle--choose {
+  display: none;
+}
+.travel-route__dropdown--opened .travel-route__button-dropdown {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    right: 3px;
+    width: 15px;
+    height: 2px;
+    background-color: @white;
+    opacity: 1;
+    border: transparent;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+.travel-route__country-container--hover:hover,
+.travel-route__country-container--hover:focus {
+  border: 1px solid #959bb2;
+}
+.travel-route__country-container--hover:hover .travel-route__button--arrow,
+.travel-route__country-container--hover:focus .travel-route__button--arrow {
+  opacity: 0.5;
+}
+.travel-route__dropdown--opened .travel-route__country-container {
+  background-color: #1d2e5b;
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.travel-route__dropdown--opened .travel-route__text {
+  color: @white;
+  font-weight: 500;
+}
+.travel-route__button--plus {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    background-color: black;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+.travel-route__button--plus::after {
+  transform: rotate(90deg);
+}
+.travel-route__country-container--bgcolor {
+  background-color: #edeff6;
+}
+.travel-route__country-choice {
+  margin-bottom: 25px;
+}
+@media (min-width: @tablet-width) {
+  .travel-route__title {
+    margin-bottom: 37px;
+  }
+  .travel-route__pharagraph {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .travel-route__container-head {
+    margin-bottom: 41px;
+    padding-bottom: 35px;
+    padding-right: 90px;
+    border-bottom: 1px solid #d6d9e6;
+  }
+  .travel-route__country-container {
+    padding: 27px 27px 24px 27px;
+    width: 313px;
+  }
+  .travel-route__text {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+  .travel-route__country-item {
+    margin-bottom: 15px;
+  }
+  .travel-route__container {
+    border: transparent;
+    padding: 0;
+    align-items: center;
+  }
+  .travel-route__flag {
+    width: 70px;
+    height: 47px;
+  }
+  .travel-route__container-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 53px;
+  }
+  .travel-route__circle {
+    position: initial;
+    width: 15px;
+    height: 15px;
+  }
+  .travel-route__circle::before {
+    content: '';
+    position: absolute;
+    background-color: #d6d9e6;
+    width: 1px;
+    height: 73px;
+    top: 41px;
+    left: 26px;
+  }
+  .travel-route__circle--line::after {
+    content: '';
+    position: absolute;
+    background-color: #d6d9e6;
+    width: 1px;
+    height: 68px;
+    top: -42px;
+    left: 26px;
+  }
+  .travel-route__circle--choose {
+    width: 13px;
+    height: 13px;
+  }
+  .travel-route__circle--add {
+    width: 13px;
+    height: 13px;
+  }
+  .travel-route__dropdown-container {
+    display: flex;
+  }
+  .travel-route__button--delete {
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    margin: 0;
+    background-color: transparent;
+    width: 17px;
+    height: 17px;
+  }
+  .travel-route__button--delete-choose {
+    left: 520px;
+  }
+  .travel-route__button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .travel-route__button--next {
+    margin: 0;
+    text-transform: initial;
+    color: #1d2e5b;
+    padding: 27px 78px 24px 34px;
+    border-radius: 20px;
+    position: relative;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .travel-route__button--next::after {
+    content: "";
+    position: absolute;
+    right: 36px;
+    top: 50%;
+    margin-top: -6px;
+    border: 6px solid transparent;
+    border-left: 10px solid #1d2e5b;
+    width: 0px;
+    height: 0px;
+  }
+  .travel-route__button--back {
+    text-transform: initial;
+    color: #1d2e5b;
+    position: relative;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .travel-route__button--back::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    margin-top: -7px;
+    border: 6px solid transparent;
+    border-right: 10px solid #1d2e5b;
+    width: 0px;
+    height: 0px;
+  }
+  .travel-route__country-container::after {
+    display: none;
+  }
+  .travel-route__country-choice {
+    margin-bottom: 49px;
+  }
+  .travel-route__dropdown--opened .travel-route__country-option {
+    flex-direction: row;
+  }
+  .travel-route__dropdown--opened .travel-route__button--delete {
+    display: block;
+  }
+  .travel-route__dropdown--opened .travel-route__circle--choose {
+    display: block;
+  }
+}
+@media (min-width: @desktop-width) {
+  .travel-route__container-head {
+    display: flex;
+    align-items: baseline;
+    padding-right: 0;
+    padding-bottom: 56px;
+    margin-bottom: 62px;
+
+  }
+  .travel-route__pharagraph {
+    margin: 0;
+    padding-right: 390px;
+  }
+  .travel-route__country-container {
+    width: 674px;
+  }
+  .travel-route__container-circle {
+    width: 85px;
+  }
+  .travel-route__circle::before {
+    left: 42px;
+  }
+  .travel-route__circle--line::after {
+    height: 89px;
+    top: -63px;
+    left: 42px;
+  }
+  .travel-route__button--delete {
+    left: 170px;
+  }
+  .travel-route__button--delete-choose {
+    left: 985px;
+  }
+  .travel-route__country-choice {
+    margin-bottom: 56px;
+  }
+}
+

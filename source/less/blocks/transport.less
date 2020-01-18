@@ -18,11 +18,69 @@
 .transport__item {
   width: 33px;
   height: 33px;
+  cursor: pointer;
+}
+.transport__tooltip {
+  display: inline;
+  position: relative;
+}
+.transport__tooltip::after {
+  display: none;
+  background: #101d41;
+  border-radius: 4px;
+  color: #fff;
+  content: attr(title);
+  margin-left: -50px;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 19px 20px 15px;
+  min-width: 110px;
+  position: absolute;
+  z-index: 5;
+}
+.transport__tooltip:hover::after {
+  display: flex;
+  justify-content: center;
+}
+.transport__tooltip::before {
+  display: none;
+  border: solid;
+  border-color: #101d41 transparent;
+  border-width: 0 8px 8px 8px;
+  content: "";
+  left: 10px;
+  bottom: -12px;
+  position: absolute;
+}
+.transport__tooltip:hover::before {
+  display: block;
 }
 .transport__item--bg-white {
   border-radius: 50%;
   background-color: @white;
 }
+.transport__item--bg-white:hover,
+.transport__item--bg-white:focus {
+  box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.08);
+}
+.transport__item--bg-white:active {
+  background-color: #e2e5f1;
+}
+.transport__item--bg-white:hover .transport__svg--noactive,
+.transport__item--bg-white:focus .transport__svg--noactive {
+  fill: rgba(0, 0, 0, 0.3);
+}
+.transport__item--bg-white:active .transport__svg--noactive {
+  fill: rgba(0, 0, 0, 0.1);
+}
+.transport__item--bg-white:active .transport__svg--active {
+  opacity: 0.3;
+}
+.transport__item--bg-white:hover .transport__svg--active,
+.transport__item--bg-white:focus .transport__svg--active {
+  opacity: 0.7;
+}
+
 .transport__item--bg-gray {
   border-radius: 50%;
   background-color: @light-grayish-blue
@@ -65,6 +123,9 @@
   .transport__item {
     width: 43px;
     height: 43px;
+  }
+  .transport__tooltip:hover::before{
+    bottom: -7px;
   }
   .transport__svg--plane {
     width: 19px;

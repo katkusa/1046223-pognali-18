@@ -1,3 +1,13 @@
+.service-info {
+  background-image: url("../../img/about-mobile@2x.png");
+  margin-right: -10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.service-info::before {
+  display: none;
+}
 .service-info__title {
   padding-top: 33px;
   padding-bottom: 23px;
@@ -7,28 +17,100 @@
   padding-bottom: 25px;
   width: 210px;
 }
+.service-info__text--light {
+  font-weight: 300;
+  color: @white;
+}
+.service-info__text--bold {
+  font-weight: 700;
+  color: @white;
+}
 .service-info__button {
   display: none;
 }
 @media (min-width: @tablet-width) {
+  .service-info {
+    background-image: initial;
+  }
+  .service-info::after {
+    content: "";
+    width: 350px;
+    height: 550px;
+    background-image: url("../../img/about-tablet@2x.png");
+    background-size: 380px 550px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 70px;
+  }
+  .service-info::before {
+    display: block;
+    content: "";
+    width: 688px;
+    height: 213px;
+    border-radius: 20px;
+    background-color: #141b3b;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   .service-info__title {
     padding-top: 43px;
     padding-bottom: 43px;
+    z-index: 2;
   }
   .service-info__text {
     padding-bottom: 38px;
     width: 298px;
+    z-index: 2;
+  }
+  .service-info__text--light {
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .service-info__text--bold {
+    font-size: 21px;
+    line-height: 25px;
   }
   .service-info__button {
     display: inline-block;
-    width: 200px;
+    width: 226px;
   }
 }
 @media (min-width: @desktop-width) {
+  .service-info::after {
+    content: "";
+    width: 630px;
+    height: 665px;
+    background-image: url("../../img/about-desktop@2x.png");
+    background-size: 630px 665px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+  }
+  .service-info::before {
+    content: "";
+    width: 213px;
+    height: 213px;
+    border-radius: 20px;
+    background-color: #141b3b;
+    position: absolute;
+    top: 71px;
+    left: 0;
+  }
   .service-info__title {
+    padding-top: 0;
     padding-bottom: 61px;
   }
   .service-info__text {
     padding-bottom: 44px;
+  }
+  .service-info__text--light {
+    width: 640px;
+  }
+  .service-info__text--bold {
+    width: 415px;
+    padding-bottom: 86px;
   }
 }

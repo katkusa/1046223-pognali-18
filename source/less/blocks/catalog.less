@@ -1,25 +1,109 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 27px;
+}
 .catalog__list{
   .list-reset();
+  margin-bottom: 24px;
 }
-.catalog__img {
-  border-radius: 50%;
+.catalog__name-container {
+  display: flex;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 .catalog__name {
   font-size: 20px;
   line-height: 20px;
   font-weight: 700;
   color: @dark-slate-blue;
+  padding-left: 86px;
+  padding-right: 40px;
+  display: block;
+  position: relative;
+}
+.catalog__indicator {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-top: 5px;
+  position: absolute;
+  left: 100%;
+  margin-left: -30px;
+}
+.catalog__indicator--offline {
+  background-color: #f97676;
+}
+.catalog__indicator--online {
+  background-color: #81e31e;
 }
 .catalog__likes {
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
   color: #161c35;
+  padding-left: 86px;
+  position: relative;
 }
-.catalog__text {
+.catalog__likes-svg-container {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 31px;
+  height: 31px;
+  background-color: #edeff6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: #e2e5f2;
+  }
+}
+.catalog__likes-svg {
+  width: 13px;
+  height: 11px;
+  padding: 11px 9px 9px 9px;
+  fill: rgba(25,33,68, 0.3);
+  &:hover,
+  &:focus {
+    fill: #192144;
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 0.1;
+  }
+}
+.catalog__likes-svg-container--red {
+  background-color: #f9eaea;
+  &:hover,
+  &:focus {
+    background-color: #f9d8d8;
+  }
+}
+.catalog__likes-svg--red {
+  fill: #f02323;
+  &:hover,
+  &:focus {
+    fill: #f02323;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+.catalog__text-tags {
   font-size: 15px;
   line-height: 18px;
   font-weight: 400;
+  margin-top: 24px;
+  margin-bottom: 20px;
+  padding-right: 20px;
 }
 .catalog__item-country {
   text-transform: uppercase;
@@ -35,4 +119,390 @@
   text-transform: uppercase;
   color: @dark-slate-blue;
   background-color: transparent;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    top: 5px;
+    left: -25px;
+    background-image: url("../../img/plus-catalog.svg");
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(45deg);
+  }
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+.catalog__item {
+  padding: 15px 20px 22px;
+  background-color: @white;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  &:hover {
+    box-shadow: 0px 6px 21px 0 rgba(0, 0, 0, 0.08);
+  }
+}
+.catalog__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.catalog__img-container {
+  overflow: hidden;
+}
+.catalog__img {
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  transition: all 1s ease-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.catalog__text {
+  display: inline-block;
+  position: relative;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-bottom: 19px;
+  padding: 0 10px;
+  background-color: @white;
+}
+.catalog__text--level {
+  margin-bottom: 12px;
+}
+.catalog__flags-container {
+  position: relative;
+  margin-bottom: 19px;
+}
+.catalog__flags-container::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 1px;
+  width: 270px;
+  background-color: rgba(0,0,0, 0.1)
+}
+.catalog__flags-list {
+  .list-reset();
+  display: flex;
+  flex-direction: column;
+}
+.catalog__flags-item {
+  display: flex;
+  align-items: center;
+}
+.catalog__flags-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.catalog__flags-svg {
+  width: 26px;
+  height: 18px;
+  margin-right: 15px;
+}
+.catalog__flags-svg--germany {
+  opacity: 0.7;
+  border-radius: 6px;
+}
+.catalog__flags-text {
+  color: #1d2e5b;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-top: 5px;
+}
+.catalog__traveller-skills-card {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 14px;
+}
+.catalog__traveller-skills-card::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 1px;
+  width: 270px;
+  background-color: rgba(0,0,0, 0.1)
+}
+.catalog__level {
+  position: relative;
+}
+.catalog__level-text-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+.catalog__level-status {
+  width: 45px;
+  height: 45px;
+}
+.catalog__level-number {
+  font-size: 24px;
+  line-height: 18px;
+  color: #1d2e5b;
+  font-weight: 700;
+}
+.catalog__level-level {
+  display: none;
+}
+@media (min-width: @tablet-width) {
+  .catalog {
+    margin-bottom: 51px;
+  }
+  .catalog__list {
+    margin-bottom: 45px;
+  }
+  .catalog__item {
+    padding: 35px 25px 26px 35px ;
+  }
+  .catalog__img {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    border-radius: 20px;
+  }
+  .catalog__text-container {
+    position: relative;
+    padding-left: 220px;
+    min-height: 200px;
+  }
+  .catalog__name {
+    font-size: 30px;
+    line-height: 30px;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .catalog__indicator {
+    position: static;
+    width: 7px;
+    height: 7px;
+    margin-left: 23px;
+    margin-top: 10px;
+  }
+  .catalog__likes {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: 50px;
+    margin-top: -60px;
+  }
+  .catalog__likes-svg-container {
+    position: static;
+    width: 50px;
+    height: 50px;
+  }
+  .catalog__likes-svg {
+    width: 20px;
+    height: 17px;
+    padding: 17px 15px 16px 15px;
+  }
+  .catalog__likes-text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 9px;
+  }
+  .catalog__text-tags {
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+    padding-right: 120px;
+  }
+  .catalog__traveller-info-container {
+    display: flex;
+    width: 100%;
+    margin-top: 26px;
+  }
+  .catalog__traveller-skills-card {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    top: 30px;
+    left: 100%;
+    margin-left: -90px;
+  }
+  .catalog__traveller-skills-card::before {
+    display: none;
+  }
+  .catalog__text {
+    display: none;
+  }
+  .catalog__text--visit {
+    display: inline-block;
+    margin-bottom: 22px;
+    margin-left: 40px;
+  }
+  .catalog__flags-container::before {
+    left: -35px;
+    width: 688px;
+  }
+  .catalog__flags-list {
+    flex-direction: row;
+    align-items: center;
+  }
+  .catalog__flags-item:not(:last-child) {
+    margin: 0;
+    margin-right: 28px;
+  }
+  .catalog__flags-svg {
+    width: 35px;
+    height: 24px;
+  }
+  .catalog__flags-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .catalog__button {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    left: 50%;
+    margin-left: -110px;
+  }
+  .catalog__transport-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .catalog__transport-item {
+    background-color: transparent;
+  }
+  .catalog__level-text-container {
+    top: 13px;
+    left: 17px;
+  }
+  .catalog__level-status {
+    width: 60px;
+    height: 60px;
+  }
+  .catalog__level-number {
+    line-height: 24px;
+  }
+  .catalog__level-level {
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+    color: rgba(68, 68, 68, 0.4);
+    position: relative;
+    &::before {
+    content:'';
+    position: absolute;
+    top: -2px;
+    left: -3px;
+    width: 31px;
+    height: 1px;
+    background-color: rgba(68, 68, 68, 0.4);
+    }
+  }
+  .catalog__show-button {
+    font-size: 20px;
+    &::before {
+      top: 0;
+      left: -45px;
+      width: 27px;
+      height: 27px;
+      background-size: 18px 18px;
+    }
+  }
+}
+@media (min-width: @desktop-width) {
+  .catalog__list {
+    margin-bottom: 65px;
+    width: 950px;
+  }
+  .catalog__item {
+    padding: 0;
+    padding-right: 44px;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 285px;
+  }
+  .catalog__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .catalog__img {
+    position: static;
+    width: 285px;
+    height: 285px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .catalog__text-container {
+    margin-top: 48px;
+    padding: 0;
+    max-width: 290px;
+  }
+  .catalog__text-tags {
+    padding: 0;
+  }
+  .catalog__traveller-info-container {
+    flex-direction: column;
+    width: 219px;
+    margin: 0;
+    margin-top: 48px;
+    margin-bottom: 42px;
+  }
+  .catalog__traveller-skills-card {
+    position: static;
+    flex-direction: row;
+    margin: 0;
+  }
+  .catalog__transport-list {
+    flex-direction: row;
+  }
+  .catalog__transport-item {
+    width: 30px;
+  }
+  .catalog__flags-container::before {
+    display: none;
+  }
+  .catalog__flags-list {
+    flex-direction: column;
+    align-items: initial;
+  }
+  .catalog__flags-item:not(:last-child) {
+    margin: 0;
+  }
+  .catalog__text {
+    display: none;
+  }
+  .catalog__button {
+    top: 70%;
+    left: 40%;
+    margin-left: -50px;
+  }
+  .catalog__likes {
+    margin: 0;
+    top: 70%;
+    left: 50%;
+    margin-left: 12px;
+    margin-top: -30px;
+  }
+  .catalog__name-container {
+    position: relative;
+  }
+  .catalog__indicator {
+    position: absolute;
+    margin-left: 0;
+    left: -25px;
+  }
 }
