@@ -37,8 +37,7 @@
 @media (min-width: @tablet-width) {
   .site-menu__wrapper {
     max-width: 688px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0 40px;
   }
   .site-menu__authorization-link {
     position: absolute;
@@ -62,16 +61,16 @@
     flex-grow: 1;
     padding: 0;
     padding-left: 145px;
-  }
-  .site-menu::before {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 2px;
-    top: 50%;
-    left: 45px;
-    margin-right: -1px;
-    background-color: @white;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      top: 50%;
+      left: 45px;
+      margin-right: -1px;
+      background-color: @white;
+    }
   }
   .site-menu__contacts--view-desktop {
     display: flex;

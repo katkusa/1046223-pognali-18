@@ -24,6 +24,27 @@
 @media (min-width: @tablet-width) {
   .directions {
     position: relative;
+    &::after {
+      content: '';
+      width: 289px;
+      height: 575px;
+      background-image: url("../../img/flags-back@2x.png");
+      background-size: 289px 575px;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0;
+      top: 79px;
+    }
+    &::before {
+      content: '';
+      width: 141px;
+      height: 141px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+      position: absolute;
+      top: 425px;
+      left: 0;
+    }
   }
   .directions__container {
     padding-left: 0;
@@ -36,6 +57,7 @@
     line-height: 33px;
   }
   .directions__title {
+    max-width: 350px;
     padding: 0;
     margin-bottom: 62px;
   }
@@ -46,28 +68,8 @@
   .directions__item:last-child {
     margin-bottom: 47px;
   }
-  .directions::after {
-    content: "";
-    width: 289px;
-    height: 575px;
-    background-image: url("../../img/flags-back@2x.png");
-    background-size: 289px 575px;
-    background-repeat: no-repeat;
-    position: absolute;
-    right: 0;
-    top: 79px;
-  }
-  .directions::before {
-    content: "";
-    width: 141px;
-    height: 141px;
-    border-radius: 20px;
-    background-color: #e2e5f2;
-    position: absolute;
-    top: 425px;
-    left: 0;
-  }
 }
+
 @media (min-width: @desktop-width) {
   .directions__container {
     order: 2;

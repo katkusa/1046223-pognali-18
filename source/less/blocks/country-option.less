@@ -47,14 +47,15 @@
 }
 .country-option__item {
   cursor: pointer;
+  &:hover,
+  &:focus {
+    color: #1d2e5b;
+  }
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
 }
-.country-option__item:hover,
-.country-option__item:focus {
-  color: #1d2e5b;
-}
-.country-option__item:active {
-  color: rgba(29, 46, 91, 0.3);
-}
+
 @media (min-width: @tablet-width) {
   .country-option {
     width: 497px;

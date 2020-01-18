@@ -13,35 +13,35 @@
 .flags__tooltip {
   display: inline;
   position: relative;
-}
-.flags__tooltip::after {
-  display: none;
-  background: #101d41;
-  border-radius: 4px;
-  color: #fff;
-  content: attr(title);
-  margin-left: -50px;
-  font-size: 20px;
-  line-height: 24px;
-  padding: 19px 20px 15px;
-  min-width: 110px;
-  z-index: 5;
-  position: absolute;
-  top: 40px;
+  &::after {
+    display: none;
+    background: #101d41;
+    border-radius: 4px;
+    color: #fff;
+    content: attr(title);
+    margin-left: -50px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 19px 20px 15px;
+    min-width: 110px;
+    z-index: 5;
+    position: absolute;
+    top: 40px;
+  }
+  &::before {
+    content: '';
+    display: none;
+    border: solid;
+    border-color: #101d41 transparent;
+    border-width: 0 8px 8px 8px;
+    left: 50%;
+    bottom: -10px;
+    position: absolute;
+  }
 }
 .flags__tooltip:hover::after {
   display: flex;
   justify-content: center;
-}
-.flags__tooltip::before {
-  display: none;
-  border: solid;
-  border-color: #101d41 transparent;
-  border-width: 0 8px 8px 8px;
-  content: "";
-  left: 10px;
-  bottom: -10px;
-  position: absolute;
 }
 .flags__tooltip:hover::before {
   display: block;

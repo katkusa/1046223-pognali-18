@@ -235,7 +235,7 @@
                 </picture>
               </div>
             </div>
-            <button class="button button--size-small traveller-id-card__button">
+            <button class="button button--size-small traveller-id-card__button" type="button">
               <span class="traveller-id-card__button-text">Сменить</span> фото
             </button>
             <div class="traveller-id-card__tags">
@@ -324,7 +324,7 @@
                 <b class="country-card__text">
                   26 мар — 29 мар
                 </b>
-                <button class="button country-card__button">
+                <button class="button country-card__button" type="button">
                   Изменить
                 </button>
               </div>
@@ -345,7 +345,7 @@
                 <b class="country-card__text">
                   1 июл — 15 июл
                 </b>
-                <button class="button country-card__button">
+                <button class="button country-card__button" type="button">
                   Изменить
                 </button>
               </div>
@@ -360,397 +360,227 @@
               Добавить план:
             </h2>
             <form action="https://echo.htmlacademy.ru" method="post" name="item-form" class="add-plan-form-container__form">
-              <div class="wrapper wrapper--bg-white wrapper--all-border">
-                <div class="form-wrapper">
-                  <div class="arrival-dates add-plan-form-container__arrival-dates">
-                    <div class="arrival-dates__container">
-                      <div class="arrival-dates__container-text">
-                        <h3 class="arrival-dates__title title title--h3 title--color-blue">
-                          Шаг 1.
-                          Даты пребывания
-                        </h3>
-                        <p class="arrival-dates__pharagraph add-plan-form-container__pharagraph">
-                          Укажите предпочтительное количество попутчиков, которых
-                          вы хотели бы позвать в поездку и ее предполагаемую длительность.
-                        </p>
-                      </div>
-                      <ul class="arrival-dates__list arrival-dates__list--first">
-                        <li class="arrival-dates__item arrival-dates__item--current">
-                          <span class="arrival-dates__item-text">
-                            Даты
-                          </span>
-                        </li>
-                        <li class="arrival-dates__item">
-                          <span class="arrival-dates__item-text">
-                            Маршрут
-                          </span>
-                        </li>
-                        <li class="arrival-dates__item">
-                          <span class="arrival-dates__item-text">
-                            Развлечения
-                          </span>
-                        </li>
-                      </ul>
+              <div class="form-wrapper form-wrapper--bg-white form-wrapper--all-border">
+                <div class="arrival-dates add-plan-form-container__arrival-dates">
+                  <div class="arrival-dates__container">
+                    <div class="arrival-dates__container-text">
+                      <h3 class="arrival-dates__title title title--h3 title--color-blue">
+                        Шаг 1.
+                        Даты пребывания
+                      </h3>
+                      <p class="arrival-dates__pharagraph add-plan-form-container__pharagraph">
+                        Укажите предпочтительное количество попутчиков, которых
+                        вы хотели бы позвать в поездку и ее предполагаемую длительность.
+                      </p>
                     </div>
-                    <div class="arrival-dates__container-check">
-                      <div class="arrival-dates__quantity-container">
-                        <div class="quantity arrival-dates__quantity">
-                          <div class="quantity__container-text">
-                            <b class="quantity__text">
-                              ищу попутчиков:
-                            </b>
-                            <b class="quantity__text quantity__text--gray quantity__text--position quantity__text--blue">
-                              Чел.
-                            </b>
-                          </div>
-                          <div class="quantity__quantity-change quantity__quantity-change--margin">
-                            <button class="quantity__button quantity__button--less" type="button">
-                              <span class="visually-hidden">Меньше</span>
-                            </button>
-                            <input class="quantity__input" id="number" type="number" value="2">
-                            <button class="quantity__button quantity__button--more" type="button">
-                              <span class="visually-hidden">Больше</span>
-                            </button>
-                          </div>
-                        </div>
-                        <div class="quantity arrival-dates__quantity">
-                          <div class="quantity__container-text">
-                            <b class="quantity__text">
-                              длительность:
-                            </b>
-                            <b class="quantity__text quantity__text--gray quantity__text--position quantity__text--blue">
-                              дн.
-                            </b>
-                          </div>
-                          <div class="quantity__quantity-change">
-                            <button class="quantity__button quantity__button--less" type="button">
-                              <span class="visually-hidden">Меньше</span>
-                            </button>
-                            <input class="quantity__input" id="number" type="number" value="2">
-                            <button class="quantity__button quantity__button--more" type="button">
-                              <span class="visually-hidden">Больше</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <label class="arrival-dates__label">
-                        <input type="checkbox" name="children-choice" value="rock" class="arrival-dates__input visually-hidden" checked>
-                        <span class="checkbox-indicator"></span>
-                        <span class="arrival-dates__label-text">Можно с детьми</span>
-                      </label>
-                    </div>
-                    <div class="calendar arrival-dates__calendar">
-                      <div class="calendar__month-container">
-                        <button class="calendar__button button calendar__button--prev" type="button">
-                          <span class="visually-hidden">Назад</span>
-                        </button>
-                        <h3 class="title title--h3 title--color-blue calendar__title">Март 2019</h3>
-                        <button class="calendar__button button calendar__button--next" type="button">
-                          <span class="visually-hidden">Вперед</span>
-                        </button>
-                      </div>
-                      <table class="calendar__table">
-                        <tr class="calendar__row calendar__row-days">
-                          <td class="calendar__cell calendar__cell--day">П<span class="calendar__cell-letter">н</span></td>
-                          <td class="calendar__cell calendar__cell--day">В<span class="calendar__cell-letter">т</span></td>
-                          <td class="calendar__cell calendar__cell--day">С<span class="calendar__cell-letter">р</span></td>
-                          <td class="calendar__cell calendar__cell--day">Ч<span class="calendar__cell-letter">т</span></td>
-                          <td class="calendar__cell calendar__cell--day">П<span class="calendar__cell-letter">н</span></td>
-                          <td class="calendar__cell calendar__cell--day calendar__cell--day-red">С<span class="calendar__cell-letter">б</span></td>
-                          <td class="calendar__cell calendar__cell--day calendar__cell--day-red">В<span class="calendar__cell-letter">с</span></td>
-                        </tr>
-                        <tr class="calendar__row">
-                          <td class="calendar__cell calendar__cell--disabled">23</td>
-                          <td class="calendar__cell calendar__cell--disabled">24</td>
-                          <td class="calendar__cell calendar__cell--disabled">25</td>
-                          <td class="calendar__cell calendar__cell--disabled">26</td>
-                          <td class="calendar__cell calendar__cell--disabled">27</td>
-                          <td class="calendar__cell calendar__cell--disabled">28</td>
-                          <td class="calendar__cell calendar__cell--disabled">
-                            1
-                            <span class="calendar__cell--text calendar__cell--text-grey">
-                              мар
-                            </span>
-                          </td>
-                        </tr>
-                        <tr class="calendar__row">
-                          <td class="calendar__cell calendar__cell--disabled">2</td>
-                          <td class="calendar__cell calendar__cell--disabled">3</td>
-                          <td class="calendar__cell calendar__cell--disabled">4</td>
-                          <td class="calendar__cell calendar__cell--disabled">5</td>
-                          <td class="calendar__cell calendar__cell--disabled">6</td>
-                          <td class="calendar__cell calendar__cell--disabled">7</td>
-                          <td class="calendar__cell calendar__cell--disabled">8</td>
-                        </tr>
-                        <tr class="calendar__row">
-                          <td class="calendar__cell calendar__cell--disabled">9</td>
-                          <td class="calendar__cell calendar__cell--disabled">10</td>
-                          <td class="calendar__cell calendar__cell--disabled">11</td>
-                          <td class="calendar__cell calendar__cell--disabled">12</td>
-                          <td class="calendar__cell calendar__cell--disabled">13</td>
-                          <td class="calendar__cell calendar__cell--disabled">15</td>
-                          <td class="calendar__cell calendar__cell--disabled">14</td>
-                        </tr>
-                        <tr class="calendar__row">
-                          <td class="calendar__cell calendar__cell--disabled">16</td>
-                          <td class="calendar__cell calendar__cell--disabled">17</td>
-                          <td class="calendar__cell calendar__cell--disabled">18</td>
-                          <td class="calendar__cell calendar__cell--disabled">19</td>
-                          <td class="calendar__cell calendar__cell--disabled">20</td>
-                          <td class="calendar__cell calendar__cell--disabled">21</td>
-                          <td class="calendar__cell calendar__cell--disabled">22</td>
-                        </tr>
-                        <tr class="calendar__row">
-                          <td class="calendar__cell calendar__cell--disabled">23</td>
-                          <td class="calendar__cell calendar__cell--disabled">24</td>
-                          <td class="calendar__cell calendar__cell--disabled">25</td>
-                          <td class="calendar__cell calendar__cell--selected">
-                            26
-                          <span class="calendar__cell--text calendar__cell--text-white">
-                            Заезд
-                          </span>
-                          </td>
-                          <td class="calendar__cell calendar__cell--selected calendar__cell--no-text">27</td>
-                          <td class="calendar__cell calendar__cell--selected">
-                            28
-                          <span class="calendar__cell--text calendar__cell--text-white">
-                            Выезд
-                          </span>
-                          </td>
-                          <td class="calendar__cell calendar__cell--active">29</td>
-                        </tr>
-                        <tr class="calendar__row">
-                          <td class="calendar__cell calendar__cell--active">30</td>
-                          <td class="calendar__cell calendar__cell--active">31</td>
-                          <td class="calendar__cell calendar__cell--active">1
-                            <span class="calendar__cell--text calendar__cell--text-black">
-                              апр
-                            </span>
-                          </td>
-                          <td class="calendar__cell calendar__cell--active">2</td>
-                          <td class="calendar__cell calendar__cell--active">3</td>
-                          <td class="calendar__cell calendar__cell--active">4</td>
-                          <td class="calendar__cell calendar__cell--active">5</td>
-                        </tr>
-                      </table>
-                    </div>
-                    <button class="button button--bg-yellow button--size-small arrival-dates__button" type="button">
-                      Cледующий шаг
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="wrapper wrapper--bg-white wrapper--all-border">
-                <div class="form-wrapper">
-                  <div class="travel-route add-plan-form-container__travel-route">
-                    <div class="travel-route__container-head">
-                      <div class="travel-route__text-container">
-                        <h3 class="travel-route__title title title--h3 title--color-blue">
-                          Шаг 2.
+                    <ul class="arrival-dates__list arrival-dates__list--first">
+                      <li class="arrival-dates__item arrival-dates__item--current">
+                        <span class="arrival-dates__item-text">
+                          Даты
+                        </span>
+                      </li>
+                      <li class="arrival-dates__item">
+                        <span class="arrival-dates__item-text">
                           Маршрут
-                        </h3>
-                        <p class="travel-route__pharagraph add-plan-form-container__pharagraph">
-                          Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.
-                        </p>
-                      </div>
-                      <ul class="arrival-dates__list arrival-dates__list--second">
-                        <li class="arrival-dates__item">
-                          <span class="arrival-dates__item-text">
-                            Даты
-                          </span>
-                        </li>
-                        <li class="arrival-dates__item arrival-dates__item--current">
-                          <span class="arrival-dates__item-text">
-                            Маршрут
-                          </span>
-                        </li>
-                        <li class="arrival-dates__item">
-                          <span class="arrival-dates__item-text">
-                            Развлечения
-                          </span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="travel-route__country-choice">
-                      <div class="travel-route__country-item">
-                        <div class="travel-route__country-container">
-                          <b class="travel-route__text">Босния и Герцеговина</b>
-                          <button class="button travel-route__button--arrow" type="button">
-                            <span class="visually-hidden">Выбрать</span>
-                          </button>
-                        </div>
-                        <div class="travel-route__container-circle">
-                          <div class="travel-route__circle travel-route__circle--selected travel-route__circle--line"></div>
-                        </div>
-                        <div class="travel-route__container">
-                          <svg class="travel-route__flag" width="71" height="48" viewBox="0 0 71 48" xmlns="http://www.w3.org/2000/svg">
-                            <g fill-rule="nonzero" fill="none">
-                              <rect fill="#4758A9" x=".9" y=".13" width="70" height="47" rx="6.36"/>
-                              <path fill="#F6D660" d="M13.9.13h37v47z"/>
-                              <path d="M8.19 4.88c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.8c.203.22.517.3.8.2l1.08-.43c.26-.11.36 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.11-1a.84.84 0 0 0-.55-.65l-1-.3zM12.51 10.38c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.8c.203.22.517.3.8.2l1.08-.43c.26-.1.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.3zM16.84 15.88c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.16.23-.33.19-.36-.09l-.11-1a.84.84
-                              0 0 0-.55-.65l-1-.31zM21.17 21.38c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.1.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.83.83 0 0 0-.55-.65l-.99-.31zM25.5 26.88c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.83.83 0 0 0-.55-.65l-.99-.31zM29.83 32.38c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.31zM34.16 37.89c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.34.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88
-                              0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.31zM37.87 42.6c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .21.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.09.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.16.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-1-.31z" fill="#FFF"/>
-                            </g>
-                          </svg>
-                          <button class="button travel-route__button--delete" type="button">
-                            <span class="visually-hidden">Удалить</span>
-                          </button>
-                        </div>
-                      </div>
-                      <div class="travel-route__country-item">
-                        <div class="travel-route__country-container">
-                          <b class="travel-route__text">Чехия</b>
-                          <button class="button travel-route__button--arrow" type="button">
-                            <span class="visually-hidden">Выбрать</span>
-                          </button>
-                        </div>
-                        <div class="travel-route__container-circle">
-                          <div class="travel-route__circle travel-route__circle--selected"></div>
-                        </div>
-                        <div class="travel-route__container">
-                          <svg class="travel-route__flag" width="71" height="48" viewBox="0 0 71 48" xmlns="http://www.w3.org/2000/svg">
-                            <g fill-rule="nonzero" fill="none">
-                              <path d="M63.92.55H6.65A6.36 6.36 0 0 0 .29 6.91v17.64h70V6.91A6.36 6.36 0 0 0 63.92.55z" fill="#FFF"/>
-                              <path d="M.28 41.18a6.36 6.36 0 0 0 6.36 6.36h57.28a6.36 6.36 0 0 0 6.36-6.36V24.55h-70v16.63z" fill="#ED5565"/>
-                              <path d="M2.19 2.38a6.34 6.34 0 0 0-1.9 4.54v34.27a6.34 6.34 0 0 0 1.95 4.57l23.05-21.21L2.19 2.38z" fill="#4758A9"/>
-                            </g>
-                          </svg>
-                          <button class="button travel-route__button--delete" type="button">
-                            <span class="visually-hidden">Удалить</span>
-                          </button>
-                        </div>
-                      </div>
-                      <div class="travel-route__country-item travel-route__dropdown">
-                        <div class="travel-route__dropdown-container">
-                          <div class="travel-route__country-container travel-route__country-container--hover">
-                            <b class="travel-route__text">Выберите страну</b>
-                            <button class="button travel-route__button--arrow travel-route__button-dropdown" type="button">
-                              <span class="visually-hidden">Выбрать</span>
-                            </button>
-                          </div>
-                          <div class="travel-route__container-circle">
-                            <div class="travel-route__circle travel-route__circle--choose"></div>
-                          </div>
-                          <button class="button travel-route__button--delete travel-route__button--delete-choose" type="button">
-                            <span class="visually-hidden">Удалить</span>
-                          </button>
-                        </div>
-                        <div class="country-option travel-route__country-option">
-                          <div class="country-option__alphabet">
-                            <table class="country-option__alphabet-table">
-                              <tr class="country-option__row">
-                                <td class="country-option__cell country-option__cell--active">А</td>
-                                <td class="country-option__cell">Б</td>
-                                <td class="country-option__cell">В</td>
-                                <td class="country-option__cell">Г</td>
-                                <td class="country-option__cell">Д</td>
-                              </tr>
-                              <tr class="country-option__row">
-                                <td class="country-option__cell">Е</td>
-                                <td class="country-option__cell">З</td>
-                                <td class="country-option__cell">И</td>
-                                <td class="country-option__cell">К</td>
-                                <td class="country-option__cell">Л</td>
-                              </tr>
-                              <tr class="country-option__row">
-                                <td class="country-option__cell">М</td>
-                                <td class="country-option__cell">Н</td>
-                                <td class="country-option__cell">О</td>
-                                <td class="country-option__cell">П</td>
-                                <td class="country-option__cell">Р</td>
-                              </tr>
-                              <tr class="country-option__row">
-                                <td class="country-option__cell">С</td>
-                                <td class="country-option__cell">Т</td>
-                                <td class="country-option__cell">У</td>
-                                <td class="country-option__cell">Ф</td>
-                                <td class="country-option__cell">Х</td>
-                              </tr>
-                              <tr class="country-option__row">
-                                <td class="country-option__cell">Ч</td>
-                                <td class="country-option__cell">Ш</td>
-                                <td class="country-option__cell">Э</td>
-                                <td class="country-option__cell">Ю</td>
-                                <td class="country-option__cell">Я</td>
-                              </tr>
-                            </table>
-                          </div>
-                          <div class="country-option__country-choose">
-                            <ul class="country-option__list">
-                              <li class="country-option__item">Афганистан</li>
-                              <li class="country-option__item">Албания</li>
-                              <li class="country-option__item">Алжир</li>
-                              <li class="country-option__item">Андора</li>
-                              <li class="country-option__item">Аргентина</li>
-                              <li class="country-option__item">Армения</li>
-                              <li class="country-option__item">Австралия</li>
-                              <li class="country-option__item">Австрия</li>
-                              <li class="country-option__item">Азербайджан</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="travel-route__dropdown-container">
-                        <div class="travel-route__country-container travel-route__country-container--bgcolor travel-route__country-container--bgcolor-hover">
-                          <b class="travel-route__text">Добавить страну</b>
-                          <button class="button travel-route__button travel-route__button--plus" type="button">
-                            <span class="visually-hidden">Выбрать</span>
-                          </button>
-                        </div>
-                        <div class="travel-route__container-circle">
-                          <div class="travel-route__circle travel-route__circle--add"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="travel-route__button-container">
-                      <button class="button button--bg-yellow button--size-small travel-route__button--next" type="button">
-                         Cледующий шаг
-                      </button>
-                      <button class="button travel-route__button--back" type="button">
-                        На шаг назад
-                      </button>
-                    </div>
+                        </span>
+                      </li>
+                      <li class="arrival-dates__item">
+                        <span class="arrival-dates__item-text">
+                          Развлечения
+                        </span>
+                      </li>
+                    </ul>
                   </div>
+                  <div class="arrival-dates__container-check">
+                    <div class="arrival-dates__quantity-container">
+                      <div class="quantity arrival-dates__quantity">
+                        <div class="quantity__container-text">
+                          <b class="quantity__text">
+                            ищу попутчиков:
+                          </b>
+                          <b class="quantity__text quantity__text--gray quantity__text--position quantity__text--blue">
+                            Чел.
+                          </b>
+                        </div>
+                        <div class="quantity__quantity-change quantity__quantity-change--margin">
+                          <button class="quantity__button quantity__button--less" type="button">
+                            <span class="visually-hidden">Меньше</span>
+                          </button>
+                          <input class="quantity__input" id="number" type="number" value="2">
+                          <button class="quantity__button quantity__button--more" type="button">
+                            <span class="visually-hidden">Больше</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="quantity arrival-dates__quantity">
+                        <div class="quantity__container-text">
+                          <b class="quantity__text">
+                            длительность:
+                          </b>
+                          <b class="quantity__text quantity__text--gray quantity__text--position quantity__text--blue">
+                            дн.
+                          </b>
+                        </div>
+                        <div class="quantity__quantity-change">
+                          <button class="quantity__button quantity__button--less" type="button">
+                            <span class="visually-hidden">Меньше</span>
+                          </button>
+                          <input class="quantity__input" id="number" type="number" value="2">
+                          <button class="quantity__button quantity__button--more" type="button">
+                            <span class="visually-hidden">Больше</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <label class="arrival-dates__label">
+                      <input type="checkbox" name="children-choice" value="rock" class="arrival-dates__input visually-hidden" checked>
+                      <span class="checkbox-indicator"></span>
+                      <span class="arrival-dates__label-text">Можно с детьми</span>
+                    </label>
+                  </div>
+                  <div class="calendar arrival-dates__calendar">
+                    <div class="calendar__month-container">
+                      <button class="calendar__button button calendar__button--prev" type="button">
+                        <span class="visually-hidden">Назад</span>
+                      </button>
+                      <h3 class="title title--h3 title--color-blue calendar__title">Март 2019</h3>
+                      <button class="calendar__button button calendar__button--next" type="button">
+                        <span class="visually-hidden">Вперед</span>
+                      </button>
+                    </div>
+                    <table class="calendar__table">
+                      <tr class="calendar__row calendar__row-days">
+                        <td class="calendar__cell calendar__cell--day">П<span class="calendar__cell-letter">н</span></td>
+                        <td class="calendar__cell calendar__cell--day">В<span class="calendar__cell-letter">т</span></td>
+                        <td class="calendar__cell calendar__cell--day">С<span class="calendar__cell-letter">р</span></td>
+                        <td class="calendar__cell calendar__cell--day">Ч<span class="calendar__cell-letter">т</span></td>
+                        <td class="calendar__cell calendar__cell--day">П<span class="calendar__cell-letter">н</span></td>
+                        <td class="calendar__cell calendar__cell--day calendar__cell--day-red">С<span class="calendar__cell-letter">б</span></td>
+                        <td class="calendar__cell calendar__cell--day calendar__cell--day-red">В<span class="calendar__cell-letter">с</span></td>
+                      </tr>
+                      <tr class="calendar__row">
+                        <td class="calendar__cell calendar__cell--disabled">23</td>
+                        <td class="calendar__cell calendar__cell--disabled">24</td>
+                        <td class="calendar__cell calendar__cell--disabled">25</td>
+                        <td class="calendar__cell calendar__cell--disabled">26</td>
+                        <td class="calendar__cell calendar__cell--disabled">27</td>
+                        <td class="calendar__cell calendar__cell--disabled">28</td>
+                        <td class="calendar__cell calendar__cell--disabled">
+                          1
+                          <span class="calendar__cell--text calendar__cell--text-grey">
+                            мар
+                          </span>
+                        </td>
+                      </tr>
+                      <tr class="calendar__row">
+                        <td class="calendar__cell calendar__cell--disabled">2</td>
+                        <td class="calendar__cell calendar__cell--disabled">3</td>
+                        <td class="calendar__cell calendar__cell--disabled">4</td>
+                        <td class="calendar__cell calendar__cell--disabled">5</td>
+                        <td class="calendar__cell calendar__cell--disabled">6</td>
+                        <td class="calendar__cell calendar__cell--disabled">7</td>
+                        <td class="calendar__cell calendar__cell--disabled">8</td>
+                      </tr>
+                      <tr class="calendar__row">
+                        <td class="calendar__cell calendar__cell--disabled">9</td>
+                        <td class="calendar__cell calendar__cell--disabled">10</td>
+                        <td class="calendar__cell calendar__cell--disabled">11</td>
+                        <td class="calendar__cell calendar__cell--disabled">12</td>
+                        <td class="calendar__cell calendar__cell--disabled">13</td>
+                        <td class="calendar__cell calendar__cell--disabled">15</td>
+                        <td class="calendar__cell calendar__cell--disabled">14</td>
+                      </tr>
+                      <tr class="calendar__row">
+                        <td class="calendar__cell calendar__cell--disabled">16</td>
+                        <td class="calendar__cell calendar__cell--disabled">17</td>
+                        <td class="calendar__cell calendar__cell--disabled">18</td>
+                        <td class="calendar__cell calendar__cell--disabled">19</td>
+                        <td class="calendar__cell calendar__cell--disabled">20</td>
+                        <td class="calendar__cell calendar__cell--disabled">21</td>
+                        <td class="calendar__cell calendar__cell--disabled">22</td>
+                      </tr>
+                      <tr class="calendar__row">
+                        <td class="calendar__cell calendar__cell--disabled">23</td>
+                        <td class="calendar__cell calendar__cell--disabled">24</td>
+                        <td class="calendar__cell calendar__cell--disabled">25</td>
+                        <td class="calendar__cell calendar__cell--selected">
+                          26
+                        <span class="calendar__cell--text calendar__cell--text-white">
+                          Заезд
+                        </span>
+                        </td>
+                        <td class="calendar__cell calendar__cell--selected calendar__cell--no-text">27</td>
+                        <td class="calendar__cell calendar__cell--selected">
+                          28
+                        <span class="calendar__cell--text calendar__cell--text-white">
+                          Выезд
+                        </span>
+                        </td>
+                        <td class="calendar__cell calendar__cell--active">29</td>
+                      </tr>
+                      <tr class="calendar__row">
+                        <td class="calendar__cell calendar__cell--active">30</td>
+                        <td class="calendar__cell calendar__cell--active">31</td>
+                        <td class="calendar__cell calendar__cell--active">1
+                          <span class="calendar__cell--text calendar__cell--text-black">
+                            апр
+                          </span>
+                        </td>
+                        <td class="calendar__cell calendar__cell--active">2</td>
+                        <td class="calendar__cell calendar__cell--active">3</td>
+                        <td class="calendar__cell calendar__cell--active">4</td>
+                        <td class="calendar__cell calendar__cell--active">5</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <button class="button button--bg-yellow button--size-small arrival-dates__button" type="button">
+                    Cледующий шаг
+                  </button>
                 </div>
               </div>
-              <div class="wrapper wrapper--bg-white wrapper--all-border">
-                <div class="form-wrapper">
-                  <div class="activity-plans add-plan-form-container__activity-plans">
-                    <div class="activity-plans__container">
-                      <div class="activity-plans__text-container">
-                        <h3 class="activity-plans__title title title--h3 title--color-blue">
-                          Шаг 3.
-                          Развлечения
-                        </h3>
-                        <p class="activity-plans__pharagraph add-plan-form-container__pharagraph">
-                          Наконец, расскажите о своих планах времяпровождения.
-                          Можно писать в свободной форме и ставить тэги.
-                        </p>
-                      </div>
-                      <ul class="arrival-dates__list arrival-dates__list--third">
-                        <li class="arrival-dates__item">
-                          <span class="arrival-dates__item-text">
-                            Даты
-                          </span>
-                        </li>
-                        <li class="arrival-dates__item">
-                          <span class="arrival-dates__item-text">
-                            Маршрут
-                          </span>
-                        </li>
-                        <li class="arrival-dates__item arrival-dates__item--current">
-                          <span class="arrival-dates__item-text">
-                            Развлечения
-                          </span>
-                        </li>
-                      </ul>
+              <div class="form-wrapper form-wrapper--bg-white form-wrapper--all-border">
+                <div class="travel-route add-plan-form-container__travel-route">
+                  <div class="travel-route__container-head">
+                    <div class="travel-route__text-container">
+                      <h3 class="travel-route__title title title--h3 title--color-blue">
+                        Шаг 2.
+                        Маршрут
+                      </h3>
+                      <p class="travel-route__pharagraph add-plan-form-container__pharagraph">
+                        Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.
+                      </p>
                     </div>
-                    <div class="activity-plans__textarea-activity">
-                      <div class="activity-plans__country">
-                        <b class="activity-plans__text">
-                          Босния и герцеговина
-                        </b>
-                        <svg class="activity-plans__flag activity-plans__flag--bosnia" width="71" height="48" viewBox="0 0 71 48" xmlns="http://www.w3.org/2000/svg">
+                    <ul class="arrival-dates__list arrival-dates__list--second">
+                      <li class="arrival-dates__item">
+                        <span class="arrival-dates__item-text">
+                          Даты
+                        </span>
+                      </li>
+                      <li class="arrival-dates__item arrival-dates__item--current">
+                        <span class="arrival-dates__item-text">
+                          Маршрут
+                        </span>
+                      </li>
+                      <li class="arrival-dates__item">
+                        <span class="arrival-dates__item-text">
+                          Развлечения
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="travel-route__country-choice">
+                    <div class="travel-route__country-item">
+                      <div class="travel-route__country-container">
+                        <b class="travel-route__text">Босния и Герцеговина</b>
+                        <button class="button travel-route__button--arrow" type="button">
+                          <span class="visually-hidden">Выбрать</span>
+                        </button>
+                      </div>
+                      <div class="travel-route__container-circle">
+                        <div class="travel-route__circle travel-route__circle--selected travel-route__circle--line"></div>
+                      </div>
+                      <div class="travel-route__container">
+                        <svg class="travel-route__flag" width="71" height="48" viewBox="0 0 71 48" xmlns="http://www.w3.org/2000/svg">
                           <g fill-rule="nonzero" fill="none">
                             <rect fill="#4758A9" x=".9" y=".13" width="70" height="47" rx="6.36"/>
                             <path fill="#F6D660" d="M13.9.13h37v47z"/>
@@ -759,35 +589,202 @@
                             0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.31zM37.87 42.6c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .21.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.09.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.16.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-1-.31z" fill="#FFF"/>
                           </g>
                         </svg>
+                        <button class="button travel-route__button--delete" type="button">
+                          <span class="visually-hidden">Удалить</span>
+                        </button>
                       </div>
-                      <textarea class="activity-plans__textarea" name="user-textarea" id="userfield-textarea" rows="5" placeholder="План действий" aria-label="Поле для ввода развлечений в стране"></textarea>
                     </div>
-                    <div class="activity-plans__textarea-activity">
-                      <div class="activity-plans__country">
-                        <b class="activity-plans__text">
-                          Чехия
-                        </b>
-                        <svg class="activity-plans__flag activity-plans__flag--czech" width="71" height="48" viewBox="0 0 71 48" xmlns="http://www.w3.org/2000/svg">
+                    <div class="travel-route__country-item">
+                      <div class="travel-route__country-container">
+                        <b class="travel-route__text">Чехия</b>
+                        <button class="button travel-route__button--arrow" type="button">
+                          <span class="visually-hidden">Выбрать</span>
+                        </button>
+                      </div>
+                      <div class="travel-route__container-circle">
+                        <div class="travel-route__circle travel-route__circle--selected"></div>
+                      </div>
+                      <div class="travel-route__container">
+                        <svg class="travel-route__flag" width="71" height="48" viewBox="0 0 71 48" xmlns="http://www.w3.org/2000/svg">
                           <g fill-rule="nonzero" fill="none">
                             <path d="M63.92.55H6.65A6.36 6.36 0 0 0 .29 6.91v17.64h70V6.91A6.36 6.36 0 0 0 63.92.55z" fill="#FFF"/>
                             <path d="M.28 41.18a6.36 6.36 0 0 0 6.36 6.36h57.28a6.36 6.36 0 0 0 6.36-6.36V24.55h-70v16.63z" fill="#ED5565"/>
                             <path d="M2.19 2.38a6.34 6.34 0 0 0-1.9 4.54v34.27a6.34 6.34 0 0 0 1.95 4.57l23.05-21.21L2.19 2.38z" fill="#4758A9"/>
                           </g>
                         </svg>
+                        <button class="button travel-route__button--delete" type="button">
+                          <span class="visually-hidden">Удалить</span>
+                        </button>
                       </div>
-                      <p class="activity-plans__textarea-pharagraph">
-                        <textarea class="activity-plans__textarea" name="user-textarea" id="userfield-textarea" rows="5" placeholder="План действий" aria-label="Поле для ввода развлечений в стране">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
-                        </textarea>
+                    </div>
+                    <div class="travel-route__country-item travel-route__country-item--dropdown">
+                      <div class="travel-route__dropdown-container">
+                        <div class="travel-route__country-container travel-route__country-container--dropdown travel-route__country-container--hover">
+                          <b class="travel-route__text">Выберите страну</b>
+                          <button class="button travel-route__button--arrow travel-route__button-dropdown" type="button">
+                            <span class="visually-hidden">Выбрать</span>
+                          </button>
+                        </div>
+                        <div class="travel-route__container-circle">
+                          <div class="travel-route__circle travel-route__circle--choose"></div>
+                        </div>
+                        <button class="button travel-route__button--delete travel-route__button--delete-choose" type="button">
+                          <span class="visually-hidden">Удалить</span>
+                        </button>
+                      </div>
+                      <div class="country-option travel-route__country-option">
+                        <div class="country-option__alphabet">
+                          <table class="country-option__alphabet-table">
+                            <tr class="country-option__row">
+                              <td class="country-option__cell country-option__cell--active">А</td>
+                              <td class="country-option__cell">Б</td>
+                              <td class="country-option__cell">В</td>
+                              <td class="country-option__cell">Г</td>
+                              <td class="country-option__cell">Д</td>
+                            </tr>
+                            <tr class="country-option__row">
+                              <td class="country-option__cell">Е</td>
+                              <td class="country-option__cell">З</td>
+                              <td class="country-option__cell">И</td>
+                              <td class="country-option__cell">К</td>
+                              <td class="country-option__cell">Л</td>
+                            </tr>
+                            <tr class="country-option__row">
+                              <td class="country-option__cell">М</td>
+                              <td class="country-option__cell">Н</td>
+                              <td class="country-option__cell">О</td>
+                              <td class="country-option__cell">П</td>
+                              <td class="country-option__cell">Р</td>
+                            </tr>
+                            <tr class="country-option__row">
+                              <td class="country-option__cell">С</td>
+                              <td class="country-option__cell">Т</td>
+                              <td class="country-option__cell">У</td>
+                              <td class="country-option__cell">Ф</td>
+                              <td class="country-option__cell">Х</td>
+                            </tr>
+                            <tr class="country-option__row">
+                              <td class="country-option__cell">Ч</td>
+                              <td class="country-option__cell">Ш</td>
+                              <td class="country-option__cell">Э</td>
+                              <td class="country-option__cell">Ю</td>
+                              <td class="country-option__cell">Я</td>
+                            </tr>
+                          </table>
+                        </div>
+                        <div class="country-option__country-choose">
+                          <ul class="country-option__list">
+                            <li class="country-option__item">Афганистан</li>
+                            <li class="country-option__item">Албания</li>
+                            <li class="country-option__item">Алжир</li>
+                            <li class="country-option__item">Андора</li>
+                            <li class="country-option__item">Аргентина</li>
+                            <li class="country-option__item">Армения</li>
+                            <li class="country-option__item">Австралия</li>
+                            <li class="country-option__item">Австрия</li>
+                            <li class="country-option__item">Азербайджан</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="travel-route__dropdown-container">
+                      <div class="travel-route__country-container travel-route__country-container--bgcolor travel-route__country-container--bgcolor-hover">
+                        <b class="travel-route__text">Добавить страну</b>
+                        <button class="button travel-route__button travel-route__button--plus" type="button">
+                          <span class="visually-hidden">Выбрать</span>
+                        </button>
+                      </div>
+                      <div class="travel-route__container-circle">
+                        <div class="travel-route__circle travel-route__circle--add"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="travel-route__button-container">
+                    <button class="button button--bg-yellow button--size-small travel-route__button--next" type="button">
+                       Cледующий шаг
+                    </button>
+                    <button class="button travel-route__button--back" type="button">
+                      На шаг назад
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-wrapper form-wrapper--bg-white form-wrapper--all-border">
+                <div class="activity-plans add-plan-form-container__activity-plans">
+                  <div class="activity-plans__container">
+                    <div class="activity-plans__text-container">
+                      <h3 class="activity-plans__title title title--h3 title--color-blue">
+                        Шаг 3.
+                        Развлечения
+                      </h3>
+                      <p class="activity-plans__pharagraph add-plan-form-container__pharagraph">
+                        Наконец, расскажите о своих планах времяпровождения.
+                        Можно писать в свободной форме и ставить тэги.
                       </p>
                     </div>
-                    <div class="activity-plans__button-container">
-                      <button class="activity-plans__button button button--bg-yellow button--size-small" type="submit">
-                        Отправить
-                      </button>
-                      <button class="button activity-plans__button--back" type="button">
-                        На шаг назад
-                      </button>
+                    <ul class="arrival-dates__list arrival-dates__list--third">
+                      <li class="arrival-dates__item">
+                        <span class="arrival-dates__item-text">
+                          Даты
+                        </span>
+                      </li>
+                      <li class="arrival-dates__item">
+                        <span class="arrival-dates__item-text">
+                          Маршрут
+                        </span>
+                      </li>
+                      <li class="arrival-dates__item arrival-dates__item--current">
+                        <span class="arrival-dates__item-text">
+                          Развлечения
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="activity-plans__textarea-activity">
+                    <div class="activity-plans__country">
+                      <b class="activity-plans__text">
+                        Босния и герцеговина
+                      </b>
+                      <svg class="activity-plans__flag activity-plans__flag--bosnia" width="71" height="48" viewBox="0 0 71 48" xmlns="http://www.w3.org/2000/svg">
+                        <g fill-rule="nonzero" fill="none">
+                          <rect fill="#4758A9" x=".9" y=".13" width="70" height="47" rx="6.36"/>
+                          <path fill="#F6D660" d="M13.9.13h37v47z"/>
+                          <path d="M8.19 4.88c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.8c.203.22.517.3.8.2l1.08-.43c.26-.11.36 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.11-1a.84.84 0 0 0-.55-.65l-1-.3zM12.51 10.38c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.8c.203.22.517.3.8.2l1.08-.43c.26-.1.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.3zM16.84 15.88c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.16.23-.33.19-.36-.09l-.11-1a.84.84
+                          0 0 0-.55-.65l-1-.31zM21.17 21.38c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.1.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.83.83 0 0 0-.55-.65l-.99-.31zM25.5 26.88c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.83.83 0 0 0-.55-.65l-.99-.31zM29.83 32.38c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.31zM34.16 37.89c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.34.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88
+                          0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.31zM37.87 42.6c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .21.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.09.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.16.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-1-.31z" fill="#FFF"/>
+                        </g>
+                      </svg>
                     </div>
+                    <div class="activity-plans__textarea-container">
+                      <textarea class="activity-plans__textarea" name="user-textarea" id="userfield-textarea" rows="5" placeholder="План действий" aria-label="Поле для ввода развлечений в стране" required=""></textarea>
+                      <span class="activity-plans__textarea-error">Это поле должно быть заполнено</span>
+                    </div>
+                  </div>
+                  <div class="activity-plans__textarea-activity">
+                    <div class="activity-plans__country">
+                      <b class="activity-plans__text">
+                        Чехия
+                      </b>
+                      <svg class="activity-plans__flag activity-plans__flag--czech" width="71" height="48" viewBox="0 0 71 48" xmlns="http://www.w3.org/2000/svg">
+                        <g fill-rule="nonzero" fill="none">
+                          <path d="M63.92.55H6.65A6.36 6.36 0 0 0 .29 6.91v17.64h70V6.91A6.36 6.36 0 0 0 63.92.55z" fill="#FFF"/>
+                          <path d="M.28 41.18a6.36 6.36 0 0 0 6.36 6.36h57.28a6.36 6.36 0 0 0 6.36-6.36V24.55h-70v16.63z" fill="#ED5565"/>
+                          <path d="M2.19 2.38a6.34 6.34 0 0 0-1.9 4.54v34.27a6.34 6.34 0 0 0 1.95 4.57l23.05-21.21L2.19 2.38z" fill="#4758A9"/>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="activity-plans__textarea-container">
+                      <textarea class="activity-plans__textarea" name="user-textarea" id="userfield-textarea" rows="5" placeholder="План действий" aria-label="Поле для ввода развлечений в стране" required="">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                      <span class="activity-plans__textarea-error">Это поле должно быть заполнено</span>
+                    </div>
+                  </div>
+                  <div class="activity-plans__button-container">
+                    <button class="activity-plans__button button button--bg-yellow button--size-small" type="submit">
+                      Отправить
+                    </button>
+                    <button class="button activity-plans__button--back" type="button">
+                      На шаг назад
+                    </button>
                   </div>
                 </div>
               </div>
@@ -879,38 +876,6 @@
         </footer>
       </div>
     </div>
-    <script>
-      var siteMenu = document.querySelector('.site-menu');
-      var siteMenuToggle = document.querySelector('.page-header__toggle');
-      var getIsDesktop = function () {
-        return window.matchMedia("(min-width: 1440px)").matches
-      }
-
-      if (getIsDesktop()) {
-        if (siteMenu.classList.contains('site-menu--closed')) {
-          siteMenu.classList.remove('site-menu--closed');
-        }
-      }
-
-      window.addEventListener('resize', function() {
-        if (getIsDesktop() && siteMenu.classList.contains('site-menu--closed')) {
-            siteMenu.classList.remove('site-menu--closed');
-        } else {
-          siteMenu.classList.add('site-menu--closed');
-        }
-      })
-
-      siteMenuToggle.addEventListener('click', function() {
-        siteMenuToggle.classList.toggle('page-header__toggle--closed');
-        siteMenu.classList.toggle('site-menu--closed');
-      });
-      var dropdownLabel = document.querySelector('.travel-route__button-dropdown');
-      var dropdown = document.querySelector('.travel-route__dropdown');
-
-      dropdownLabel.addEventListener('click', function() {
-      dropdown.classList.toggle('travel-route__dropdown--opened');
-});
-    </script>
-
+    <script src="./js/script.js"></script>
   </body>
 </html>

@@ -1,6 +1,13 @@
 .copyright {
   border-top: 1px solid rgba(1, 1, 1, 0.05);
   cursor: pointer;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 .copyright__text {
   display: block;
@@ -17,13 +24,6 @@
   width: 27px;
   height: 34px;
   fill: #192144;
-}
-.copyright:hover,
-.copyright:focus {
-  opacity: 0.6;
-}
-.copyright:active {
-  opacity: 0.3;
 }
 @media (min-width: @tablet-width) {
   .copyright {

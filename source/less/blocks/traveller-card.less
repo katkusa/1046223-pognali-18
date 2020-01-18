@@ -1,11 +1,6 @@
 .traveller-card__wrapper {
   position: relative;
 }
-.traveller-card__img-container {
-  overflow: hidden;
-  width: 270px;
-  height: 270px;
-}
 .traveller-card__level-score {
   position: absolute;
   top: 16px;
@@ -40,31 +35,33 @@
   font-weight: 700;
   color: @white;
   position: relative;
-}
-.traveller-card__number::after {
-  content: "";
-  position: absolute;
-  left: -3px;
-  bottom: 2px;
-  width: 31px;
-  height: 1px;
-  background-color: rgba(225, 225, 225, 0.2);
+  &::after {
+    content: '';
+    position: absolute;
+    left: -3px;
+    bottom: 2px;
+    width: 31px;
+    height: 1px;
+    background-color: rgba(225, 225, 225, 0.2);
+  }
 }
 .traveller-card__level {
   font-size: 14px;
   line-height: 14px;
   color: @white;
 }
-
-.traveller-card__img {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  transition: all 1s ease-out;
-}
-.traveller-card__img:hover {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+.traveller-card:hover .traveller-card__img {
   transform: scale(1.1);
+}
+.traveller-card__img-container {
+  overflow: hidden;
+  width: 270px;
+  height: 270px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.traveller-card__img {
+  transition: all 1s ease-out;
 }
 .traveller-card__name {
   font-size: 21px;
@@ -74,13 +71,13 @@
   margin-bottom: 16px;
   position: relative;
   cursor: pointer;
-}
-.traveller-card__name:hover,
-.traveller-card__name:focus {
-  opacity: 0.7;
-}
-.traveller-card__name:active {
-  opacity: 0.3;
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 .traveller-card__hobbys {
   line-height: 18px;
@@ -99,15 +96,17 @@
 .traveller-card__transport {
   margin-bottom: 22px;
 }
-.traveller-card__name--offline::before,
-.traveller-card__name--online::before {
-  content: "";
+.traveller-card__name--offline,
+.traveller-card__name--online {
+  &::before {
+  content: '';
   position: absolute;
   top: 5px;
   left: -11px;
   width: 5px;
   height: 5px;
   border-radius: 50%;
+  }
 }
 .traveller-card__name--offline::before {
   background-color: #f97676;
@@ -135,16 +134,14 @@
   margin-top: -20px;
 }
 @media (min-width: @tablet-width) {
-  .traveller-card__img {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
   .traveller-card__discription {
     margin-top: 11px;
   }
   .traveller-card__img-container {
     width: 285px;
     height: 285px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
   .traveller-card__img {
     width: 285px;
@@ -163,15 +160,13 @@
     max-width: 230px;
     margin-bottom: 27px;
   }
-  .traveller-card__name--offline::before,
-  .traveller-card__name--online::before {
+  .traveller-card__name--offline,
+  .traveller-card__name--online {
+    &::before {
     width: 7px;
     height: 7px;
     left: -17px;
-  }
-  .traveller-card__img {
-    width: 285px;
-    height: 285px;
+    }
   }
   .traveller-card__transport {
     margin-bottom: 29px;
