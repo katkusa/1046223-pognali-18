@@ -346,7 +346,7 @@
                   <a href="tel:+78005558628" class="contact contact--icon-size-s contact--icon-bg-orange">
                     <div class="contact__icon">
                       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
-                        <use xlink:href="#contacts-phone"></use>
+                        <use xlink:href="#topmenu-phone"></use>
                       </svg>
                     </div>
                     <span class="contact__text">8 800 555-86-28</span>
@@ -356,7 +356,7 @@
                   <a href="mailto:mail@htmlacademy.ru" class="contact contact--icon-size-s contact--icon-bg-yellow">
                     <div class="contact__icon">
                       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 14" style="enable-background:new 0 0 18 14;" xml:space="preserve">
-                        <use xlink:href="#contacts-mail"></use>
+                        <use xlink:href="#topmenu-mail"></use>
                       </svg>
                     </div>
                     <span class="contact__text">mail@htmlacademy.ru</span>
@@ -723,8 +723,10 @@
           <section class="subscription page-main__subscription">
             <h2 class="visually-hidden">Регистрация и обратная связь</h2>
             <span class="subscription__title title title--h2 title--color-orange">Заинтересовались?</span>
+            <p class="subscription__text subscription__text--first">
+              Зарегистрируйтесь, <br> это быстро и бесплатно!
+            </p>
             <p class="subscription__text">
-              Зарегистрируйтесь, это быстро и бесплатно!
               Уже зарегистрированы? Тогда скорее <a class="subscription__link">авторизуйтесь</a>.
             </p>
             <form action="https://echo.htmlacademy.ru" method="post" name="subscription__form" class="subscription__form">
@@ -738,9 +740,14 @@
                 </span>
               </button>
             </form>
-            <p class="subscription__pharagraph">
-              Остались вопросы? Мы с радостью на них ответим!
-            </p>
+            <div class="subscription__pharagraph-container">
+              <p class="subscription__pharagraph subscription__pharagraph--first">
+                Остались вопросы?
+              </p>
+              <p class="subscription__pharagraph">
+                Мы с радостью на них ответим!
+              </p>
+            </div>
             <div class="subscription__contacts">
               <div class="subscription__contact-item">
                 <a href="tel:+78005558628" class="contact contact--icon-bg-dark-blue contact--color-yellow contact--show-text">
@@ -881,6 +888,6 @@
         </div>
       </div>
     </div>
-    <script src="./js/script.js"></script>
+    <script src="./js/script-index.js"></script>
   </body>
 </html>

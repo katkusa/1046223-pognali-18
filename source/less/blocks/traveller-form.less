@@ -65,21 +65,21 @@
 .traveller-form__label:disabled {
   opacity: 0.3;
 }
-.traveller-form__container-checkbox .traveller-form__fieldset {
+.traveller-form__container .traveller-form__fieldset {
   display: none;
 }
-.traveller-form__container-checkbox--opened .traveller-form__fieldset {
+.traveller-form__container--opened .traveller-form__fieldset {
   display: block;
 }
-.traveller-form__container-checkbox {
+.traveller-form__container {
   padding-top: 13px;
   border-top: 1px solid #f3c72b;
   margin-bottom: 11px;
 }
-.traveller-form__container-checkbox--hobby {
+.traveller-form__container--hobby {
   margin-bottom: 13px;
 }
-.traveller-form__container-checkbox--music {
+.traveller-form__container--music {
   margin-bottom: 20px;
 }
 .traveller-form__fieldset {
@@ -87,13 +87,13 @@
   padding: 0;
   padding-top: 17px;
 }
-.traveller-form__container-checkbox--food {
+.traveller-form__container--food {
   margin-bottom: 11px;
 }
-.traveller-form__container-checkbox--transport {
+.traveller-form__container--transport {
   margin-bottom: 19px;
 }
-.traveller-form__container-checkbox--level-form {
+.traveller-form__container--level-form {
   padding-top: 13px;
 }
 .traveller-form__button-arrow {
@@ -186,23 +186,23 @@
   left: -10px;
 }
 .traveller-form__checkbox-transport:checked + .checkbox-indicator--plane::after {
-  background-image: url(../../img/plane.svg);
+  background-image: url(../../img/icon-plane.svg);
   width: 14px;
   height: 16px;
 }
 .traveller-form__checkbox-transport:checked + .checkbox-indicator--bus::after {
-  background-image: url(../../img/bus.svg);
+  background-image: url(../../img/icon-bus.svg);
   width: 13px;
   height: 16px;
 }
 .traveller-form__checkbox-transport:checked + .checkbox-indicator--bike::after {
-  background-image: url(../../img/bike.svg);
+  background-image: url(../../img/icon-bike.svg);
   width: 19px;
   height: 17px;
   left: -7px;
 }
 .traveller-form__checkbox-transport:checked + .checkbox-indicator--foot::after {
-  background-image: url(../../img/run.svg);
+  background-image: url(../../img/icon-run.svg);
   width: 15px;
   height: 17px;
 }
@@ -272,7 +272,7 @@
   cursor: pointer;
 }
 @media (min-width: @tablet-width) {
-  .traveller-form__container-checkbox .traveller-form__fieldset {
+  .traveller-form__container .traveller-form__fieldset {
     display: flex;
   }
   .traveller-form__button-arrow {
@@ -288,31 +288,31 @@
     line-height: 30px;
     font-weight: 500;
   }
-  .traveller-form__container-checkbox {
+  .traveller-form__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: transparent;
   }
-  .traveller-form__container-checkbox--hobby {
+  .traveller-form__container--hobby {
     padding-top: 35px;
     padding-bottom: 26px;
     border-top: 1px solid #f3c72b;
   }
-  .traveller-form__container-checkbox--music {
+  .traveller-form__container--music {
     padding: 0;
     padding-bottom: 26px;
   }
-  .traveller-form__container-checkbox--food {
+  .traveller-form__container--food {
     padding: 0;
     padding-bottom: 23px;
   }
-  .traveller-form__container-checkbox--transport {
+  .traveller-form__container--transport {
     padding: 0;
     flex-direction: row;
     padding-bottom: 14px;
   }
-  .traveller-form__container-checkbox--level-form {
+  .traveller-form__container--level-form {
     padding: 0;
     border-bottom: 1px solid #f3c72b;
     padding-bottom: 36px;
@@ -416,10 +416,10 @@
   }
 }
 @media (min-width: @desktop-width) {
-  .traveller-form__container-checkbox .traveller-form__fieldset {
+  .traveller-form__container .traveller-form__fieldset {
     display: none;
   }
-  .traveller-form__container-checkbox--opened .traveller-form__fieldset {
+  .traveller-form__container--opened .traveller-form__fieldset {
     display: block;
   }
   .traveller-form__input-container {
@@ -440,20 +440,20 @@
   .traveller-form__label:not(:last-child) {
     padding-bottom: 16px;
   }
-  .traveller-form__container-checkbox {
+  .traveller-form__container {
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 25px;
     border: transparent;
   }
-  .traveller-form__container-checkbox--hobby {
+  .traveller-form__container--hobby {
     padding-top: 0;
   }
   .traveller-form__fieldset-transport {
     margin: 0;
     padding-top: 23px;
   }
-  .traveller-form__container-checkbox--level-form {
+  .traveller-form__container--level-form {
     padding: 0;
     margin-bottom: 43px;
   }
