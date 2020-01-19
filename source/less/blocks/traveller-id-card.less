@@ -10,13 +10,13 @@
   margin-bottom: 33px;
   background-color: @medium-grayish-blue;
   color: #161c35;
-}
-.traveller-id-card__button:hover,
-.traveller-id-card__button:focus {
-  background-color: #d1d7e9;
-}
-.traveller-id-card__button:active {
-  color: rgba(29, 46, 91, 0.3);
+  &:hover,
+  &:focus {
+    background-color: #d1d7e9;
+  }
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
 }
 .traveller-id-card__heading {
   margin: 0;
@@ -47,13 +47,13 @@
   background-color: #edeff6;
   overflow: hidden;
   cursor: pointer;
-}
-.traveller-id-card__textarea:hover,
-.traveller-id-card__textarea:focus {
-  border: 1px solid #959bb2;
-}
-.traveller-id-card__textarea:active {
-  border: 1px solid #161c35;
+  &:hover,
+  &:focus {
+    border: 1px solid #959bb2;
+  }
+  &:active {
+    border: 1px solid #161c35;
+  }
 }
 .traveller-id-card__textarea::-webkit-input-placeholder {
   color: rgba(68, 68, 68, 0.3);
@@ -84,15 +84,15 @@
   font-weight: 700;
   color: #161c35;
   position: relative;
-}
-.traveller-id-card__number::after {
-  content: "";
-  position: absolute;
-  left: -3px;
-  bottom: 2px;
-  width: 49px;
-  height: 2px;
-  background-color: #cbced9;
+  &::after {
+    content: '';
+    position: absolute;
+    left: -3px;
+    bottom: 2px;
+    width: 49px;
+    height: 2px;
+    background-color: #cbced9;
+  }
 }
 .traveller-id-card__level {
   font-size: 18px;
@@ -238,9 +238,9 @@
   }
   .traveller-id-card__number {
     color: @white;
-  }
-  .traveller-id-card__number::after {
-    opacity: 0.3;
+    &::after {
+      opacity: 0.3;
+    }
   }
   .traveller-id-card__level {
     color: @white;

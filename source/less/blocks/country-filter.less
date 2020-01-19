@@ -6,8 +6,7 @@
   text-transform: uppercase;
   background-color: #e2e5f2;
   border-radius: 0 0 20px 20px;
-  padding: 0 25px;
-  padding-bottom: 1px;
+  padding: 0 0 1px 0;
   margin-bottom: 24px;
 }
 .country-filter--open {
@@ -28,7 +27,6 @@
 }
 .country-filter__title {
   margin: 0;
-  padding: 0;
   padding: 14px 0 14px 27px;
   font-size: 16px;
   font-weight: 700;
@@ -47,17 +45,14 @@
   font-size: 0;
   background-color: #e2e5f2;;
   border: none;
-
   &:hover,
   &:focus {
     opacity: 0.6;
   }
-
   &:active {
     opacity: 0.3;
   }
 }
-
 .country-filter__toggle-open {
   position: relative;
   display: block;
@@ -65,7 +60,6 @@
   height: 12px;
   margin-right: 5px;
   background-color: inherit;
-
   &::after {
     position: absolute;
     content: "";
@@ -77,7 +71,6 @@
     background-size: 17px 12px;
     background-repeat: no-repeat;
   }
-
   .country-filter--open & {
     display: none;
   }
@@ -90,7 +83,6 @@
   margin-bottom: 4px;
   margin-right: 7px;
   background-color: inherit;
-
   &::after {
     position: absolute;
     content: "";
@@ -102,7 +94,6 @@
     background-size: 12px 12px;
     background-repeat: no-repeat;
   }
-
   .country-filter--open & {
     display: block;
   }
@@ -113,39 +104,32 @@
   padding: 0;
   margin-bottom: 19px;
   list-style: none;
-
   .country-filter--open & {
     display: block;
     padding-top: 16px;
     padding-left: 24px;
   }
 }
-
 .country-filter__region-item {
   &:not(:last-child) {
     margin-bottom: 5px;
   }
 }
-
 .country-filter__region-link {
   opacity: 0.3;
   color: #192144;
   text-decoration: none;
-
   &:hover,
   &:focus {
     opacity: 0.6;
   }
-
   &:active {
     opacity: 1;
   }
-
   &--active {
     opacity: 1;
   }
 }
-
 .country-filter__letter-list {
   width: 250px;
   display: flex;
@@ -157,7 +141,6 @@
   margin-bottom: 67px;
   list-style: none;
 }
-
 .country-filter__letter-btn {
   margin: 0;
   padding: 0;
@@ -172,35 +155,28 @@
   letter-spacing: 1.4px;
   background-color: #ffffff;
   border: 1px solid #cbced9;
-
   &:hover,
   &:focus {
     border: 1px solid #959bb2;
   }
-
   &:active {
     background-color: #1d2e5b;
     color: #ffffff;
   }
-
   &--active {
     color: #ffffff;
     background-color: #1d2e5b;
   }
 }
-
 .country-filter__letter {
   display: none;
-
   &--active {
     display: block;
   }
 }
-
 .country-filter__letter-title {
   display: none;
 }
-
 .country-filter__country-list {
   display: none;
   margin: 0;
@@ -213,23 +189,19 @@
     display: block;
   }
 }
-
 .country-filter__country-link {
   color: #444444;
   font-weight: 400;
   text-decoration: none;
   text-transform: capitalize;
-
   &:hover,
   &:focus {
     color: #1d2e5b;
   }
-
   &:active {
     opacity: 0.3;
   }
 }
-
 .country-filter__close {
   width: 100%;
   color: #1d2e5b;
@@ -243,16 +215,13 @@
   display: none;
   margin-bottom: 27px;
   padding-left: 27px;
-
   &:hover,
   &:focus {
     background-color: #c8cee8;
   }
-
   &:active {
     color: rgba(29, 46, 91, 0.3);
   }
-
   .country-filter--open & {
     display: block;
   }
@@ -261,7 +230,6 @@
   position: relative;
   display: block;
   padding-top: 4px;
-
   &::before {
     position: absolute;
     content: "";
@@ -273,15 +241,12 @@
     background-repeat: no-repeat;
     background-position: left center;
   }
-
   &:active::before {
     opacity: 0.3;
   }
 }
-
 .country-filter__wrapper {
   display: none;
-
   .country-filter--open & {
     display: block;
   }
@@ -290,13 +255,11 @@
 @media (min-width: @tablet-width) {
   .country-filter {
     border-radius: 0 0 60px 60px;
-    padding: 0 75px 1px 75px;
+    padding: 0 35px 1px 35px;
     margin-bottom: 50px;
-
     &--catalog {
       margin-bottom: 44px;
     }
-
     &--open {
       z-index: 2;
     }
@@ -305,17 +268,14 @@
     padding-top: 61px;
     margin-bottom: 57px;
   }
-
   .country-filter__menu-wrapper {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-start;
   }
-
   .country-filter__title {
     display: none;
   }
-
   .country-filter__toggle {
     margin: 0;
     padding: 0;
@@ -323,13 +283,11 @@
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
-
     &--catalog {
       margin-left: auto;
       order: 2;
     }
   }
-
   .country-filter__toggle-open {
     width: auto;
     height: auto;
@@ -338,7 +296,6 @@
     padding-top: 2px;
     padding-right: 43px;
     color: #192144;
-
     &::after {
       top: 2px;
       right: 0;
@@ -347,7 +304,6 @@
       background-size: 27px 18px;
     }
   }
-
   .country-filter__toggle-close {
     width: auto;
     height: auto;
@@ -355,7 +311,6 @@
     padding: 0;
     padding-top: 2px;
     padding-right: 82px;
-
     &::after {
       width: 18px;
       height: 18px;
@@ -363,7 +318,6 @@
       background-size: 18px 18px;
     }
   }
-
   .country-filter__region-list {
     width: 65%;
     display: flex;
@@ -372,7 +326,6 @@
     margin: 0; padding: 0;
     padding-top: 2px;
     padding-left: 0;
-
     .country-filter--open & {
       display: flex;
       padding-top: 4px;
@@ -391,7 +344,6 @@
       margin-right: 25px;
       margin-bottom: 0;
     }
-
     &:nth-child(2) {
       margin-right: 6px;
     }
@@ -400,7 +352,6 @@
       margin-right: 30px;
     }
   }
-
   .country-filter__wrapper {
     .country-filter--open & {
       display: flex;
@@ -412,7 +363,6 @@
       padding-top: 52px;
     }
   }
-
   .country-filter__letter-list {
     &--catalog {
       width: 410px;
@@ -425,7 +375,6 @@
   .country-filter__letter-item {
     margin-bottom: 0;
   }
-
   .country-filter__letter-btn {
     .country-filter__letter-list--catalog & {
       width: 71px;
@@ -440,7 +389,6 @@
       background-color: #e2e5f2;;
       border: none;
       opacity: 0.2;
-
       &--active {
         opacity: 1;
         background-color: inherit;
@@ -452,7 +400,6 @@
     flex-direction: column;
     margin: 0;
     padding: 0;
-
     &--active {
       display: none;
     }
@@ -463,12 +410,10 @@
     line-height: 30px;
     text-transform: none;
   }
-
   .country-filter__letter {
     margin: 0;
     padding-top: 3px;
   }
-
   .country-filter__close {
     width: 618px;
     min-height: 100px;
@@ -494,9 +439,8 @@
 @media (min-width: @desktop-width) {
   .country-filter {
     margin-bottom: 77px;
-    padding-right: 128px;
-    padding-left: 80px;
-
+    padding-right: 78px;
+    padding-left: 20px;
     &--open {
       position: static;
       top: 300px;
@@ -510,7 +454,6 @@
   .country-filter--open .country-filter__menu {
     margin-bottom: 75px;
   }
-
   .country-filter__toggle {
     &--catalog {
       margin-left: 0;
@@ -521,13 +464,11 @@
       }
     }
   }
-
   .country-filter__toggle-close {
     margin: 0;
     padding: 0;
     padding-right: 82px;
   }
-
   .country-filter__region-list {
     width: 40%;
     margin: 0;
@@ -537,19 +478,16 @@
       padding: 0;
     }
   }
-
   .country-filter__region-list--catalog {
     .country-filter__region-item {
       &:not(:last-child) {
         margin-right: 25px;
       }
     }
-
     .country-filter__region-link {
       min-width: 55px;
     }
   }
-
   .country-filter__wrapper {
     .country-filter--open & {
       flex-wrap: wrap;
@@ -559,7 +497,6 @@
       padding-left: 17px;
     }
   }
-
   .country-filter__title {
     display: block;
     margin: 0;
@@ -570,7 +507,6 @@
     background-position: left 40%;
     background-size: 23px 15px;
   }
-
   .country-filter__letter {
     display: block;
     margin: 0;
@@ -579,31 +515,24 @@
     &:nth-child(5n + 2) {
       width: 254px;
     }
-
     &:nth-child(5n + 3) {
       width: 252px;
     }
-
     &:nth-child(5n + 4) {
       width: 250px;
     }
-
     &:nth-child(5n + 5) {
       width: 246px;
     }
-
     &:nth-child(5n + 6) {
       width: 204px;
     }
-
     &:nth-child(n + 12):nth-child(-n + 16) {
       margin-bottom: 90px;
     }
-
     &:nth-child(n + 17):nth-child(-n + 21) {
       margin-bottom: 45px;
     }
-
     &:nth-child(n + 22):nth-child(-n + 26) {
       & .country-filter__letter-title {
         margin-bottom: 40px;
@@ -621,22 +550,18 @@
     font-weight: 700;
     line-height: 24px;
   }
-
   .country-filter__letter-list {
     &--catalog {
       display: none;
     }
   }
-
   .country-filter__country-list {
     margin: 0;
     padding: 0;
   }
-
   .country-filter__letter-item {
     .country-filter__letter-list--form & {
       margin-bottom: 15px;
-
       &:not(:nth-child(5n)) {
         margin-right: 15px;
       }

@@ -36,15 +36,15 @@
 .arrival-dates__item {
   position: relative;
   margin-left: 20px;
-}
-.arrival-dates__item::before {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #808285;
-  opacity: 0.3;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #808285;
+    opacity: 0.3;
+  }
 }
 .arrival-dates__item--current::before {
   background-color: #1d2e5b;
@@ -75,7 +75,7 @@
   background-color: #e2e5f1;
 }
 .arrival-dates__input:checked + .checkbox-indicator::after {
-  content: "";
+  content: '';
   flex-shrink: 0;
   display: block;
   width: 9px;
@@ -121,10 +121,9 @@
     margin-bottom: 67px;
     position: relative;
   }
-
   .arrival-dates__label-text {
     font-size: 20px;
-    line-height: 18px;
+    line-height: 22px;
     letter-spacing: 2px;
     font-weight: 500;
     color: @dark-slate-blue;
@@ -151,16 +150,16 @@
     line-height: 24px;
     text-transform: initial;
     position: relative;
-  }
-  .arrival-dates__button::after {
-    content: "";
-    position: absolute;
-    right: 10%;
-    top: 40%;
-    border: 6px solid transparent;
-    border-left: 10px solid #1d2e5b;
-    width: 0px;
-    height: 0px;
+    &::after {
+      content: '';
+      position: absolute;
+      right: 10%;
+      top: 40%;
+      border: 6px solid transparent;
+      border-left: 10px solid #1d2e5b;
+      width: 0px;
+      height: 0px;
+    }
   }
 }
 @media (min-width: @desktop-width) {
@@ -189,7 +188,7 @@
   .arrival-dates__item-text {
     display: block;
     font-size: 20px;
-    line-height: 13.8px;
+    line-height: 22px;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-left: 36px;
@@ -199,7 +198,6 @@
     width: auto;
     margin-bottom: 37px;
     line-height: 50px;
-    margin-bottom: 37px;
   }
   .arrival-dates__item {
     margin-bottom: 26px;

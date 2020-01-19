@@ -15,28 +15,27 @@
   justify-content: space-between;
   align-items: baseline;
   font-weight: 300;
-}
-.distribution__item::after {
-  position: absolute;
-  content: "";
-  width: 200px;
-  height: 1px;
-  background-color: rgba(0,0,0,0.05);
-}
-.distribution__item::before {
-  position: absolute;
-  bottom: 0;
-  content: "";
-  width: 200px;
-  height: 1px;
-  background-color: rgba(0,0,0,0.02);
+  &::after {
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 1px;
+    background-color: rgba(0,0,0,0.05);
+  }
+  &::before {
+    position: absolute;
+    bottom: 0;
+    content: '';
+    width: 200px;
+    height: 1px;
+    background-color: rgba(0,0,0,0.02);
+  }
 }
 .distribution__container {
   display: flex;
   flex-direction: column;
   width: 200px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 0;
 }
 .distribution__text {
   display: block;
@@ -48,19 +47,19 @@
 }
 .distribution__link-container {
   cursor: pointer;
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 .distribution__link {
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
   color: @very-dark-blue;
-}
-.distribution__link-container:hover,
-.distribution__link-container:focus {
-  opacity: 0.7;
-}
-.distribution__link-container:active {
-  opacity: 0.3;
 }
 .distribution__title {
   margin-bottom: 52px;
@@ -91,16 +90,16 @@
 @media (min-width: @tablet-width) {
   .distribution {
     position: relative;
-  }
-  .distribution::before {
-    content: "";
-    width: 198px;
-    height: 285px;
-    border-radius: 20px;
-    background-color: #e2e5f2;
-    position: absolute;
-    top: 150px;
-    right: 0;
+    &::before {
+      content: '';
+      width: 198px;
+      height: 285px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+      position: absolute;
+      top: 150px;
+      right: 0;
+    }
   }
   .distribution__list {
     margin-bottom: 33px;
@@ -108,6 +107,11 @@
   .distribution__item {
     justify-content: flex-start;
     align-items: initial;
+    &::before,
+    &::after {
+      width: 562px;
+      right: 10px;
+    }
   }
   .distribution__text {
     font-size: 28px;
@@ -134,14 +138,6 @@
     width: auto;
     text-align: center;
     margin-bottom: 73px;
-  }
-  .distribution__item::after {
-    width: 562px;
-    right: 10px;
-  }
-  .distribution__item::before {
-    width: 562px;
-    right: 10px;
   }
   .distribution__link {
     font-size: 20px;
