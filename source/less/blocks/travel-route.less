@@ -29,13 +29,13 @@
   text-transform: uppercase;
   color: #161c35;
   background-color: transparent;
-}
-.travel-route__button--back:hover,
-.travel-route__button--back:focus {
-  opacity: 0.7;
-}
-.travel-route__button--back:active {
-  opacity: 0.3;
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 .travel-route__button--next {
   padding: 10px 40px 5px 38px;
@@ -71,16 +71,16 @@
   background-color: transparent;
   padding: 0;
   opacity: 0.3;
-}
-.travel-route__button--arrow::before {
-  position: relative;
-  content: "";
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-right: 2px solid black;
-  border-top: 2px solid black;
-  transform: rotate(135deg);
+  &::before {
+    position: relative;
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    transform: rotate(135deg);
+  }
 }
 .travel-route__country-container {
   display: flex;
@@ -90,16 +90,16 @@
   padding: 16px 11px 13px 12px;
   min-width: 143px;
   position: relative;
-}
-.travel-route__country-container::after {
-  content: '';
-  position: absolute;
-  background-image: url("../../img/small-arrow.svg");
-  width: 5px;
-  height: 10px;
-  top: 53px;
-  left: 165px;
-  fill: #cbced9;
+  &::after {
+    content: '';
+    position: absolute;
+    background-image: url("../../img/small-arrow.svg");
+    width: 5px;
+    height: 10px;
+    top: 53px;
+    left: 165px;
+    fill: #cbced9;
+  }
 }
 .travel-route__country-container--bgcolor::after {
   display: none;
@@ -124,7 +124,7 @@
 .travel-route__button--delete {
   &::before,
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     right: 3px;
     width: 15px;
@@ -172,7 +172,7 @@
   left: 75%;
   top: -25px;
 }
-.travel-route__dropdown {
+.travel-route__country-item--dropdown {
   display: flex;
   flex-direction: column;
 }
@@ -186,23 +186,23 @@
 .travel-route__country-option {
   display: none;
 }
-.travel-route__dropdown--opened .travel-route__country-container--hover {
+.travel-route__country-item--dropdown--opened .travel-route__country-container--hover {
   border: transparent;
 }
-.travel-route__dropdown--opened .travel-route__country-option{
+.travel-route__country-item--dropdown--opened .travel-route__country-option{
   display: flex;
   flex-direction: column;
 }
-.travel-route__dropdown--opened .travel-route__button--delete {
+.travel-route__country-item--dropdown--opened .travel-route__button--delete {
   display: none;
 }
-.travel-route__dropdown--opened .travel-route__circle--choose {
+.travel-route__country-item--dropdown--opened .travel-route__circle--choose {
   display: none;
 }
-.travel-route__dropdown--opened .travel-route__button-dropdown {
+.travel-route__country-item--dropdown--opened .travel-route__button-dropdown {
   &::before,
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     right: 3px;
     width: 15px;
@@ -226,21 +226,21 @@
 .travel-route__country-container--hover:focus .travel-route__button--arrow {
   opacity: 0.5;
 }
-.travel-route__dropdown--opened .travel-route__country-container {
+.travel-route__country-item--dropdown--opened .travel-route__country-container {
   background-color: #1d2e5b;
   border: 1px solid transparent;
   border-radius: 0;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-.travel-route__dropdown--opened .travel-route__text {
+.travel-route__country-item--dropdown--opened .travel-route__text {
   color: @white;
   font-weight: 500;
 }
 .travel-route__button--plus {
   &::before,
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 14px;
     height: 2px;
@@ -305,15 +305,15 @@
     position: initial;
     width: 15px;
     height: 15px;
-  }
-  .travel-route__circle::before {
-    content: '';
-    position: absolute;
-    background-color: #d6d9e6;
-    width: 1px;
-    height: 73px;
-    top: 41px;
-    left: 26px;
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: #d6d9e6;
+      width: 1px;
+      height: 73px;
+      top: 41px;
+      left: 26px;
+    }
   }
   .travel-route__circle--line::after {
     content: '';
@@ -331,9 +331,14 @@
   .travel-route__circle--add {
     width: 13px;
     height: 13px;
+    &::before {
+      height: 90px;
+      background-image: linear-gradient(to bottom, transparent, #ffffff 90px);
+    }
   }
   .travel-route__dropdown-container {
     display: flex;
+    margin-bottom: 15px;
   }
   .travel-route__button--delete {
     position: absolute;
@@ -362,17 +367,17 @@
     position: relative;
     font-size: 24px;
     line-height: 24px;
-  }
-  .travel-route__button--next::after {
-    content: "";
-    position: absolute;
-    right: 36px;
-    top: 50%;
-    margin-top: -6px;
-    border: 6px solid transparent;
-    border-left: 10px solid #1d2e5b;
-    width: 0px;
-    height: 0px;
+    &::after {
+      content: '';
+      position: absolute;
+      right: 36px;
+      top: 50%;
+      margin-top: -6px;
+      border: 6px solid transparent;
+      border-left: 10px solid #1d2e5b;
+      width: 0px;
+      height: 0px;
+    }
   }
   .travel-route__button--back {
     text-transform: initial;
@@ -380,31 +385,31 @@
     position: relative;
     font-size: 24px;
     line-height: 24px;
-  }
-  .travel-route__button--back::before {
-    content: "";
-    position: absolute;
-    left: -30px;
-    top: 50%;
-    margin-top: -7px;
-    border: 6px solid transparent;
-    border-right: 10px solid #1d2e5b;
-    width: 0px;
-    height: 0px;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -30px;
+      top: 50%;
+      margin-top: -7px;
+      border: 6px solid transparent;
+      border-right: 10px solid #1d2e5b;
+      width: 0px;
+      height: 0px;
+    }
   }
   .travel-route__country-container::after {
     display: none;
   }
   .travel-route__country-choice {
-    margin-bottom: 49px;
+    margin-bottom: 34px;
   }
-  .travel-route__dropdown--opened .travel-route__country-option {
+  .travel-route__country-item--dropdown--opened .travel-route__country-option {
     flex-direction: row;
   }
-  .travel-route__dropdown--opened .travel-route__button--delete {
+  .travel-route__country-item--dropdown--opened .travel-route__button--delete {
     display: block;
   }
-  .travel-route__dropdown--opened .travel-route__circle--choose {
+  .travel-route__country-item--dropdown--opened .travel-route__circle--choose {
     display: block;
   }
 }
@@ -435,6 +440,10 @@
     top: -63px;
     left: 42px;
   }
+  .travel-route__circle--add::before {
+    height: 150px;
+    background-image: linear-gradient(to bottom, transparent, #ffffff 106px);
+  }
   .travel-route__button--delete {
     left: 170px;
   }
@@ -442,7 +451,7 @@
     left: 985px;
   }
   .travel-route__country-choice {
-    margin-bottom: 56px;
+    margin-bottom: 41px;
   }
 }
 

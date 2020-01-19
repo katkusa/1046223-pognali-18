@@ -7,6 +7,7 @@
 .country-card__container-info {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .country-card__text {
   font-size: 14px;
@@ -34,13 +35,13 @@
   background-color: transparent;
   text-align: left;
   padding: 0;
-}
-.country-card__button:hover,
-.country-card__button:focus {
-  color: rgba(0, 0, 0, 0.6);
-}
-.country-card__button:active {
-  color: rgba(0, 0, 0, 0.1);
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  &:active {
+    color: rgba(0, 0, 0, 0.1);
+  }
 }
 @media (min-width: @tablet-width) {
   .country-card__container-country {

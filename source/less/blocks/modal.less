@@ -52,14 +52,15 @@
   background-color: #f3f4f8;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  &:hover,
+  &:focus {
+    background-color: #edeff6;
+  }
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
 }
-.modal__button:hover,
-.modal__button:focus {
-  background-color: #edeff6;
-}
-.modal__button:active {
-  color: rgba(29, 46, 91, 0.3);
-}
+
 @media (min-width: @tablet-width) {
   .modal__container {
     margin-left: -340px;

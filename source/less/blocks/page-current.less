@@ -1,18 +1,18 @@
 .page-current__title {
   position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 214px;
+    height: 5px;
+    border-radius: 2.4px;
+    background-color: #ff8d30;
+  }
 }
 .page-current {
   padding-bottom: 12px;
-}
-.page-current__title::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -12px;
-  width: 214px;
-  height: 5px;
-  border-radius: 2.4px;
-  background-color: #ff8d30;
 }
 .page-current__back-main {
   display: none;
@@ -20,11 +20,11 @@
 @media (min-width: @tablet-width) {
   .page-current__title {
     padding-bottom: 69px;
-  }
-  .page-current__title::after {
-    width: 355px;
-    height: 8px;
-    border-radius: 4px;
+    &::after {
+      width: 355px;
+      height: 8px;
+      border-radius: 4px;
+    }
   }
   .page-current__back-main {
     display: block;

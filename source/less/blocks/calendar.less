@@ -20,11 +20,11 @@
   color: @white;
   background-color: #101d41;
   box-sizing: border-box;
-}
-.calendar__cell--selected:hover {
-  background-color: #1d2e5b;
-  outline: 4px solid #ff5c23;
-  border: 1px solid transparent;
+  &:hover {
+    background-color: #1d2e5b;
+    outline: 4px solid #ff5c23;
+    border: 1px solid transparent;
+  }
 }
 .calendar__cell--active:hover {
   background-color: #1d2e5b;
@@ -61,29 +61,29 @@
   padding: 0;
   background-color: transparent;
   border: transparent;
-}
-.calendar__button::before {
-  position: relative;
-  content: "";
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-right: 2px solid black;
-  border-top: 2px solid black;
-  opacity: 0.3;
+  &::before {
+    position: relative;
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    opacity: 0.3;
+  }
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 0.1;
+  }
 }
 .calendar__button--next::before {
   transform: rotate(45deg);
 }
 .calendar__button--prev::before {
   transform: rotate(-135deg);
-}
-.calendar__button:hover,
-.calendar__button:focus {
-  opacity: 0.5;
-}
-.calendar__button:active {
-  opacity: 0.1;
 }
 .calendar__cell-letter {
   display: none;
@@ -121,15 +121,15 @@
   }
 }
 @media (min-width: @desktop-width) {
-  .calendar__row .selected {
+  .calendar__row--selected {
     padding-bottom: 20px;
-  }
-  .calendar__button::before {
-    width: 18px;
-    height: 18px;
   }
   .calendar__button {
     border: transparent;
+    &::before {
+      width: 18px;
+      height: 18px;
+    }
   }
   .calendar__month-container {
     margin-bottom: 0;

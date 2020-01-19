@@ -17,6 +17,14 @@
   color: #1d2e5b;
   border: 3px solid @very-dark-blue;
   border-radius: 10px;
+  &:hover,
+  &:focus {
+    background-color: @very-dark-blue;
+    color: @white;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 .address__svg-container {
   display: flex;
@@ -39,17 +47,10 @@
   flex-direction: row;
   margin-bottom: 32px;
 }
-.address__link:hover,
-.address__link:focus {
-  background-color: @very-dark-blue;
-  color: @white;
-}
+
 .address__link:hover::after,
 .address__link:focus::after {
   border-left: 10px solid @white;
-}
-.address__link:active {
-  color: rgba(255, 255, 255, 0.3);
 }
 .address__link:active::after {
   border-left: 10px solid rgba(255, 255, 255, 0.3);
