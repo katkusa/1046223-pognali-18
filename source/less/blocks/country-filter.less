@@ -251,11 +251,14 @@
     display: block;
   }
 }
+.country-filter--open .wrapper--bg-light-gray {
+  background-color: red;
+}
 
 @media (min-width: @tablet-width) {
   .country-filter {
     border-radius: 0 0 60px 60px;
-    padding: 0 35px 1px 35px;
+    padding-bottom: 1px;
     margin-bottom: 50px;
     &--catalog {
       margin-bottom: 44px;
@@ -439,8 +442,6 @@
 @media (min-width: @desktop-width) {
   .country-filter {
     margin-bottom: 77px;
-    padding-right: 78px;
-    padding-left: 20px;
     &--open {
       position: static;
       top: 300px;

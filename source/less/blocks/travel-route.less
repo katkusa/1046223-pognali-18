@@ -172,7 +172,7 @@
   left: 75%;
   top: -25px;
 }
-.travel-route__country-item--dropdown {
+.dropdown-form {
   display: flex;
   flex-direction: column;
 }
@@ -186,20 +186,20 @@
 .travel-route__country-option {
   display: none;
 }
-.travel-route__country-item--dropdown--opened .travel-route__country-container--hover {
+.dropdown-form--opened .travel-route__country-container--hover {
   border: transparent;
 }
-.travel-route__country-item--dropdown--opened .travel-route__country-option{
+.dropdown-form--opened .travel-route__country-option{
   display: flex;
   flex-direction: column;
 }
-.travel-route__country-item--dropdown--opened .travel-route__button--delete {
+.dropdown-form--opened .travel-route__button--delete {
   display: none;
 }
-.travel-route__country-item--dropdown--opened .travel-route__circle--choose {
+.dropdown-form--opened .travel-route__circle--choose {
   display: none;
 }
-.travel-route__country-item--dropdown--opened .travel-route__button-dropdown {
+.dropdown-form--opened .travel-route__button-dropdown {
   &::before,
   &::after {
     content: '';
@@ -226,14 +226,14 @@
 .travel-route__country-container--hover:focus .travel-route__button--arrow {
   opacity: 0.5;
 }
-.travel-route__country-item--dropdown--opened .travel-route__country-container {
+.dropdown-form--opened .travel-route__country-container {
   background-color: #1d2e5b;
   border: 1px solid transparent;
   border-radius: 0;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-.travel-route__country-item--dropdown--opened .travel-route__text {
+.dropdown-form--opened .travel-route__text {
   color: @white;
   font-weight: 500;
 }
@@ -403,13 +403,13 @@
   .travel-route__country-choice {
     margin-bottom: 34px;
   }
-  .travel-route__country-item--dropdown--opened .travel-route__country-option {
+  .dropdown-form--opened .travel-route__country-option {
     flex-direction: row;
   }
-  .travel-route__country-item--dropdown--opened .travel-route__button--delete {
+  .dropdown-form--opened .travel-route__button--delete {
     display: block;
   }
-  .travel-route__country-item--dropdown--opened .travel-route__circle--choose {
+  .dropdown-form--opened .travel-route__circle--choose {
     display: block;
   }
 }
