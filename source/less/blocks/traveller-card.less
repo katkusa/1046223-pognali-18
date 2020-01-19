@@ -18,7 +18,7 @@
   position: absolute;
   width: 60px;
   height: 60px;
-  top: 0;
+  top: 4px;
   left: 0;
   border-radius: 50%;
 }
@@ -39,7 +39,7 @@
     content: '';
     position: absolute;
     left: -3px;
-    bottom: 2px;
+    bottom: 0;
     width: 31px;
     height: 1px;
     background-color: rgba(225, 225, 225, 0.2);
@@ -68,7 +68,7 @@
   line-height: 21px;
   font-weight: 700;
   color: #1d2e5b;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   position: relative;
   cursor: pointer;
   &:hover,
@@ -84,8 +84,11 @@
   text-align: center;
   color: @very-dark-gray;
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 8px;
   max-width: 180px;
+}
+.traveller-card__hobbys:nth-child(2n) {
+  margin-right: -13px;
 }
 .traveller-card__discription{
   display: flex;
@@ -94,7 +97,7 @@
   margin-top: 7px;
 }
 .traveller-card__transport {
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 .traveller-card__name--offline,
 .traveller-card__name--online {
@@ -102,7 +105,7 @@
   content: '';
   position: absolute;
   top: 5px;
-  left: -11px;
+  left: -14px;
   width: 5px;
   height: 5px;
   border-radius: 50%;
@@ -131,7 +134,7 @@
   height: 21px;
 }
 .traveller-card__flags {
-  margin-top: -20px;
+  margin-top: -10px;
 }
 @media (min-width: @tablet-width) {
   .traveller-card__discription {

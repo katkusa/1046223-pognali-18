@@ -29,7 +29,7 @@ window.addEventListener('resize', function() {
   } else {
     siteMenu.classList.add('site-menu--closed');
   }
-})
+});
 
 siteMenuToggle.addEventListener('click', function() {
   siteMenuToggle.classList.toggle('page-header__toggle--closed');
@@ -41,6 +41,10 @@ link.addEventListener("click", function (evt) {
   popup.classList.add("modal--show");
 });
 close.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.remove("modal--show");
+});
+popup.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal--show");
 });
