@@ -16,7 +16,7 @@
   font-weight: 500;
   color: @dark-slate-blue;
   text-transform: uppercase;
-  background-color: @light-grayish-blue;
+  background-color: transparent;
   border-radius: 4px;
   margin: 0;
   position: relative;
@@ -90,6 +90,7 @@
   padding: 16px 11px 13px 12px;
   min-width: 143px;
   position: relative;
+  cursor: pointer;
   &::after {
     content: '';
     position: absolute;
@@ -120,6 +121,7 @@
   width: 21px;
   height: 21px;
   border-radius: 50%;
+  padding: 10px;
 }
 .travel-route__button--delete {
   &::before,
@@ -216,6 +218,17 @@
   }
   &::after {
     transform: rotate(-45deg);
+  }
+}
+.travel-route__country-container--bgcolor-hover {
+  &:hover,
+  &:focus {
+    background-color: #cbced9;
+  }
+  &:active .travel-route__text,
+  &:active .travel-route__button--plus::before,
+  &:active .travel-route__button--plus::after {
+    opacity: 0.3;
   }
 }
 .travel-route__country-container--hover:hover,
@@ -338,7 +351,6 @@
   }
   .travel-route__dropdown-container {
     display: flex;
-    margin-bottom: 15px;
   }
   .travel-route__button--delete {
     position: absolute;

@@ -42,7 +42,7 @@
   background-color: #e2e5f1;
 }
 .traveller-form__input-checkbox:checked + .checkbox-indicator::after {
-  content: "";
+  content: '';
   flex-shrink: 0;
   display: block;
   width: 9px;
@@ -172,7 +172,7 @@
   background-repeat: no-repeat;
 }
 .traveller-form__checkbox-transport:checked + .checkbox-indicator::after {
-  content: "";
+  content: '';
   flex-shrink: 0;
   display: block;
   background-repeat: no-repeat;
@@ -265,6 +265,9 @@
 }
 .traveller-form__input-container--transport label {
   cursor: pointer;
+}
+.traveller-form__fieldset-transport--user {
+  padding: 15px;
 }
 @media (min-width: @tablet-width) {
   .traveller-form__container .traveller-form__fieldset {
@@ -409,6 +412,16 @@
     font-size: 20px;
     line-height: 18px;
   }
+  .traveller-form__fieldset-transport--user {
+    padding: 25px;
+    margin: 0;
+  }
+  .traveller-form__input-container--user {
+    width: auto;
+  }
+  .traveller-form__input-container--user label {
+    margin-right: 0;
+}
 }
 @media (min-width: @desktop-width) {
   .traveller-form__container .traveller-form__fieldset {
