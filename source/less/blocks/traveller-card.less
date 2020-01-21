@@ -146,9 +146,37 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
+  .traveller-card__level-score {
+    top: 22px;
+    left: 22px;
+  }
   .traveller-card__img {
     width: 285px;
     height: 285px;
+  }
+  .traveller-card__name {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 23px;
+  }
+  .traveller-card__name--offline,
+  .traveller-card__name--online {
+    &::before {
+      width: 7px;
+      height: 7px;
+      top: 6px;
+      left: -20px;
+    }
+  }
+  .traveller-card__hobbys {
+    font-size: 20px;
+    line-height: 22px;
+    max-width: 250px;
+    margin-left: -8px;
+    margin-bottom: 15px;
+  }
+  .traveller-card__transport {
+    margin-bottom: 28px;
   }
 }
 @media (min-width: @desktop-width) {

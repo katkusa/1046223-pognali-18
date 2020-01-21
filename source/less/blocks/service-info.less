@@ -39,8 +39,8 @@
       background-size: 380px 550px;
       background-repeat: no-repeat;
       position: absolute;
-      right: 0;
-      bottom: 70px;
+      right: -30px;
+      bottom: 75px;
     }
     &::before {
       display: block;
@@ -57,12 +57,12 @@
   .service-info__title {
     max-width: 300px;
     padding-top: 43px;
-    margin-bottom: 43px;
+    margin-bottom: 42px;
     z-index: 2;
   }
   .service-info__text {
-    margin-bottom: 38px;
-    width: 298px;
+    margin-bottom: 30px;
+    width: 300px;
     z-index: 2;
   }
   .service-info__text--light {
@@ -72,10 +72,15 @@
   .service-info__text--bold {
     font-size: 21px;
     line-height: 25px;
+    margin-bottom: 50px;
   }
   .service-info__button {
     display: inline-block;
     width: 226px;
+    padding: 30px 19px 26px 30px;
+    &::after {
+      right: 32px;
+    }
   }
 }
 @media (min-width: @desktop-width) {

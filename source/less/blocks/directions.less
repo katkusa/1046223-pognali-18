@@ -42,7 +42,7 @@
       border-radius: 20px;
       background-color: #e2e5f2;
       position: absolute;
-      top: 425px;
+      top: 412px;
       left: 0;
     }
   }
@@ -51,7 +51,8 @@
   }
   .directions__text {
     padding: 0;
-    margin-bottom: 113px;
+    padding-left: 3px;
+    margin-bottom: 105px;
     max-width: 350px;
     font-size: 28px;
     line-height: 33px;
@@ -59,14 +60,22 @@
   .directions__title {
     max-width: 350px;
     padding: 0;
-    margin-bottom: 62px;
+    margin-bottom: 60px;
   }
   .directions__item {
-    margin: 0;
+    margin: 0 6px 10px 1px;
     margin-bottom: 10px;
   }
   .directions__item:last-child {
     margin-bottom: 47px;
+  }
+  .directions__button {
+    margin-right: 6px;
+    margin-left: 1px;
+    padding: 30px 35px;
+    &::after {
+      right: 30px;
+    }
   }
 }
 
