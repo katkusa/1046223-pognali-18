@@ -198,7 +198,7 @@
   }
   .activity-plans__button {
     margin: 0;
-    text-transform: initial;
+    text-transform: none;
     color: #1d2e5b;
     padding: 27px 140px 24px 34px;
     border-radius: 20px;
@@ -218,16 +218,17 @@
     }
   }
   .activity-plans__button--back {
-    text-transform: initial;
+    text-transform: none;
     color: #1d2e5b;
     position: relative;
     font-size: 24px;
     line-height: 24px;
+    padding-left: 40px;
     &::before {
       content: '';
       position: absolute;
-      left: -40px;
-      top: 50%;
+      left: 0;
+      top: 10px;
       margin-top: -6px;
       border: 6px solid transparent;
       border-right: 10px solid #1d2e5b;

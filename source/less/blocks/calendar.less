@@ -122,6 +122,9 @@
   }
 }
 @media (min-width: @desktop-width) {
+  .calendar__table {
+    width: 1000px;
+  }
   .calendar__row--selected {
     padding-bottom: 20px;
   }
@@ -150,11 +153,11 @@
     line-height: 30px;
     letter-spacing: 1.8px;
   }
+  .calendar__cell--selected {
+    padding: 10px 0 5px 10px;
+  }
   .calendar__cell--text-white {
     display: block;
-  }
-  .calendar__cell--active {
-    padding-bottom: 14px;
   }
   .calendar__cell--no-text {
     padding-bottom: 40px;
