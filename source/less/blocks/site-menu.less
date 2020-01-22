@@ -35,13 +35,19 @@
 }
 
 @media (min-width: @tablet-width) {
+  .site-menu {
+    padding: 42px 40px 40px;
+  }
+  .site-menu--closed {
+    padding: 0;
+  }
   .site-menu__wrapper {
     max-width: 688px;
     padding: 0 40px;
   }
   .site-menu__authorization-link {
     position: absolute;
-    right: 40px;
+    right: 0;
     top: 0;
     padding: 10px 30px 8px;
   }
@@ -49,6 +55,9 @@
     display: block;
     position: static;
     margin-right: -40px;
+  }
+  .site-menu__logo {
+    margin-left: -40px;
   }
 }
 

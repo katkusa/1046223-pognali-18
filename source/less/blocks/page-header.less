@@ -6,9 +6,9 @@
   padding-bottom: 42px;
 }
 .page-header__toggle {
-  position: absolute;
-  top: 30px;
-  right: 32px;
+  position: relative;
+  top: -5px;
+  right: -60px;
   z-index: 11;
   width: 24px;
   background-color: transparent;
@@ -23,6 +23,10 @@
     border-radius: 1.5px;
     background-color: @white;
   }
+}
+.page-header__toggle--closed {
+  right: 0;
+  top: -5px;
 }
 .page-header__toggle::before {
   margin-bottom: 5px;
@@ -53,14 +57,17 @@
   }
   .page-header__toggle {
     width: 24px;
-    right: 0px;
-    top: 60px;
-    left: 363px;
+    right: 0;
+    top: 0;
+    left: 0;
+  }
+  .page-header__toggle--closed {
+    left: -360px;
   }
 }
 @media (min-width: @desktop-width) {
   .page-header {
-    padding: 47px 0 125px;
+    padding: 47px 0 25px;
     justify-content: flex-start;
   }
   .page-header__toggle {

@@ -36,6 +36,10 @@
 .wrapper--bg-blue.wrapper::before {
   background-color: @very-dark-blue;
 }
+.wrapper--bg-blue-header,
+.wrapper--bg-blue-header.wrapper::before {
+  background-color: #161c36;
+}
 .wrapper--bg-gray,
 .wrapper--bg-gray.wrapper::before {
   background-color: @light-grayish-blue;
@@ -84,6 +88,10 @@
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
   }
+  .wrapper--bg-blue-header,
+  .wrapper--bg-blue-header.wrapper::before {
+    background-color: @very-dark-blue;
+  }
 }
 @media (min-width: @desktop-width) {
   .wrapper__inner {
@@ -97,5 +105,9 @@
   .wrapper--bg-yellow-height {
     height: 815px;
     width: 285px;
+  }
+  .wrapper--bg-blue-header,
+  .wrapper--bg-blue-header.wrapper::before {
+    background-color: #161c36;
   }
 }
