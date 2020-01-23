@@ -156,7 +156,7 @@
     </div>
 
     <main class="page-form">
-      <div class="wrapper wrapper--bg-blue wrapper--bottom-radius">
+      <div class="wrapper wrapper--bg-blue wrapper--bottom-radius-header">
         <div class="wrapper__inner">
           <div class="page-form__current page-current">
             <h1 class="page-current__title title title--h1 title--color-white">Направления</h1>
@@ -312,8 +312,8 @@
                   <div class="arrival-dates__container">
                     <div class="arrival-dates__container-text">
                       <h3 class="arrival-dates__title title title--h3 title--color-blue">
-                        Шаг 1.
-                        Даты пребывания
+                        <span>Шаг 1.</span>
+                        <span>Даты пребывания</span>
                       </h3>
                       <p class="arrival-dates__pharagraph add-plan-form-container__pharagraph">
                         Укажите предпочтительное количество попутчиков, которых
@@ -434,8 +434,8 @@
                         <td class="calendar__cell calendar__cell--disabled">11</td>
                         <td class="calendar__cell calendar__cell--disabled">12</td>
                         <td class="calendar__cell calendar__cell--disabled">13</td>
-                        <td class="calendar__cell calendar__cell--disabled">15</td>
                         <td class="calendar__cell calendar__cell--disabled">14</td>
+                        <td class="calendar__cell calendar__cell--disabled">15</td>
                       </tr>
                       <tr class="calendar__row">
                         <td class="calendar__cell calendar__cell--disabled">16</td>
@@ -480,18 +480,18 @@
                       </tr>
                     </table>
                   </div>
-                  <button class="button button--bg-yellow button--size-small arrival-dates__button" type="button">
+                  <a class="button--bg-yellow button--size-small arrival-dates__button" src="#travel-route-link">
                     Cледующий шаг
-                  </button>
+                  </a>
                 </div>
               </div>
               <div class="form-wrapper form-wrapper--bg-white form-wrapper--all-border">
-                <div class="travel-route add-plan-form-container__travel-route">
+                <div class="travel-route add-plan-form-container__travel-route" id="travel-route-link">
                   <div class="travel-route__container-head">
                     <div class="travel-route__text-container">
                       <h3 class="travel-route__title title title--h3 title--color-blue">
-                        Шаг 2.
-                        Маршрут
+                        <span>Шаг 2.</span>
+                        <span>Маршрут</span>
                       </h3>
                       <p class="travel-route__pharagraph add-plan-form-container__pharagraph">
                         Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.
@@ -637,22 +637,22 @@
                     </div>
                   </div>
                   <div class="travel-route__button-container">
-                    <button class="button button--bg-yellow button--size-small travel-route__button--next" type="button">
+                    <a class="button--bg-yellow button--size-small travel-route__button--next" src="#activity-plans-link">
                        Cледующий шаг
-                    </button>
-                    <button class="button travel-route__button--back" type="button">
+                    </a>
+                    <a class="travel-route__button--back" src="#travel-route-link">
                       На шаг назад
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
               <div class="form-wrapper form-wrapper--bg-white form-wrapper--all-border">
-                <div class="activity-plans add-plan-form-container__activity-plans">
+                <div class="activity-plans add-plan-form-container__activity-plans" id="activity-plans-link">
                   <div class="activity-plans__container">
                     <div class="activity-plans__text-container">
                       <h3 class="activity-plans__title title title--h3 title--color-blue">
-                        Шаг 3.
-                        Развлечения
+                        <span>Шаг 3.</span>
+                        <span>Развлечения</span>
                       </h3>
                       <p class="activity-plans__pharagraph add-plan-form-container__pharagraph">
                         Наконец, расскажите о своих планах времяпровождения.
@@ -709,9 +709,9 @@
                     <button class="activity-plans__button button button--bg-yellow button--size-small" type="submit">
                       Отправить
                     </button>
-                    <button class="button activity-plans__button--back" type="button">
+                    <a class="activity-plans__button--back" src="#activity-plans-link">
                       На шаг назад
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>

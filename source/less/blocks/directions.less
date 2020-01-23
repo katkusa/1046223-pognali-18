@@ -86,10 +86,13 @@
   }
   .directions__button {
     position: absolute;
-    right: 250px;
+    right: 232px;
     bottom: 140px;
-    padding: 31px 102px 32px 34px;
+    padding: 31px 105px 30px 34px;
     z-index: 2;
+    &::after {
+      right: 32px;
+    }
   }
   .directions__text {
     margin: 0;
@@ -104,5 +107,9 @@
   .directions::before {
     top: 89px;
     left: 0;
+  }
+  .directions__title {
+    margin-left: 5px;
+    padding-top: 5px;
   }
 }

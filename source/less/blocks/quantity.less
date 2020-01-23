@@ -7,6 +7,7 @@
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 9px;
+  margin-left: -2px;
 }
 .quantity__text {
   text-transform: uppercase;
@@ -24,8 +25,8 @@
   justify-content: space-between;
   border: 1px solid #cbced9;
   border-radius: 4px;
-  margin-bottom: 21px;
-  padding: 16px 14px;
+  margin-bottom: 20px;
+  padding: 12px 14px 11px 14px;
   &:hover,
   &:focus {
     border: 1px solid #959bb2;
@@ -52,8 +53,8 @@
   &::after {
     content: '';
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 8px;
+    left: -1px;
     width: 14px;
     height: 2px;
     background-color: black;
@@ -62,10 +63,17 @@
 .quantity__button--more::before {
   transform: rotate(90deg);
 }
+.quantity__button--more {
+  &::before,
+  &::after {
+    top: 8px;
+    left: 25px;
+  }
+}
 
 .quantity__input {
-  width: 30px;
-  padding: 0 40px;
+  width: 40px;
+  padding: 2px 20px 0 47px;
   font: inherit;
   text-transform: uppercase;
   font-size: 16px;
