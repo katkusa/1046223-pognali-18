@@ -1,6 +1,5 @@
 .promoblock {
   position: relative;
-  padding-bottom: 55px;
 }
 .promoblock__slogan {
   display: flex;
@@ -51,7 +50,6 @@
 
 @media (min-width: @tablet-width) {
   .promoblock {
-    padding-bottom: 110px;
     background-image: url(../img/traveller-illustration-tablet@1x.png),url(../img/globe-back-tablet@1x.jpg);
     background-position: left 300px top 210px,top 160px left -300px;
     background-size: 300px 400px,1400px 591px;
@@ -84,11 +82,9 @@
 
 @media (min-width: @desktop-width) {
   .promoblock {
-    padding-top: 100px;
-    padding-bottom: 138px;
     background-image: url(../img/traveller-illustration-desktop@1x.png),url(../img/globe-back-desktop@1x.jpg);
-    background-position: left 570px top 20px,top -200px left -200px;
-    background-size: 431px 640px,2000px 891px;
+    background-position: left 605px top 5px,top -90px left -165px;
+    background-size: 431px 640px,1760px 900px;
     background-repeat: no-repeat,no-repeat;
     background-color: #161c36;
   }
@@ -96,17 +92,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 107px;
-    padding: 0 28px 0 69px;
+    padding: 0 5px 0 69px;
   }
   .promoblock__service {
     margin-left: 15px;
+    margin-top: 10px;
   }
   .promoblock__slogan {
     padding: 0;
     text-align: left;
     width: 439px;
     margin: 0;
+    margin-bottom: 90px;
   }
   .promoblock__review {
     padding: 0;
@@ -114,6 +111,7 @@
     width: 280px;
   }
   .promoblock__review-text {
-    margin-bottom: 52px;
+    margin-bottom: 45px;
+    margin-top: 10px;
   }
 }

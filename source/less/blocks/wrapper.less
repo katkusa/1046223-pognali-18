@@ -24,9 +24,17 @@
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
+.wrapper--bottom-radius-header {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
 .wrapper--bottom-radius + .wrapper::before {
   top: -30px;
   height: 30px;
+}
+.wrapper--bottom-radius-header + .wrapper::before {
+  top: -20px;
+  height: 20px;
 }
 .wrapper--top-radius {
   border-top-left-radius: 30px;
@@ -85,8 +93,8 @@
     height: 50px;
   }
   .wrapper--top-radius {
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
   }
   .wrapper--bg-blue-header,
   .wrapper--bg-blue-header.wrapper::before {
