@@ -23,6 +23,8 @@
   opacity: 0.3;
 }
 .travel-route__button--back {
+  display: block;
+  text-align: center;
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
@@ -38,15 +40,19 @@
   }
 }
 .travel-route__button--next {
-  padding: 10px 40px 5px 38px;
-  margin-bottom: 19px;
+  display: block;
+  padding: 5px 45px 5px 40px;
+  margin: 0 -5px 10px -5px;
 }
 .travel-route__title {
-  margin-bottom: 18px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-left: -2px;
 }
 .travel-route__pharagraph {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 .travel-route__text {
   color: #1d2e5b;
@@ -86,6 +92,8 @@
     display: inline-block;
     width: 8px;
     height: 8px;
+    top: -5px;
+    left: -3px;
     border-right: 2px solid black;
     border-top: 2px solid black;
     transform: rotate(135deg);
@@ -96,7 +104,7 @@
   justify-content: space-between;
   border: 1px solid #cbced9;
   border-radius: 4px;
-  padding: 16px 11px 13px 12px;
+  padding: 13px 11px 3px 10px;
   min-width: 143px;
   position: relative;
   cursor: pointer;
@@ -106,19 +114,26 @@
     background-image: url("../../img/small-arrow.svg");
     width: 5px;
     height: 10px;
-    top: 53px;
-    left: 165px;
+    top: 48px;
+    left: 163px;
     fill: #cbced9;
   }
 }
 .travel-route__country-container--bgcolor::after {
   display: none;
 }
+.travel-route__country-container--dropdown {
+  padding-bottom: 10px;
+}
+.travel-route__country-container--bgcolor {
+  padding: 14px 12px 11px 11px;
+  border: transparent;
+}
 .travel-route__container {
   display: flex;
   border: 1px solid #cbced9;
   border-radius: 4px;
-  padding: 9px;
+  padding: 8px;
   position: relative;
 }
 .travel-route__button--delete {
@@ -137,8 +152,8 @@
   &::after {
     content: '';
     position: absolute;
-    right: 3px;
-    width: 15px;
+    right: 4px;
+    width: 13px;
     height: 1px;
     background-color: #cccccc;
   }
@@ -173,7 +188,7 @@
   background-color: @white;
   border: 1px solid #cbced9;
   left: 75%;
-  top: -25px;
+  top: -22px;
 }
 .travel-route__circle--add {
   width: 7px;
@@ -193,6 +208,7 @@
 .travel-route__button-dropdown {
   position: relative;
   background-color: transparent;
+  width: 15px;
 }
 .travel-route__country-option {
   display: none;
@@ -215,8 +231,9 @@
   &::after {
     content: '';
     position: absolute;
-    right: 3px;
-    width: 15px;
+    right: 6px;
+    top: 5px;
+    width: 12px;
     height: 2px;
     background-color: @white;
     opacity: 1;
@@ -267,7 +284,7 @@
     width: 14px;
     height: 2px;
     background-color: black;
-    top: 50%;
+    top: 5px;
     left: 0;
     bottom: 0;
     right: 0;

@@ -8,7 +8,6 @@ var countryCatalogEl = document.querySelector('.country-filter--catalog');
 var toggleCatalog1El = document.querySelector('.country-filter__toggle');
 var toggleCatalog2El = document.querySelector('.country-filter__close');
 
-
 var getIsDesktop = function () {
   return window.matchMedia("(min-width: 1440px)").matches
 }
