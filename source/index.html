@@ -16,7 +16,7 @@
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <div class="wrapper wrapper--bg-blue">
+    <div class="wrapper wrapper--bg-blue-header">
       <div class="wrapper__inner">
         <header class="page-header">
           <a class="logo page-header__logo">
@@ -122,7 +122,7 @@
                 <ul class="social__list">
                   <li class="social__item">
                     <a class="social__link social__link--no-bg" href="#">
-                      <svg class="social__svg social__svg--no-bg social__svg--facebook" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      <svg class="social__svg social__svg--no-bg social__svg--facebook" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
                         <use xlink:href="#icon-facebook"></use>
                       </svg>
@@ -131,7 +131,7 @@
                   </li>
                   <li class="social__item">
                     <a class="social__link social__link--no-bg" href="#">
-                      <svg class="social__svg social__svg--no-bg social__svg--vk" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      <svg class="social__svg social__svg--no-bg social__svg--vk" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
                         <use xlink:href="#icon-vk"></use>
                       </svg>
@@ -140,7 +140,7 @@
                   </li>
                   <li class="social__item">
                     <a class="social__link social__link--insta" href="#">
-                      <svg class="social__svg social__svg--no-bg social__svg--insta" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      <svg class="social__svg social__svg--no-bg social__svg--insta" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
                         <use xlink:href="#icon-instagram"></use>
                       </svg>
@@ -157,12 +157,11 @@
 
     <main class="page-main">
       <div class="wrapper wrapper--bg-blue">
-        <div class="wrapper__inner">
-          <h1 class="visually-hidden">Сервис для путешествий "Погнали?"</h1>
-          <div class="promoblock page-main__promoblock">
-            <div class="promoblock__container">
+        <h1 class="visually-hidden">Сервис для путешествий "Погнали?"</h1>
+        <div class="promoblock page-main__promoblock">
+          <div class="promoblock__container">
+            <div class="wrapper__inner">
               <b class="promoblock__slogan">В путешествие с крутыми попутчиками!</b>
-
               <ul class="promoblock__buttons-list">
                 <li>
                   <a href="tel:+78005558628" class="contact contact--icon-size-s contact--icon-bg-orange">
@@ -196,12 +195,14 @@
                   «Лучшее приложение, что я видел в жизни!»
                 </blockquote>
                 <cite class="promoblock__review-author">
-                  Мурат Эльтазин <br>главный редактор газеты «гаджетлайф»
+                  Мурат Эльтазин <br> главный редактор газеты «гаджетлайф»
                 </cite>
               </div>
             </div>
-
+          </div>
+          <div class="wrapper__inner">
             <section class="service promoblock__service">
+              <h2 class="visually-hidden">Как найти попутчика</h2>
               <ul class="service__list">
                 <li class="service__item service__item--first">
                   <span class="service__text">Выберите направление</span>
@@ -237,7 +238,7 @@
             </p>
             <p class="service-info__text service-info__text--bold">
               А если найдете кого-то
-              близкого по духу — скорее зовите в совместный трип!
+              близкого по духу — скорее зовите его в совместный трип!
             </p>
             <a class="service-info__button button button--bg-yellow button--size-big button--arrow-right">Подробнее</a>
           </section>
@@ -318,7 +319,7 @@
                 </div>
               </li>
             </ul>
-            <a class="directions__button button button--bg-yellow button--size-big button--arrow-right">
+            <a class="directions__button button button--bg-yellow button--size-big button--arrow-right" href="./form.html">
               Показать все
             </a>
           </section>
@@ -390,27 +391,27 @@
                     <div class="transport traveller-card__transport">
                       <ul class="transport__list">
                         <li class="transport__item transport__item--active transport__tooltip" title="Авиаперелет">
-                          <svg class="transport__svg transport__svg--plane traveller-card__svg--plane transport__svg--active" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                          <svg class="transport__svg transport__svg--plane traveller-card__svg--plane transport__svg--active" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
                             <use xlink:href="#icon-plane"></use>
                           </svg>
                           <span class="visually-hidden">Самолет</span></li>
                         <li class="transport__item transport__tooltip" title="Автотранспорт">
-                          <svg class="transport__svg transport__svg--bus traveller-card__svg--bus" version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                          <svg class="transport__svg transport__svg--bus traveller-card__svg--bus" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
                             <use xlink:href="#icon-bus"></use>
                           </svg>
                           <span class="visually-hidden">Автобус</span>
                         </li>
                         <li class="transport__item transport__tooltip" title="Велосипед">
-                          <svg class="transport__svg transport__svg--bike traveller-card__svg--bike" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                          <svg class="transport__svg transport__svg--bike traveller-card__svg--bike" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
                             <use xlink:href="#icon-bike"></use>
                           </svg>
                           <span class="visually-hidden">Велосипед</span>
                         </li>
                         <li class="transport__item transport__tooltip" title="Пешком">
-                          <svg class="transport__svg transport__svg--foot traveller-card__svg--foot" version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                          <svg class="transport__svg transport__svg--foot traveller-card__svg--foot" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
                             <use xlink:href="#icon-run"></use>
                           </svg>
@@ -468,27 +469,27 @@
                     <div class="transport traveller-card__transport">
                       <ul class="transport__list">
                         <li class="transport__item transport__item--active transport__tooltip" title="Авиаперелет">
-                          <svg class="transport__svg transport__svg--plane traveller-card__svg--plane transport__svg--active" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                          <svg class="transport__svg transport__svg--plane traveller-card__svg--plane transport__svg--active" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
                             <use xlink:href="#icon-plane"></use>
                           </svg>
                           <span class="visually-hidden">Самолет</span></li>
                         <li class="transport__item transport__item--active transport__tooltip" title="Автотранспорт">
-                          <svg class="transport__svg transport__svg--bus traveller-card__svg--bus transport__svg--active" version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                          <svg class="transport__svg transport__svg--bus traveller-card__svg--bus transport__svg--active" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
                             <use xlink:href="#icon-bus"></use>
                           </svg>
                           <span class="visually-hidden">Автобус</span>
                         </li>
                         <li class="transport__item transport__tooltip" title="Велосипед">
-                          <svg class="transport__svg transport__svg--bike traveller-card__svg--bike" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                          <svg class="transport__svg transport__svg--bike traveller-card__svg--bike" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
                             <use xlink:href="#icon-bike"></use>
                           </svg>
                           <span class="visually-hidden">Велосипед</span>
                         </li>
                         <li class="transport__item transport__item--active transport__tooltip" title="Пешком">
-                          <svg class="transport__svg transport__svg--foot traveller-card__svg--foot transport__svg--active" version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                          <svg class="transport__svg transport__svg--foot traveller-card__svg--foot transport__svg--active" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
                             <use xlink:href="#icon-run"></use>
                           </svg>
@@ -500,7 +501,7 @@
                 </div>
               </li>
             </ul>
-            <a class="traveller__button button button--bg-yellow button--size-big button--arrow-right">Показать всех</a>
+            <a class="traveller__button button button--bg-yellow button--size-big button--arrow-right" href="./catalog.html">Показать всех</a>
           </section>
         </div>
       </div>
@@ -510,7 +511,7 @@
             <h2 class="distribution__title title title--h2 title--color-orange">
               Добавьте свой профиль
             </h2>
-            <img class="distribution__img" srcset="img/img/rates@1x.png 1x, img/rates@2x.png 2x" width="99" height="99">
+            <img class="distribution__img" src="img/rates@1x.png" srcset="img/rates@2x.png 2x" width="99" height="99" alt="">
             <ul class="distribution__list">
               <li class="distribution__item">
                 <div class="distribution__container">
@@ -527,7 +528,7 @@
                 <span class="distribution__number distribution__number--vivid-orange-light">2</span>
               </li>
               <li class="distribution__item">
-                <div class="distribution__container">
+                <div class="distribution__container distribution__container--bottom-border">
                   <span class="distribution__text">Кастомный цвет карточки</span>
                   <span class="distribution__text">59 руб./мес</span>
                 </div>
@@ -536,7 +537,7 @@
             </ul>
             <div class="distribution__link-container">
               <div class="distribution__svg-container">
-                <svg class="distribution__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <svg class="distribution__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
                   <use xlink:href="#icon-business"></use>
                 </svg>
@@ -562,7 +563,7 @@
                 <label for="subscription-field" class="visually-hidden">Электронная почта</label>
                 <input class="subscription__input" type="email" name="subscription-form" id="subscription-field" placeholder="E-mail" required>
               </div>
-              <button type="submit" class="button subscription__button button--bg-yellow button--arrow-right" type="submit">
+              <button type="submit" class="button subscription__button button--bg-yellow button--arrow-right">
                 <span class="subscription__button--text">
                   Регистрация
                 </span>
@@ -580,7 +581,7 @@
               <div class="subscription__contact-item">
                 <a href="tel:+78005558628" class="contact contact--icon-bg-dark-blue contact--color-yellow contact--show-text">
                   <div class="contact__icon">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
                       <use xlink:href="#icon-contacts-phone"></use>
                     </svg>
@@ -591,7 +592,7 @@
               <div class="subscription__contact-item">
                 <a href="mailto:mail@htmlacademy.ru" class="contact contact--icon-bg-dark-blue contact--color-yellow contact--show-text">
                   <div class="contact__icon">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
                       <use xlink:href="#icon-contacts-mail"></use>
                     </svg>
@@ -606,9 +607,10 @@
       <div class="wrapper wrapper--bg-yellow wrapper--bottom-radius">
         <div class="wrapper__inner">
           <section class="address page-main__address">
+            <h2 class="visually-hidden">Адрес офиса</h2>
             <div class="address__container">
               <div class="address__svg-container">
-                <svg class="address__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <svg class="address__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 28 43" style="enable-background:new 0 0 28 43;" xml:space="preserve">
                   <use xlink:href="#icon-contacts-location"></use>
                 </svg>
@@ -632,7 +634,7 @@
             <source type="image/webp" srcset="img/map-mobile1x.webp 1x, img/map-mobile2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/map-desktop1x.jpg 1x, img/map-desktop2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/map-tablet1x.jpg 1x, img/map-tablet2x.jpg 2x">
-            <img class="map__img" src="img/map-mobile1x.jpg" srcset="img/map-mobile2x.jpg 2x" width="" height="" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
+            <img class="map__img" src="img/map-mobile1x.jpg" srcset="img/map-mobile2x.jpg 2x" width="320" height="400" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
           </picture>
           <img class="map__pin" src="img/map-marker.svg" alt=""  width="41" height="41">
         </div>
@@ -656,7 +658,7 @@
             <ul class="social__list">
               <li class="social__item social__item--bg-yellow">
                 <a class="social__link" href="#">
-                  <svg class="social__svg social__svg--bg-yellow social__svg--facebook" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg class="social__svg social__svg--bg-yellow social__svg--facebook" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
                     <use xlink:href="#icon-facebook"></use>
                   </svg>
@@ -665,7 +667,7 @@
               </li>
               <li class="social__item social__item--bg-yellow">
                 <a class="social__link" href="#">
-                  <svg class="social__svg social__svg--bg-yellow social__svg--vk" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg class="social__svg social__svg--bg-yellow social__svg--vk" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
                     <use xlink:href="#icon-vk"></use>
                   </svg>
@@ -674,7 +676,7 @@
               </li>
               <li class="social__item social__item--bg-yellow">
                 <a class="social__link" href="#">
-                  <svg class="social__svg social__svg--bg-yellow social__svg--insta" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg class="social__svg social__svg--bg-yellow social__svg--insta" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
                     <use xlink:href="#icon-instagram"></use>
                   </svg>
@@ -686,7 +688,7 @@
           <div class="copyright page-footer__copyright">
             <b class="copyright__text">Разработано</b>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <svg class="copyright__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg class="copyright__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 27 34" style="enable-background:new 0 0 27 34;" xml:space="preserve">
                 <use xlink:href="#icon-htmlacademy"></use>
               </svg>

@@ -2,7 +2,7 @@
   position: relative;
 }
 .wrapper::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   right: 0;
@@ -29,12 +29,16 @@
   height: 30px;
 }
 .wrapper--top-radius {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 .wrapper--bg-blue,
 .wrapper--bg-blue.wrapper::before {
   background-color: @very-dark-blue;
+}
+.wrapper--bg-blue-header,
+.wrapper--bg-blue-header.wrapper::before {
+  background-color: #161c36;
 }
 .wrapper--bg-gray,
 .wrapper--bg-gray.wrapper::before {
@@ -73,16 +77,20 @@
     border-radius: 30px;
   }
   .wrapper--bottom-radius {
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
   .wrapper--bottom-radius + .wrapper::before {
-    top: -40px;
-    height: 40px;
+    top: -50px;
+    height: 50px;
   }
   .wrapper--top-radius {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+  }
+  .wrapper--bg-blue-header,
+  .wrapper--bg-blue-header.wrapper::before {
+    background-color: @very-dark-blue;
   }
 }
 @media (min-width: @desktop-width) {
@@ -97,5 +105,9 @@
   .wrapper--bg-yellow-height {
     height: 815px;
     width: 285px;
+  }
+  .wrapper--bg-blue-header,
+  .wrapper--bg-blue-header.wrapper::before {
+    background-color: #161c36;
   }
 }

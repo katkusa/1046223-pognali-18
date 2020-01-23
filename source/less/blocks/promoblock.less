@@ -25,8 +25,7 @@
   padding: 8px 40px 3px 40px;
 }
 .promoblock__review {
-  padding: 0 80px 0 25px;
-  margin-bottom: 30px;
+  padding: 0 80px 110px 25px;
 }
 .promoblock__review-text {
   font-weight: 300;
@@ -39,27 +38,43 @@
   color: @white;
   font-style: normal;
 }
+.promoblock {
+  background-image: url(../img/traveller-illustration-mobile@1x.png),url(../img/globe-back-mobile@1x.jpg);
+  background-position: center 125px,center top 40px;
+  background-size: 192px 256px,320px 340px;
+  background-repeat: no-repeat,no-repeat;
+  background-color: #161c36;
+}
+.promoblock__service {
+  margin-top: -80px;
+}
 
 @media (min-width: @tablet-width) {
   .promoblock {
     padding-bottom: 110px;
+    background-image: url(../img/traveller-illustration-tablet@1x.png),url(../img/globe-back-tablet@1x.jpg);
+    background-position: left 300px top 210px,top 160px left -300px;
+    background-size: 300px 400px,1400px 591px;
+    background-repeat: no-repeat,no-repeat;
+    background-color: #192144;
   }
   .promoblock__slogan {
     padding: 0 130px;
     font-size: 60px;
     line-height: 70px;
-    margin-bottom: 96px;
+    margin-bottom: 86px;
   }
   .promoblock__buttons-list {
     display: none;
   }
   .promoblock__review {
-    margin-bottom: 213px;
+    margin-bottom: 210px;
     padding: 0 380px 0 35px;
   }
   .promoblock__review-text {
     font-size: 28px;
     line-height: 33px;
+    margin-bottom: 43px;
   }
   .promoblock__review-author {
     font-size: 21px;
@@ -69,7 +84,13 @@
 
 @media (min-width: @desktop-width) {
   .promoblock {
+    padding-top: 100px;
     padding-bottom: 138px;
+    background-image: url(../img/traveller-illustration-desktop@1x.png),url(../img/globe-back-desktop@1x.jpg);
+    background-position: left 570px top 20px,top -200px left -200px;
+    background-size: 431px 640px,2000px 891px;
+    background-repeat: no-repeat,no-repeat;
+    background-color: #161c36;
   }
   .promoblock__container {
     display: flex;

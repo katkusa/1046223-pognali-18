@@ -122,7 +122,7 @@
                 <ul class="social__list">
                   <li class="social__item">
                     <a class="social__link social__link--no-bg" href="#">
-                      <svg class="social__svg social__svg--no-bg social__svg--facebook" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      <svg class="social__svg social__svg--no-bg social__svg--facebook" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
                         <use xlink:href="#icon-facebook"></use>
                       </svg>
@@ -131,7 +131,7 @@
                   </li>
                   <li class="social__item">
                     <a class="social__link social__link--no-bg" href="#">
-                      <svg class="social__svg social__svg--no-bg social__svg--vk" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      <svg class="social__svg social__svg--no-bg social__svg--vk" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
                         <use xlink:href="#icon-vk"></use>
                       </svg>
@@ -140,7 +140,7 @@
                   </li>
                   <li class="social__item">
                     <a class="social__link social__link--insta" href="#">
-                      <svg class="social__svg social__svg--no-bg social__svg--insta" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      <svg class="social__svg social__svg--no-bg social__svg--insta" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
                         <use xlink:href="#icon-instagram"></use>
                       </svg>
@@ -195,41 +195,56 @@
               <h3 class="traveller-id-card__heading">
                 Тэги
               </h3>
-              <textarea class="traveller-id-card__textarea" name="user-textarea" id="userfield-textarea" rows="5" placeholder="Коротко о себе в виде 5-8 хештэгов" aria-label="Поле для ввода развлечений в стране">#бургер #бар #футбол #концерт #крафт</textarea>
+              <textarea class="traveller-id-card__textarea" name="user-textarea" id="userfield-textarea1" rows="5" placeholder="Коротко о себе в виде 5-8 хештэгов" aria-label="Поле для ввода развлечений в стране">#бургер #бар #футбол #концерт #крафт</textarea>
             </div>
             <div class="transport traveller-id-card__transport">
               <h3 class="transport__title">
                 Транспорт
               </h3>
-              <ul class="transport__list traveller-id-card__list">
-                <li class="transport__item transport__item--bg-white transport__tooltip" title="Авиаперелет">
-                  <svg class="transport__svg traveller-id-card__svg--plane transport__svg--plane transport__svg--active" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
-                    <use xlink:href="#icon-plane"></use>
-                  </svg>
-                  <span class="visually-hidden">Самолет</span></li>
-                <li class="transport__item transport__item--bg-white transport__tooltip" title="Автотранспорт">
-                  <svg class="transport__svg traveller-id-card__svg--bus transport__svg--bus transport__svg--active" version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
-                    <use xlink:href="#icon-bus"></use>
-                  </svg>
-                  <span class="visually-hidden">Автобус</span>
-                </li>
-                <li class="transport__item transport__item--bg-white transport__tooltip" title="Велосипед">
-                  <svg class="transport__svg transport__svg--noactive transport__svg--bike traveller-id-card__svg--bike" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
-                    <use xlink:href="#icon-bike"></use>
-                  </svg>
-                  <span class="visually-hidden">Велосипед</span>
-                </li>
-                <li class="transport__item transport__item--bg-white transport__tooltip" title="Пешком">
-                  <svg class="transport__svg transport__svg--foot traveller-id-card__svg--foot transport__svg--active" version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
-                    <use xlink:href="#icon-run"></use>
-                  </svg>
-                  <span class="visually-hidden">Пешком</span>
-                </li>
-              </ul>
+              <fieldset class="traveller-form__fieldset-transport traveller-form__fieldset-transport--user">
+                <div class="traveller-form__input-container traveller-form__input-container--transport traveller-form__input-container--user">
+                  <label>
+                    <input type="checkbox" name="transport-choice" value="plane" class="traveller-form__checkbox-transport traveller-form__input-checkbox--circle visually-hidden" checked>
+                    <span class="checkbox-indicator checkbox-indicator--plane">
+                      <svg class="traveller-form__checkbox-indicator-svg traveller-form__checkbox-indicator-svg--plane" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                        <use xlink:href="#icon-plane"></use>
+                      </svg>
+                    </span>
+                    <span class="visually-hidden">Самолет</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="transport-choice" value="bus" class="traveller-form__checkbox-transport traveller-form__input-checkbox--circle visually-hidden" checked>
+                    <span class="checkbox-indicator checkbox-indicator--bus">
+                      <svg class="traveller-form__checkbox-indicator-svg traveller-form__checkbox-indicator-svg--bus" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                        <use xlink:href="#icon-bus"></use>
+                      </svg>
+                    </span>
+                    <span class="visually-hidden">Автобус</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="transport-choice" value="bike" class="traveller-form__checkbox-transport traveller-form__input-checkbox--circle visually-hidden">
+                    <span class="checkbox-indicator checkbox-indicator--bike">
+                      <svg class="traveller-form__checkbox-indicator-svg traveller-form__checkbox-indicator-svg--bike" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                        <use xlink:href="#icon-bike"></use>
+                      </svg>
+                    </span>
+                    <span class="visually-hidden">Велосипед</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="transport-choice" value="foot" class="traveller-form__checkbox-transport traveller-form__input-checkbox--circle visually-hidden" checked>
+                    <span class="checkbox-indicator checkbox-indicator--foot">
+                      <svg class="traveller-form__checkbox-indicator-svg traveller-form__checkbox-indicator-svg--foot" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                        <use xlink:href="#icon-run"></use>
+                      </svg>
+                    </span>
+                    <span class="visually-hidden">Пешком</span>
+                  </label>
+                </div>
+              </fieldset>
             </div>
           </section>
         </div>
@@ -338,7 +353,7 @@
                           <button class="quantity__button quantity__button--less" type="button">
                             <span class="visually-hidden">Меньше</span>
                           </button>
-                          <input class="quantity__input" id="number" type="number" value="2">
+                          <input class="quantity__input" id="number3" type="number" value="2">
                           <button class="quantity__button quantity__button--more" type="button">
                             <span class="visually-hidden">Больше</span>
                           </button>
@@ -357,7 +372,7 @@
                           <button class="quantity__button quantity__button--less" type="button">
                             <span class="visually-hidden">Меньше</span>
                           </button>
-                          <input class="quantity__input" id="number" type="number" value="2">
+                          <input class="quantity__input" id="number4" type="number" value="2">
                           <button class="quantity__button quantity__button--more" type="button">
                             <span class="visually-hidden">Больше</span>
                           </button>
@@ -503,7 +518,7 @@
                   <div class="travel-route__country-choice">
                     <div class="travel-route__country-item">
                       <div class="travel-route__country-container">
-                        <b class="travel-route__text">Босния и Герцеговина</b>
+                        <b class="travel-route__text travel-route__text--gradient">Босния и Герцеговина</b>
                         <button class="button travel-route__button--arrow" type="button">
                           <span class="visually-hidden">Выбрать</span>
                         </button>
@@ -672,7 +687,7 @@
                       </svg>
                     </div>
                     <div class="activity-plans__textarea-container">
-                      <textarea class="activity-plans__textarea" name="user-textarea" id="userfield-textarea" rows="5" placeholder="План действий" aria-label="Поле для ввода развлечений в стране" required=""></textarea>
+                      <textarea class="activity-plans__textarea" name="user-textarea" id="userfield-textarea2" rows="5" placeholder="План действий" aria-label="Поле для ввода развлечений в стране" required=""></textarea>
                       <span class="activity-plans__textarea-error">Это поле должно быть заполнено</span>
                     </div>
                   </div>
@@ -686,7 +701,7 @@
                       </svg>
                     </div>
                     <div class="activity-plans__textarea-container">
-                      <textarea class="activity-plans__textarea" name="user-textarea" id="userfield-textarea" rows="5" placeholder="План действий" aria-label="Поле для ввода развлечений в стране" required="">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                      <textarea class="activity-plans__textarea" name="user-textarea" id="userfield-textarea3" rows="5" placeholder="План действий" aria-label="Поле для ввода развлечений в стране" required="">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                       <span class="activity-plans__textarea-error">Это поле должно быть заполнено</span>
                     </div>
                   </div>
@@ -723,7 +738,7 @@
             <ul class="social__list">
               <li class="social__item social__item--bg-yellow">
                 <a class="social__link" href="#">
-                  <svg class="social__svg social__svg--bg-yellow social__svg--facebook" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg class="social__svg social__svg--bg-yellow social__svg--facebook" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
                     <use xlink:href="#icon-facebook"></use>
                   </svg>
@@ -732,7 +747,7 @@
               </li>
               <li class="social__item social__item--bg-yellow">
                 <a class="social__link" href="#">
-                  <svg class="social__svg social__svg--bg-yellow social__svg--vk" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg class="social__svg social__svg--bg-yellow social__svg--vk" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
                     <use xlink:href="#icon-vk"></use>
                   </svg>
@@ -741,7 +756,7 @@
               </li>
               <li class="social__item social__item--bg-yellow">
                 <a class="social__link" href="#">
-                  <svg class="social__svg social__svg--bg-yellow social__svg--insta" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg class="social__svg social__svg--bg-yellow social__svg--insta" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
                     <use xlink:href="#icon-instagram"></use>
                   </svg>
@@ -753,7 +768,7 @@
           <div class="copyright page-footer__copyright">
             <b class="copyright__text">Разработано</b>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <svg class="copyright__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg class="copyright__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 27 34" style="enable-background:new 0 0 27 34;" xml:space="preserve">
                 <use xlink:href="#icon-htmlacademy"></use>
               </svg>

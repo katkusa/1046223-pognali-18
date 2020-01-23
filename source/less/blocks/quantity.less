@@ -40,6 +40,7 @@
   opacity: 0.3;
   background-color: transparent;
   border: transparent;
+  width: 40px;
   &:hover,
   &:focus {
     opacity: 0.4;
@@ -51,6 +52,8 @@
   &::after {
     content: '';
     position: absolute;
+    top: 10px;
+    left: 10px;
     width: 14px;
     height: 2px;
     background-color: black;
@@ -59,9 +62,7 @@
 .quantity__button--more::before {
   transform: rotate(90deg);
 }
-.quantity__button--more {
-  right: 10px;
-}
+
 .quantity__input {
   width: 30px;
   padding: 0 40px;
@@ -91,7 +92,6 @@
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 2px;
-    padding: 0 50px;
   }
   .quantity__container-text {
     margin-bottom: 25px;
@@ -113,6 +113,7 @@
     margin-bottom: 112px;
   }
   .quantity__button {
+    width: 50px;
     &::before,
     &::after {
       width: 20px;

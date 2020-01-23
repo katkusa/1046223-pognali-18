@@ -16,7 +16,7 @@
   font-weight: 500;
   color: @dark-slate-blue;
   text-transform: uppercase;
-  background-color: @light-grayish-blue;
+  background-color: transparent;
   border-radius: 4px;
   margin: 0;
   position: relative;
@@ -57,6 +57,15 @@
   font-weight: 500;
   overflow: hidden;
   white-space: nowrap;
+  position: relative;
+}
+.travel-route__text--gradient::before {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 20px;
+  left: 118px;
+  background: linear-gradient(to left,#fff,rgba(255,255,255,0.9));
 }
 .travel-route__country-item {
   display: flex;
@@ -90,6 +99,7 @@
   padding: 16px 11px 13px 12px;
   min-width: 143px;
   position: relative;
+  cursor: pointer;
   &::after {
     content: '';
     position: absolute;
@@ -120,6 +130,7 @@
   width: 21px;
   height: 21px;
   border-radius: 50%;
+  padding: 10px;
 }
 .travel-route__button--delete {
   &::before,
@@ -218,6 +229,17 @@
     transform: rotate(-45deg);
   }
 }
+.travel-route__country-container--bgcolor-hover {
+  &:hover,
+  &:focus {
+    background-color: #cbced9;
+  }
+  &:active .travel-route__text,
+  &:active .travel-route__button--plus::before,
+  &:active .travel-route__button--plus::after {
+    opacity: 0.3;
+  }
+}
 .travel-route__country-container--hover:hover,
 .travel-route__country-container--hover:focus {
   border: 1px solid #959bb2;
@@ -261,6 +283,9 @@
   margin-bottom: 25px;
 }
 @media (min-width: @tablet-width) {
+  .travel-route__text--gradient::before {
+    display: none;
+  }
   .travel-route__title {
     margin-bottom: 37px;
   }
@@ -302,7 +327,7 @@
     width: 53px;
   }
   .travel-route__circle {
-    position: initial;
+    position: static;
     width: 15px;
     height: 15px;
     &::before {
@@ -310,7 +335,7 @@
       position: absolute;
       background-color: #d6d9e6;
       width: 1px;
-      height: 73px;
+      height: 77px;
       top: 41px;
       left: 26px;
     }
@@ -338,7 +363,6 @@
   }
   .travel-route__dropdown-container {
     display: flex;
-    margin-bottom: 15px;
   }
   .travel-route__button--delete {
     position: absolute;
@@ -360,7 +384,7 @@
   }
   .travel-route__button--next {
     margin: 0;
-    text-transform: initial;
+    text-transform: none;
     color: #1d2e5b;
     padding: 27px 78px 24px 34px;
     border-radius: 20px;
@@ -380,16 +404,17 @@
     }
   }
   .travel-route__button--back {
-    text-transform: initial;
+    text-transform: none;
     color: #1d2e5b;
     position: relative;
     font-size: 24px;
     line-height: 24px;
+    padding-left: 40px;
     &::before {
       content: '';
       position: absolute;
-      left: -30px;
-      top: 50%;
+      left: 0;
+      top: 13px;
       margin-top: -7px;
       border: 6px solid transparent;
       border-right: 10px solid #1d2e5b;

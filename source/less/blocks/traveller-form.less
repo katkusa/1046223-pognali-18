@@ -42,7 +42,7 @@
   background-color: #e2e5f1;
 }
 .traveller-form__input-checkbox:checked + .checkbox-indicator::after {
-  content: "";
+  content: '';
   flex-shrink: 0;
   display: block;
   width: 9px;
@@ -101,6 +101,7 @@
   top: 0;
   right: 0;
   width: 10px;
+  height: 20px;
   background-color: transparent;
   border: none;
   box-shadow: none;
@@ -110,7 +111,7 @@
   position: absolute;
   right: 0;
   left: 0;
-  top: 50%;
+  top: 0;
   margin-top: 4px;
   border: 4px solid transparent;
   border-top: 4px solid #1d2e5b;
@@ -118,7 +119,7 @@
   height: 0px;
 }
 .traveller-form__button-arrow--opened::before {
-  top: -5px;
+  top: 0;
   margin-top: 0;
   border-top: 0;
   border-bottom: 4px solid #1d2e5b;
@@ -172,7 +173,7 @@
   background-repeat: no-repeat;
 }
 .traveller-form__checkbox-transport:checked + .checkbox-indicator::after {
-  content: "";
+  content: '';
   flex-shrink: 0;
   display: block;
   background-repeat: no-repeat;
@@ -265,6 +266,9 @@
 }
 .traveller-form__input-container--transport label {
   cursor: pointer;
+}
+.traveller-form__fieldset-transport--user {
+  padding: 15px;
 }
 @media (min-width: @tablet-width) {
   .traveller-form__container .traveller-form__fieldset {
@@ -409,6 +413,16 @@
     font-size: 20px;
     line-height: 18px;
   }
+  .traveller-form__fieldset-transport--user {
+    padding: 25px;
+    margin: 0;
+  }
+  .traveller-form__input-container--user {
+    width: auto;
+  }
+  .traveller-form__input-container--user label {
+    margin-right: 0;
+}
 }
 @media (min-width: @desktop-width) {
   .traveller-form__container .traveller-form__fieldset {

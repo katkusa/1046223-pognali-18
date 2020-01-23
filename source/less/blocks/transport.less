@@ -10,6 +10,7 @@
   background-color: #edeff6;
   text-align: center;
   top: -8px;
+  left: 80px;
 }
 .transport__list {
   display: flex;
@@ -114,15 +115,12 @@
 @media (min-width: @tablet-width) {
   .transport__title {
     top: 85px;
+    left: 70px;
     font-size: 20px;
     line-height: 18px;
     font-weight: 500;
     letter-spacing: 2px;
     padding: 0 20px;
-  }
-  .transport__item {
-    width: 43px;
-    height: 43px;
   }
   .transport__tooltip:hover::before {
     bottom: -7px;
@@ -150,6 +148,9 @@
 }
 @media (min-width: @desktop-width) {
   .transport__title {
-    top: 165px;
+    top: 80px;
+    right: 0;
+    left: 110px;
+    max-width: 130px;
   }
 }
