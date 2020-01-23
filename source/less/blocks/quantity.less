@@ -102,20 +102,20 @@
     letter-spacing: 2px;
   }
   .quantity__container-text {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     &::before {
       content: '';
       width: 532px;
       height: 1px;
       position: absolute;
-      top: -24px;
+      top: -26px;
       left: 0;
       background-color: #d6d9e6;
     }
   }
   .quantity__quantity-change {
     margin-bottom: 59px;
-    padding: 28px 20px;
+    padding: 18px 21px;
   }
   .quantity__quantity-change--margin {
     margin-bottom: 112px;
@@ -125,6 +125,19 @@
     &::before,
     &::after {
       width: 20px;
+    }
+  }
+  .quantity__button--less {
+    &::before,
+    &::after {
+      top: 13px;
+    }
+  }
+  .quantity__button--more {
+    &::before,
+    &::after {
+      top: 15px;
+      left: 33px;
     }
   }
 }

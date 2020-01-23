@@ -92,13 +92,22 @@
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
+  .wrapper--bottom-radius-header {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+  .wrapper--bottom-radius-header + .wrapper::before {
+    top: -60px;
+    height: 60px;
+  }
   .wrapper--bottom-radius + .wrapper::before {
     top: -50px;
     height: 50px;
   }
   .wrapper--top-radius {
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: -40px;
   }
   .wrapper--bg-blue-header,
   .wrapper--bg-blue-header.wrapper::before {
