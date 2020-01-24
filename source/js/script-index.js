@@ -1,4 +1,6 @@
 var siteMenu = document.querySelector('.site-menu');
+var pageHeader = document.querySelector('.page-header');
+var noJS = document.querySelector('.no-js');
 var siteMenuToggle = document.querySelector('.page-header__toggle');
 var link = document.querySelector('.distribution__link-container');
 var popup = document.querySelector('.modal');
@@ -13,6 +15,21 @@ if (getIsDesktop()) {
   if (siteMenu.classList.contains('site-menu--closed')) {
     siteMenu.classList.remove('site-menu--closed');
   }
+}
+window.addEventListener('scroll', function (evt) {
+  if (siteMenu.classList.contains('site-menu--open')) {
+    evt.preventDefault();
+  } else {
+    if (window.pageYOffset > 300) {
+      pageHeader.classList.add('page-header--scroll');
+    } else {
+      pageHeader.classList.remove('page-header--scroll');
+    }
+  }
+});
+
+if (pageHeader.classList.contains('no-js')) {
+  pageHeader.classList.remove('no-js');
 }
 
 window.addEventListener('resize', function() {

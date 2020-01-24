@@ -4,7 +4,37 @@
   align-items: center;
   padding-top: 27px;
   padding-bottom: 42px;
+
+  &--scroll {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 150;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+  }
 }
+.page-header--scroll .site-menu--closed .site-menu__logo {
+  display: block;
+  order: 1;
+}
+.page-header--scroll .page-header__toggle {
+  order: 2;
+  top: 0;
+  right: 6px;
+}
+.page-header--scroll .page-header__logo {
+  display: none;
+}
+.page-header--scroll .page-header__toggle::after,
+.page-header--scroll .page-header__toggle::before {
+  background-color: #cccccc;
+}
+
 .page-header__toggle {
   position: relative;
   top: -5px;
@@ -27,6 +57,12 @@
 .page-header__toggle--closed {
   right: 27px;
   top: 33px;
+  position: fixed;
+}
+.page-header--scroll .page-header__toggle--closed {
+  right: 27px;
+  top: 33px;
+  order: 1;
   position: fixed;
 }
 .page-header__toggle::before {
@@ -56,6 +92,9 @@
     padding-bottom: 65px;
     align-items: stretch;
   }
+  .page-header--scroll {
+    padding: 42px 40px 40px;
+  }
   .page-header__toggle {
     width: 24px;
     right: 0;
@@ -66,6 +105,20 @@
     left: 350px;
     top: 65px;
   }
+  .page-header--scroll .page-header__toggle {
+    order: 1;
+    top: -5px;
+    left: -340px;
+  }
+  .page-header--scroll .page-header__toggle--closed {
+    left: 350px;
+    top: 65px;
+  }
+  .page-header--scroll .site-menu--closed .site-menu__authorization-link {
+    position: absolute;
+    right: -438px;
+    top: 0;
+  }
 }
 @media (min-width: @desktop-width) {
   .page-header {
@@ -74,5 +127,33 @@
   }
   .page-header__toggle {
     display: none;
+  }
+  .page-header--scroll {
+    padding: 17px 60px 15px;
+  }
+  .page-header--scroll .site-menu {
+    padding: 0;
+  }
+  .page-header--scroll .site-menu::before {
+    background-color: #192144;
+    left: 255px;
+    top: 25px;
+    width: 43px;
+  }
+  .page-header--scroll .site-menu__logo {
+    display: block;
+    margin: 0;
+  }
+  .page-header--scroll .site-list__link {
+    color: #192144;
+  }
+  .page-header--scroll .site-navigation {
+    width: 700px;
+    padding-left: 150px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+  .page-header--scroll .site-menu__authorization-link {
+    max-height: 30px;
   }
 }
