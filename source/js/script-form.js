@@ -1,4 +1,5 @@
 var siteMenu = document.querySelector('.site-menu');
+var pageHeader = document.querySelector('.page-header');
 var siteMenuToggle = document.querySelector('.page-header__toggle');
 var link = document.querySelector('.distribution__link-container');
 var dropdownLabel = document.querySelector('.travel-route__country-container--dropdown');
@@ -14,7 +15,17 @@ if (getIsDesktop()) {
     siteMenu.classList.remove('site-menu--closed');
   }
 }
-
+window.addEventListener('scroll', function (evt) {
+  if (siteMenu.classList.contains('site-menu--open')) {
+    evt.preventDefault();
+  } else {
+    if (window.pageYOffset > 300) {
+      pageHeader.classList.add('page-header--scroll');
+    } else {
+      pageHeader.classList.remove('page-header--scroll');
+    }
+  }
+});
 window.addEventListener('resize', function() {
   if (getIsDesktop() && siteMenu.classList.contains('site-menu--closed')) {
       siteMenu.classList.remove('site-menu--closed');

@@ -45,15 +45,15 @@ siteMenuToggle.addEventListener('click', function() {
   siteMenu.classList.toggle('site-menu--closed');
 });
 
-link.addEventListener("click", function (evt) {
+link.addEventListener('click', function (evt) {
   evt.preventDefault();
-  popup.classList.add("modal--show");
+  popup.classList.add('modal--show');
 });
-close.addEventListener("click", function (evt) {
+close.addEventListener('click', function (evt) {
   evt.preventDefault();
-  popup.classList.remove("modal--show");
+  popup.classList.remove('modal--show');
 });
-popup.addEventListener("click", function (evt) {
+popup.addEventListener('click', function (evt) {
   evt.preventDefault();
-  popup.classList.remove("modal--show");
+  popup.classList.remove('modal--show');
 });
