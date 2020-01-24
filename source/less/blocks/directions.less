@@ -97,6 +97,18 @@
   .directions__text {
     margin: 0;
   }
+  .directions__list {
+    position: relative;
+  }
+  .directions__list::after {
+    content: '';
+    position: absolute;
+    width: 565px;
+    height: 100px;
+    top: 385px;
+    background-image: linear-gradient(to bottom,transparent,#edeff6 55px);
+    z-index: 2;
+  }
   .directions__item:last-child {
     margin-bottom: 0;
   }
