@@ -145,21 +145,26 @@
   .calendar__button {
     border: transparent;
     &::before {
-      width: 18px;
-      height: 18px;
+      width: 22px;
+      height: 22px;
     }
+  }
+  .calendar__button--prev::before {
+    left: -10px;
+  }
+  .calendar__button--next::before {
+    right: -10px;
   }
   .calendar__month-container {
     margin-bottom: 0;
   }
   .calendar__cell {
-    height: 0;
-    padding: 15px 0 40px 17px;
+    height: 30px;
+    padding: 15px 0 27px 17px;
     text-align: left;
   }
   .calendar__cell--day {
-    height: 50px;
-    padding-bottom: 0;
+    padding: 13px 5px 13px 15px;
   }
   .calendar__cell--text {
     display: inline-block;
