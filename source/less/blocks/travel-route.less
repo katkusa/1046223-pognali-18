@@ -304,11 +304,12 @@
     display: none;
   }
   .travel-route__title {
-    margin-bottom: 37px;
+    margin-bottom: 33px;
   }
   .travel-route__pharagraph {
     font-size: 20px;
     line-height: 24px;
+    margin: 0;
   }
   .travel-route__container-head {
     margin-bottom: 41px;
@@ -317,7 +318,7 @@
     border-bottom: 1px solid #d6d9e6;
   }
   .travel-route__country-container {
-    padding: 27px 27px 24px 27px;
+    padding: 27px 28px 22px 24px;
     width: 313px;
   }
   .travel-route__text {
@@ -373,6 +374,7 @@
   .travel-route__circle--add {
     width: 13px;
     height: 13px;
+    margin-left: 3px;
     &::before {
       height: 90px;
       background-image: linear-gradient(to bottom, transparent, #ffffff 90px);
@@ -383,12 +385,33 @@
   }
   .travel-route__button--delete {
     position: absolute;
-    top: 30px;
-    left: 100px;
+    top: 23px;
+    left: 98px;
     margin: 0;
     background-color: transparent;
     width: 17px;
     height: 17px;
+    &::after,
+    &::before {
+      width: 20px;
+    }
+  }
+  .travel-route__button--arrow {
+    width: 40px;
+    &::before {
+      width: 10px;
+      height: 10px;
+      top: -3px;
+      left: 13px;
+    }
+  }
+  .travel-route__button--plus {
+    width: 40px;
+    &::before,
+    &::after {
+      width: 18px;
+      left: 25px;
+    }
   }
   .travel-route__button--delete-choose {
     left: 520px;
@@ -403,7 +426,7 @@
     margin: 0;
     text-transform: none;
     color: #1d2e5b;
-    padding: 27px 78px 24px 34px;
+    padding: 27px 78px 26px 25px;
     border-radius: 20px;
     position: relative;
     font-size: 24px;
@@ -411,7 +434,7 @@
     &::after {
       content: '';
       position: absolute;
-      right: 36px;
+      right: 30px;
       top: 50%;
       margin-top: -6px;
       border: 6px solid transparent;
@@ -443,7 +466,7 @@
     display: none;
   }
   .travel-route__country-choice {
-    margin-bottom: 34px;
+    margin-bottom: 54px;
   }
   .dropdown-form--opened .travel-route__country-option {
     flex-direction: row;

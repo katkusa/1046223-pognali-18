@@ -92,29 +92,41 @@
   display: none;
 }
 @media (min-width: @tablet-width) {
+  .calendar__button {
+    width: 60px;
+  }
   .calendar__button::before {
-    width: 13px;
-    height: 13px;
+    width: 18px;
+    height: 18px;
+  }
+  .calendar__button--prev::before {
+    left: 0;
+    top: -2px;
+  }
+  .calendar__button--next::before {
+    right: 3px;
+    top: -3px;
   }
   .calendar__title {
     line-height: normal;
   }
   .calendar__month-container {
-    padding: 29px 0 22px 0;
-    margin-bottom: 40px;
+    padding: 29px 0 18px 0;
+    margin-bottom: 0;
   }
   .calendar__cell-letter {
     display: initial;
   }
   .calendar__cell {
     width: 77px;
-    height: 70px;
+    height: 65px;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
   }
   .calendar__cell--day {
-    padding-bottom: 14px;
+    padding-top: 33px;
+    height: 30px;
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 1.6px;

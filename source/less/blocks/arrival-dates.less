@@ -141,27 +141,37 @@
   }
   .arrival-dates__label {
     position: absolute;
-    top: 140px;
+    top: 135px;
     left: 0;
     margin-bottom: 0;
   }
   .arrival-dates__input + .checkbox-indicator {
     margin-right: 23px;
+    width: 34px;
+    height: 34px;
+  }
+  .arrival-dates__input:checked + .checkbox-indicator::after {
+    width: 12px;
+    height: 14px;
+    left: 11px;
+    top: 3px;
   }
   .arrival-dates__calendar {
     margin-bottom: 46px;
   }
   .arrival-dates__button {
-    padding: 30px 78px 28px 34px;
+    padding: 30px 73px 28px 34px;
     font-size: 24px;
     line-height: 24px;
     text-transform: none;
     position: relative;
+    margin-left: 0;
+    width: 180px;
     &::after {
       content: '';
       position: absolute;
-      right: 10%;
-      top: 40%;
+      right: 32px;
+      top: 35px;
       border: 6px solid transparent;
       border-left: 10px solid #1d2e5b;
       width: 0px;

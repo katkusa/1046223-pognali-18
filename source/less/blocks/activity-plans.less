@@ -160,15 +160,13 @@
   .activity-plans__text::after {
     display: none;
   }
-  .activity-plans__text::before {
-    width: 15px;
-    height: 15px;
-    top: 0;
-    left: 420px;
+  .activity-plans__title {
+    margin-bottom: 35px;
   }
   .activity-plans__pharagraph {
     font-size: 20px;
     line-height: 24px;
+    margin-bottom: 60px;
   }
   .activity-plans__country {
     margin-bottom: 26px;
@@ -177,18 +175,25 @@
     padding: 0;
     font-size: 30px;
     line-height: 18px;
+    font-weight: 700;
+    &::before {
+      width: 15px;
+      height: 15px;
+      top: 0;
+      left: 410px;
+    }
   }
   .activity-plans__flag {
-    width: 70px;
-    height: 47px;
+    width: 74px;
+    height: 49px;
   }
   .activity-plans__textarea-activity {
-    margin-bottom: 46px;
+    margin-bottom: 47px;
   }
   .activity-plans__textarea {
-    width: 344px;
-    height: 119px;
-    padding: 21px 162px 0 19px;
+    width: 354px;
+    height: 121px;
+    padding: 18px 152px 0 19px;
     font-size: 20px;
     line-height: 24px;
     &:required:not(:focus):invalid + .activity-plans__textarea-error {
@@ -208,7 +213,7 @@
     margin: 0;
     text-transform: none;
     color: #1d2e5b;
-    padding: 27px 140px 24px 34px;
+    padding: 31px 135px 28px 33px;
     border-radius: 20px;
     position: relative;
     font-size: 24px;
@@ -216,7 +221,7 @@
     &::after {
       content: '';
       position: absolute;
-      right: 36px;
+      right: 30px;
       top: 50%;
       margin-top: -6px;
       border: 6px solid transparent;
