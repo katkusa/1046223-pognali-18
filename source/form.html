@@ -201,7 +201,7 @@
               <h3 class="transport__title">
                 Транспорт
               </h3>
-              <fieldset class="traveller-form__fieldset-transport traveller-form__fieldset-transport--user">
+              <fieldset class="traveller-form__fieldset--transport traveller-form__fieldset--transport-user">
                 <div class="traveller-form__input-container traveller-form__input-container--transport traveller-form__input-container--user">
                   <label>
                     <input type="checkbox" name="transport-choice" value="plane" class="traveller-form__checkbox-transport traveller-form__input-checkbox--circle visually-hidden" checked>
@@ -271,9 +271,9 @@
                 <b class="country-card__text country-card__text--first">
                   26 мар — 29 мар
                 </b>
-                <button class="button country-card__button" type="button">
+                <a class="button country-card__button" href="#">
                   Изменить
-                </button>
+                </a>
               </div>
             </div>
             <div class="country-card plans-id__country-card">
@@ -292,9 +292,9 @@
                 <b class="country-card__text country-card__text--second">
                   1 июл — 15 июл
                 </b>
-                <button class="button country-card__button" type="button">
+                <a class="button country-card__button" href="#">
                   Изменить
-                </button>
+                </a>
               </div>
             </div>
           </section>
@@ -308,7 +308,7 @@
             </h2>
             <form action="https://echo.htmlacademy.ru" method="post" name="item-form" class="add-plan-form-container__form">
               <div class="form-wrapper form-wrapper--bg-white form-wrapper--all-border">
-                <div class="arrival-dates add-plan-form-container__arrival-dates">
+                <div class="arrival-dates add-plan-form-container__arrival-dates" id="arrival-dates-link">
                   <div class="arrival-dates__container">
                     <div class="arrival-dates__container-text">
                       <h3 class="arrival-dates__title title title--h3 title--color-blue">
@@ -480,7 +480,7 @@
                       </tr>
                     </table>
                   </div>
-                  <a class="button--bg-yellow button--size-small arrival-dates__button" src="#travel-route-link">
+                  <a class="button--bg-yellow button--size-small arrival-dates__button" href="#travel-route-link">
                     Cледующий шаг
                   </a>
                 </div>
@@ -637,10 +637,10 @@
                     </div>
                   </div>
                   <div class="travel-route__button-container">
-                    <a class="button--bg-yellow button--size-small travel-route__button--next" src="#activity-plans-link">
+                    <a class="button--bg-yellow button--size-small travel-route__button--next" href="#activity-plans-link">
                        Cледующий шаг
                     </a>
-                    <a class="travel-route__button--back" src="#travel-route-link">
+                    <a class="travel-route__button--back" href="#arrival-dates-link">
                       На шаг назад
                     </a>
                   </div>
@@ -709,7 +709,7 @@
                     <button class="activity-plans__button button button--bg-yellow button--size-small" type="submit">
                       Отправить
                     </button>
-                    <a class="activity-plans__button--back" src="#activity-plans-link">
+                    <a class="activity-plans__button--back" href="#travel-route-link">
                       На шаг назад
                     </a>
                   </div>

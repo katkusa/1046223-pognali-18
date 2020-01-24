@@ -50,23 +50,27 @@
 .subscription__input {
   border-radius: 10px;
   border: none;
-  padding: 21px 40px 21px 25px ;
+  padding: 21px 40px 21px 25px;
   font-size: 18px;
   line-height: 18px;
   font-family: inherit;
   font-weight: 700;
   background-color: @white;
-  color: @white;
+  color: rgba(68, 68, 68, 0.3);
+  border: 4px solid transparent;
   cursor: pointer;
   &:hover {
     background-color: #edeff6;
   }
-  &:focus:valid {
+  &:focus:valid,
+  &:active:valid,
+  &:hover:valid {
     background-color: @very-dark-blue;
     border: 4px solid @white;
-    padding: 17px 28px;
+    color: @white;
   }
-  &:focus:invalid {
+  &:focus:invalid,
+  &:active:invalid {
     background-color: #ffefef;
     color: #ff0000;
   }

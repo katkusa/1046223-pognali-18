@@ -1,7 +1,7 @@
 var siteMenu = document.querySelector('.site-menu');
 var pageHeader = document.querySelector('.page-header');
 var siteMenuToggle = document.querySelector('.page-header__toggle');
-var travellerForm = document.querySelector('.traveller-form__container');
+var travellerForm = document.querySelectorAll('.traveller-form__container');
 var travellerBtn = document.querySelector('.traveller-form__button-arrow');
 var countryFormEl = document.querySelector('.country-filter');
 var toggleFormEl = document.querySelector('.country__btn--empty');
@@ -40,10 +40,11 @@ siteMenuToggle.addEventListener('click', function() {
   siteMenuToggle.classList.toggle('page-header__toggle--closed');
   siteMenu.classList.toggle('site-menu--closed');
 });
-travellerForm.addEventListener('click', function() {
-  travellerBtn.classList.toggle('traveller-form__button-arrow--opened');
-  travellerForm.classList.toggle('traveller-form__container--opened');
-});
+travellerForm.forEach(function(item) {
+    item.addEventListener('click', function(e) {
+      e.currentTarget.classList.toggle('traveller-form__container--opened');
+    })
+  })
 if (toggleFormEl) {
   toggleFormEl.onclick = function() {
     countryFormEl.classList.toggle('country-filter--open');

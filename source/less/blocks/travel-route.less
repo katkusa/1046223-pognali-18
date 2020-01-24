@@ -483,27 +483,35 @@
     display: flex;
     align-items: baseline;
     padding-right: 0;
-    padding-bottom: 56px;
+    padding-bottom: 50px;
     margin-bottom: 62px;
-
+  }
+  .travel-route__title {
+    display: inline-block;
   }
   .travel-route__pharagraph {
     margin: 0;
-    padding-right: 390px;
+    padding-right: 350px;
   }
   .travel-route__country-container {
     width: 674px;
+  }
+  .travel-route__circle {
+    margin-left: 5px;
   }
   .travel-route__container-circle {
     width: 85px;
   }
   .travel-route__circle::before {
-    left: 42px;
+    left: 45px;
   }
   .travel-route__circle--line::after {
     height: 89px;
     top: -63px;
-    left: 42px;
+    left: 45px;
+  }
+  .travel-route__circle--add {
+    margin-left: 8px;
   }
   .travel-route__circle--add::before {
     height: 150px;
@@ -511,12 +519,16 @@
   }
   .travel-route__button--delete {
     left: 170px;
+    &::before,
+    &::after {
+      width: 23px;
+    }
   }
   .travel-route__button--delete-choose {
     left: 985px;
   }
   .travel-route__country-choice {
-    margin-bottom: 41px;
+    margin-bottom: 60px;
   }
 }
 

@@ -20,11 +20,15 @@
   color: @white;
   background-color: #101d41;
   box-sizing: border-box;
+  cursor: pointer;
   &:hover {
     background-color: #1d2e5b;
     outline: 4px solid #ff5c23;
     border: 1px solid transparent;
   }
+}
+.calendar__cell--active {
+  cursor: pointer;
 }
 .calendar__cell--active:hover {
   background-color: #1d2e5b;
@@ -160,8 +164,9 @@
   }
   .calendar__cell {
     height: 30px;
-    padding: 15px 0 27px 17px;
+    padding: 6px 0 33px 17px;
     text-align: left;
+    font-size: 18px;
   }
   .calendar__cell--day {
     padding: 13px 5px 13px 15px;

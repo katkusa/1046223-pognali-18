@@ -65,16 +65,21 @@
 .traveller-form__label:disabled {
   opacity: 0.3;
 }
-.traveller-form__container .traveller-form__fieldset {
+.traveller-form__container .traveller-form__fieldset,
+.traveller-form__container .traveller-form__number-container,
+.traveller-form__container .traveller-form__range-controls {
   display: none;
 }
-.traveller-form__container--opened .traveller-form__fieldset {
-  display: block;
+.traveller-form__container--opened .traveller-form__fieldset,
+.traveller-form__container--opened .traveller-form__number-container,
+.traveller-form__container--opened .traveller-form__range-controls {
+  display: flex;
 }
 .traveller-form__container {
   padding-top: 13px;
   border-top: 1px solid #f3c72b;
   margin-bottom: 11px;
+  cursor: pointer;
 }
 .traveller-form__container--hobby {
   margin-bottom: 13px;
@@ -105,6 +110,7 @@
   background-color: transparent;
   border: none;
   box-shadow: none;
+  cursor: pointer;
 }
 .traveller-form__button-arrow::before {
   content: '';
@@ -118,10 +124,10 @@
   width: 0px;
   height: 0px;
 }
-.traveller-form__button-arrow--opened::before {
+.traveller-form__container--opened .traveller-form__button-arrow::before {
   transform: rotate(180deg);
 }
-.traveller-form__fieldset-transport {
+.traveller-form__fieldset--transport {
   margin: 0;
   padding: 0;
   padding-top: 15px;
@@ -264,11 +270,13 @@
 .traveller-form__input-container--transport label {
   cursor: pointer;
 }
-.traveller-form__fieldset-transport--user {
+.traveller-form__fieldset--transport-user {
   padding: 15px;
 }
 @media (min-width: @tablet-width) {
-  .traveller-form__container .traveller-form__fieldset {
+  .traveller-form__container .traveller-form__fieldset,
+  .traveller-form__container .traveller-form__number-container,
+  .traveller-form__container .traveller-form__range-controls {
     display: flex;
   }
   .traveller-form__button-arrow {
@@ -391,7 +399,7 @@
     font-size: 20px;
     line-height: 20px;
   }
-  .traveller-form__fieldset-transport {
+  .traveller-form__fieldset--transport {
     padding: 0;
     margin-left: 21px;
   }
@@ -410,7 +418,7 @@
     font-size: 20px;
     line-height: 18px;
   }
-  .traveller-form__fieldset-transport--user {
+  .traveller-form__fieldset--transport-user {
     padding: 25px 0;
     margin: 0;
   }
@@ -427,11 +435,15 @@
   }
 }
 @media (min-width: @desktop-width) {
-  .traveller-form__container .traveller-form__fieldset {
+  .traveller-form__container .traveller-form__fieldset,
+  .traveller-form__container .traveller-form__number-container,
+  .traveller-form__container .traveller-form__range-controls {
     display: none;
   }
-  .traveller-form__container--opened .traveller-form__fieldset {
-    display: block;
+  .traveller-form__container--opened .traveller-form__fieldset,
+  .traveller-form__container--opened .traveller-form__number-container,
+  .traveller-form__container--opened .traveller-form__range-controls {
+    display: flex;
   }
   .traveller-form__input-container {
     flex-direction: column;
@@ -460,7 +472,7 @@
   .traveller-form__container--hobby {
     padding-top: 0;
   }
-  .traveller-form__fieldset-transport {
+  .traveller-form__fieldset--transport {
     margin: 0;
     padding-top: 23px;
   }
@@ -476,10 +488,6 @@
   .traveller-form__button-arrow::before {
     left: 0;
     top: 0;
-  }
-  .traveller-form__button-arrow--opened::before {
-    left: 0;
-    top: -5px;
   }
   .traveller-form__number-container {
     order: initial;
