@@ -2,17 +2,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 27px;
+  margin-bottom: 20px;
 }
 .catalog__container {
   padding-bottom: 1px;
 }
 .catalog__button {
   cursor: pointer;
+  text-align: center;
+  padding: 5px 40px 5px;
 }
 .catalog__list{
   .list-reset();
-  margin-bottom: 24px;
+  margin-bottom: 17px;
 }
 .catalog__name-container {
   display: flex;
@@ -55,9 +57,12 @@
   padding-left: 86px;
   position: relative;
 }
+.catalog__likes-text {
+  margin-top: 5px;
+}
 .catalog__likes-svg-container {
   position: absolute;
-  top: 0;
+  top: -5px;
   left: 50px;
   width: 31px;
   height: 31px;
@@ -113,8 +118,12 @@
   font-size: 15px;
   line-height: 18px;
   font-weight: 400;
-  margin: 24px 0 20px;
+  margin: 20px 0 10px;
   padding-right: 20px;
+  padding-left: 5px;
+}
+.catalog__text-tags span {
+  display: block;
 }
 .catalog__item-country {
   text-transform: uppercase;
@@ -138,9 +147,9 @@
     width: 18px;
     height: 18px;
     top: 5px;
-    left: 0;
+    left: 5px;
     background-image: url("../../img/plus-catalog.svg");
-    background-size: 12px 12px;
+    background-size: 14px 14px;
     background-repeat: no-repeat;
     background-position: center;
     transform: rotate(45deg);
@@ -189,16 +198,18 @@
   font-size: 15px;
   line-height: 18px;
   font-weight: 400;
-  margin-bottom: 19px;
+  margin-bottom: 10px;
+  margin-left: -5px;
   padding: 0 10px;
   background-color: @white;
 }
 .catalog__text--level {
-  margin-bottom: 12px;
+  margin-bottom: 5px;
+  margin-right: -5px;
 }
 .catalog__flags-container {
   position: relative;
-  margin-bottom: 19px;
+  margin-bottom: 10px;
   &::before {
     content: '';
     position: absolute;
@@ -214,13 +225,14 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-left: 4px;
 }
 .catalog__flags-item {
   display: flex;
   align-items: center;
 }
 .catalog__flags-item:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .catalog__flags-svg {
   width: 26px;
@@ -243,7 +255,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   flex-wrap: wrap;
   &::before {
     content: '';
@@ -257,6 +269,7 @@
 }
 .catalog__level {
   position: relative;
+  left: 5px;
 }
 .catalog__level-text-container {
   display: flex;
@@ -278,16 +291,23 @@
 .catalog__level-level {
   display: none;
 }
+.catalog__transport {
+  margin-top: 5px;
+  margin-left: 5px;
+}
 @media (min-width: @tablet-width) {
   .catalog {
-    margin-bottom: 51px;
+    margin-bottom: 45px;
   }
   .catalog__list {
     margin-bottom: 45px;
   }
   .catalog__item {
-    padding: 35px 25px 26px 35px;
+    padding: 35px 25px 10px 35px;
     width: auto;
+  }
+  .catalog__item:not(:last-child) {
+    margin-bottom: 40px;
   }
   .catalog__img-container {
     position: absolute;
@@ -307,7 +327,7 @@
     font-size: 30px;
     line-height: 30px;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
   }
   .catalog__indicator {
     position: static;
@@ -321,10 +341,8 @@
     display: flex;
     align-items: center;
     position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: 50px;
-    margin-top: -60px;
+    top: 140px;
+    left: 370px;
   }
   .catalog__likes-button {
     width: 50px;
@@ -343,7 +361,10 @@
   .catalog__likes-text {
     font-size: 20px;
     line-height: 30px;
-    margin-left: 9px;
+    margin-left: 5px;
+  }
+  .catalog__likes-text span {
+    margin-left: 5px;
   }
   .catalog__text-tags {
     margin: 0;
@@ -354,14 +375,14 @@
   .catalog__traveller-info-container {
     display: flex;
     width: 100%;
-    margin-top: 26px;
+    margin-top: 10px;
   }
   .catalog__traveller-skills-card {
     position: absolute;
     flex-direction: column;
     align-items: center;
-    top: 30px;
-    left: 100%;
+    top: 22px;
+    left: 99%;
     margin-left: -90px;
     &::before {
       display: none;
@@ -372,8 +393,8 @@
   }
   .catalog__text--visit {
     display: inline-block;
-    margin-bottom: 22px;
-    margin-left: 40px;
+    margin-bottom: 10px;
+    margin-left: 38px;
   }
   .catalog__flags-container::before {
     left: -35px;
@@ -390,6 +411,7 @@
   .catalog__flags-svg {
     width: 35px;
     height: 24px;
+    margin-right: 8px;
   }
   .catalog__flags-text {
     font-size: 20px;
@@ -397,10 +419,12 @@
   }
   .catalog__button {
     position: absolute;
-    top: 50%;
-    margin-top: -15px;
-    left: 50%;
-    margin-left: -110px;
+    top: 175px;
+    left: 250px;
+    padding: 10px 34px;
+  }
+  .catalog__transport-container {
+    margin-bottom: 10px;
   }
   .catalog__transport-list {
     display: flex;
@@ -408,6 +432,9 @@
   }
   .catalog__transport-item {
     background-color: transparent;
+  }
+  .catalog__level-container {
+    margin-left: 5px;
   }
   .catalog__level-text-container {
     top: 13px;
@@ -438,22 +465,28 @@
   }
   .catalog__show-button {
     font-size: 20px;
+    margin-left: 5px;
     &::before {
       top: 0;
-      left: 0;
+      left: -10px;
       width: 27px;
       height: 27px;
-      background-size: 18px 18px;
+      background-size: 20px 20px;
     }
   }
 }
 @media (min-width: @desktop-width) {
   .catalog {
     margin-right: 85px;
+    margin-bottom: 65px;
   }
   .catalog__list {
     margin-bottom: 65px;
     width: 950px;
+  }
+  .catalog__name {
+    margin-bottom: 15px;
+    margin-left: 5px;
   }
   .catalog__item {
     padding: 0;
@@ -480,7 +513,7 @@
   .catalog__text-container {
     margin-top: 48px;
     padding: 0;
-    max-width: 290px;
+    width: 290px;
     &::after,
     &::before{
       content: '';
@@ -500,13 +533,15 @@
   }
   .catalog__text-tags {
     padding: 0;
+    margin-left: 6px;
   }
   .catalog__traveller-info-container {
     flex-direction: column;
+    justify-content: space-between;
     width: 219px;
     margin: 0;
-    margin-top: 48px;
-    margin-bottom: 42px;
+    margin-top: 45px;
+    margin-bottom: 45px;
   }
   .catalog__traveller-skills-card {
     position: static;
@@ -518,6 +553,17 @@
   }
   .catalog__transport-item {
     width: 30px;
+    margin-right: 5px;
+  }
+  .catalog__transport-container {
+    margin: 0;
+    margin-left: -30px;
+  }
+  .catalog__flags-container {
+    margin-left: -15px;
+  }
+  .catalog__flags-svg {
+    margin-right: 15px;
   }
   .catalog__flags-container::before {
     display: none;
@@ -533,13 +579,13 @@
     display: none;
   }
   .catalog__button {
-    top: 70%;
-    left: 330px;
+    top: 190px;
+    left: 340px;
     margin-left: 0;
   }
   .catalog__likes {
-    top: 137px;
-    left: 160px;
+    top: 140px;
+    left: 152px;
     margin: 0;
   }
   .catalog__name-container {
@@ -549,5 +595,12 @@
     position: absolute;
     margin-left: 0;
     left: -25px;
+  }
+  .catalog__level {
+    left: 0;
+    top: 10px;
+  }
+  .catalog__show-button {
+    margin-left: -60px;
   }
 }

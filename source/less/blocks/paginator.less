@@ -47,8 +47,8 @@
     content: '';
     position: absolute;
     right: 0;
-    left: 0;
-    top: 0;
+    left: -5px;
+    top: -3px;
     border: 10px solid transparent;
     width: 0px;
     height: 0px;
@@ -74,12 +74,16 @@
       display: none;
     }
   }
+  .paginator__button::before {
+    left: 0;
+  }
   .paginator__list {
     display: flex;
     align-items: center;
   }
   .paginator__button-container {
     width: 61px;
+    margin-right: 10px;
   }
   .paginator__link {
     font-size: 20px;
@@ -95,5 +99,9 @@
 @media (min-width: @desktop-width) {
   .paginator {
     width: 900px;
+    margin-bottom: 120px;
+  }
+  .paginator__button-container {
+    margin-right: 20px;
   }
 }

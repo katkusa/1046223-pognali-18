@@ -11,6 +11,9 @@
     background-color: #ff8d30;
   }
 }
+.page-current__title--catalog::before {
+  width: 175px;
+}
 .page-current {
   padding-bottom: 12px;
   padding-top: 5px;
@@ -30,6 +33,14 @@
       z-index: 4;
     }
   }
+  .page-current__title--catalog {
+    padding: 0 0 45px 0;
+  }
+  .page-current__title--catalog::before {
+    width: 290px;
+    left: 0;
+    bottom: -20px;
+  }
   .page-current__back-main {
     display: block;
     font-size: 20px;
@@ -46,7 +57,7 @@
       width: 32px;
       height: 16px;
       top: 0;
-      left: 140px;
+      left: 145px;
     }
     &:hover,
     &:focus {

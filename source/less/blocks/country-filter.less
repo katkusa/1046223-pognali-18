@@ -1,4 +1,5 @@
 .country-filter {
+  position: relative;
   color: #192144;
   font-size: 16px;
   font-weight: 700;
@@ -8,6 +9,16 @@
   border-radius: 0 0 20px 20px;
   padding: 0 0 1px 0;
   margin-bottom: 24px;
+}
+.country-filter::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -30px;
+  z-index: -1;
+  height: 50px;
+  background-color: #e2e5f2;
 }
 .country-filter--open {
   z-index: 3;
@@ -138,7 +149,7 @@
   margin: 0;
   padding: 0;
   padding-left: 25px;
-  margin-bottom: 67px;
+  margin-bottom: 63px;
   list-style: none;
 }
 .country-filter__letter-btn {
@@ -235,8 +246,8 @@
     content: '';
     width: 12px;
     height: 12px;
-    top: 13px;
-    left: 53px;
+    top: 11px;
+    left: 56px;
     background-image: url("../img/close.svg");
     background-repeat: no-repeat;
     background-position: left center;
@@ -261,14 +272,17 @@
     padding-bottom: 1px;
     margin-bottom: 50px;
     &--catalog {
-      margin-bottom: 44px;
+      margin-bottom: 40px;
     }
     &--open {
       z-index: 2;
     }
   }
+  .country-filter::before {
+    top: -45px;
+  }
   .country-filter__menu {
-    padding-top: 61px;
+    padding: 55px 38px 0 33px;
     margin-bottom: 57px;
   }
   .country-filter__menu-wrapper {
@@ -320,6 +334,10 @@
       top: 4px;
       background-size: 18px 18px;
     }
+  }
+  .country-filter__container {
+    padding-left: 35px;
+    padding-right: 55px;
   }
   .country-filter__region-list {
     width: 65%;
@@ -449,8 +467,15 @@
       margin-bottom: 150px;
     }
   }
+  .country-filter::before {
+    z-index: -1;
+  }
   .country-filter__menu {
     margin-bottom: 44px;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 65px;
+
   }
   .country-filter--open .country-filter__menu {
     margin-bottom: 75px;
@@ -495,7 +520,6 @@
       justify-content: flex-start;
       margin-bottom: 14px;
       padding: 0;
-      padding-left: 17px;
     }
   }
   .country-filter__title {
@@ -571,6 +595,6 @@
   .country-filter__close {
     width: 1320px;
     margin-bottom: 0;
-    margin-left: -20px;
+    margin-left: -30px;
   }
 }
