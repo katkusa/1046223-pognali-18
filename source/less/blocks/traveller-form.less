@@ -175,6 +175,11 @@
   border-radius: 50%;
   background-repeat: no-repeat;
 }
+.traveller-form__checkbox-transport:hover + .checkbox-indicator,
+.traveller-form__checkbox-transport:focus + .checkbox-indicator {
+  box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.08);
+  opacity: 0.7;
+}
 .traveller-form__checkbox-transport:checked + .checkbox-indicator::after {
   content: '';
   flex-shrink: 0;

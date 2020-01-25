@@ -78,6 +78,23 @@
 .wrapper--bg-light-gray.wrapper::before {
   background-color: #e2e5f2;
 }
+.wrapper--map-bottom {
+  z-index: 2;
+}
+.wrapper--map-top {
+  position: relative;
+}
+.wrapper--map-top::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  background-color: #ffd74b;
+  z-index: 2;
+  bottom: 0px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
 @media (min-width: @tablet-width) {
   .wrapper__inner {
     width: 688px;
@@ -86,6 +103,12 @@
   }
   .wrapper--all-border {
     border-radius: 30px;
+  }
+  .wrapper--map-top::after {
+    height: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    bottom: -40px;
   }
   .wrapper--bottom-radius {
     border-bottom-left-radius: 60px;
@@ -132,5 +155,10 @@
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
     margin-top: -50px;
+  }
+  .wrapper--map-top::after {
+    height: 60px;
+    bottom: -25px;
+
   }
 }

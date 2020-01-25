@@ -106,18 +106,19 @@
     top: 65px;
   }
   .page-header--scroll .page-header__toggle {
+    position: fixed;
     order: 1;
-    top: -5px;
-    left: -340px;
+    top: 60px;
+    left: 50%;
   }
   .page-header--scroll .page-header__toggle--closed {
     left: 350px;
     top: 65px;
   }
   .page-header--scroll .site-menu--closed .site-menu__authorization-link {
-    position: absolute;
-    right: -438px;
-    top: 0;
+    position: fixed;
+    right: 80px;
+    top: 40px;
   }
 }
 @media (min-width: @desktop-width) {
@@ -129,14 +130,20 @@
     display: none;
   }
   .page-header--scroll {
-    padding: 17px 60px 15px;
+    padding: 17px 0 15px;
+    display: block;
   }
   .page-header--scroll .site-menu {
     padding: 0;
+    width: 1320px;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .page-header--scroll .site-menu::before {
     background-color: #192144;
-    left: 255px;
+    left: 295px;
     top: 25px;
     width: 43px;
   }
