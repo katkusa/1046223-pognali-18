@@ -122,4 +122,3 @@ window.addEventListener('resize', function() {
 if (getIsDesktop()) {
   siteMenu.classList.remove('site-menu--closed');
 }
-

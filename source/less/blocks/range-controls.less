@@ -2,12 +2,14 @@
   position: relative;
   margin-bottom: 26px;
 }
+
 .range-controls__scale {
   width: 220px;
   height: 2px;
   border-radius: 0.5px;
   background-color: rgba(29,46,91, 0.5);
 }
+
 .range-controls__bar {
   width: 144px;
   height: 2px;
@@ -15,6 +17,7 @@
   margin-left: 76px;
   background-color: #1d2e5b;
 }
+
 .range-controls__range-toggle {
   position: absolute;
   top: -5px;
@@ -26,46 +29,56 @@
   border-radius: 50%;
   cursor: pointer;
 }
+
 .range-controls__range-toggle--min {
   left: 70px;
 }
+
 .range-controls__range-toggle--max {
   left: 210px;
 }
+
 .range-controls:hover .range-controls__range-toggle,
 .range-controls:focus .range-controls__range-toggle {
   width: 19px;
   height: 19px;
   top: -9px;
 }
+
 .range-controls:active .range-controls__range-toggle {
   box-shadow: 0px 3px 7px 0 rgba(29, 46, 91, 0.35);
 }
+
 @media (min-width: @tablet-width) {
   .range-controls {
     margin-bottom: 0;
     margin-top: -8px;
   }
+
   .range-controls__scale {
     width: 277px;
     height: 3px;
     border-radius: 1.5px;
   }
+
   .range-controls__bar {
   width: 201px;
   height: 3px;
   border-radius: 1.5px;
   margin-left: 76px;
   }
+
   .range-controls__range-toggle {
     top: -5px;
     left: 0;
     width: 13px;
     height: 13px;
   }
+
   .range-controls__range-toggle--min {
     left: 70px;
   }
+
   .range-controls__range-toggle--max {
     left: 270px;
   }
@@ -74,10 +87,12 @@
   .range-controls__scale {
     width: 191px;
   }
+
   .range-controls__bar {
   width: 115px;
   margin-left: 70px;
   }
+
   .range-controls__range-toggle--min {
     left: 60px
   }

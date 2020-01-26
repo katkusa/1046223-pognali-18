@@ -28,10 +28,10 @@ siteMenuToggle.addEventListener('click', function() {
   siteMenu.classList.toggle('site-menu--closed');
 });
 travellerForm.forEach(function(item) {
-  item.addEventListener('click', function(e) {
-    e.currentTarget.classList.toggle('traveller-form__container--opened');
-  })
-})
+  item.addEventListener('click', function(e) {
+  e.currentTarget.classList.toggle('traveller-form__container--opened');
+  });
+});
 
 //Обработчик скролла для меню
 window.addEventListener('scroll', function (evt) {
@@ -58,23 +58,3 @@ window.addEventListener('resize', function() {
 if (getIsDesktop()) {
   siteMenu.classList.remove('site-menu--closed');
 }
-
-/*
-if (toggleFormEl) {
-  toggleFormEl.onclick = function() {
-    countryFormEl.classList.toggle('country-filter--open');
-  };
-}
-
-if (toggleCatalog1El) {
-  toggleCatalog1El.onclick = function() {
-    countryCatalogEl.classList.toggle('country-filter--open');
-  };
-}
-
-if (toggleCatalog2El) {
-  toggleCatalog2El.onclick = function() {
-    countryCatalogEl.classList.toggle('country-filter--open');
-  };
-}
-*/

@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 0;
+  padding: 63px 0 50px;
 }
 .site-list__item {
   text-align: center;
@@ -42,6 +42,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .site-list {
+    padding: 0;
+    padding-bottom: 130px;
+  }
   .site-list__link {
     font-size: 60px;
     line-height: 71px;
@@ -52,6 +56,7 @@
 }
 @media (min-width: @desktop-width) {
   .site-list {
+    padding: 0;
     position: relative;
   }
   .site-list__link {
