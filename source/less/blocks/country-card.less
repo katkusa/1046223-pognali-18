@@ -1,14 +1,17 @@
 .country-card {
   background-color: @white;
 }
+
 .country-card__container-country {
   margin-bottom: 18px;
 }
+
 .country-card__container-info {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
+
 .country-card__text {
   font-size: 14px;
   line-height: 14px;
@@ -18,9 +21,11 @@
   color: @dark-slate-blue;
   margin-bottom: 5px;
 }
-.country-card__text:nth-child(2n){
+
+.country-card__text:nth-child(2n) {
   margin-bottom: 23px;
 }
+
 .country-card__country-name {
   font-size: 16px;
   line-height: 16px;
@@ -29,6 +34,7 @@
   text-transform: none;
   margin-left: -5px;
 }
+
 .country-card__button {
   font-size: 14px;
   line-height: 18px;
@@ -39,14 +45,17 @@
   background-color: transparent;
   text-align: left;
   padding: 0;
+
   &:hover,
   &:focus {
     color: rgba(0, 0, 0, 0.6);
   }
+
   &:active {
     color: rgba(0, 0, 0, 0.1);
   }
 }
+
 @media (min-width: @tablet-width) {
   .country-card__container-country {
     display: flex;
@@ -57,55 +66,67 @@
     padding: 27px 26px 20px 40px;
     margin: 0;
   }
+
   .country-card__container-info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 20px 32px 15px 34px;
   }
+
   .country-card__text {
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
     margin-bottom: 0;
   }
+
   .country-card__text:nth-child(2n) {
     margin-bottom: 0;
   }
+
   .country-card__text--first {
     margin-left: -39px;
   }
+
   .country-card__text--second {
     margin-left: -20px;
   }
+
   .country-card__country-name {
     font-size: 24px;
     line-height: 50px;
     order: -1;
   }
+
   .country-card__button {
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .country-card__container-country {
     padding: 0;
     margin-bottom: 0;
     border-bottom: transparent;
   }
+
   .country-card__container-info {
     padding: 0;
     min-width: 586px;
   }
+
   .country-card__country-name {
     order: 0;
     padding-left: 36px;
   }
+
   .country-card__text--first {
     margin-left: -85px;
   }
+
   .country-card__text--second {
     margin-left: -79px;
   }

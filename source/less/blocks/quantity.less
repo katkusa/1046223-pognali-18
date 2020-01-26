@@ -61,7 +61,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 8px;
     left: -1px;
@@ -96,11 +96,6 @@
   border: transparent;
 }
 
-.quantity__input::-webkit-outer-spin-button,
-.quantity__input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
 @media (min-width: @tablet-width) {
   .quantity {
     position: relative;
@@ -120,8 +115,9 @@
 
   .quantity__container-text {
     margin-bottom: 24px;
+
     &::before {
-      content: '';
+      content: "";
       width: 532px;
       height: 1px;
       position: absolute;
@@ -142,6 +138,7 @@
 
   .quantity__button {
     width: 50px;
+
     &::before,
     &::after {
       width: 20px;
@@ -163,6 +160,7 @@
     }
   }
 }
+
 @media (min-width: @desktop-width) {
   .quantity__container-text {
     position: relative;

@@ -40,7 +40,7 @@
     background-image: initial;
 
     &::after {
-      content: '';
+      content: "";
       width: 350px;
       height: 550px;
       background-image: url("../../img/about-tablet@2x.png");
@@ -53,7 +53,7 @@
 
     &::before {
       display: block;
-      content: '';
+      content: "";
       width: 688px;
       height: 213px;
       border-radius: 20px;
@@ -98,23 +98,24 @@
     }
   }
 }
+
 @media (min-width: @desktop-width) {
   .service-info {
     &::after {
-    content: '';
-    width: 630px;
-    height: 665px;
-    background-image: url("../../img/about-desktop@2x.png");
-    background-size: 630px 665px;
-    background-repeat: no-repeat;
-    position: absolute;
-    right: 10px;
-    top: 85px;
-    bottom: 0;
+      content: "";
+      width: 630px;
+      height: 665px;
+      background-image: url("../../img/about-desktop@2x.png");
+      background-size: 630px 665px;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 10px;
+      top: 85px;
+      bottom: 0;
     }
 
     &::before {
-      content: '';
+      content: "";
       width: 213px;
       height: 213px;
       border-radius: 20px;
@@ -143,6 +144,7 @@
     width: 415px;
     margin-bottom: 83px;
   }
+
   .service-info__button {
     padding-left: 32px;
   }

@@ -6,8 +6,9 @@
   border-radius: 20px;
   padding: 15px 60px 15px 55px;
   position: relative;
+
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     right: 0;
     left: 50%;
@@ -17,90 +18,110 @@
     background-color: #edeff6;
   }
 }
+
 .paginator__item {
   cursor: pointer;
   padding: 10px 20px 10px 20px;
+
   &:hover {
     color: rgba(22, 28, 53, 0.6);
   }
+
   &:active {
     color: #161c35;
     background-color: #ffd74b;
     border-radius: 50%;
   }
 }
+
 .paginator__list {
   display: none;
   .list-reset();
 }
+
 .paginator__button-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
+
 .paginator__button {
   position: relative;
   width: 10px;
   height: 20px;
   background-color: transparent;
+
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     right: 0;
     left: -5px;
     top: -3px;
     border: 10px solid transparent;
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
   }
+
   &:hover,
   &:focus {
     opacity: 0.6;
   }
+
   &:active {
     opacity: 0.3;
   }
 }
+
 .paginator__button--prev::before {
   border-right: 10px solid #192144;
 }
+
 .paginator__button--next::before {
   border-left: 10px solid #192144;
 }
+
 @media (min-width: @tablet-width) {
   .paginator {
     padding: 25px;
+
     &::before {
       display: none;
     }
   }
+
   .paginator__button::before {
     left: 0;
   }
+
   .paginator__list {
     display: flex;
     align-items: center;
   }
+
   .paginator__button-container {
     width: 61px;
     margin-right: 10px;
   }
+
   .paginator__link {
     font-size: 20px;
     line-height: 30px;
     color: #161c35;
     font-weight: 700;
   }
+
   .paginator__item--active {
     background-color: #ffd74b;
     border-radius: 50%;
   }
 }
+
 @media (min-width: @desktop-width) {
   .paginator {
     width: 900px;
     margin-bottom: 120px;
   }
+
   .paginator__button-container {
     margin-right: 20px;
   }

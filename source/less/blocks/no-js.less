@@ -1,26 +1,32 @@
 .no-js .page-header__toggle {
-display: none;
+  display: none;
 }
+
 .no-js .site-menu {
   position: static;
   padding: 27px 15px 40px;
 }
+
 @media (min-width: @tablet-width) {
   .no-js .site-menu {
     width: 100%;
   }
+
   .no-js .page-header__logo {
     display: none;
   }
 }
+
 @media (min-width: @desktop-width) {
   .no-js .page-header__logo {
     display: block;
   }
+
   .no-js .site-menu {
     width: auto;
     padding: 0 0 0 145px;
   }
+
   .no-js .site-menu::before {
     top: 70px;
     left: 300px;

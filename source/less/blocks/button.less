@@ -4,13 +4,16 @@
   border: transparent;
   font-family: inherit;
 }
+
 .button--bg-yellow {
   background-color: @light-yellow;
   color: #1d2e5b;
+
   &:hover,
   &:focus {
     background-color: @vivid-orange-light;
   }
+
   &:active {
     color: rgba(22, 28, 53, 0.3);
   }
@@ -24,6 +27,7 @@
   text-transform: uppercase;
   border-radius: 25px;
 }
+
 .button--size-big {
   position: relative;
   padding: 24px;
@@ -33,25 +37,28 @@
   text-align: left;
   border-radius: 10px;
 }
+
 .button--arrow-right::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 15px;
   top: 50%;
   margin-top: -6px;
   border: 6px solid transparent;
   border-left: 10px solid #1d2e5b;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
 }
 
 .button--bg-yellow:active::after {
   opacity: 0.3;
 }
+
 @media (min-width: @tablet-width) {
   .button--size-small {
     font-size: 20px;
   }
+
   .button--size-big {
     font-size: 24px;
     line-height: 24px;

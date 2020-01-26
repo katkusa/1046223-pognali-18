@@ -4,6 +4,7 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .social__item {
   width: 45px;
   height: 45px;
@@ -11,67 +12,75 @@
   border-radius: 50%;
   cursor: pointer;
 }
+
 .social__item--bg-yellow {
   background-color: @light-yellow;
 }
+
 .social__item--bg-yellow:hover,
 .social__item--bg-yellow:focus {
   background-color: @vivid-orange-light;
 }
+
 .social__svg--bg-yellow {
   fill: #1d2e5b;
 }
+
 .social__svg--bg-yellow:active {
   opacity: 0.3;
 }
+
 .social__svg--no-bg {
   fill: #cccccc;
 }
+
 .social__svg--facebook {
   width: 11px;
   height: 21px;
   padding: 12px 17px;
 }
+
 .social__svg--vk {
   width: 23px;
   height: 12px;
   padding: 18px 11px 15px;
 }
+
 .social__svg--insta {
   width: 18px;
   height: 18px;
   padding: 14px 13px;
 }
+
 @media (min-width: @tablet-width) {
   .social__list {
     justify-content: flex-start;
   }
+
   .social__svg--facebook {
     width: 14px;
     height: 28px;
+    padding: 16px 23px;
   }
+
   .social__svg--vk {
     width: 31px;
     height: 16px;
+    padding: 22px 15px;
   }
+
   .social__svg--insta {
     width: 24px;
     height: 24px;
+    padding: 18px;
   }
+
   .social__item {
     width: 60px;
     height: 60px;
   }
-  .social__svg--facebook {
-    padding: 16px 23px;
-  }
-  .social__svg--vk {
-    padding: 22px 15px;
-  }
-  .social__svg--insta {
-    padding: 18px;
-  }
 }
+
 @media (min-width: @desktop-width) {
   .social__list {
     margin-left: -28px;
