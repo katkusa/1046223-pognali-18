@@ -18,7 +18,7 @@
     </div>
     <div class="wrapper wrapper--bg-blue">
       <div class="wrapper__inner">
-        <header class="page-header">
+        <header class="page-header no-js">
           <a class="logo page-header__logo" href="./index.html">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
@@ -32,7 +32,7 @@
           <button class="page-header__toggle button" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <div class="site-menu site-menu--closed">
+          <div class="site-menu">
             <div class="site-menu__wrapper">
               <a class="logo site-menu__logo">
                 <picture>
@@ -73,7 +73,7 @@
                 <div class="site-menu__contact-item">
                   <a href="tel:+78005558628" class="contact contact--icon-bg-orange contact--icon-size-s">
                     <div class="contact__icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+                      <svg>
                         <use xlink:href="#icon-topmenu-phone"></use>
                       </svg>
                     </div>
@@ -83,7 +83,7 @@
                 <div class="site-menu__contact-item">
                   <a href="mailto:mail@htmlacademy.ru" class="contact contact--icon-bg-yellow contact--icon-size-s">
                   <div class="contact__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 14" style="enable-background:new 0 0 18 14;" xml:space="preserve">
+                    <svg>
                       <use xlink:href="#icon-topmenu-mail"></use>
                     </svg>
                   </div>
@@ -98,8 +98,7 @@
                 <div class="site-menu__contact-item">
                   <a href="tel:+78005558628" class="contact contact--icon-bg-dark-blue contact--color-dark-blue contact--show-text">
                     <div class="contact__icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                      <svg>
                         <use xlink:href="#icon-contacts-phone"></use>
                       </svg>
                     </div>
@@ -109,8 +108,7 @@
                 <div class="site-menu__contact-item">
                   <a href="mailto:mail@htmlacademy.ru" class="contact contact--icon-bg-dark-blue contact--color-dark-blue contact--show-text">
                   <div class="contact__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
+                    <svg>
                       <use xlink:href="#icon-contacts-mail"></use>
                     </svg>
                   </div>
@@ -122,8 +120,7 @@
                 <ul class="social__list">
                   <li class="social__item">
                     <a class="social__link social__link--no-bg" href="#">
-                      <svg class="social__svg social__svg--no-bg social__svg--facebook" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
+                      <svg class="social__svg social__svg--no-bg social__svg--facebook">
                         <use xlink:href="#icon-facebook"></use>
                       </svg>
                       <span class="visually-hidden">Фейсбук</span>
@@ -131,8 +128,7 @@
                   </li>
                   <li class="social__item">
                     <a class="social__link social__link--no-bg" href="#">
-                      <svg class="social__svg social__svg--no-bg social__svg--vk" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
+                      <svg class="social__svg social__svg--no-bg social__svg--vk">
                         <use xlink:href="#icon-vk"></use>
                       </svg>
                       <span class="visually-hidden">Вконтакте</span>
@@ -140,8 +136,7 @@
                   </li>
                   <li class="social__item">
                     <a class="social__link social__link--insta" href="#">
-                      <svg class="social__svg social__svg--no-bg social__svg--insta" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
+                      <svg class="social__svg social__svg--no-bg social__svg--insta">
                         <use xlink:href="#icon-instagram"></use>
                       </svg>
                       <span class="visually-hidden">Инстаграм</span>
@@ -157,10 +152,10 @@
 
     <div class="wrapper wrapper--bg-gray">
       <main class="page-catalog">
-        <div class="wrapper wrapper--bg-blue wrapper--bottom-radius">
+        <div class="wrapper wrapper--bg-blue wrapper--bottom-radius wrapper--index wrapper--bottom-radius-header">
             <div class="wrapper__inner">
               <div class="page-current page-catalog__current">
-                <h1 class="page-current__title title title--h1 title--color-white">Попутчики</h1>
+                <h1 class="page-current__title page-current__title--catalog title title--h1 title--color-white">Попутчики</h1>
                 <a class="page-current__back-main" href="index.html">
                   На главную
                 </a>
@@ -169,7 +164,7 @@
         </div>
         <div class="wrapper wrapper--bg-light-gray wrapper--bottom-radius">
 
-          <section class="country-filter country-filter--catalog">
+          <section class="country-filter country-filter--catalog country-filter--open">
             <div class="wrapper__inner">
               <div class="country-filter__menu">
                 <div class="country-filter__menu-wrapper">
@@ -930,177 +925,169 @@
           <div class="wrapper__inner">
             <div class="catalog__container">
               <div class="page-catalog__container">
-                <div class="wrapper wrapper--bg-yellow wrapper--all-border wrapper--bg-yellow-height">
-                  <div class="wrapper__inner-catalog">
-                    <div class="traveller-filter page-catalog__traveller-filter">
-                      <h2 class="traveller-filter__title">
-                        Подберите идеального попутчика
-                      </h2>
-                      <form action="https://echo.htmlacademy.ru" method="post" name="item-filter" class="traveller-form traveller-filter__traveller-form">
-                        <div class="traveller-form__container traveller-form__container--hobby">
-                          <div class="traveller-form__text">
-                            <span>Хобби</span>
-                            <button class="traveller-form__button-arrow traveller-form__text-arrow--down" type="button">
-                              <span class="visually-hidden">Закрыть</span>
-                            </button>
-                          </div>
-                          <fieldset class="traveller-form__fieldset traveller-form__fieldset--hobby">
-                            <div class="traveller-form__input-container traveller-form__input-container--hobby">
-                              <label class="traveller-form__label">
-                                <input type="checkbox" name="hobby-choice" value="sport" class="traveller-form__input-checkbox visually-hidden" checked>
-                                <span class="checkbox-indicator"></span>
-                                <span class="traveller-form__label-text">Спортзал</span>
-                              </label>
-                              <label class="traveller-form__label">
-                                <input type="checkbox" name="hobby-choice" value="shisha" class="traveller-form__input-checkbox visually-hidden">
-                                <span class="checkbox-indicator"></span>
-                                <span class="traveller-form__label-text">Кальян</span>
-                              </label>
-                              <label class="traveller-form__label">
-                                <input type="checkbox" name="hobby-choice" value="coach" class="traveller-form__input-checkbox visually-hidden">
-                                <span class="checkbox-indicator"></span>
-                                <span class="traveller-form__label-text">Диван</span>
-                              </label>
-                            </div>
-                          </fieldset>
-                        </div>
-                        <div class="traveller-form__container traveller-form__container--music">
-                          <div class="traveller-form__text">
-                            <span>Музыка</span>
-                            <button class="traveller-form__button-arrow traveller-form__text-arrow--down" type="button">
-                              <span class="visually-hidden">Закрыть</span>
-                            </button>
-                          </div>
-                          <fieldset class="traveller-form__fieldset traveller-form__fieldset--music">
-                            <div class="traveller-form__input-container traveller-form__input-container--music">
-                              <label class="traveller-form__label">
-                                <input type="checkbox" name="music-choice" value="rock" class="traveller-form__input-checkbox visually-hidden" checked>
-                                <span class="checkbox-indicator"></span>
-                                <span class="traveller-form__label-text">Тяжелый рок</span>
-                              </label>
-                              <label class="traveller-form__label">
-                                <input type="checkbox" name="music-choice" value="rap" class="traveller-form__input-checkbox visually-hidden">
-                                <span class="checkbox-indicator"></span>
-                                <span class="traveller-form__label-text">Русский рэп</span>
-                              </label>
-                              <label class="traveller-form__label">
-                                <input type="checkbox" name="music-choice" value="eurodance" class="traveller-form__input-checkbox visually-hidden">
-                                <span class="checkbox-indicator"></span>
-                                <span class="traveller-form__label-text">Евроденс</span>
-                              </label>
-                            </div>
-                          </fieldset>
-                        </div>
-                        <div class="traveller-form__container traveller-form__container--food">
-                          <div class="traveller-form__text">
-                            <span>Еда</span>
-                            <button class="traveller-form__button-arrow traveller-form__text-arrow--down" type="button">
-                              <span class="visually-hidden">Закрыть</span>
-                            </button>
-                          </div>
-                          <fieldset class="traveller-form__fieldset traveller-form__fieldset--food">
-                            <div class="traveller-form__input-container traveller-form__input-container--food">
-                              <label class="traveller-form__label">
-                                <input type="checkbox" name="food-choice" value="meat" class="traveller-form__input-checkbox visually-hidden" checked>
-                                <span class="checkbox-indicator"></span>
-                                <span class="traveller-form__label-text">Мясоед</span>
-                              </label>
-                              <label class="traveller-form__label">
-                                <input type="checkbox" name="food-choice" value="pp" class="traveller-form__input-checkbox visually-hidden">
-                                <span class="checkbox-indicator"></span>
-                                <span class="traveller-form__label-text">Сидит на ПП</span>
-                              </label>
-                              <label class="traveller-form__label">
-                                <input type="checkbox" name="food-choice" value="vegan" class="traveller-form__input-checkbox visually-hidden">
-                                <span class="checkbox-indicator"></span>
-                                <span class="traveller-form__label-text">Веган-сыроед</span>
-                              </label>
-                            </div>
-                          </fieldset>
-                        </div>
-                        <div class="traveller-form__container traveller-form__container--transport">
-                          <div class="traveller-form__text">
-                            <span>Транспорт</span>
-                            <button class="traveller-form__button-arrow traveller-form__text-arrow--down" type="button">
-                              <span class="visually-hidden">Закрыть</span>
-                            </button>
-                          </div>
-                          <fieldset class="traveller-form__fieldset-transport">
-                            <div class="traveller-form__input-container traveller-form__input-container--transport">
-                              <label>
-                                <input type="checkbox" name="transport-choice" value="plane" class="traveller-form__checkbox-transport traveller-form__input-checkbox--circle visually-hidden" checked>
-                                <span class="checkbox-indicator checkbox-indicator--plane">
-                                  <svg class="traveller-form__checkbox-indicator-svg traveller-form__checkbox-indicator-svg--plane" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
-                                    <use xlink:href="#icon-plane"></use>
-                                  </svg>
-                                </span>
-                                <span class="visually-hidden">Самолет</span>
-                              </label>
-                              <label>
-                                <input type="checkbox" name="transport-choice" value="bus" class="traveller-form__checkbox-transport traveller-form__input-checkbox--circle visually-hidden" checked>
-                                <span class="checkbox-indicator checkbox-indicator--bus">
-                                  <svg class="traveller-form__checkbox-indicator-svg traveller-form__checkbox-indicator-svg--bus" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
-                                    <use xlink:href="#icon-bus"></use>
-                                  </svg>
-                                </span>
-                                <span class="visually-hidden">Автобус</span>
-                              </label>
-                              <label>
-                                <input type="checkbox" name="transport-choice" value="bike" class="traveller-form__checkbox-transport traveller-form__input-checkbox--circle visually-hidden">
-                                <span class="checkbox-indicator checkbox-indicator--bike">
-                                  <svg class="traveller-form__checkbox-indicator-svg traveller-form__checkbox-indicator-svg--bike" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
-                                    <use xlink:href="#icon-bike"></use>
-                                  </svg>
-                                </span>
-                                <span class="visually-hidden">Велосипед</span>
-                              </label>
-                              <label>
-                                <input type="checkbox" name="transport-choice" value="foot" class="traveller-form__checkbox-transport traveller-form__input-checkbox--circle visually-hidden" checked>
-                                <span class="checkbox-indicator checkbox-indicator--foot">
-                                  <svg class="traveller-form__checkbox-indicator-svg traveller-form__checkbox-indicator-svg--foot" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
-                                    <use xlink:href="#icon-run"></use>
-                                  </svg>
-                                </span>
-                                <span class="visually-hidden">Пешком</span>
-                              </label>
-                            </div>
-                          </fieldset>
-                        </div>
-                        <div class="traveller-form__container traveller-form__container--level-form">
-                          <div class="traveller-form__text">
-                            <span>Левел</span>
-                            <button class="traveller-form__button-arrow traveller-form__text-arrow--down" type="button">
-                              <span class="visually-hidden">Закрыть</span>
-                            </button>
-                          </div>
-                          <div class="traveller-form__number-container">
-                            <input class="traveller-form__number traveller-form__number--left" id="number1" type="number" value="30">
-                            <input class="traveller-form__number traveller-form__number--right" id="number2" type="number" value="100">
-                          </div>
-                          <div class="range-controls traveller-form__range-controls">
-                            <div class="range-controls__scale">
-                              <div class="range-controls__bar"></div>
-                            </div>
-                            <div class="range-controls__range-toggle range-controls__range-toggle--min" tabindex="0"></div>
-                            <div class="range-controls__range-toggle range-controls__range-toggle--max" tabindex="0"></div>
-                          </div>
-                        </div>
-                        <button class="button button--size-small traveller-filter__button" type="submit">
-                          Показать
+                <div class="traveller-filter page-catalog__traveller-filter">
+                  <h2 class="traveller-filter__title">
+                    Подберите идеального попутчика
+                  </h2>
+                  <form action="https://echo.htmlacademy.ru" method="post" name="item-filter" class="traveller-form traveller-filter__traveller-form">
+                    <div class="traveller-form__container traveller-form__container--hobby">
+                      <div class="traveller-form__text">
+                        <span>Хобби</span>
+                        <button class="traveller-form__button-arrow traveller-form__text-arrow--down" type="button">
+                          <span class="visually-hidden">Закрыть</span>
                         </button>
-                      </form>
+                      </div>
+                      <fieldset class="traveller-form__fieldset traveller-form__fieldset--hobby">
+                        <div class="traveller-form__input-container traveller-form__input-container--hobby">
+                          <label class="traveller-form__label">
+                            <input type="checkbox" name="hobby-choice" value="sport" class="traveller-form__input-checkbox visually-hidden" checked>
+                            <span class="checkbox-indicator"></span>
+                            <span class="traveller-form__label-text">Спортзал</span>
+                          </label>
+                          <label class="traveller-form__label">
+                            <input type="checkbox" name="hobby-choice" value="shisha" class="traveller-form__input-checkbox visually-hidden">
+                            <span class="checkbox-indicator"></span>
+                            <span class="traveller-form__label-text">Кальян</span>
+                          </label>
+                          <label class="traveller-form__label">
+                            <input type="checkbox" name="hobby-choice" value="coach" class="traveller-form__input-checkbox visually-hidden">
+                            <span class="checkbox-indicator"></span>
+                            <span class="traveller-form__label-text">Диван</span>
+                          </label>
+                        </div>
+                      </fieldset>
                     </div>
-                  </div>
+                    <div class="traveller-form__container traveller-form__container--music">
+                      <div class="traveller-form__text">
+                        <span>Музыка</span>
+                        <button class="traveller-form__button-arrow traveller-form__text-arrow--down" type="button">
+                          <span class="visually-hidden">Закрыть</span>
+                        </button>
+                      </div>
+                      <fieldset class="traveller-form__fieldset traveller-form__fieldset--music">
+                        <div class="traveller-form__input-container traveller-form__input-container--music">
+                          <label class="traveller-form__label">
+                            <input type="checkbox" name="music-choice" value="rock" class="traveller-form__input-checkbox visually-hidden" checked>
+                            <span class="checkbox-indicator"></span>
+                            <span class="traveller-form__label-text">Тяжелый рок</span>
+                          </label>
+                          <label class="traveller-form__label">
+                            <input type="checkbox" name="music-choice" value="rap" class="traveller-form__input-checkbox visually-hidden">
+                            <span class="checkbox-indicator"></span>
+                            <span class="traveller-form__label-text">Русский рэп</span>
+                          </label>
+                          <label class="traveller-form__label">
+                            <input type="checkbox" name="music-choice" value="eurodance" class="traveller-form__input-checkbox visually-hidden">
+                            <span class="checkbox-indicator"></span>
+                            <span class="traveller-form__label-text">Евроденс</span>
+                          </label>
+                        </div>
+                      </fieldset>
+                    </div>
+                    <div class="traveller-form__container traveller-form__container--food">
+                      <div class="traveller-form__text">
+                        <span>Еда</span>
+                        <button class="traveller-form__button-arrow traveller-form__text-arrow--down" type="button">
+                          <span class="visually-hidden">Закрыть</span>
+                        </button>
+                      </div>
+                      <fieldset class="traveller-form__fieldset traveller-form__fieldset--food">
+                        <div class="traveller-form__input-container traveller-form__input-container--food">
+                          <label class="traveller-form__label">
+                            <input type="checkbox" name="food-choice" value="meat" class="traveller-form__input-checkbox visually-hidden" checked>
+                            <span class="checkbox-indicator"></span>
+                            <span class="traveller-form__label-text">Мясоед</span>
+                          </label>
+                          <label class="traveller-form__label">
+                            <input type="checkbox" name="food-choice" value="pp" class="traveller-form__input-checkbox visually-hidden">
+                            <span class="checkbox-indicator"></span>
+                            <span class="traveller-form__label-text">Сидит на ПП</span>
+                          </label>
+                          <label class="traveller-form__label">
+                            <input type="checkbox" name="food-choice" value="vegan" class="traveller-form__input-checkbox visually-hidden">
+                            <span class="checkbox-indicator"></span>
+                            <span class="traveller-form__label-text">Веган-сыроед</span>
+                          </label>
+                        </div>
+                      </fieldset>
+                    </div>
+                    <div class="traveller-form__container traveller-form__container--transport">
+                      <div class="traveller-form__text">
+                        <span>Транспорт</span>
+                        <button class="traveller-form__button-arrow traveller-form__text-arrow--down" type="button">
+                          <span class="visually-hidden">Закрыть</span>
+                        </button>
+                      </div>
+                      <fieldset class="traveller-form__fieldset traveller-form__fieldset--transport">
+                        <div class="traveller-form__input-container traveller-form__input-container--transport">
+                          <label>
+                            <input type="checkbox" name="transport-choice" value="plane" class="traveller-form__checkbox-transport traveller-form__input-checkbox--circle visually-hidden" checked>
+                            <span class="checkbox-indicator checkbox-indicator--plane">
+                              <svg class="traveller-form__checkbox-indicator-svg traveller-form__checkbox-indicator-svg--plane">
+                                <use xlink:href="#icon-plane"></use>
+                              </svg>
+                            </span>
+                            <span class="visually-hidden">Самолет</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" name="transport-choice" value="bus" class="traveller-form__checkbox-transport traveller-form__input-checkbox--circle visually-hidden" checked>
+                            <span class="checkbox-indicator checkbox-indicator--bus">
+                              <svg class="traveller-form__checkbox-indicator-svg traveller-form__checkbox-indicator-svg--bus">
+                                <use xlink:href="#icon-bus"></use>
+                              </svg>
+                            </span>
+                            <span class="visually-hidden">Автобус</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" name="transport-choice" value="bike" class="traveller-form__checkbox-transport traveller-form__input-checkbox--circle visually-hidden">
+                            <span class="checkbox-indicator checkbox-indicator--bike">
+                              <svg class="traveller-form__checkbox-indicator-svg traveller-form__checkbox-indicator-svg--bike">
+                                <use xlink:href="#icon-bike"></use>
+                              </svg>
+                            </span>
+                            <span class="visually-hidden">Велосипед</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" name="transport-choice" value="foot" class="traveller-form__checkbox-transport traveller-form__input-checkbox--circle visually-hidden" checked>
+                            <span class="checkbox-indicator checkbox-indicator--foot">
+                              <svg class="traveller-form__checkbox-indicator-svg traveller-form__checkbox-indicator-svg--foot">
+                                <use xlink:href="#icon-run"></use>
+                              </svg>
+                            </span>
+                            <span class="visually-hidden">Пешком</span>
+                          </label>
+                        </div>
+                      </fieldset>
+                    </div>
+                    <div class="traveller-form__container traveller-form__container--level-form">
+                      <div class="traveller-form__text">
+                        <span>Левел</span>
+                        <button class="traveller-form__button-arrow traveller-form__text-arrow--down" type="button">
+                          <span class="visually-hidden">Закрыть</span>
+                        </button>
+                      </div>
+                      <div class="traveller-form__number-container">
+                        <input class="traveller-form__number traveller-form__number--left" id="number1" type="number" value="30">
+                        <input class="traveller-form__number traveller-form__number--right" id="number2" type="number" value="100">
+                      </div>
+                      <div class="range-controls traveller-form__range-controls">
+                        <div class="range-controls__scale">
+                          <div class="range-controls__bar"></div>
+                        </div>
+                        <div class="range-controls__range-toggle range-controls__range-toggle--min" tabindex="0"></div>
+                        <div class="range-controls__range-toggle range-controls__range-toggle--max" tabindex="0"></div>
+                      </div>
+                    </div>
+                    <button class="button button--size-small traveller-filter__button" type="submit">
+                      Показать
+                    </button>
+                  </form>
                 </div>
                 <section class="catalog page-catalog__catalog">
                   <h2 class="catalog__title visually-hidden">Каталог для подбора попутчика</h2>
                   <ul class="catalog__list">
                     <li class="catalog__item">
-                      <div class="catalog__img-container">
+                      <a class="catalog__img-container" href="#">
                         <picture>
                           <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-destop@2x.webp 2x">
                           <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
@@ -1109,7 +1096,7 @@
                           <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
                           <img class="catalog__img" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Личное фото Тани Фирсовой" width="70" height="70">
                         </picture>
-                      </div>
+                      </a>
                       <div class="catalog__text-container">
                         <div class="catalog__name-container">
                           <a class="catalog__name" href="#">Таня Фирсова</a>
@@ -1118,13 +1105,12 @@
                         <div class="catalog__likes">
                           <div class="catalog__likes-svg-container">
                             <button class="catalog__likes-button catalog__likes-button--red" type="button" aria-label="Поставить лайк">
-                              <svg class="catalog__likes-svg catalog__likes-svg--red" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 20 17" width="20" height="17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
+                              <svg class="catalog__likes-svg catalog__likes-svg--red">
                                 <use xlink:href="#icon-heart-active"></use>
                               </svg>
                             </button>
                           </div>
-                          <div class="catalog__likes-text">1,5М</div>
+                          <div class="catalog__likes-text">1,5<span>М</span></div>
                         </div>
                         <p class="catalog__text-tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
                       </div>
@@ -1133,19 +1119,19 @@
                           <b class="catalog__text catalog__text--visit">хочет посетить:</b>
                           <ul class="catalog__flags-list">
                             <li class="catalog__flags-item">
-                              <svg class="catalog__flags-svg" width="71" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
+                              <svg class="catalog__flags-svg" width="71" height="48" viewBox="0 0 71 48">
                                 <use xlink:href="#icon-flag-sri-lanka"></use>
                               </svg>
                               <span class="catalog__flags-text">Шри-ланка</span>
                             </li>
                             <li class="catalog__flags-item">
-                              <svg class="catalog__flags-svg" width="71" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
+                              <svg class="catalog__flags-svg" width="71" height="48" viewBox="0 0 71 48">
                                 <use xlink:href="#icon-flag-thailand"></use>
                               </svg>
                               <span class="catalog__flags-text">Таиланд</span>
                             </li>
                             <li class="catalog__flags-item">
-                              <svg class="catalog__flags-svg" width="71" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
+                              <svg class="catalog__flags-svg" width="71" height="48" viewBox="0 0 71 48">
                                 <use xlink:href="#icon-flag-seychelles"></use>
                               </svg>
                               <span class="catalog__flags-text">Сейшелы</span>
@@ -1158,28 +1144,24 @@
                             <div class="transport catalog__transport">
                               <ul class="transport__list catalog__transport-list">
                                 <li class="transport__item transport__item--bg-gray catalog__transport-item transport__tooltip" title="Авиаперелет">
-                                  <svg class="transport__svg transport__svg--plane transport__svg--active" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                                  <svg class="transport__svg transport__svg--plane transport__svg--active">
                                     <use xlink:href="#icon-plane"></use>
                                   </svg>
                                   <span class="visually-hidden">Самолет</span></li>
                                 <li class="transport__item transport__item--bg-gray catalog__transport-item transport__tooltip" title="Автотранспорт">
-                                  <svg class="transport__svg transport__svg--bus" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                                  <svg class="transport__svg transport__svg--bus">
                                     <use xlink:href="#icon-bus"></use>
                                   </svg>
                                   <span class="visually-hidden">Автобус</span>
                                 </li>
                                 <li class="transport__item transport__item--bg-gray catalog__transport-item transport__tooltip" title="Велосипед">
-                                  <svg class="transport__svg transport__svg--bike" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                                  <svg class="transport__svg transport__svg--bike">
                                     <use xlink:href="#icon-bike"></use>
                                   </svg>
                                   <span class="visually-hidden">Велосипед</span>
                                 </li>
                                 <li class="transport__item transport__item--bg-gray catalog__transport-item transport__tooltip" title="Пешком">
-                                  <svg class="transport__svg transport__svg--foot" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                                  <svg class="transport__svg transport__svg--foot">
                                     <use xlink:href="#icon-run"></use>
                                   </svg>
                                   <span class="visually-hidden">Пешком</span>
@@ -1201,12 +1183,12 @@
                           </div>
                         </div>
                       </div>
-                      <a class="button--bg-yellow button--size-small catalog__button" src="#">
+                      <a class="button--bg-yellow button--size-small catalog__button" href="#">
                         Позвать!
                       </a>
                     </li>
                     <li class="catalog__item">
-                      <div class="catalog__img-container">
+                      <a class="catalog__img-container" href="#">
                         <picture>
                           <source type="image/webp" media="(min-width: 1200px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
                           <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
@@ -1215,37 +1197,36 @@
                           <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
                           <img class="catalog__img" src="./img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="Личное фото Пети Демина" width="70" height="70">
                         </picture>
-                      </div>
+                      </a>
                       <div class="catalog__text-container">
                         <div class="catalog__name-container">
-                          <a class="catalog__name" href="#"> Петя Демин</a>
+                          <a class="catalog__name" href="#">Петя Демин</a>
                           <div class="catalog__indicator catalog__indicator--offline"></div>
                         </div>
                         <div class="catalog__likes">
                           <div class="catalog__likes-svg-container">
                             <button class="catalog__likes-button" type="button" aria-label="Поставить лайк">
-                              <svg class="catalog__likes-svg" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 20 17" width="20" height="17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
+                              <svg class="catalog__likes-svg">
                                 <use xlink:href="#icon-heart"></use>
                               </svg>
                             </button>
                           </div>
                           <div class="catalog__likes-text">150</div>
                         </div>
-                        <p class="catalog__text-tags">#бургер #бар #футбол#концерт #крафт</p>
+                        <p class="catalog__text-tags">#бургер #бар #футбол<span>#концерт #крафт</span></p>
                       </div>
                       <div class="catalog__traveller-info-container">
                         <div class="catalog__flags-container">
                           <b class="catalog__text catalog__text--visit">хочет посетить:</b>
                           <ul class="catalog__flags-list">
                             <li class="catalog__flags-item">
-                              <svg class="catalog__flags-svg" width="71" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
+                              <svg class="catalog__flags-svg" width="71" height="48" viewBox="0 0 71 48">
                                 <use xlink:href="#icon-flag-belgium"></use>
                               </svg>
                               <span class="catalog__flags-text">бельгия</span>
                             </li>
                             <li class="catalog__flags-tem">
-                              <svg class="catalog__flags-svg" width="71" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
+                              <svg class="catalog__flags-svg" width="71" height="48" viewBox="0 0 71 48">
                                 <use xlink:href="#icon-flag-czech"></use>
                               </svg>
                               <span class="catalog__flags-text">чехия</span>
@@ -1258,29 +1239,25 @@
                             <div class="transport catalog__transport">
                               <ul class="transport__list catalog__transport-list">
                                 <li class="transport__item transport__item--bg-gray catalog__transport-item transport__tooltip" title="Авиаперелет">
-                                  <svg class="transport__svg transport__svg--plane transport__svg--active" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                                  <svg class="transport__svg transport__svg--plane transport__svg--active">
                                     <use xlink:href="#icon-plane"></use>
                                   </svg>
                                   <span class="visually-hidden">Самолет</span>
                                 </li>
                                 <li class="transport__item transport__item--bg-gray catalog__transport-item transport__tooltip" title="Автотранспорт">
-                                  <svg class="transport__svg transport__svg--bus transport__svg--active" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                                  <svg class="transport__svg transport__svg--bus transport__svg--active">
                                     <use xlink:href="#icon-bus"></use>
                                   </svg>
                                   <span class="visually-hidden">Автобус</span>
                                 </li>
                                 <li class="transport__item transport__item--bg-gray catalog__transport-item transport__tooltip" title="Велосипед">
-                                  <svg class="transport__svg transport__svg--bike" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                                  <svg class="transport__svg transport__svg--bike">
                                     <use xlink:href="#icon-bike"></use>
                                   </svg>
                                   <span class="visually-hidden">Велосипед</span>
                                 </li>
                                 <li class="transport__item transport__item--bg-gray catalog__transport-item transport__tooltip" title="Пешком">
-                                  <svg class="transport__svg transport__svg--foot transport__svg--active" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                                  <svg class="transport__svg transport__svg--foot transport__svg--active">
                                     <use xlink:href="#icon-run"></use>
                                   </svg>
                                   <span class="visually-hidden">Пешком</span>
@@ -1302,12 +1279,12 @@
                           </div>
                         </div>
                       </div>
-                      <a class="button--bg-yellow button--size-small catalog__button" src="#">
+                      <a class="button--bg-yellow button--size-small catalog__button" href="#">
                         Позвать!
                       </a>
                     </li>
                     <li class="catalog__item">
-                      <div class="catalog__img-container">
+                      <a class="catalog__img-container" href="#">
                         <picture>
                           <source type="image/webp" media="(min-width: 1200px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
                           <source type="image/webp" media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
@@ -1316,7 +1293,7 @@
                           <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
                           <img class="catalog__img" src="./img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" alt="Личное фото  Марка Смолова" width="70" height="70">
                         </picture>
-                      </div>
+                      </a>
                       <div class="catalog__text-container">
                         <div class="catalog__name-container">
                           <a class="catalog__name" href="#">Марк Смолов</a>
@@ -1325,34 +1302,33 @@
                         <div class="catalog__likes">
                           <div class="catalog__likes-svg-container">
                             <button class="catalog__likes-button" type="button" aria-label="Поставить лайк">
-                              <svg class="catalog__likes-svg" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 20 17" width="20" height="17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
+                              <svg class="catalog__likes-svg">
                                 <use xlink:href="#icon-heart"></use>
                               </svg>
                             </button>
                           </div>
                           <div class="catalog__likes-text">1700</div>
                         </div>
-                        <p class="catalog__text-tags">#рэп #тату #хайпбист#кроссовки #суприм</p>
+                        <p class="catalog__text-tags">#рэп #тату #хайпбист<span>#кроссовки #суприм</span></p>
                       </div>
                       <div class="catalog__traveller-info-container">
                         <div class="catalog__flags-container">
                           <b class="catalog__text catalog__text--visit">хочет посетить:</b>
                           <ul class="catalog__flags-list">
                             <li class="catalog__flags-item">
-                              <svg class="catalog__flags-svg" width="71" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
+                              <svg class="catalog__flags-svg" width="71" height="48" viewBox="0 0 71 48">
                                 <use xlink:href="#icon-flag-usa"></use>
                               </svg>
                               <span class="catalog__flags-text">сша</span>
                             </li>
                             <li class="catalog__flags-item">
-                              <svg class="catalog__flags-svg" width="71" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
+                              <svg class="catalog__flags-svg" width="71" height="48" viewBox="0 0 71 48">
                                 <use xlink:href="#icon-flag-australia"></use>
                               </svg>
                               <span class="catalog__flags-text">Австралия</span>
                             </li>
                             <li class="catalog__flags-item">
-                              <svg class="catalog__flags-svg" width="71" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
+                              <svg class="catalog__flags-svg" width="71" height="48" viewBox="0 0 71 48">
                                 <use xlink:href="#icon-flag-dominica"></use>
                               </svg>
                               <span class="catalog__flags-text">доминикана</span>
@@ -1365,29 +1341,25 @@
                             <div class="transport catalog__transport">
                               <ul class="transport__list catalog__transport-list">
                                 <li class="transport__item transport__item--bg-gray catalog__transport-item transport__tooltip" title="Авиаперелет">
-                                  <svg class="transport__svg transport__svg--plane transport__svg--active" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                                  <svg class="transport__svg transport__svg--plane transport__svg--active">
                                     <use xlink:href="#icon-plane"></use>
                                   </svg>
                                   <span class="visually-hidden">Самолет</span>
                                 </li>
                                 <li class="transport__item transport__item--bg-gray catalog__transport-item transport__tooltip" title="Автотранспорт">
-                                  <svg class="transport__svg transport__svg--bus" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                                  <svg class="transport__svg transport__svg--bus">
                                     <use xlink:href="#icon-bus"></use>
                                   </svg>
                                   <span class="visually-hidden">Автобус</span>
                                 </li>
                                 <li class="transport__item transport__item--bg-gray catalog__transport-item transport__tooltip" title="Велосипед">
-                                  <svg class="transport__svg transport__svg--bike transport__svg--active" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                                  <svg class="transport__svg transport__svg--bike transport__svg--active">
                                     <use xlink:href="#icon-bike"></use>
                                   </svg>
                                   <span class="visually-hidden">Велосипед</span>
                                 </li>
                                 <li class="transport__item transport__item--bg-gray catalog__transport-item transport__tooltip" title="Пешком">
-                                  <svg class="transport__svg transport__svg--foot" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                                  <svg class="transport__svg transport__svg--foot">
                                     <use xlink:href="#icon-run"></use>
                                   </svg>
                                   <span class="visually-hidden">Пешком</span>
@@ -1409,12 +1381,12 @@
                           </div>
                         </div>
                       </div>
-                      <a class="button--bg-yellow button--size-small catalog__button" src="#">
+                      <a class="button--bg-yellow button--size-small catalog__button" href="#">
                         Позвать!
                       </a>
                     </li>
                     <li class="catalog__item">
-                      <div class="catalog__img-container">
+                      <a class="catalog__img-container" href="#">
                         <picture>
                           <source type="image/webp" media="(min-width: 1200px)" srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
                           <source type="image/webp" media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
@@ -1423,7 +1395,7 @@
                           <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
                           <img class="catalog__img" src="./img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Личное фото  Ларисы Роговой" width="70" height="70">
                         </picture>
-                      </div>
+                      </a>
                       <div class="catalog__text-container">
                         <div class="catalog__name-container">
                           <a class="catalog__name" href="#">Лариса Роговая</a>
@@ -1432,28 +1404,27 @@
                         <div class="catalog__likes">
                           <div class="catalog__likes-svg-container">
                             <button class="catalog__likes-button" type="button" aria-label="Поставить лайк">
-                              <svg class="catalog__likes-svg" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 20 17" width="20" height="17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
+                              <svg class="catalog__likes-svg">
                                 <use xlink:href="#icon-heart"></use>
                               </svg>
                             </button>
                           </div>
                           <span class="catalog__likes-text">23</span>
                         </div>
-                        <p class="catalog__text-tags">#образование #карьера#учеба #линкедин</p>
+                        <p class="catalog__text-tags">#образование #карьера<span>#учеба #линкедин</span></p>
                       </div>
                       <div class="catalog__traveller-info-container">
                         <div class="catalog__flags-container">
                           <b class="catalog__text catalog__text--visit">хочет посетить:</b>
                           <ul class="catalog__flags-list">
                             <li class="catalog__flags-item">
-                              <svg class="catalog__flags-svg" width="71" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
+                              <svg class="catalog__flags-svg" width="71" height="48" viewBox="0 0 71 48">
                                 <use xlink:href="#icon-flag-united-kingdom"></use>
                               </svg>
                               <span class="catalog__flags-text">Великобритания</span>
                             </li>
                             <li class="catalog__flags-item">
-                              <svg class="catalog__flags-svg catalog__flags-svg--germany" xmlns="http://www.w3.org/2000/svg" width="71" height="48" viewBox="0 0 5 3">
+                              <svg class="catalog__flags-svg catalog__flags-svg--germany" width="71" height="48" viewBox="0 0 5 3">
                                 <use xlink:href="#icon-flag-germany"></use>
                               </svg>
                               <span class="catalog__flags-text">германия</span>
@@ -1466,29 +1437,25 @@
                             <div class="transport catalog__transport">
                               <ul class="transport__list catalog__transport-list">
                                 <li class="transport__item transport__item--bg-gray catalog__transport-item transport__tooltip" title="Авиаперелет">
-                                  <svg class="transport__svg transport__svg--plane transport__svg--active" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                                  <svg class="transport__svg transport__svg--plane transport__svg--active">
                                     <use xlink:href="#icon-plane"></use>
                                   </svg>
                                   <span class="visually-hidden">Самолет</span>
                                 </li>
                                 <li class="transport__item transport__item--bg-gray catalog__transport-item transport__tooltip" title="Автотранспорт">
-                                  <svg class="transport__svg transport__svg--bus transport__svg--active" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                                  <svg class="transport__svg transport__svg--bus transport__svg--active">
                                     <use xlink:href="#icon-bus"></use>
                                   </svg>
                                   <span class="visually-hidden">Автобус</span>
                                 </li>
                                 <li class="transport__item transport__item--bg-gray catalog__transport-item transport__tooltip" title="Велосипед">
-                                  <svg class="transport__svg transport__svg--bike" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                                  <svg class="transport__svg transport__svg--bike">
                                     <use xlink:href="#icon-bike"></use>
                                   </svg>
                                   <span class="visually-hidden">Велосипед</span>
                                 </li>
                                 <li class="transport__item transport__item--bg-gray catalog__transport-item transport__tooltip" title="Пешком">
-                                  <svg class="transport__svg transport__svg--foot" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                                  <svg class="transport__svg transport__svg--foot">
                                     <use xlink:href="#icon-run"></use>
                                   </svg>
                                   <span class="visually-hidden">Пешком</span>
@@ -1510,7 +1477,7 @@
                           </div>
                         </div>
                       </div>
-                      <a class="button button--bg-yellow button--size-small catalog__button" src="#">
+                      <a class="button button--bg-yellow button--size-small catalog__button" href="#">
                         Позвать!
                       </a>
                     </li>
@@ -1530,10 +1497,10 @@
                   <li class="paginator__item"><a class="paginator__link" href="#">4</a></li>
                 </ul>
                 <div class="paginator__button-container">
-                  <a class="button paginator__button paginator__button--prev" src="#">
+                  <a class="button paginator__button paginator__button--prev" href="#">
                     <span class="visually-hidden">Назад</span>
                   </a>
-                  <a class="button paginator__button paginator__button--next" src="#">
+                  <a class="button paginator__button paginator__button--next" href="#">
                     <span class="visually-hidden">Вперед</span>
                   </a>
                 </div>
@@ -1561,8 +1528,7 @@
             <ul class="social__list">
               <li class="social__item social__item--bg-yellow">
                 <a class="social__link" href="#">
-                  <svg class="social__svg social__svg--bg-yellow social__svg--facebook" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
+                  <svg class="social__svg social__svg--bg-yellow social__svg--facebook">
                     <use xlink:href="#icon-facebook"></use>
                   </svg>
                   <span class="visually-hidden">Фейсбук</span>
@@ -1570,8 +1536,7 @@
               </li>
               <li class="social__item social__item--bg-yellow">
                 <a class="social__link" href="#">
-                  <svg class="social__svg social__svg--bg-yellow social__svg--vk" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
+                  <svg class="social__svg social__svg--bg-yellow social__svg--vk">
                     <use xlink:href="#icon-vk"></use>
                   </svg>
                   <span class="visually-hidden">Вконтакте</span>
@@ -1579,8 +1544,7 @@
               </li>
               <li class="social__item social__item--bg-yellow">
                 <a class="social__link" href="#">
-                  <svg class="social__svg social__svg--bg-yellow social__svg--insta" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
+                  <svg class="social__svg social__svg--bg-yellow social__svg--insta">
                     <use xlink:href="#icon-instagram"></use>
                   </svg>
                   <span class="visually-hidden">Инстаграм</span>
@@ -1591,8 +1555,7 @@
           <div class="copyright page-footer__copyright">
             <b class="copyright__text">Разработано</b>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <svg class="copyright__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 27 34" style="enable-background:new 0 0 27 34;" xml:space="preserve">
+              <svg class="copyright__svg">
                 <use xlink:href="#icon-htmlacademy"></use>
               </svg>
               <span class="visually-hidden">HTML-Academy</span>

@@ -3,22 +3,27 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .traveller-id-card__img {
   border-radius: 50%;
 }
+
 .traveller-id-card__button {
   margin-bottom: 30px;
   background-color: @medium-grayish-blue;
   color: #161c35;
   padding: 7px 40px 5px 37px;
+
   &:hover,
   &:focus {
     background-color: #d1d7e9;
   }
+
   &:active {
     color: rgba(29, 46, 91, 0.3);
   }
 }
+
 .traveller-id-card__heading {
   margin: 0;
   padding: 0 17px;
@@ -33,10 +38,12 @@
   left: 100px;
   background-color: #edeff6;
 }
+
 .traveller-id-card__text {
   margin: 0;
   padding: 25px;
 }
+
 .traveller-id-card__textarea {
   font: inherit;
   font-size: 16px;
@@ -51,17 +58,21 @@
   background-color: #edeff6;
   overflow: hidden;
   cursor: pointer;
+
   &:hover,
   &:focus {
     border: 1px solid #959bb2;
   }
+
   &:active {
     border: 1px solid #161c35;
   }
 }
+
 .traveller-id-card__textarea::-webkit-input-placeholder {
   color: rgba(68, 68, 68, 0.3);
 }
+
 .traveller-id-card__container {
   display: flex;
   flex-direction: row;
@@ -70,6 +81,7 @@
   margin-bottom: 19px;
   position: relative;
 }
+
 .traveller-id-card__level-id {
   display: flex;
   flex-direction: column;
@@ -82,14 +94,16 @@
   left: 20px;
   border-radius: 50%;
 }
+
 .traveller-id-card__number {
   font-size: 38px;
   line-height: 38px;
   font-weight: 700;
   color: #161c35;
   position: relative;
+
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: -3px;
     bottom: 2px;
@@ -98,15 +112,18 @@
     background-color: #cbced9;
   }
 }
+
 .traveller-id-card__level {
   font-size: 18px;
   line-height: 22px;
   color: #444444;
 }
+
 .traveller-id-card__photo-id {
   width: 100px;
   height: 100px;
 }
+
 .traveller-id-card__tags {
   position: relative;
   display: flex;
@@ -114,6 +131,7 @@
   align-items: center;
   margin-bottom: 25px;
 }
+
 .traveller-id-card__transport {
   margin-bottom: 33px;
   position: relative;
@@ -123,30 +141,40 @@
   border: 1px solid #cbced9;
   border-radius: 10px;
 }
+
 .traveller-id-card__list {
   align-items: center;
   padding: 15px 0;
 }
+
 @media (min-width: @tablet-width) {
   .traveller-id-card {
     position: relative;
   }
+
   .traveller-id-card__container {
-    margin-bottom: 52px;
+    margin-bottom: 50px;
     padding: 0;
     padding-top: 60px;
   }
+
+  .traveller-id-card__svg {
+    margin-left: -2px;
+  }
+
   .traveller-id-card__transport {
     position: absolute;
-    top: 60px;
-    left: 180px;
+    top: 62px;
+    left: 190px;
     right: 0;
     margin-bottom: 0;
-    width: 310px;
+    width: 305px;
   }
+
   .traveller-id-card__list {
     padding: 25px 0;
   }
+
   .traveller-id-card__button {
     font-size: 20px;
     line-height: 18px;
@@ -155,12 +183,14 @@
     color: #1d2e5b;
     padding: 22px 0;
     border-radius: 10px;
-    margin-bottom: 51px;
+    margin-bottom: 49px;
   }
+
   .traveller-id-card__tags {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     align-items: flex-start;
   }
+
   .traveller-id-card__heading {
     font-size: 20px;
     line-height: 18px;
@@ -171,7 +201,8 @@
     left: 50%;
     margin-left: -43px;
   }
-  .traveller-id-card__textarea  {
+
+  .traveller-id-card__textarea {
     font-size: 20px;
     line-height: 18px;
     text-align: left;
@@ -179,35 +210,44 @@
     width: 576px;
     height: 18px;
   }
+
   .traveller-id-card__level-id {
     top: 65px;
-    left: 5px;
+    left: 0;
   }
+
   .traveller-id-card__img {
-    border-radius: 10px;
+    border-radius: 6px;
+    width: 95px;
+    margin: 3px 0 0 7px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .traveller-id-card__container {
     justify-content: flex-end;
     position: absolute;
     top: -190px;
-    left: 0px;
+    left: 0;
     right: 95px;
     padding: 0;
   }
+
   .traveller-id-card {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
   .traveller-id-card__tags {
     margin-bottom: 0;
     width: 730px;
   }
+
   .traveller-id-card__textarea {
     width: 688px;
   }
+
   .traveller-id-card__button {
     position: absolute;
     right: 95px;
@@ -217,40 +257,51 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
+
   .traveller-id-card__transport {
     position: relative;
     top: 0;
     left: 0;
     width: 384px;
   }
+
   .traveller-id-card__button-text {
     display: none;
   }
+
   .traveller-id-card__img {
     width: 190px;
     height: 190px;
     border-radius: 0;
+    margin: 0;
   }
+
   .traveller-id-card__photo-id {
     width: 190px;
     height: 190px;
   }
+
   .traveller-id-card__level-id {
     top: 45px;
     left: 895px;
   }
+
   .traveller-id-card__heading {
-    left: 70px;
+    left: 65px;
   }
+
   .traveller-id-card__number {
     color: @white;
+
     &::after {
       opacity: 0.3;
     }
   }
+
   .traveller-id-card__level {
     color: @white;
   }
+
   .traveller-id-card__svg {
     margin-right: 45px;
     margin-top: 40px;

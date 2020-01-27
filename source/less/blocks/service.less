@@ -5,6 +5,7 @@
   padding: 0;
   margin: 0;
 }
+
 .service__item {
   display: flex;
   justify-content: space-between;
@@ -18,34 +19,42 @@
   border-radius: 10px;
   margin-bottom: -15px;
 }
+
 .service__text {
   width: 140px;
   margin-bottom: 10px;
 }
+
 .service__number {
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   color: @white;
 }
+
 .service__item--first {
   background-color: @vivid-orange-dark;
 }
+
 .service__item--second {
   background-color: @vivid-orange;
 }
+
 .service__item--third {
   background-color: @vivid-orange-light;
 }
+
 .service__item--fourth {
   background-color: @light-yellow;
-  padding-bottom: 14px
+  padding-bottom: 14px;
 }
+
 @media (min-width: @tablet-width) {
   .service__list {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
   .service__item {
     flex-direction: column;
     width: 299px;
@@ -57,17 +66,21 @@
     margin-right: -17px;
     align-items: flex-start;
   }
+
   .service__number {
     font-size: 30px;
   }
+
   .service__text {
     width: 190px;
     margin: 0;
   }
+
   .service__item--first {
     border-top-left-radius: 20px;
     padding-bottom: 40px;
   }
+
   .service__item--second {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -75,11 +88,13 @@
     padding-left: 35px;
     padding-bottom: 40px;
   }
+
   .service__item--third {
     border-bottom-left-radius: 20px;
     padding-bottom: 25px;
     padding-top: 32px;
   }
+
   .service__item--fourth {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -88,10 +103,14 @@
     padding-top: 32px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .service__number {
     font-size: 24px;
+    margin-right: 40px;
+    margin-top: 5px;
   }
+
   .service__item {
     flex-direction: row;
     width: 290px;
@@ -100,27 +119,29 @@
     margin-left: -15px;
     padding: 27px 32px 18px 32px;
   }
-  .service__number {
-    margin-right: 40px;
-    margin-top: 5px;
-  }
+
   .service__item--second {
     margin-left: -20px;
     padding-left: 26px;
     padding-right: 60px;
   }
+
   .service__item--second .service__number {
     margin: 5px 5px 0 0;
   }
+
   .service__item--third {
     padding-right: 48px;
   }
+
   .service__item--third .service__number {
     margin-right: 7px;
   }
+
   .service__item--fourth .service__number {
     margin-right: 5px;
   }
+
   .service__item--fourth {
     width: 255px;
     padding: 30px 30px 18px;

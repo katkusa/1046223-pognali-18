@@ -4,35 +4,43 @@
   background-size: 280px 350px;
   background-repeat: no-repeat;
   position: relative;
+
   &::before {
     display: none;
   }
 }
+
 .service-info__title {
   padding-top: 33px;
   margin-bottom: 17px;
 }
+
 .service-info__text {
   margin: 0;
   margin-bottom: 20px;
   width: 210px;
 }
+
 .service-info__text--light {
   font-weight: 300;
   color: @white;
 }
+
 .service-info__text--bold {
   font-weight: 700;
   color: @white;
 }
+
 .service-info__button {
   display: none;
 }
+
 @media (min-width: @tablet-width) {
   .service-info {
     background-image: initial;
+
     &::after {
-      content: '';
+      content: "";
       width: 350px;
       height: 550px;
       background-image: url("../../img/about-tablet@2x.png");
@@ -42,9 +50,10 @@
       right: -30px;
       bottom: 75px;
     }
+
     &::before {
       display: block;
-      content: '';
+      content: "";
       width: 688px;
       height: 213px;
       border-radius: 20px;
@@ -54,51 +63,59 @@
       left: 0;
     }
   }
+
   .service-info__title {
     max-width: 300px;
     padding-top: 43px;
     margin-bottom: 42px;
     z-index: 2;
   }
+
   .service-info__text {
     margin-bottom: 30px;
     width: 300px;
     z-index: 2;
   }
+
   .service-info__text--light {
     font-size: 28px;
     line-height: 33px;
   }
+
   .service-info__text--bold {
     font-size: 21px;
     line-height: 25px;
     margin-bottom: 50px;
   }
+
   .service-info__button {
     display: inline-block;
     width: 226px;
     padding: 30px 19px 26px 30px;
+
     &::after {
       right: 32px;
     }
   }
 }
+
 @media (min-width: @desktop-width) {
   .service-info {
     &::after {
-    content: '';
-    width: 630px;
-    height: 665px;
-    background-image: url("../../img/about-desktop@2x.png");
-    background-size: 630px 665px;
-    background-repeat: no-repeat;
-    position: absolute;
-    right: 10px;
-    top: 85px;
-    bottom: 0;
+      content: "";
+      width: 630px;
+      height: 665px;
+      background-image: url("../../img/about-desktop@2x.png");
+      background-size: 630px 665px;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 10px;
+      top: 85px;
+      bottom: 0;
     }
+
     &::before {
-      content: '';
+      content: "";
       width: 213px;
       height: 213px;
       border-radius: 20px;
@@ -108,21 +125,26 @@
       left: 0;
     }
   }
+
   .service-info__title {
     max-width: 600px;
     padding-top: 0;
     margin-bottom: 61px;
   }
+
   .service-info__text {
     margin-bottom: 38px;
   }
+
   .service-info__text--light {
     width: 640px;
   }
+
   .service-info__text--bold {
     width: 415px;
     margin-bottom: 83px;
   }
+
   .service-info__button {
     padding-left: 32px;
   }

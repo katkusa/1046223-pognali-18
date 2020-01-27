@@ -1,15 +1,18 @@
 .traveller-card__wrapper {
   position: relative;
 }
+
 .traveller-card__level-score {
   position: absolute;
   top: 16px;
   left: 17px;
   z-index: 3;
 }
+
 .traveller-card__discription:hover {
-  box-shadow: 0px 6px 21px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
 }
+
 .traveller-card__level-id {
   display: flex;
   flex-direction: column;
@@ -22,21 +25,25 @@
   left: 0;
   border-radius: 50%;
 }
+
 .traveller-card__svg {
   width: 60px;
   height: 60px;
 }
+
 .traveller-card__svg circle {
   fill: rgba(0, 0, 0, 0.5);
 }
+
 .traveller-card__number {
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
   color: @white;
   position: relative;
+
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: -3px;
     bottom: 0;
@@ -45,14 +52,17 @@
     background-color: rgba(225, 225, 225, 0.2);
   }
 }
+
 .traveller-card__level {
   font-size: 14px;
   line-height: 14px;
   color: @white;
 }
+
 .traveller-card:hover .traveller-card__img {
   transform: scale(1.1);
 }
+
 .traveller-card__img-container {
   overflow: hidden;
   width: 270px;
@@ -60,9 +70,11 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+
 .traveller-card__img {
   transition: all 1s ease-out;
 }
+
 .traveller-card__name {
   font-size: 21px;
   line-height: 21px;
@@ -71,14 +83,17 @@
   margin-bottom: 14px;
   position: relative;
   cursor: pointer;
+
   &:hover,
   &:focus {
     opacity: 0.7;
   }
+
   &:active {
     opacity: 0.3;
   }
 }
+
 .traveller-card__hobbys {
   line-height: 18px;
   text-align: center;
@@ -87,78 +102,95 @@
   margin-bottom: 8px;
   max-width: 180px;
 }
+
 .traveller-card__hobbys:nth-child(2n) {
   margin-right: -13px;
 }
-.traveller-card__discription{
+
+.traveller-card__discription {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 7px;
 }
+
 .traveller-card__transport {
   margin-bottom: 18px;
 }
+
 .traveller-card__name--offline,
 .traveller-card__name--online {
   &::before {
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: -14px;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -14px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
   }
 }
+
 .traveller-card__name--offline::before {
   background-color: #f97676;
 }
+
 .traveller-card__name--online::before {
   background-color: #81e31e;
 }
+
 .traveller-card__svg--plane {
   width: 19px;
   height: 21px;
 }
+
 .traveller-card__svg--bus {
   width: 17px;
   height: 21px;
 }
+
 .traveller-card__svg--bike {
   width: 24px;
   height: 21px;
 }
+
 .traveller-card__svg--foot {
   width: 20px;
   height: 21px;
 }
+
 .traveller-card__flags {
   margin-top: -10px;
 }
+
 @media (min-width: @tablet-width) {
   .traveller-card__discription {
     margin-top: 11px;
   }
+
   .traveller-card__img-container {
     width: 285px;
     height: 285px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
+
   .traveller-card__level-score {
     top: 22px;
     left: 22px;
   }
+
   .traveller-card__img {
     width: 285px;
     height: 285px;
   }
+
   .traveller-card__name {
     font-size: 24px;
     line-height: 24px;
     margin-bottom: 23px;
   }
+
   .traveller-card__name--offline,
   .traveller-card__name--online {
     &::before {
@@ -168,6 +200,7 @@
       left: -20px;
     }
   }
+
   .traveller-card__hobbys {
     font-size: 20px;
     line-height: 22px;
@@ -175,33 +208,39 @@
     margin-left: -8px;
     margin-bottom: 15px;
   }
+
   .traveller-card__transport {
     margin-bottom: 28px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .traveller-card__name {
     font-size: 24px;
     line-height: 24px;
     margin-bottom: 22px;
   }
+
   .traveller-card__hobbys {
     font-size: 20px;
     line-height: 24px;
     max-width: 230px;
     margin-bottom: 7px;
   }
+
   .traveller-card__name--offline,
   .traveller-card__name--online {
     &::before {
-    width: 7px;
-    height: 7px;
-    left: -17px;
+      width: 7px;
+      height: 7px;
+      left: -17px;
     }
   }
+
   .traveller-card__transport {
     margin-bottom: 29px;
   }
+
   .traveller-card__discription {
     margin-top: 14px;
   }

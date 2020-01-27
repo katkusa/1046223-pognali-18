@@ -4,8 +4,9 @@
   margin-top: -20px;
   margin-bottom: -20px;
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
+
 .map iframe {
   z-index: 1;
   border: none;
@@ -13,6 +14,7 @@
   height: 100%;
   position: relative;
 }
+
 .map__container {
   width: 100%;
   height: 100%;
@@ -21,24 +23,29 @@
   left: 0;
   margin: 0;
 }
+
 .map__pin {
   position: absolute;
   top: 40%;
   left: 40%;
 }
+
 @media (min-width: @tablet-width) {
   .map {
     height: 505px;
   }
+
   .map__pin {
     top: 45%;
     left: 45%;
   }
 }
+
 @media (min-width: @desktop-width) {
   .map {
-    height: 440px;
+    height: 480px;
   }
+
   .map__pin {
     top: 32%;
     left: 48%;

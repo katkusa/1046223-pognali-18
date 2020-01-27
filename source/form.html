@@ -18,7 +18,7 @@
     </div>
     <div class="wrapper wrapper--bg-blue">
       <div class="wrapper__inner">
-        <header class="page-header">
+        <header class="page-header no-js">
           <a class="logo page-header__logo" href="./index.html">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
@@ -32,7 +32,7 @@
           <button class="page-header__toggle button" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <div class="site-menu site-menu--closed">
+          <div class="site-menu">
             <div class="site-menu__wrapper">
               <a class="logo site-menu__logo">
                 <picture>
@@ -73,7 +73,7 @@
                 <div class="site-menu__contact-item">
                   <a href="tel:+78005558628" class="contact contact--icon-bg-orange contact--icon-size-s">
                     <div class="contact__icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+                      <svg>
                         <use xlink:href="#icon-topmenu-phone"></use>
                       </svg>
                     </div>
@@ -83,7 +83,7 @@
                 <div class="site-menu__contact-item">
                   <a href="mailto:mail@htmlacademy.ru" class="contact contact--icon-bg-yellow contact--icon-size-s">
                   <div class="contact__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 14" style="enable-background:new 0 0 18 14;" xml:space="preserve">
+                    <svg>
                       <use xlink:href="#icon-topmenu-mail"></use>
                     </svg>
                   </div>
@@ -98,8 +98,7 @@
                 <div class="site-menu__contact-item">
                   <a href="tel:+78005558628" class="contact contact--icon-bg-dark-blue contact--color-dark-blue contact--show-text">
                     <div class="contact__icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                      <svg>
                         <use xlink:href="#icon-contacts-phone"></use>
                       </svg>
                     </div>
@@ -109,8 +108,7 @@
                 <div class="site-menu__contact-item">
                   <a href="mailto:mail@htmlacademy.ru" class="contact contact--icon-bg-dark-blue contact--color-dark-blue contact--show-text">
                   <div class="contact__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
+                    <svg>
                       <use xlink:href="#icon-contacts-mail"></use>
                     </svg>
                   </div>
@@ -122,8 +120,7 @@
                 <ul class="social__list">
                   <li class="social__item">
                     <a class="social__link social__link--no-bg" href="#">
-                      <svg class="social__svg social__svg--no-bg social__svg--facebook" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
+                      <svg class="social__svg social__svg--no-bg social__svg--facebook">
                         <use xlink:href="#icon-facebook"></use>
                       </svg>
                       <span class="visually-hidden">Фейсбук</span>
@@ -131,8 +128,7 @@
                   </li>
                   <li class="social__item">
                     <a class="social__link social__link--no-bg" href="#">
-                      <svg class="social__svg social__svg--no-bg social__svg--vk" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
+                      <svg class="social__svg social__svg--no-bg social__svg--vk">
                         <use xlink:href="#icon-vk"></use>
                       </svg>
                       <span class="visually-hidden">Вконтакте</span>
@@ -140,8 +136,7 @@
                   </li>
                   <li class="social__item">
                     <a class="social__link social__link--insta" href="#">
-                      <svg class="social__svg social__svg--no-bg social__svg--insta" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
+                      <svg class="social__svg social__svg--no-bg social__svg--insta">
                         <use xlink:href="#icon-instagram"></use>
                       </svg>
                       <span class="visually-hidden">Инстаграм</span>
@@ -201,13 +196,12 @@
               <h3 class="transport__title">
                 Транспорт
               </h3>
-              <fieldset class="traveller-form__fieldset-transport traveller-form__fieldset-transport--user">
+              <fieldset class="traveller-form__fieldset--transport traveller-form__fieldset--transport-user">
                 <div class="traveller-form__input-container traveller-form__input-container--transport traveller-form__input-container--user">
                   <label>
                     <input type="checkbox" name="transport-choice" value="plane" class="traveller-form__checkbox-transport traveller-form__input-checkbox--circle visually-hidden" checked>
                     <span class="checkbox-indicator checkbox-indicator--plane">
-                      <svg class="traveller-form__checkbox-indicator-svg traveller-form__checkbox-indicator-svg--plane" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                      <svg class="traveller-form__checkbox-indicator-svg traveller-form__checkbox-indicator-svg--plane">
                         <use xlink:href="#icon-plane"></use>
                       </svg>
                     </span>
@@ -216,8 +210,7 @@
                   <label>
                     <input type="checkbox" name="transport-choice" value="bus" class="traveller-form__checkbox-transport traveller-form__input-checkbox--circle visually-hidden" checked>
                     <span class="checkbox-indicator checkbox-indicator--bus">
-                      <svg class="traveller-form__checkbox-indicator-svg traveller-form__checkbox-indicator-svg--bus" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                      <svg class="traveller-form__checkbox-indicator-svg traveller-form__checkbox-indicator-svg--bus">
                         <use xlink:href="#icon-bus"></use>
                       </svg>
                     </span>
@@ -226,8 +219,7 @@
                   <label>
                     <input type="checkbox" name="transport-choice" value="bike" class="traveller-form__checkbox-transport traveller-form__input-checkbox--circle visually-hidden">
                     <span class="checkbox-indicator checkbox-indicator--bike">
-                      <svg class="traveller-form__checkbox-indicator-svg traveller-form__checkbox-indicator-svg--bike" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                      <svg class="traveller-form__checkbox-indicator-svg traveller-form__checkbox-indicator-svg--bike">
                         <use xlink:href="#icon-bike"></use>
                       </svg>
                     </span>
@@ -236,8 +228,7 @@
                   <label>
                     <input type="checkbox" name="transport-choice" value="foot" class="traveller-form__checkbox-transport traveller-form__input-checkbox--circle visually-hidden" checked>
                     <span class="checkbox-indicator checkbox-indicator--foot">
-                      <svg class="traveller-form__checkbox-indicator-svg traveller-form__checkbox-indicator-svg--foot" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                      <svg class="traveller-form__checkbox-indicator-svg traveller-form__checkbox-indicator-svg--foot">
                         <use xlink:href="#icon-run"></use>
                       </svg>
                     </span>
@@ -249,7 +240,7 @@
           </section>
         </div>
       </div>
-      <div class="wrapper wrapper--bg-medium-gray wrapper--top-radius">
+      <div class="wrapper wrapper--bg-medium-gray wrapper--top-radius-small">
         <div class="wrapper__inner">
           <section class="plans-id page-form__plans-id">
             <h2 class="plans-id__title title title--h2 title--color-blue title--h2-s">
@@ -268,12 +259,12 @@
                 <b class="country-card__text">
                   3 попутчика
                 </b>
-                <b class="country-card__text">
+                <b class="country-card__text country-card__text--first">
                   26 мар — 29 мар
                 </b>
-                <button class="button country-card__button" type="button">
+                <a class="button country-card__button" href="#">
                   Изменить
-                </button>
+                </a>
               </div>
             </div>
             <div class="country-card plans-id__country-card">
@@ -289,18 +280,18 @@
                 <b class="country-card__text">
                   1 попутчик
                 </b>
-                <b class="country-card__text">
+                <b class="country-card__text country-card__text--second">
                   1 июл — 15 июл
                 </b>
-                <button class="button country-card__button" type="button">
+                <a class="button country-card__button" href="#">
                   Изменить
-                </button>
+                </a>
               </div>
             </div>
           </section>
         </div>
       </div>
-      <div class="wrapper wrapper--bg-dark-gray wrapper--top-radius">
+      <div class="wrapper wrapper--bg-dark-gray wrapper--top-radius-small">
         <div class="wrapper__inner">
           <section class="add-plan-form-container page-form__add-plan-form-container">
             <h2 class="add-plan-form-container__title title title--h2 title--color-blue title--h2-s">
@@ -308,7 +299,7 @@
             </h2>
             <form action="https://echo.htmlacademy.ru" method="post" name="item-form" class="add-plan-form-container__form">
               <div class="form-wrapper form-wrapper--bg-white form-wrapper--all-border">
-                <div class="arrival-dates add-plan-form-container__arrival-dates">
+                <div class="arrival-dates add-plan-form-container__arrival-dates" id="arrival-dates-link">
                   <div class="arrival-dates__container">
                     <div class="arrival-dates__container-text">
                       <h3 class="arrival-dates__title title title--h3 title--color-blue">
@@ -401,7 +392,7 @@
                         <td class="calendar__cell calendar__cell--day">В<span class="calendar__cell-letter">т</span></td>
                         <td class="calendar__cell calendar__cell--day">С<span class="calendar__cell-letter">р</span></td>
                         <td class="calendar__cell calendar__cell--day">Ч<span class="calendar__cell-letter">т</span></td>
-                        <td class="calendar__cell calendar__cell--day">П<span class="calendar__cell-letter">н</span></td>
+                        <td class="calendar__cell calendar__cell--day">П<span class="calendar__cell-letter">т</span></td>
                         <td class="calendar__cell calendar__cell--day calendar__cell--day-red">С<span class="calendar__cell-letter">б</span></td>
                         <td class="calendar__cell calendar__cell--day calendar__cell--day-red">В<span class="calendar__cell-letter">с</span></td>
                       </tr>
@@ -480,7 +471,7 @@
                       </tr>
                     </table>
                   </div>
-                  <a class="button--bg-yellow button--size-small arrival-dates__button" src="#travel-route-link">
+                  <a class="button--bg-yellow button--size-small arrival-dates__button" href="#travel-route-link">
                     Cледующий шаг
                   </a>
                 </div>
@@ -527,7 +518,7 @@
                         <div class="travel-route__circle travel-route__circle--selected travel-route__circle--line"></div>
                       </div>
                       <div class="travel-route__container">
-                        <svg class="travel-route__flag" width="71" height="48" viewBox="0 0 71 48" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="travel-route__flag" width="71" height="48" viewBox="0 0 71 48">
                           <use xlink:href="#icon-flag-bosnia"></use>
                         </svg>
                         <button class="button travel-route__button--delete" type="button">
@@ -546,7 +537,7 @@
                         <div class="travel-route__circle travel-route__circle--selected"></div>
                       </div>
                       <div class="travel-route__container">
-                        <svg class="travel-route__flag" width="71" height="48" viewBox="0 0 71 48" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="travel-route__flag" width="71" height="48" viewBox="0 0 71 48">
                           <use xlink:href="#icon-flag-czech"></use>
                         </svg>
                         <button class="button travel-route__button--delete" type="button">
@@ -637,10 +628,10 @@
                     </div>
                   </div>
                   <div class="travel-route__button-container">
-                    <a class="button--bg-yellow button--size-small travel-route__button--next" src="#activity-plans-link">
-                       Cледующий шаг
+                    <a class="button--bg-yellow button--size-small travel-route__button--next" href="#activity-plans-link">
+                      Cледующий шаг
                     </a>
-                    <a class="travel-route__button--back" src="#travel-route-link">
+                    <a class="travel-route__button--back" href="#arrival-dates-link">
                       На шаг назад
                     </a>
                   </div>
@@ -682,7 +673,7 @@
                       <b class="activity-plans__text">
                         Босния и герцеговина
                       </b>
-                      <svg class="activity-plans__flag activity-plans__flag--bosnia" width="71" height="48" viewBox="0 0 71 48" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="activity-plans__flag activity-plans__flag--bosnia" width="71" height="48" viewBox="0 0 71 48">
                         <use xlink:href="#icon-flag-bosnia"></use>
                       </svg>
                     </div>
@@ -696,7 +687,7 @@
                       <b class="activity-plans__text">
                         Чехия
                       </b>
-                      <svg class="activity-plans__flag activity-plans__flag--czech" width="71" height="48" viewBox="0 0 71 48" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="activity-plans__flag activity-plans__flag--czech" width="71" height="48" viewBox="0 0 71 48">
                         <use xlink:href="#icon-flag-czech"></use>
                       </svg>
                     </div>
@@ -709,7 +700,7 @@
                     <button class="activity-plans__button button button--bg-yellow button--size-small" type="submit">
                       Отправить
                     </button>
-                    <a class="activity-plans__button--back" src="#activity-plans-link">
+                    <a class="activity-plans__button--back" href="#travel-route-link">
                       На шаг назад
                     </a>
                   </div>
@@ -738,8 +729,7 @@
             <ul class="social__list">
               <li class="social__item social__item--bg-yellow">
                 <a class="social__link" href="#">
-                  <svg class="social__svg social__svg--bg-yellow social__svg--facebook" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
+                  <svg class="social__svg social__svg--bg-yellow social__svg--facebook">
                     <use xlink:href="#icon-facebook"></use>
                   </svg>
                   <span class="visually-hidden">Фейсбук</span>
@@ -747,8 +737,7 @@
               </li>
               <li class="social__item social__item--bg-yellow">
                 <a class="social__link" href="#">
-                  <svg class="social__svg social__svg--bg-yellow social__svg--vk" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
+                  <svg class="social__svg social__svg--bg-yellow social__svg--vk">
                     <use xlink:href="#icon-vk"></use>
                   </svg>
                   <span class="visually-hidden">Вконтакте</span>
@@ -756,8 +745,7 @@
               </li>
               <li class="social__item social__item--bg-yellow">
                 <a class="social__link" href="#">
-                  <svg class="social__svg social__svg--bg-yellow social__svg--insta" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
+                  <svg class="social__svg social__svg--bg-yellow social__svg--insta">
                     <use xlink:href="#icon-instagram"></use>
                   </svg>
                   <span class="visually-hidden">Инстаграм</span>
@@ -768,8 +756,7 @@
           <div class="copyright page-footer__copyright">
             <b class="copyright__text">Разработано</b>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <svg class="copyright__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 27 34" style="enable-background:new 0 0 27 34;" xml:space="preserve">
+              <svg class="copyright__svg">
                 <use xlink:href="#icon-htmlacademy"></use>
               </svg>
               <span class="visually-hidden">HTML-Academy</span>

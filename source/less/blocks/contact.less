@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
 }
+
 .contact__icon {
   box-sizing: border-box;
   display: inline-flex;
@@ -12,13 +13,16 @@
   border-radius: 50%;
   fill: inherit;
 }
+
 .contact__text {
   display: none;
 }
+
 .contact__icon svg {
   width: 18px;
   height: 18px;
 }
+
 //size mods
 .contact--icon-size-s .contact__icon {
   width: 40px;
@@ -30,10 +34,12 @@
   background-color: #ff8d30;
   fill: #161c35;
 }
+
 .contact--icon-bg-yellow .contact__icon {
   background-color: #ffbd30;
   fill: #161c35;
 }
+
 .contact--icon-bg-dark-blue .contact__icon {
   background-color: #121936;
   fill: #ffd64b;
@@ -43,6 +49,7 @@
 .contact--color-dark-blue {
   color: #121936;
 }
+
 .contact--color-yellow {
   color: #ffd64b;
 }
@@ -61,13 +68,16 @@
 .contact--icon-bg-orange .contact__icon:focus {
   background-color: #f26926;
 }
+
 .contact--icon-bg-orange .contact__icon:active {
   fill: rgba(22, 28, 53, 0.3);
 }
+
 .contact--icon-bg-yellow .contact__icon:hover,
 .contact--icon-bg-yellow .contact__icon:focus {
   background-color: #ff8d30;
 }
+
 .contact--icon-bg-yellow .contact__icon:active {
   fill: rgba(22, 28, 53, 0.3);
 }
@@ -79,41 +89,50 @@
   color: #ffbd30;
   fill: #ffbd30;
 }
+
 .contact--icon-bg-dark-blue:active {
   opacity: 0.3;
 }
-@media (min-width:@tablet-width) {
+
+@media (min-width: @tablet-width) {
   .contact__icon {
     width: 67px;
     height: 67px;
   }
+
   .contact__icon svg {
     width: 27px;
     height: 27px;
   }
+
   .contact--show-text .contact__text {
     font-size: 28px;
     line-height: 28px;
     margin-left: 25px;
   }
 }
-@media (min-width:@desktop-width) {
+
+@media (min-width: @desktop-width) {
   .contact__icon {
     width: 90px;
     height: 90px;
   }
+
   .contact__icon svg {
     width: 36px;
     height: 36px;
   }
+
   .contact--icon-size-s svg {
     width: 18px;
     height: 18px;
   }
+
   .contact--icon-size-s .contact__icon {
     width: 50px;
     height: 50px;
   }
+
   .contact--show-text .contact__text {
     margin-left: 32px;
   }
