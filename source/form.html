@@ -196,46 +196,48 @@
               <h3 class="transport__title">
                 Транспорт
               </h3>
-              <fieldset class="traveller-form__fieldset traveller-form__fieldset--transport-user">
-                <div class="traveller-form__input-container traveller-form__input-container--transport traveller-form__input-container--user">
-                  <label>
-                    <input type="checkbox" name="transport-choice" value="plane" class="traveller-form__checkbox-transport traveller-form__checkbox-transport--circle visually-hidden" checked>
-                    <span class="checkbox-indicator checkbox-indicator--plane">
-                      <svg class="checkbox-indicator__svg checkbox-indicator__svg--plane" width="18" height="18">
-                        <use xlink:href="#icon-plane"></use>
-                      </svg>
-                    </span>
-                    <span class="visually-hidden">Самолет</span>
-                  </label>
-                  <label>
-                    <input type="checkbox" name="transport-choice" value="bus" class="traveller-form__checkbox-transport traveller-form__checkbox-transport--circle visually-hidden" checked>
-                    <span class="checkbox-indicator checkbox-indicator--bus">
-                      <svg class="checkbox-indicator__svg checkbox-indicator__svg--bus" width="18" height="18">
-                        <use xlink:href="#icon-bus"></use>
-                      </svg>
-                    </span>
-                    <span class="visually-hidden">Автобус</span>
-                  </label>
-                  <label>
-                    <input type="checkbox" name="transport-choice" value="bike" class="traveller-form__checkbox-transport traveller-form__checkbox-transport--circle visually-hidden">
-                    <span class="checkbox-indicator checkbox-indicator--bike">
-                      <svg class="checkbox-indicator__svg checkbox-indicator__svg--bike" width="18" height="18">
-                        <use xlink:href="#icon-bike"></use>
-                      </svg>
-                    </span>
-                    <span class="visually-hidden">Велосипед</span>
-                  </label>
-                  <label>
-                    <input type="checkbox" name="transport-choice" value="foot" class="traveller-form__checkbox-transport traveller-form__checkbox-transport--circle visually-hidden" checked>
-                    <span class="checkbox-indicator checkbox-indicator--foot">
-                      <svg class="checkbox-indicator__svg checkbox-indicator__svg--foot" width="18" height="18">
-                        <use xlink:href="#icon-run"></use>
-                      </svg>
-                    </span>
-                    <span class="visually-hidden">Пешком</span>
-                  </label>
-                </div>
-              </fieldset>
+              <div class="traveller-form">
+                <fieldset class="traveller-form__fieldset traveller-form__fieldset--transport-user">
+                  <div class="traveller-form__input-container traveller-form__input-container--transport traveller-form__input-container--user">
+                    <label>
+                      <input type="checkbox" name="transport-choice" value="plane" class="traveller-form__checkbox-transport traveller-form__checkbox-transport--circle visually-hidden" checked>
+                      <span class="checkbox-indicator checkbox-indicator--plane">
+                        <svg class="checkbox-indicator__svg checkbox-indicator__svg--plane" width="18" height="18">
+                          <use xlink:href="#icon-plane"></use>
+                        </svg>
+                      </span>
+                      <span class="visually-hidden">Самолет</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="transport-choice" value="bus" class="traveller-form__checkbox-transport traveller-form__checkbox-transport--circle visually-hidden" checked>
+                      <span class="checkbox-indicator checkbox-indicator--bus">
+                        <svg class="checkbox-indicator__svg checkbox-indicator__svg--bus" width="18" height="18">
+                          <use xlink:href="#icon-bus"></use>
+                        </svg>
+                      </span>
+                      <span class="visually-hidden">Автобус</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="transport-choice" value="bike" class="traveller-form__checkbox-transport traveller-form__checkbox-transport--circle visually-hidden">
+                      <span class="checkbox-indicator checkbox-indicator--bike">
+                        <svg class="checkbox-indicator__svg checkbox-indicator__svg--bike" width="18" height="18">
+                          <use xlink:href="#icon-bike"></use>
+                        </svg>
+                      </span>
+                      <span class="visually-hidden">Велосипед</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="transport-choice" value="foot" class="traveller-form__checkbox-transport traveller-form__checkbox-transport--circle visually-hidden" checked>
+                      <span class="checkbox-indicator checkbox-indicator--foot">
+                        <svg class="checkbox-indicator__svg checkbox-indicator__svg--foot" width="18" height="18">
+                          <use xlink:href="#icon-run"></use>
+                        </svg>
+                      </span>
+                      <span class="visually-hidden">Пешком</span>
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
             </div>
           </section>
         </div>
@@ -405,7 +407,7 @@
                         <td class="calendar__cell calendar__cell--disabled">28</td>
                         <td class="calendar__cell calendar__cell--disabled">
                           1
-                          <span class="calendar__cell--text calendar__cell--text-grey">
+                          <span class="calendar__cell-text calendar__cell-text--grey">
                             мар
                           </span>
                         </td>
@@ -443,14 +445,14 @@
                         <td class="calendar__cell calendar__cell--disabled">25</td>
                         <td class="calendar__cell calendar__cell--selected">
                           26
-                        <span class="calendar__cell--text calendar__cell--text-white">
+                        <span class="calendar__cell-text calendar__cell-text--white">
                           Заезд
                         </span>
                         </td>
                         <td class="calendar__cell calendar__cell--selected calendar__cell--no-text">27</td>
                         <td class="calendar__cell calendar__cell--selected">
                           28
-                        <span class="calendar__cell--text calendar__cell--text-white">
+                        <span class="calendar__cell-text calendar__cell-text--white">
                           Выезд
                         </span>
                         </td>
@@ -460,7 +462,7 @@
                         <td class="calendar__cell calendar__cell--active">30</td>
                         <td class="calendar__cell calendar__cell--active">31</td>
                         <td class="calendar__cell calendar__cell--active">1
-                          <span class="calendar__cell--text calendar__cell--text-black">
+                          <span class="calendar__cell-text calendar__cell-text--black">
                             апр
                           </span>
                         </td>
@@ -471,7 +473,7 @@
                       </tr>
                     </table>
                   </div>
-                  <a class="button--bg-yellow button--size-small arrival-dates__button" href="#travel-route-link">
+                  <a class="button--bg-yellow button button--size-small arrival-dates__button" href="#travel-route-link">
                     Cледующий шаг
                   </a>
                 </div>
@@ -488,29 +490,31 @@
                         Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.
                       </p>
                     </div>
-                    <ul class="arrival-dates__list arrival-dates__list--second">
-                      <li class="arrival-dates__item">
-                        <span class="arrival-dates__item-text">
-                          Даты
-                        </span>
-                      </li>
-                      <li class="arrival-dates__item arrival-dates__item--current">
-                        <span class="arrival-dates__item-text">
-                          Маршрут
-                        </span>
-                      </li>
-                      <li class="arrival-dates__item">
-                        <span class="arrival-dates__item-text">
-                          Развлечения
-                        </span>
-                      </li>
-                    </ul>
+                    <div class="arrival-dates">
+                      <ul class="arrival-dates__list arrival-dates__list--second">
+                        <li class="arrival-dates__item">
+                          <span class="arrival-dates__item-text">
+                            Даты
+                          </span>
+                        </li>
+                        <li class="arrival-dates__item arrival-dates__item--current">
+                          <span class="arrival-dates__item-text">
+                            Маршрут
+                          </span>
+                        </li>
+                        <li class="arrival-dates__item">
+                          <span class="arrival-dates__item-text">
+                            Развлечения
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                   <div class="travel-route__country-choice">
                     <div class="travel-route__country-item">
                       <div class="travel-route__country-container">
                         <b class="travel-route__text travel-route__text--gradient">Босния и Герцеговина</b>
-                        <button class="button travel-route__button--arrow" type="button">
+                        <button class="button travel-route__button travel-route__button--arrow" type="button">
                           <span class="visually-hidden">Выбрать</span>
                         </button>
                       </div>
@@ -521,7 +525,7 @@
                         <svg class="travel-route__flag" width="71" height="48" viewBox="0 0 71 48">
                           <use xlink:href="#icon-flag-bosnia"></use>
                         </svg>
-                        <button class="button travel-route__button--delete" type="button">
+                        <button class="button travel-route__button travel-route__button--delete" type="button">
                           <span class="visually-hidden">Удалить</span>
                         </button>
                       </div>
@@ -529,7 +533,7 @@
                     <div class="travel-route__country-item">
                       <div class="travel-route__country-container">
                         <b class="travel-route__text">Чехия</b>
-                        <button class="button travel-route__button--arrow" type="button">
+                        <button class="button travel-route__button travel-route__button--arrow" type="button">
                           <span class="visually-hidden">Выбрать</span>
                         </button>
                       </div>
@@ -540,7 +544,7 @@
                         <svg class="travel-route__flag" width="71" height="48" viewBox="0 0 71 48">
                           <use xlink:href="#icon-flag-czech"></use>
                         </svg>
-                        <button class="button travel-route__button--delete" type="button">
+                        <button class="button travel-route__button travel-route__button--delete" type="button">
                           <span class="visually-hidden">Удалить</span>
                         </button>
                       </div>
@@ -549,14 +553,14 @@
                       <div class="travel-route__dropdown-container">
                         <div class="travel-route__country-container travel-route__country-container--dropdown travel-route__country-container--hover">
                           <b class="travel-route__text">Выберите страну</b>
-                          <button class="button travel-route__button--arrow travel-route__button-dropdown" type="button">
+                          <button class="button travel-route__button travel-route__button--arrow travel-route__button-dropdown" type="button">
                             <span class="visually-hidden">Выбрать</span>
                           </button>
                         </div>
                         <div class="travel-route__container-circle">
                           <div class="travel-route__circle travel-route__circle--choose"></div>
                         </div>
-                        <button class="button travel-route__button--delete travel-route__button--delete-choose" type="button">
+                        <button class="button travel-route__button travel-route__button--delete travel-route__button--delete-choose" type="button">
                           <span class="visually-hidden">Удалить</span>
                         </button>
                       </div>
@@ -628,10 +632,10 @@
                     </div>
                   </div>
                   <div class="travel-route__button-container">
-                    <a class="button--bg-yellow button--size-small travel-route__button--next" href="#activity-plans-link">
+                    <a class="button--bg-yellow button--size-small button travel-route__button-next" href="#activity-plans-link">
                       Cледующий шаг
                     </a>
-                    <a class="travel-route__button--back" href="#arrival-dates-link">
+                    <a class="travel-route__button-back" href="#arrival-dates-link">
                       На шаг назад
                     </a>
                   </div>
@@ -650,23 +654,25 @@
                         Можно писать в свободной форме и ставить тэги.
                       </p>
                     </div>
-                    <ul class="arrival-dates__list arrival-dates__list--third">
-                      <li class="arrival-dates__item">
-                        <span class="arrival-dates__item-text">
-                          Даты
-                        </span>
-                      </li>
-                      <li class="arrival-dates__item">
-                        <span class="arrival-dates__item-text">
-                          Маршрут
-                        </span>
-                      </li>
-                      <li class="arrival-dates__item arrival-dates__item--current">
-                        <span class="arrival-dates__item-text">
-                          Развлечения
-                        </span>
-                      </li>
-                    </ul>
+                    <div class="arrival-dates">
+                      <ul class="arrival-dates__list arrival-dates__list--third">
+                        <li class="arrival-dates__item">
+                          <span class="arrival-dates__item-text">
+                            Даты
+                          </span>
+                        </li>
+                        <li class="arrival-dates__item">
+                          <span class="arrival-dates__item-text">
+                            Маршрут
+                          </span>
+                        </li>
+                        <li class="arrival-dates__item arrival-dates__item--current">
+                          <span class="arrival-dates__item-text">
+                            Развлечения
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                   <div class="activity-plans__textarea-activity">
                     <div class="activity-plans__country">
@@ -700,7 +706,7 @@
                     <button class="activity-plans__button button button--bg-yellow button--size-small" type="submit">
                       Отправить
                     </button>
-                    <a class="activity-plans__button--back" href="#travel-route-link">
+                    <a class="activity-plans__button-back" href="#travel-route-link">
                       На шаг назад
                     </a>
                   </div>
